@@ -16,8 +16,8 @@ export function actorPath(actor) {
 // Entrées connues des actors LeBonCoin testés : pas besoin de régler APIFY_INPUT pour eux.
 // (Un actor qui ne reconnaît pas ses paramètres renvoie ses résultats par défaut, hors sujet.)
 export const ACTOR_INPUTS = {
-  'clearpath/leboncoin-api': '{"searchUrl":"{{url}}","adLimit":{{max}}}',
-  'clearpath/leboncoin-api-ppe': '{"searchUrl":"{{url}}","adLimit":{{max}}}',
+  'clearpath/leboncoin-api': '{"searchUrl":"{{url}}","adLimit":{{max}},"includeSeller":false,"includePhone":false}',
+  'clearpath/leboncoin-api-ppe': '{"searchUrl":"{{url}}","adLimit":{{max}},"includeSeller":false,"includePhone":false}',
 };
 
 export function inputTemplateFor(actor, override) {

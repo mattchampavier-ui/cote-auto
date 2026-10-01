@@ -75,8 +75,8 @@ test("identifiant d'actor Apify et gabarit d'entrée", () => {
   assert.equal(actorPath('jean/leboncoin-scraper'), 'jean~leboncoin-scraper');
   assert.deepEqual(buildInput(undefined, 'https://a/b?x=1', 40), { startUrls: [{ url: 'https://a/b?x=1' }], maxItems: 40 });
   assert.deepEqual(buildInput('{"searchUrl":"{{url}}","limit":{{max}}}', 'u', 5), { searchUrl: 'u', limit: 5 });
-  assert.deepEqual(buildInput(inputTemplateFor('clearpath/leboncoin-api'), 'u', 60), { searchUrl: 'u', adLimit: 60 });
-  assert.deepEqual(buildInput(inputTemplateFor('Clearpath~leboncoin-api', ''), 'u', 60), { searchUrl: 'u', adLimit: 60 });
+  assert.deepEqual(buildInput(inputTemplateFor('clearpath/leboncoin-api'), 'u', 60), { searchUrl: 'u', adLimit: 60, includeSeller: false, includePhone: false });
+  assert.deepEqual(buildInput(inputTemplateFor('Clearpath~leboncoin-api', ''), 'u', 60), { searchUrl: 'u', adLimit: 60, includeSeller: false, includePhone: false });
   assert.deepEqual(buildInput(inputTemplateFor('clearpath/leboncoin-api', '{"x":"{{url}}"}'), 'u', 1), { x: 'u' });
 });
 
