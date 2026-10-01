@@ -1,0 +1,83 @@
+name: Ajouter un véhicule
+description: Le robot l'ajoute au suivi, lance un premier relevé et répond ici. Seul le nom est obligatoire.
+title: "Ajouter : "
+labels: ["ajout-vehicule"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Remplis au minimum le **nom**. Tout ce qui reste vide est estimé automatiquement
+        (par Claude si la clé est configurée, sinon avec des valeurs neutres à affiner dans `models.json`).
+  - type: input
+    id: nom
+    attributes:
+      label: Nom du véhicule
+      placeholder: "BMW Z3 1.9i"
+    validations:
+      required: true
+  - type: input
+    id: recherche
+    attributes:
+      label: Texte de recherche LeBonCoin
+      description: Ce que tu taperais dans la barre de recherche. Vide = le nom du véhicule.
+      placeholder: "bmw z3"
+  - type: input
+    id: annee_min
+    attributes:
+      label: Année minimum
+      placeholder: "1996"
+  - type: input
+    id: annee_max
+    attributes:
+      label: Année maximum
+      placeholder: "2002"
+  - type: input
+    id: km_max
+    attributes:
+      label: Kilométrage maximum
+      placeholder: "200000"
+  - type: input
+    id: prix_max
+    attributes:
+      label: Prix maximum
+      description: Facultatif — utile pour écarter des versions très au-dessus (ex. M Roadster).
+  - type: input
+    id: obligatoires
+    attributes:
+      label: Mots obligatoires
+      description: Tous doivent apparaître dans l'annonce. Séparés par des virgules.
+      placeholder: "z3"
+  - type: input
+    id: variantes
+    attributes:
+      label: Variantes acceptées
+      description: Au moins un doit apparaître. Séparés par des virgules.
+      placeholder: "1.9, 2.0, 1.9i"
+  - type: input
+    id: exclusions
+    attributes:
+      label: Mots à exclure
+      description: Dans le titre — autres versions, générations... Séparés par des virgules.
+      placeholder: "m roadster, coupe, 3.0"
+  - type: input
+    id: categorie
+    attributes:
+      label: Catégorie
+      placeholder: "Roadster youngtimer"
+  - type: input
+    id: rarete
+    attributes:
+      label: Rareté (0-100)
+  - type: input
+    id: dernier_de
+    attributes:
+      label: « Dernier de » (0-100)
+      description: Dernière génération avant une rupture technique ou stylistique.
+  - type: input
+    id: desirabilite
+    attributes:
+      label: Désirabilité (0-100)
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes

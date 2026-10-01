@@ -1,0 +1,27 @@
+{
+  "_comment": "Réglages globaux. Tout est modifiable ici, rien n'est codé en dur. Les poids du score doivent faire 1 au total.",
+  "repo": "mattchampavier-ui/cote-auto",
+  "dashboardUrl": "https://mattchampavier-ui.github.io/cote-auto/",
+  "scoring": {
+    "weights": {
+      "rarete": 0.2,
+      "desirabilite": 0.2,
+      "dernierDe": 0.1,
+      "proximite": 0.2,
+      "momentum": 0.15,
+      "marche": 0.15
+    },
+    "fullLiquidity": 15
+  },
+  "filters": {
+    "minPrice": 500,
+    "exclude": []
+  },
+  "scrape": {
+    "maxItemsPerModel": 60,
+    "bargainThreshold": 0.15
+  },
+  "ai": {
+    "model": "claude-sonnet-5-5"
+  }
+}

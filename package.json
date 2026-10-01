@@ -1,0 +1,18 @@
+{
+  "name": "cote-auto",
+  "version": "4.0.0",
+  "private": true,
+  "description": "Suivi automatisé de la cote de véhicules d'occasion, avec récap mensuel par mail.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "scrape": "node src/scrape.mjs",
+    "recap": "node src/recap.mjs",
+    "recap:preview": "node src/recap.mjs --dry-run",
+    "demo": "node src/scrape.mjs --fixture tests/fixtures/run1 --date 2026-09-07 && node src/scrape.mjs --fixture tests/fixtures/run2 --date 2026-09-28"
+  },
+  "dependencies": {
+    "nodemailer": "^10.0.13"
+  }
+}

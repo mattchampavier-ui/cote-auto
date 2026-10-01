@@ -1,0 +1,40 @@
+{
+  "_comment": "Historique des relevés, ajoutés par le robot (jamais réécrits). Les relevés « manuel » du 08/09/2026 sont l'amorce de départ.",
+  "meta": {
+    "lastRun": null,
+    "lastRecap": null,
+    "runs": []
+  },
+  "snapshots": {
+    "peugeot-208-gti-30th": [
+      { "date": "2026-09-08", "count": 7, "min": 12990, "max": 23490, "median": 15990, "avgKm": 108000, "source": "manuel" }
+    ],
+    "porsche-911-997": [
+      { "date": "2026-09-08", "count": 11, "min": 46500, "max": 74900, "median": 51000, "avgKm": 100000, "source": "manuel" }
+    ],
+    "porsche-boxster-986": [
+      { "date": "2026-09-08", "count": 4, "min": 17986, "max": 26900, "median": 22425, "avgKm": 110000, "source": "manuel" }
+    ],
+    "porsche-boxster-987": [
+      { "date": "2026-09-08", "count": 5, "min": 33000, "max": 72986, "median": 43990, "avgKm": 65000, "source": "manuel" }
+    ],
+    "renault-twingo-1": [
+      { "date": "2026-09-08", "count": 6, "min": 1500, "max": 6290, "median": 5490, "avgKm": 150000, "source": "manuel" }
+    ],
+    "peugeot-206-rc": [
+      { "date": "2026-09-08", "count": 1, "min": 6790, "max": 6790, "median": 6790, "avgKm": 244000, "source": "manuel" }
+    ],
+    "renault-clio-2-rs": [
+      { "date": "2026-09-08", "count": 2, "min": 6000, "max": 11799, "median": 8899.5, "avgKm": 168000, "source": "manuel" }
+    ],
+    "citroen-saxo-vts": [
+      { "date": "2026-09-08", "count": 2, "min": 6500, "max": 6700, "median": 6600, "avgKm": 153683, "source": "manuel" }
+    ]
+  },
+  "radar": [
+    { "name": "Peugeot 306 S16", "periode": "1996-2001", "text": "306 s16", "yearMin": 1996, "yearMax": 2001, "pourquoi": "Châssis loué par la presse de l'époque, encore très accessible, communauté active." },
+    { "name": "BMW Z3 1.9i / 2.0i", "periode": "1996-2002", "text": "bmw z3", "yearMin": 1996, "yearMax": 2002, "pourquoi": "Roadster BMW le plus abordable, désirabilité de marque en hausse sur les youngtimers allemandes." },
+    { "name": "Volkswagen Golf IV GTI 25th Anniversary", "periode": "2001-2002", "text": "golf gti 25", "yearMin": 2001, "yearMax": 2002, "pourquoi": "Édition limitée, dernière Golf GTI avant l'ère turbo généralisée grand public." },
+    { "name": "Alfa Romeo 156 2.5 V6 24V", "periode": "1997-2005", "text": "alfa 156 v6", "yearMin": 1997, "yearMax": 2005, "pourquoi": "Design Giugiaro, V6 atmosphérique rare sur ce segment, cote encore raisonnable." }
+  ]
+}

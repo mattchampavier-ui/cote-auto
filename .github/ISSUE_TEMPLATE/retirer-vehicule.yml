@@ -1,0 +1,12 @@
+name: Retirer un véhicule
+description: Arrête le suivi (l'historique est conservé).
+title: "Retirer : "
+labels: ["retrait-vehicule"]
+body:
+  - type: input
+    id: cible
+    attributes:
+      label: Véhicule à retirer
+      description: Nom ou identifiant (visible sur le dashboard, ex. citroen-saxo-vts).
+    validations:
+      required: true

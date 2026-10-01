@@ -1,0 +1,66 @@
+name: Véhicules (ajout / retrait)
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: cote-data
+  cancel-in-progress: false
+
+jobs:
+  vehicule:
+    # Seuls le propriétaire du dépôt et ses collaborateurs peuvent modifier la liste (le dépôt
+    # est public : n'importe qui peut ouvrir une issue).
+    if: >-
+      (contains(github.event.issue.body, '### Nom du véhicule') || contains(github.event.issue.body, '### Véhicule à retirer'))
+      && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci --omit=dev
+
+      - name: Mise à jour de models.json
+        id: edit
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BODY: ${{ github.event.issue.body }}
+          ACTION: ${{ contains(github.event.issue.body, '### Nom du véhicule') && 'add' || 'remove' }}
+        run: |
+          printf '%s' "$BODY" > "$RUNNER_TEMP/issue.md"
+          node src/vehicles.mjs "$ACTION" --body-file "$RUNNER_TEMP/issue.md" --comment-out "$RUNNER_TEMP/comment.md"
+
+      - name: Commit
+        if: success()
+        run: .github/commit.sh "Véhicules : issue #${{ github.event.issue.number }}"
+
+      - name: Premier relevé du véhicule ajouté
+        if: success() && steps.edit.outputs.id && contains(github.event.issue.body, '### Nom du véhicule')
+        continue-on-error: true
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          APIFY_ACTOR: ${{ vars.APIFY_ACTOR }}
+          APIFY_INPUT: ${{ vars.APIFY_INPUT }}
+        run: |
+          node src/scrape.mjs --only "${{ steps.edit.outputs.id }}"
+          .github/commit.sh "Premier relevé : ${{ steps.edit.outputs.id }}"
+
+      - name: Réponse sur l'issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.issue.number }}
+          OUTCOME: ${{ steps.edit.outcome }}
+        run: |
+          if [ ! -s "$RUNNER_TEMP/comment.md" ]; then echo "❌ Le traitement a échoué, voir les logs du workflow." > "$RUNNER_TEMP/comment.md"; fi
+          gh issue comment "$NUMBER" --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/comment.md"
+          if [ "$OUTCOME" = "success" ]; then gh issue close "$NUMBER" --repo "$GITHUB_REPOSITORY" --reason completed; fi

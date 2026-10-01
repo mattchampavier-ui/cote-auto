@@ -1,0 +1,63 @@
+name: Relevé + récap mensuel
+
+on:
+  schedule:
+    # Relevé chaque lundi (suivi des annonces vendues et des baisses de prix)
+    - cron: "23 5 * * 1"
+    # ...et le 1er du mois, suivi du récap mensuel par mail
+    - cron: "23 5 1 * *"
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Identifiants à relever (séparés par des virgules) — vide = tous"
+        required: false
+        default: ""
+      recap:
+        description: "Envoyer le récap mensuel maintenant (même s'il est déjà parti)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cote-data
+  cancel-in-progress: false
+
+jobs:
+  releve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci --omit=dev
+
+      - name: Relevé des annonces
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          APIFY_ACTOR: ${{ vars.APIFY_ACTOR }}
+          APIFY_INPUT: ${{ vars.APIFY_INPUT }}
+          ONLY: ${{ inputs.only }}
+        run: |
+          if [ -n "$ONLY" ]; then node src/scrape.mjs --only "$ONLY"; else node src/scrape.mjs; fi
+
+      # Le récap part au premier passage du mois (le 1er, ou au passage suivant si le cron
+      # du 1er a été sauté) ; il ne part qu'une fois par mois.
+      - name: Récap mensuel par mail
+        if: always()
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FORCE: ${{ inputs.recap }}
+        run: |
+          if [ "$FORCE" = "true" ]; then node src/recap.mjs --force; else node src/recap.mjs; fi
+
+      - name: Commit des données
+        if: always()
+        run: .github/commit.sh "Relevé automatique $(date -u +%Y-%m-%d)"
