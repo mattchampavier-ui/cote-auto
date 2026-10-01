@@ -142,7 +142,13 @@
       "exclude": [
         "hdi",
         "206+",
-        "206 cc"
+        "206 cc",
+        "rc line",
+        "rcline",
+        "1.4",
+        "1.6",
+        "110 cv",
+        "110ch"
       ],
       "rarete": 45,
       "dernierDe": 75,

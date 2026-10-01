@@ -9,6 +9,17 @@ Pour suivre un nouveau véhicule, un bouton du dashboard ouvre un formulaire : l
 - Ajouter un véhicule : bouton **+ Ajouter un véhicule** du dashboard, ou [ce formulaire](https://github.com/mattchampavier-ui/cote-auto/issues/new?template=ajouter-vehicule.yml)
 - Base Excel : [`cote-auto.xlsx`](cote-auto.xlsx), mise à jour à chaque relevé et jointe au récap mensuel
 
+## Ajouter un véhicule
+
+Trois façons, toutes traitées automatiquement par le robot (ajout, premier relevé, réponse) :
+
+1. **Depuis le dashboard** : bouton « + Ajouter un véhicule ». Le plus simple : fais ta recherche
+   sur leboncoin.fr avec tes filtres (modèle, années, km, prix), copie l'adresse de la page et
+   colle-la dans le champ « URL de recherche LeBonCoin ». Sinon, un nom suffit.
+   GitHub s'ouvre avec la demande pré-remplie : il reste à cliquer sur « Create ».
+2. **Depuis le radar** du dashboard : bouton « Suivre » sur un candidat.
+3. **Directement sur GitHub** : [formulaire d'ajout](https://github.com/mattchampavier-ui/cote-auto/issues/new?template=ajouter-vehicule.yml).
+
 ## Véhicules suivis (16)
 
 | Depuis septembre 2026 | Ajoutés en octobre 2026 |
@@ -86,8 +97,9 @@ tableur). Le fichier est écrasé à chaque relevé : enregistre une copie si tu
 
 Dans le dépôt → **Settings → Secrets and variables → Actions** :
 
-1. **Apify** (collecte) — crée un compte gratuit sur [apify.com](https://apify.com), choisis un
-   actor de scraping LeBonCoin sur la marketplace et récupère ton token (Settings → Integrations).
+1. **Apify** (collecte) — compte sur [apify.com](https://apify.com) et token (Settings → Integrations).
+   L'actor utilisé est fixé dans `config.json` (`scrape.actor`, actuellement `memo23/leboncoin-scraper` :
+   0,00079 $ par annonce + 0,03 $ par recherche, profils vendeurs désactivés).
    - secret `APIFY_TOKEN` : ton token
    - `APIFY_ACTOR` (variable ou secret, au choix) : l'identifiant de l'actor, ex. `username/leboncoin-scraper`
    - variable `APIFY_INPUT` *(facultative)* : seulement si l'actor attend une entrée différente de
