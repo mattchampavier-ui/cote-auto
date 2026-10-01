@@ -18,9 +18,10 @@
     "exclude": []
   },
   "scrape": {
+    "actor": "memo23/leboncoin-scraper",
     "maxItemsPerModel": 40,
     "bargainThreshold": 0.15,
-    "maxChargePerRunUsd": 0.15,
+    "maxChargePerRunUsd": 0.12,
     "monthlyBudgetUsd": 4
   },
   "ai": {

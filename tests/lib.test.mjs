@@ -78,6 +78,10 @@ test("identifiant d'actor Apify et gabarit d'entrée", () => {
   assert.deepEqual(buildInput(inputTemplateFor('clearpath/leboncoin-api'), 'u', 60), { searchUrl: 'u', adLimit: 60, includeSeller: false, includePhone: false });
   assert.deepEqual(buildInput(inputTemplateFor('Clearpath~leboncoin-api', ''), 'u', 60), { searchUrl: 'u', adLimit: 60, includeSeller: false, includePhone: false });
   assert.deepEqual(buildInput(inputTemplateFor('clearpath/leboncoin-api', '{"x":"{{url}}"}'), 'u', 1), { x: 'u' });
+  const memo = buildInput(inputTemplateFor('memo23/leboncoin-scraper'), 'https://www.leboncoin.fr/recherche?text=a', 40);
+  assert.deepEqual(memo.startUrls, ['https://www.leboncoin.fr/recherche?text=a']);
+  assert.equal(memo.maxItems, 40);
+  assert.equal(memo.enrichSeller, false);
 });
 
 test('le prix attendu tient compte du kilométrage', () => {

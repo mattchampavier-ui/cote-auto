@@ -18,6 +18,13 @@ export function actorPath(actor) {
 export const ACTOR_INPUTS = {
   'clearpath/leboncoin-api': '{"searchUrl":"{{url}}","adLimit":{{max}},"includeSeller":false,"includePhone":false}',
   'clearpath/leboncoin-api-ppe': '{"searchUrl":"{{url}}","adLimit":{{max}},"includeSeller":false,"includePhone":false}',
+  'memo23/leboncoin-scraper': '{"startUrls":["{{url}}"],"maxItems":{{max}},"maxConcurrency":1,"enrichSeller":false,"enrichSellerPhone":false,"enrichEmails":false}',
+};
+
+// Options de lancement par actor : la mémoire détermine le prix du démarrage (0,03 $ par Go
+// pour memo23) ; 1 Go suffit pour une recherche de quelques dizaines d'annonces.
+export const ACTOR_RUN_OPTIONS = {
+  'memo23/leboncoin-scraper': { memory: 1024 },
 };
 
 export function inputTemplateFor(actor, override) {
@@ -91,8 +98,12 @@ export async function runActor({ token, actor, url, max, inputTemplate, maxCharg
   };
 
   // maxTotalChargeUsd : plafond de facturation du run imposé par Apify (actors payés à l'événement).
-  const cap = maxChargeUsd ? `?maxTotalChargeUsd=${maxChargeUsd}` : '';
-  const start = await call(`/acts/${actorPath(actor)}/runs${cap}`, {
+  const opts = new URLSearchParams();
+  if (maxChargeUsd) opts.set('maxTotalChargeUsd', String(maxChargeUsd));
+  const runOpts = ACTOR_RUN_OPTIONS[String(actor).replace('~', '/').toLowerCase()] || {};
+  if (runOpts.memory) opts.set('memory', String(runOpts.memory));
+  const qs = opts.toString() ? `?${opts}` : '';
+  const start = await call(`/acts/${actorPath(actor)}/runs${qs}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ ...buildInput(inputTemplateFor(actor, inputTemplate), url, max), ...costlyCache }),

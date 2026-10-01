@@ -32,7 +32,8 @@ export async function scrape({ only, fixture, today = todayISO(), fetchItems } =
       fetchItems = async (m) => ({ items: JSON.parse(await fs.readFile(path.join(fixture, `${m.id}.json`), 'utf-8')) });
     } else {
       const token = process.env.APIFY_TOKEN;
-      const actor = process.env.APIFY_ACTOR;
+      // L'actor fixé dans config.json prime sur la variable GitHub APIFY_ACTOR.
+      const actor = config.scrape.actor || process.env.APIFY_ACTOR;
       if (!token || !actor) {
         const missing = [!token && 'APIFY_TOKEN', !actor && 'APIFY_ACTOR'].filter(Boolean).join(' et ');
         console.warn(`${missing} manquant : relevé sauté (voir README, étape 2 — APIFY_ACTOR peut être une variable ou un secret).`);
@@ -62,6 +63,12 @@ export async function scrape({ only, fixture, today = todayISO(), fetchItems } =
       if (log) console.warn(`  --- journal de l'actor (réponse vide) ---\n${log}\n  ---`);
       if (costUsd) run.costUsd += costUsd;
       const listings = (Array.isArray(items) ? items : []).map(normalizeItem);
+      // Contrôle du format : part des annonces pour lesquelles prix, km et année ont été lus.
+      if (listings.length) {
+        const share = (k) => Math.round((100 * listings.filter((l) => l[k] != null).length) / listings.length);
+        console.log(`  lus : prix ${share('price')} %, km ${share('km')} %, année ${share('year')} %, id ${share('id')} %`);
+        if (share('km') < 50 || share('year') < 50) console.log(`  champs reçus : ${Object.keys(items[0]).join(', ')}`);
+      }
       const { kept, rejected } = filterRelevant(listings, model, config.filters);
       if (kept.length === 0) {
         console.warn(`  0 annonce retenue sur ${listings.length} reçues — vérifier les critères de recherche ou le format de l'actor.`);
