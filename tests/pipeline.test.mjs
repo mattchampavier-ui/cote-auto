@@ -136,3 +136,20 @@ test('export pour la base Excel : une ligne par véhicule et par mois', async ()
   assert.ok(out.annonces.length > 50);
   assert.ok(out.annonces.some((a) => a.statut === 'Partie'));
 });
+
+test('le budget Apify du mois arrête les relevés', async () => {
+  const cfgPath = path.join(box.dir, 'config.json');
+  const cfg = JSON.parse(fs.readFileSync(cfgPath, 'utf-8'));
+  cfg.scrape.monthlyBudgetUsd = 4;
+  fs.writeFileSync(cfgPath, JSON.stringify(cfg));
+  let calls = 0;
+  const run = await scrape({
+    today: '2026-12-01',
+    fetchItems: async (m) => {
+      calls++;
+      return { items: JSON.parse(fs.readFileSync(path.join(FIXTURES, 'run1', `${m.id}.json`), 'utf-8')), costUsd: 1.5 };
+    },
+  });
+  assert.equal(calls, 3); // 1,5 + 1,5 + 1,5 ≥ 4 : arrêt avant le 4e
+  assert.equal(run.budgetReached, true);
+});

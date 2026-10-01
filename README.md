@@ -55,8 +55,8 @@ tableur). Le fichier est écrasé à chaque relevé : enregistre une copie si tu
 - **Retrait** de la même façon (lien « Retirer » sur chaque carte) ; l'historique est conservé et
   redemander l'ajout réactive le véhicule.
 - **Radar → suivi en un clic** : « Suivre » sur un candidat du radar ouvre le formulaire pré-rempli.
-- **Relevé chaque lundi + le 1er du mois** au lieu d'une fois par mois : c'est ce qui permet de
-  voir les ventes et les baisses de prix.
+- **Relevé le 1er et le 15 du mois** au lieu d'une fois par mois : c'est ce qui permet de voir
+  les ventes et les baisses de prix.
 - **Récap mensuel par mail** (Gmail), archivé aussi sur le dashboard. S'il n'a pas pu partir le 1er
   (cron GitHub en retard), il part au passage suivant — jamais deux fois.
 - Les bornes plancher / plafond se recalculent seules à partir des prix observés après 3 mois.
@@ -167,9 +167,11 @@ python3 -m http.server   # puis http://localhost:8000
   robot gère le format brut de l'API LeBonCoin et les formats aplatis courants. Si un véhicule
   remonte « 0 annonce retenue » alors qu'il y en a, regarde le log du workflow : il indique combien
   d'annonces ont été reçues et pourquoi elles ont été écartées.
-- **Crédits Apify** : 16 véhicules × 60 annonces × ~5 relevés par mois. Vérifie ta consommation le
-  premier mois ; le récap affiche le coût du mois quand l'actor le communique. Baisse
-  `maxItemsPerModel` dans `config.json` si besoin.
+- **Budget Apify** : 16 véhicules × 40 annonces × 2 relevés ≈ 2 à 3 $ par mois avec
+  `clearpath/leboncoin-api` (environ 1,5 $ les 1 000 annonces). Garde-fous dans `config.json` : chaque
+  recherche est plafonnée par Apify (`maxChargePerRunUsd`), et les relevés s'arrêtent quand le
+  budget du mois (`monthlyBudgetUsd`, 4 $) est atteint. Les options payantes inutiles (profils
+  vendeurs, téléphones) sont désactivées automatiquement d'après le schéma de l'actor.
 - **Ventes** : une annonce disparue peut aussi avoir été retirée sans vente. Le décompte n'est fait
   que si le relevé n'a pas été tronqué par la limite d'annonces.
 - Le signal est une heuristique de repérage, pas un conseil financier.

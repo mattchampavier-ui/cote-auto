@@ -1,5 +1,5 @@
 {
-  "_comment": "Réglages globaux. Tout est modifiable ici, rien n'est codé en dur. Les poids du score doivent faire 1 au total.",
+  "_comment": "Réglages globaux. Tout est modifiable ici, rien n'est codé en dur. Les poids du score doivent faire 1 au total. Budget Apify : maxChargePerRunUsd plafonne chaque recherche (imposé par Apify), monthlyBudgetUsd arrête les relevés du mois une fois atteint.",
   "repo": "mattchampavier-ui/cote-auto",
   "dashboardUrl": "https://mattchampavier-ui.github.io/cote-auto/",
   "scoring": {
@@ -18,8 +18,10 @@
     "exclude": []
   },
   "scrape": {
-    "maxItemsPerModel": 60,
-    "bargainThreshold": 0.15
+    "maxItemsPerModel": 40,
+    "bargainThreshold": 0.15,
+    "maxChargePerRunUsd": 0.15,
+    "monthlyBudgetUsd": 4
   },
   "ai": {
     "model": "claude-sonnet-5-5"

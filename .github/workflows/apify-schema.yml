@@ -1,0 +1,19 @@
+name: Apify — lire le schéma de l'actor (gratuit)
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  schema:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Schéma d'entrée (aucun run lancé)
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          APIFY_ACTOR: ${{ vars.APIFY_ACTOR || secrets.APIFY_ACTOR }}
+        run: node src/apify-schema.mjs

@@ -107,3 +107,14 @@ test('bornes : manuelles au début, observées après 3 mois de relevés', () =>
   const later = bounds(model, [snap('2026-05-01', 12000, { p25: 11000, p75: 14000 }), snap('2026-09-01', 13000, { p25: 11500, p75: 15000 })]);
   assert.deepEqual([later.floor, later.ceiling, later.auto], [11000, 15000, true]);
 });
+
+test('les options payantes (profil vendeur, téléphone) sont désactivées', async () => {
+  const { costlyOptions } = await import('../src/lib/apify.mjs');
+  const schema = { properties: {
+    searchUrl: { type: 'string' }, adLimit: { type: 'integer' },
+    includeSellerProfile: { type: 'boolean', default: true },
+    includePhone: { type: 'boolean' },
+    x: { type: 'boolean', title: 'Profils vendeurs détaillés' },
+  } };
+  assert.deepEqual(costlyOptions(schema), { includeSellerProfile: false, includePhone: false, x: false });
+});

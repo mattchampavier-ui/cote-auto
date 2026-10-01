@@ -38,14 +38,24 @@ export async function scrape({ only, fixture, today = todayISO(), fetchItems } =
         console.warn(`${missing} manquant : relevé sauté (voir README, étape 2 — APIFY_ACTOR peut être une variable ou un secret).`);
         return { skipped: true };
       }
-      fetchItems = (m) => runActor({ token, actor, url: buildSearchUrl(m), max, inputTemplate: process.env.APIFY_INPUT || undefined });
+      fetchItems = (m) => runActor({ token, actor, url: buildSearchUrl(m), max, inputTemplate: process.env.APIFY_INPUT || undefined, maxChargeUsd: config.scrape.maxChargePerRunUsd });
     }
   }
 
   const run = { date: today, ok: [], empty: [], failed: [], costUsd: 0 };
   let registryChanged = false;
 
+  // Garde-fou budget : dépense Apify du mois en cours (relevés précédents + celui-ci).
+  const month = today.slice(0, 7);
+  const budget = Number(config.scrape.monthlyBudgetUsd) || Infinity;
+  const spentBefore = (data.meta?.runs || []).filter((r) => r.date.slice(0, 7) === month).reduce((a, r) => a + (r.costUsd || 0), 0);
+
   for (const model of models) {
+    if (spentBefore + run.costUsd >= budget) {
+      console.warn(`Budget Apify du mois atteint (${round(spentBefore + run.costUsd, 2)} $ / ${budget} $) : relevé arrêté.`);
+      run.budgetReached = true;
+      break;
+    }
     console.log(`→ ${model.name}`);
     try {
       const { items, costUsd, log } = await fetchItems(model);

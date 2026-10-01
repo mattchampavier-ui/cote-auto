@@ -2,10 +2,10 @@ name: Relevé + récap mensuel
 
 on:
   schedule:
-    # Relevé chaque lundi (suivi des annonces vendues et des baisses de prix)
-    - cron: "23 5 * * 1"
-    # ...et le 1er du mois, suivi du récap mensuel par mail
-    - cron: "23 5 1 * *"
+    # Relevé le 1er (suivi du récap mensuel par mail) et le 15 de chaque mois.
+    # Deux relevés par mois suffisent pour les ventes et baisses de prix, et tiennent dans le
+    # crédit Apify gratuit (voir config.json → scrape.monthlyBudgetUsd).
+    - cron: "23 5 1,15 * *"
   workflow_dispatch:
     inputs:
       only:
