@@ -43,12 +43,15 @@ toute seule. Elle est jointe au récap mensuel et téléchargeable depuis le das
 
 | Onglet | Contenu |
 |---|---|
-| Analyse du mois | Indicateurs clés + une ligne par véhicule : score, signal, médiane, position dans la fourchette, tendances 1/3/12 mois, offre, ventes, bonnes affaires ; graphique des scores |
+| Analyse du mois | Indicateurs clés + une ligne par véhicule : score, signal, médiane, position dans la fourchette, tendances 1/3/12 mois, offre, ventes, bonnes affaires, part de vendeurs pros, favoris et jours en ligne moyens ; graphique des scores |
 | Historique mensuel | Une ligne par véhicule et par mois, avec variations vs mois précédent (médiane, cote à km constant, score) |
 | Médianes par mois | Tableau croisé véhicule × mois |
 | Indice base 100 | Évolution comparée de tous les véhicules (100 = premier mois suivi), avec graphique |
 | Relevés | Tous les relevés bruts |
-| Annonces | Chaque annonce suivie : en vente / partie, jours en ligne, baisse de prix, lien |
+| Annonces | Chaque annonce avec tout ce que fournit LeBonCoin : prix, km, année, carburant, boîte, puissance, couleur, première main, Crit'Air, vendeur pro/particulier, ville, département, photos, favoris, description, autres caractéristiques ; en vente / partie, jours en ligne, baisses de prix, lien |
+| Historique des prix | Chaque prix relevé pour chaque annonce, avec l'évolution d'un relevé à l'autre |
+| Par année-modèle | Prix moyen / plus bas / plus haut et km moyen par véhicule et année-modèle |
+| Par kilométrage | Mêmes indicateurs par tranche de km (< 100 000, 100–150 000, 150–200 000, ≥ 200 000) |
 | Bonnes affaires | Annonces nettement sous la cote, avec décote et lien |
 | Véhicules | Véhicules suivis ou retirés et leurs critères |
 
