@@ -41,7 +41,8 @@ jobs:
 
       - name: Commit
         if: success()
-        run: .github/commit.sh "Véhicules : issue #${{ github.event.issue.number }}"
+        run: |
+          .github/commit.sh "Véhicules — issue #${{ github.event.issue.number }}"
 
       - name: Premier relevé du véhicule ajouté
         if: success() && steps.edit.outputs.id && contains(github.event.issue.body, '### Nom du véhicule')
