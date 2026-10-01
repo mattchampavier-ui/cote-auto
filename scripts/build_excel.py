@@ -125,7 +125,10 @@ def build(data, out):
         ("Médianes par mois", "Tableau croisé véhicule × mois des prix médians (formules sur l'onglet Historique mensuel)."),
         ("Indice base 100", "Évolution de la médiane depuis le premier mois suivi (100 = premier mois), avec graphique."),
         ("Relevés", "Tous les relevés bruts, y compris l'amorce manuelle de septembre 2026."),
-        ("Annonces", "Chaque annonce suivie : en vente ou partie (≈ vendue), durée en ligne, baisse de prix."),
+        ("Annonces", "Chaque annonce suivie avec tout ce que fournit LeBonCoin : prix, km, année, carburant, boîte, puissance, couleur, vendeur pro/particulier, localisation, photos, favoris, description, durée en ligne, baisses de prix."),
+        ("Historique des prix", "Chaque prix relevé pour chaque annonce, avec l'évolution d'un relevé à l'autre."),
+        ("Par année-modèle", "Prix moyen, plus bas, plus haut et km moyen par véhicule et par année-modèle (annonces en vente)."),
+        ("Par kilométrage", "Mêmes indicateurs par tranche de kilométrage : mesure la décote liée au km."),
         ("Bonnes affaires", "Annonces du dernier relevé au moins 15 % sous la cote attendue pour leur kilométrage."),
         ("Véhicules", "Liste des véhicules suivis ou retirés et leurs critères de recherche."),
         ("", ""),
@@ -190,6 +193,7 @@ def build(data, out):
           formulas={8: lambda r: f'=IF(AND(ISNUMBER(E{r}),ISNUMBER(F{r}),ISNUMBER(G{r}),G{r}>F{r}),(E{r}-F{r})/(G{r}-F{r}),"")'},
           links={25: "lien"})
     signal_colors(ws, "D", first, last)
+    analyse_ws, analyse_first, analyse_last = ws, first, last
 
     if syn:
         chart = BarChart()
@@ -308,30 +312,89 @@ def build(data, out):
         ("Date", "date"), ("Véhicule", "vehicule"), ("Source", "source"), ("Annonces", "annonces"), ("Min", "min"),
         ("P25", "p25"), ("Médiane", "mediane"), ("P75", "p75"), ("Max", "max"), ("Km médian", "km_median"),
         ("Cote à km réf.", "cote_km_ref"), ("Km réf.", "km_ref"), ("Nouvelles", "nouvelles"), ("Vendues", "vendues"),
-        ("Délai de vente", "delai_vente"), ("Annonces écartées", "ecartees"),
+        ("Délai de vente", "delai_vente"), ("Part de pros", "part_pro"), ("Annonces écartées", "ecartees"),
     ]
     table(ws, 1, headers, rel,
-          formats={1: DATE, 4: INT, 5: EUR, 6: EUR, 7: EUR, 8: EUR, 9: EUR, 10: KM, 11: EUR, 12: KM, 13: INT, 14: INT, 15: DAYS, 16: INT},
-          widths=[11, 34, 9, 10, 11, 11, 11, 11, 11, 12, 13, 12, 10, 9, 10, 11])
+          formats={1: DATE, 4: INT, 5: EUR, 6: EUR, 7: EUR, 8: EUR, 9: EUR, 10: KM, 11: EUR, 12: KM, 13: INT, 14: INT, 15: DAYS, 16: PCT, 17: INT},
+          widths=[11, 34, 9, 10, 11, 11, 11, 11, 11, 12, 13, 12, 10, 9, 10, 10, 11])
 
     # ------------------------------------------------------------------ Annonces
     ws = wb.create_sheet("Annonces")
     ann = data["annonces"]
     for a in ann:
-        for k in ("premiere_vue", "derniere_vue", "partie_le"):
+        for k in ("publiee_le", "premiere_vue", "derniere_vue", "partie_le"):
             a[k] = d(a[k])
     headers = [
-        ("Véhicule", "vehicule"), ("Titre", "titre"), ("Statut", "statut"), ("Première vue", "premiere_vue"),
-        ("Dernière vue", "derniere_vue"), ("Partie le", "partie_le"), ("Jours en ligne", None), ("Prix initial", "prix_initial"),
-        ("Prix actuel", "prix"), ("Baisse de prix", None), ("Km", "km"), ("Année", "annee"), ("Ville", "ville"),
-        ("Annonce", None), ("Id", "id"),
+        ("Véhicule", "vehicule"), ("Titre", "titre"), ("Statut", "statut"), ("Publiée le", "publiee_le"),
+        ("Première vue", "premiere_vue"), ("Dernière vue", "derniere_vue"), ("Partie le", "partie_le"),
+        ("Jours en ligne", None), ("Prix initial", "prix_initial"), ("Prix actuel", "prix"), ("Baisse de prix", None),
+        ("Nb de baisses", "nb_baisses"), ("Km", "km"), ("Année", "annee"), ("Carburant", "carburant"), ("Boîte", "boite"),
+        ("Puissance DIN (ch)", "puissance_din"), ("Puissance fiscale (CV)", "puissance_fiscale"), ("Couleur", "couleur"),
+        ("Portes", "portes"), ("Première main", "premiere_main"), ("Crit'Air", "critair"), ("Vendeur", "vendeur"),
+        ("Ville", "ville"), ("Code postal", "code_postal"), ("Département", "departement"), ("Région", "region"),
+        ("Photos", "photos"), ("Favoris", "favoris"), ("Remontée payante", "remontee"), ("Description (extrait)", "description"),
+        ("Autres caractéristiques", "autres"), ("Annonce", None), ("Id", "id"),
     ]
+    # Jours en ligne : depuis la publication si connue, sinon depuis la première observation.
     table(ws, 1, headers, ann,
-          formats={4: DATE, 5: DATE, 6: DATE, 7: DAYS, 8: EUR, 9: EUR, 10: PCT, 11: KM, 12: INT},
-          widths=[30, 44, 10, 12, 12, 12, 10, 11, 11, 10, 12, 8, 16, 9, 13],
-          formulas={7: lambda r: f'=IF(ISNUMBER(D{r}),IF(ISNUMBER(F{r}),F{r},E{r})-D{r},"")',
-                    10: lambda r: f'=IF(AND(ISNUMBER(H{r}),ISNUMBER(I{r}),H{r}>0),1-I{r}/H{r},"")'},
-          links={14: "lien"})
+          formats={4: DATE, 5: DATE, 6: DATE, 7: DATE, 8: DAYS, 9: EUR, 10: EUR, 11: PCT, 12: INT, 13: KM, 14: INT,
+                   17: INT, 18: INT, 20: INT, 28: INT, 29: INT},
+          widths=[28, 40, 10, 11, 11, 11, 11, 10, 11, 11, 10, 9, 12, 8, 11, 11, 10, 10, 11, 7, 10, 8, 11,
+                  16, 10, 16, 18, 8, 8, 10, 60, 50, 9, 13],
+          formulas={8: lambda r: f'=IF(OR(ISNUMBER(D{r}),ISNUMBER(E{r})),IF(ISNUMBER(G{r}),G{r},F{r})-IF(ISNUMBER(D{r}),D{r},E{r}),"")',
+                    11: lambda r: f'=IF(AND(ISNUMBER(I{r}),ISNUMBER(J{r}),I{r}>0),1-J{r}/I{r},"")'},
+          links={33: "lien"})
+    ann_last = max(len(ann) + 1, 2)
+    A = lambda col: f"Annonces!${col}$2:${col}${ann_last}"
+
+    # ------------------------------------------------------------------ Historique des prix
+    ws = wb.create_sheet("Historique des prix")
+    px = data["prix"]
+    for h in px:
+        h["date"] = d(h["date"])
+    headers = [("Véhicule", "vehicule"), ("Id annonce", "id"), ("Titre", "titre"), ("Date", "date"), ("Prix", "prix"),
+               ("Évolution vs prix précédent", None), ("Annonce", None)]
+    table(ws, 1, headers, px, formats={4: DATE, 5: EUR, 6: TREND}, widths=[28, 13, 40, 11, 11, 14, 9],
+          formulas={6: lambda r: f'=IF(AND($B{r}=$B{r - 1},ISNUMBER(E{r - 1}),E{r - 1}>0),E{r}/E{r - 1}-1,"")'},
+          links={7: "lien"})
+
+    # ------------------------------------------------------------------ Par année-modèle / par kilométrage
+    # Calculés par formules sur l'onglet Annonces (annonces en vente) : se mettent à jour seuls.
+    def segment_sheet(title, rows, key_header, crit):
+        ws = wb.create_sheet(title)
+        ws["A1"] = f"Annonces en vente, par véhicule et {key_header.lower()} (formules sur l'onglet Annonces)"
+        ws["A1"].font = F_DIM
+        headers = [("Véhicule", "vehicule"), (key_header, "cle"), ("Annonces", None), ("Prix moyen", None),
+                   ("Prix le plus bas", None), ("Prix le plus haut", None), ("Km moyen", None)]
+        base = lambda r: f'{A("A")},$A{r},{A("C")},"En vente",{crit(r)}'
+        table(ws, 2, headers, rows, formats={3: INT, 4: EUR, 5: EUR, 6: EUR, 7: KM}, widths=[34, 16, 10, 12, 13, 13, 12],
+              formulas={3: lambda r: f"=COUNTIFS({base(r)})",
+                        4: lambda r: f'=IFERROR(AVERAGEIFS({A("J")},{base(r)}),"")',
+                        5: lambda r: f'=IF(C{r}>0,_xlfn.MINIFS({A("J")},{base(r)}),"")',
+                        6: lambda r: f'=IF(C{r}>0,_xlfn.MAXIFS({A("J")},{base(r)}),"")',
+                        7: lambda r: f'=IFERROR(AVERAGEIFS({A("M")},{base(r)}),"")'})
+        return ws
+
+    en_vente = [a for a in ann if a["statut"] == "En vente"]
+    years = sorted({(a["vehicule"], a["annee"]) for a in en_vente if a["annee"]})
+    segment_sheet("Par année-modèle", [{"vehicule": v, "cle": y} for v, y in years], "Année-modèle",
+                  lambda r: f'{A("N")},$B{r}')
+    BANDS = [("< 100 000 km", 0, 100000), ("100 000 – 150 000 km", 100000, 150000),
+             ("150 000 – 200 000 km", 150000, 200000), ("≥ 200 000 km", 200000, 10**7)]
+    band_of = {label: (lo, hi) for label, lo, hi in BANDS}
+    km_rows = []
+    for v in sorted({a["vehicule"] for a in en_vente if a["km"]}):
+        for label, lo, hi in BANDS:
+            if any(a["vehicule"] == v and a["km"] and lo <= a["km"] < hi for a in en_vente):
+                km_rows.append({"vehicule": v, "cle": label, "lo": lo, "hi": hi})
+    ws_km = segment_sheet("Par kilométrage", km_rows, "Tranche de km",
+                          lambda r: f'{A("M")},">="&$H{r},{A("M")},"<"&$I{r}')
+    # Bornes de chaque tranche (colonnes H-I, utilisées par les formules).
+    ws_km.cell(row=2, column=8, value="Km min").font = F_DIM
+    ws_km.cell(row=2, column=9, value="Km max (exclu)").font = F_DIM
+    for i, row in enumerate(km_rows, start=3):
+        ws_km.cell(row=i, column=8, value=row["lo"]).font = F_DIM
+        ws_km.cell(row=i, column=9, value=row["hi"]).font = F_DIM
 
     # ------------------------------------------------------------------ Bonnes affaires
     ws = wb.create_sheet("Bonnes affaires")
@@ -364,6 +427,25 @@ def build(data, out):
     ]
     table(ws, 1, headers, veh, formats={10: INT, 11: INT, 12: INT, 13: DATE},
           widths=[34, 22, 9, 30, 20, 11, 16, 20, 28, 8, 9, 10, 11, 60, 11], links={15: "lien"})
+
+    # Colonnes de l'analyse calculées sur l'onglet Annonces (ajoutées une fois celui-ci écrit).
+    ws = analyse_ws
+    extra = [("Part de pros (en vente)", lambda r: f'=IFERROR(COUNTIFS({A("A")},$A{r},{A("C")},"En vente",{A("W")},"Pro")/COUNTIFS({A("A")},$A{r},{A("C")},"En vente",{A("W")},"<>"),"")', PCT),
+             ("Favoris moyens", lambda r: f'=IFERROR(AVERAGEIFS({A("AC")},{A("A")},$A{r},{A("C")},"En vente"),"")', "0.0"),
+             ("Jours en ligne moyens", lambda r: f'=IFERROR(AVERAGEIFS({A("H")},{A("A")},$A{r},{A("C")},"En vente"),"")', DAYS)]
+    for j, (title, f, fmt) in enumerate(extra, start=26):
+        cell = ws.cell(row=8, column=j, value=title)
+        cell.font = F_HEAD
+        cell.fill = FILL_HEAD
+        cell.alignment = Alignment(vertical="center", wrap_text=True)
+        ws.column_dimensions[get_column_letter(j)].width = 12
+        if syn:
+            for r in range(analyse_first, analyse_last + 1):
+                c = ws.cell(row=r, column=j, value=f(r))
+                c.font = F_BASE
+                c.number_format = fmt
+                c.border = BORDER
+    ws.auto_filter.ref = f"A8:{get_column_letter(25 + len(extra))}{analyse_last}"
 
     wb.calculation.fullCalcOnLoad = True
     wb.save(out)

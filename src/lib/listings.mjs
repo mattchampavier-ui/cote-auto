@@ -15,7 +15,7 @@ const ALIASES = {
   year: ['regdate', 'year', 'annee', 'registrationYear', 'modelYear'],
   url: ['url', 'link', 'adUrl', 'href'],
   date: ['first_publication_date', 'firstPublishedAt', 'publishedAt', 'publicationDate', 'date', 'index_date'],
-  city: ['city', 'ville', 'location.city', 'location.city_label'],
+  city: ['city', 'ville', 'location.city', 'location.city_label', 'location.cityLabel'],
   seller: ['owner.type', 'seller.type', 'seller.accountType', 'sellerType', 'seller_type', 'ownerType'],
   gearbox: ['gearbox', 'boite', 'transmission'],
 };
@@ -31,6 +31,65 @@ const ATTR_SYNONYMS = {
   mileage: ['mileage', 'kilometrage', 'km'],
   year: ['regdate', 'anneemodele', 'annee', 'year', 'miseencirculation', 'issuancedate'],
 };
+
+// Caractéristiques interprétées en colonnes dédiées (le reste va dans « autres »).
+const NAMED_ATTRS = {
+  fuel: ['fuel', 'carburant', 'energie'],
+  gearbox: ['gearbox', 'boitedevitesse', 'boite', 'transmission'],
+  powerDin: ['horsepowerdin', 'puissancedin', 'puissancereelle'],
+  powerFiscal: ['horsepower', 'puissancefiscale'],
+  color: ['vehiclecolor', 'vehiculecolor', 'couleur', 'color'],
+  doors: ['doors', 'nombredeportes', 'portes'],
+  seats: ['seats', 'nombredeplaces', 'places'],
+  vehicleType: ['vehicletype', 'typedevehicule'],
+  critair: ['critair', 'vignettecritair'],
+  firstHand: ['vehiclefirsthand', 'premieremain'],
+  history: ['vehiclehistory', 'historique', 'carnetdentretien'],
+};
+const SKIP_ATTRS = new Set([...ATTR_SYNONYMS.mileage, ...ATTR_SYNONYMS.year, 'brand', 'marque', 'model', 'modele', 'uservisible'].map((s) => s));
+
+// Toutes les caractéristiques de l'annonce, à plat : { libellé: valeur }. Accepte les formats
+// tableau [{key, key_label, value, value_label}] et objet { clé: valeur }.
+export function flattenAttributes(item) {
+  const out = {};
+  for (const attrs of [item.attributesRaw, item.attributes]) {
+    if (Array.isArray(attrs)) {
+      for (const a of attrs) {
+        if (!a) continue;
+        const k = a.key_label || a.label || a.name || a.key;
+        const v = a.value_label ?? a.value ?? (Array.isArray(a.values) ? a.values.join(', ') : undefined);
+        if (k && v !== undefined && v !== null && v !== '' && !(k in out)) out[k] = String(v);
+        if (a.key && a.key !== k && !(a.key in out) && v != null) out[`#${a.key}`] = String(v);
+      }
+    } else if (attrs && typeof attrs === 'object') {
+      for (const [k, v0] of Object.entries(attrs)) {
+        const v = v0 && typeof v0 === 'object' ? v0.value_label ?? v0.value ?? v0.label : v0;
+        if (v !== undefined && v !== null && v !== '' && !(k in out)) out[k] = String(v);
+      }
+    }
+  }
+  return out;
+}
+
+function interpretAttributes(flat) {
+  const named = {};
+  const others = {};
+  const used = new Set();
+  for (const [field, syns] of Object.entries(NAMED_ATTRS)) {
+    for (const [k, v] of Object.entries(flat)) {
+      if (syns.includes(squash(k.replace(/^#/, '')))) {
+        if (named[field] === undefined) named[field] = v;
+        used.add(k);
+      }
+    }
+  }
+  for (const [k, v] of Object.entries(flat)) {
+    const sk = squash(k.replace(/^#/, ''));
+    if (used.has(k) || SKIP_ATTRS.has(sk) || k.startsWith('#')) continue;
+    others[k] = v;
+  }
+  return { named, others };
+}
 
 // Attributs rangés en tableau [{key, value}] (format brut LeBonCoin, « attributesRaw ») ou en
 // objet { mileage: …, regdate: … } / { "Kilométrage": "152 000 km", … } selon l'actor.
@@ -83,7 +142,25 @@ export function normalizeItem(raw) {
     if (m) id = m[1];
   }
   const sellerRaw = String(pick(raw, 'seller') || '').toLowerCase();
+  const { named, others } = interpretAttributes(flattenAttributes(raw));
+  const loc = raw.location || {};
+  const num = (v) => (Number.isFinite(Number(v)) ? Number(v) : null);
+  const images = Array.isArray(raw.images) ? raw.images.length : num(raw.images?.nb_images ?? raw.imagesCount ?? raw.nbImages);
   return {
+    // Informations complémentaires conservées pour l'historique et l'Excel. Aucune donnée
+    // personnelle du vendeur (nom, téléphone) : seulement pro / particulier.
+    details: {
+      ...named,
+      zipcode: loc.zipcode ?? loc.zipCode ?? loc.postalCode ?? null,
+      department: loc.department_name ?? loc.departmentName ?? loc.department ?? null,
+      region: loc.region_name ?? loc.regionName ?? loc.region ?? null,
+      images,
+      favorites: num(raw.favorites ?? raw.favoritesCount ?? raw.counters?.favorites),
+      boosted: typeof raw.isBoosted === 'boolean' ? raw.isBoosted : null,
+      hasPhone: typeof raw.hasPhone === 'boolean' ? raw.hasPhone : null,
+      expiresAt: raw.expiresAt ? String(raw.expiresAt).slice(0, 10) : null,
+      others,
+    },
     id: id != null ? String(id) : null,
     title: String(pick(raw, 'title') || '').trim(),
     body: String(pick(raw, 'body') || ''),

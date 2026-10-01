@@ -45,6 +45,7 @@ export async function scrape({ only, fixture, today = todayISO(), fetchItems } =
 
   const run = { date: today, ok: [], empty: [], failed: [], costUsd: 0 };
   let registryChanged = false;
+  let sampleSaved = false;
 
   // Garde-fou budget : dépense Apify du mois en cours (relevés précédents + celui-ci).
   const month = today.slice(0, 7);
@@ -63,6 +64,13 @@ export async function scrape({ only, fixture, today = todayISO(), fetchItems } =
       if (log) console.warn(`  --- journal de l'actor (réponse vide) ---\n${log}\n  ---`);
       if (costUsd) run.costUsd += costUsd;
       const listings = (Array.isArray(items) ? items : []).map(normalizeItem);
+      // Échantillon brut anonymisé (vendeur réduit à son type) : sert à vérifier la lecture des
+      // champs quand l'actor évolue.
+      if (!fixture && !sampleSaved && items?.length) {
+        const { seller, ...rest } = items[0];
+        await writeJson('apify-sample.json', { actor: config.scrape.actor || process.env.APIFY_ACTOR, date: today, item: { ...rest, seller: seller ? { type: seller.type ?? seller.accountType ?? null } : null } });
+        sampleSaved = true;
+      }
       // Contrôle du format : part des annonces pour lesquelles prix, km et année ont été lus.
       if (listings.length) {
         const share = (k) => Math.round((100 * listings.filter((l) => l[k] != null).length) / listings.length);

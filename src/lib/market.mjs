@@ -34,10 +34,17 @@ export function updateTracking(state, kept, today, { complete }) {
     if (!l.id) continue;
     seenIds.add(l.id);
     const prev = state[l.id];
+    // Tout ce que l'annonce apporte est conservé (capitalisé pour l'Excel), sans données
+    // personnelles : la description est tronquée, le vendeur réduit à pro / particulier.
+    const info = {
+      title: l.title, url: l.url, city: l.city, year: l.year, pro: l.pro,
+      publishedAt: l.publishedAt, description: (l.body || '').slice(0, 1200) || undefined,
+      details: l.details,
+    };
     if (!prev) {
       state[l.id] = {
-        title: l.title, url: l.url, city: l.city, km: l.km, year: l.year,
-        price: l.price, firstPrice: l.price,
+        ...info, km: l.km,
+        price: l.price, firstPrice: l.price, priceHistory: [{ date: today, price: l.price }],
         firstSeen: l.publishedAt && l.publishedAt <= today ? l.publishedAt : today,
         lastSeen: today, gone: null,
       };
@@ -50,7 +57,12 @@ export function updateTracking(state, kept, today, { complete }) {
         totalDropPct: round(((prev.firstPrice - l.price) / prev.firstPrice) * 100, 1),
       });
     }
-    Object.assign(prev, { price: l.price, km: l.km ?? prev.km, lastSeen: today, gone: null, title: l.title, url: l.url ?? prev.url });
+    if (l.price !== prev.price) {
+      prev.priceHistory ||= [{ date: prev.firstSeen, price: prev.firstPrice }];
+      prev.priceHistory.push({ date: today, price: l.price });
+    }
+    for (const [k, v] of Object.entries(info)) if (v === undefined || v === null) delete info[k];
+    Object.assign(prev, info, { price: l.price, km: l.km ?? prev.km, lastSeen: today, gone: null });
   }
 
   // Une annonce absente n'est considérée « partie » que si le run n'a pas été tronqué par
@@ -123,6 +135,7 @@ export function buildSnapshot(kept, rejected, model, tracking, { today, truncate
     activeMedianAge: round(tracking.activeMedianAge),
     priceDrops: tracking.priceDrops.slice(0, 5),
     bargains,
+    proShare: kept.some((l) => l.pro != null) ? round(kept.filter((l) => l.pro).length / kept.filter((l) => l.pro != null).length, 2) : null,
     rejected: rejected.length,
     rejectedReasons: reasons,
     truncated,

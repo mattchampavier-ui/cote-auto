@@ -30,7 +30,7 @@ export async function exportData({ today = todayISO() } = {}) {
         date: s.date, vehicule: model.name, source: s.source, annonces: s.count, min: s.min, p25: s.p25 ?? null,
         mediane: s.median, p75: s.p75 ?? null, max: s.max, km_median: s.medianKm ?? s.avgKm ?? null,
         cote_km_ref: s.refPrice ?? null, km_ref: s.refKm ?? null, nouvelles: s.newListings ?? null, vendues: s.sold ?? null,
-        delai_vente: s.soldMedianDays ?? null, ecartees: s.rejected ?? null,
+        delai_vente: s.soldMedianDays ?? null, part_pro: s.proShare ?? null, ecartees: s.rejected ?? null,
       });
     }
 
@@ -75,14 +75,33 @@ export async function exportData({ today = todayISO() } = {}) {
   }
 
   const annonces = [];
+  const prix = [];
+  const yesNo = (v) => (v === true ? 'Oui' : v === false ? 'Non' : null);
+  const intOf = (v) => {
+    const m = String(v ?? '').match(/\d+/);
+    return m ? Number(m[0]) : null;
+  };
   for (const [id, byListing] of Object.entries(tracking)) {
     const model = models.find((m) => m.id === id);
+    const name = model?.name ?? id;
     for (const [listingId, s] of Object.entries(byListing)) {
+      const det = s.details || {};
+      const history = s.priceHistory || [{ date: s.firstSeen, price: s.firstPrice }];
       annonces.push({
-        vehicule: model?.name ?? id, id: listingId, titre: s.title, statut: s.gone ? 'Partie' : 'En vente',
-        premiere_vue: s.firstSeen, derniere_vue: s.lastSeen, partie_le: s.gone, prix_initial: s.firstPrice, prix: s.price,
-        km: s.km, annee: s.year, ville: s.city, lien: s.url,
+        vehicule: name, id: listingId, titre: s.title, statut: s.gone ? 'Partie' : 'En vente',
+        premiere_vue: s.firstSeen, derniere_vue: s.lastSeen, partie_le: s.gone, publiee_le: s.publishedAt ?? null,
+        prix_initial: s.firstPrice, prix: s.price, nb_baisses: history.filter((h, i) => i > 0 && h.price < history[i - 1].price).length,
+        km: s.km, annee: s.year, carburant: det.fuel ?? null, boite: det.gearbox ?? null,
+        puissance_din: intOf(det.powerDin), puissance_fiscale: intOf(det.powerFiscal), couleur: det.color ?? null,
+        portes: intOf(det.doors), premiere_main: det.firstHand ?? null, critair: det.critair ?? null,
+        vendeur: s.pro === true ? 'Pro' : s.pro === false ? 'Particulier' : null,
+        ville: s.city, code_postal: det.zipcode ?? null, departement: det.department ?? null, region: det.region ?? null,
+        photos: det.images ?? null, favoris: det.favorites ?? null, remontee: yesNo(det.boosted),
+        description: s.description ? s.description.replace(/\s+/g, ' ').slice(0, 500) : null,
+        autres: det.others && Object.keys(det.others).length ? Object.entries(det.others).map(([k, v]) => `${k} : ${v}`).join(' ; ') : null,
+        lien: s.url,
       });
+      for (const h of history) prix.push({ vehicule: name, id: listingId, titre: s.title, date: h.date, prix: h.price, lien: s.url });
     }
   }
 
@@ -97,6 +116,7 @@ export async function exportData({ today = todayISO() } = {}) {
   synthese.sort((a, b) => b.score - a.score);
   mensuel.sort((a, b) => a.vehicule.localeCompare(b.vehicule, 'fr') || a.mois.localeCompare(b.mois));
   releves.sort((a, b) => b.date.localeCompare(a.date) || a.vehicule.localeCompare(b.vehicule, 'fr'));
+  prix.sort((a, b) => a.vehicule.localeCompare(b.vehicule, 'fr') || a.id.localeCompare(b.id) || a.date.localeCompare(b.date));
   annonces.sort((a, b) => a.vehicule.localeCompare(b.vehicule, 'fr') || (b.derniere_vue || '').localeCompare(a.derniere_vue || ''));
   affaires.sort((a, b) => a.prix / a.cote_attendue - b.prix / b.cote_attendue);
 
@@ -104,7 +124,7 @@ export async function exportData({ today = todayISO() } = {}) {
     genere_le: today,
     dernier_releve: data.meta?.lastRun ?? null,
     dashboard: config.dashboardUrl,
-    synthese, mensuel, releves, annonces, affaires, vehicules,
+    synthese, mensuel, releves, annonces, prix, affaires, vehicules,
   };
 }
 
