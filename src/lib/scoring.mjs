@@ -15,9 +15,12 @@ export const DEFAULT_WEIGHTS = {
 const priceOf = (s) => (s ? s.refPrice ?? s.median : null);
 
 // Relevé le plus récent datant d'au moins `days` jours avant `ref` (tolérance de 25 %).
+// Les relevés manuels d'amorce (méthode et échantillon différents) ne servent pas de point de
+// comparaison pour un relevé du robot : la tendance serait un artefact.
 export function snapshotAgo(history, ref, days) {
   let best = null;
   for (const s of history) {
+    if (ref.source !== 'manuel' && s.source === 'manuel') continue;
     const age = daysBetween(s.date, ref.date);
     if (age >= days * 0.75) best = s;
   }

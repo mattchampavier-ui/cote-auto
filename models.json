@@ -251,27 +251,19 @@
         "yearMin": 1996,
         "yearMax": 2002
       },
-      "anyOf": [
-        "1.9",
-        "1.9i",
-        "2.0",
-        "2.0i",
-        "1.8",
-        "1.8i",
-        "2.2",
-        "2.2i"
-      ],
       "exclude": [
         "m roadster",
         "m coupe",
         "coupe",
         "3.0",
-        "2.8"
+        "2.8",
+        "3.0i",
+        "2.8i"
       ],
       "rarete": 35,
       "dernierDe": 40,
       "desirabilite": 65,
-      "notes": "Roadster BMW le plus abordable. M Roadster et coupé exclus (marchés à part).",
+      "notes": "Roadster BMW le plus abordable (1.8 à 2.2). M Roadster, coupé et 6 cylindres 2.8/3.0 exclus (marchés à part).",
       "addedAt": "2026-10-01",
       "refKm": 130000.00000000001
     },

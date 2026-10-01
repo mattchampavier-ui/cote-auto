@@ -16,6 +16,9 @@ export function sandbox() {
   // Repart d'un journal vierge : le data.json du dépôt contient les vrais passages du robot.
   const data = JSON.parse(fs.readFileSync(path.join(dir, 'data.json'), 'utf-8'));
   data.meta = { lastRun: null, lastRecap: null, runs: [] };
+  // Seule l'amorce manuelle de septembre est gardée : les tests rejouent leurs propres relevés.
+  for (const id of Object.keys(data.snapshots)) data.snapshots[id] = data.snapshots[id].filter((x) => x.source === 'manuel');
+  fs.writeFileSync(path.join(dir, 'listings.json'), '{}');
   fs.writeFileSync(path.join(dir, 'data.json'), JSON.stringify(data));
   process.env.COTE_ROOT = dir;
   // Le robot écrit sa progression sur la console ; sous Node 20, ces lignes se mêlent au canal

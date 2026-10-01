@@ -140,3 +140,25 @@ test('format memo23/leboncoin-scraper : attributs en tableau ou en objet, libell
   const c = normalizeItem({ ...base, attributes: [{ key_label: 'Kilométrage', value_label: '152 000 km' }, { label: 'Mise en circulation', value: '05/2004' }] });
   assert.deepEqual([c.km, c.year], [152000, 2004]);
 });
+
+test('réponse réelle memo23 : libellés (pas les codes), version, entretien, estimation LeBonCoin', async () => {
+  const fs = await import('node:fs');
+  const item = JSON.parse(fs.readFileSync(new URL('./fixtures/memo23-item.json', import.meta.url), 'utf-8'));
+  const l = normalizeItem(item);
+  assert.equal(l.km, 168800);
+  assert.equal(l.year, 2015);
+  assert.equal(l.pro, true);
+  const d = l.details;
+  assert.deepEqual([d.fuel, d.gearbox, d.powerDin, d.version, d.finition, d.issuance], ['Essence', 'Manuelle', '208 Ch', '1.6 THP 208ch GTi S&S 3p', 'GTi', '10/2015']);
+  assert.match(d.maintenance, /Carnet/);
+  assert.deepEqual([d.lbcEstimateMin, d.lbcEstimateMax, d.oldPrice], ['7650', '8450', '12900']);
+  assert.equal(d.images, 10);
+  assert.equal(d.department, 'Moselle');
+  assert.ok(!Object.keys(d.others).some((k) => /^\d+$/.test(k)), 'pas de valeurs prises pour des noms de champs');
+});
+
+test("pas de tendance calculée contre l'amorce manuelle", () => {
+  const ev = evaluate(model, [{ date: '2026-09-08', median: 6790, count: 1, source: 'manuel' }, snap('2026-10-01', 9990)]);
+  assert.equal(ev.trend1m, null);
+  assert.equal(ev.momentum, 50);
+});

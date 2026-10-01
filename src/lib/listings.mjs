@@ -44,22 +44,47 @@ const NAMED_ATTRS = {
   vehicleType: ['vehicletype', 'typedevehicule'],
   critair: ['critair', 'vignettecritair'],
   firstHand: ['vehiclefirsthand', 'premieremain'],
-  history: ['vehiclehistory', 'historique', 'carnetdentretien'],
+  history: ['vehiclehistory', 'historique'],
+  version: ['ucarversion', 'version'],
+  finition: ['ucarfinition', 'finition'],
+  issuance: ['issuancedate', 'miseencirculation', 'datedepremieremiseencirculation'],
+  maintenance: ['vehiclemaintenance', 'entretien', 'carnetdentretien'],
+  // Estimation de prix affichée par LeBonCoin sur l'annonce, et prix précédent.
+  lbcEstimateMin: ['carpricemin'],
+  lbcEstimateMax: ['carpricemax'],
+  lbcPositioning: ['carpricepositioning'],
+  oldPrice: ['oldprice'],
 };
-const SKIP_ATTRS = new Set([...ATTR_SYNONYMS.mileage, ...ATTR_SYNONYMS.year, 'brand', 'marque', 'model', 'modele', 'uservisible'].map((s) => s));
+// Champs sans intérêt pour la cote (marque/modèle déjà connus, notation du vendeur, options
+// techniques de l'annonce...).
+const SKIP_ATTRS = new Set([...ATTR_SYNONYMS.mileage, 'regdate', 'anneemodele', 'annee', 'year',
+  'brand', 'marque', 'model', 'modele', 'ucarbrand', 'ucarmodel', 'uservisible', 'activitysector', 'ratingscore',
+  'ratingcount', 'storelogo', 'hasvisibilityoption', 'vehicleiseligiblep2p', 'vehicleavailablepaymentmethods',
+  'licenceplateavailable', 'storename', 'onlinestoreid', 'argusobjectid']);
+// Libellés français des caractéristiques restantes.
+const ATTR_LABELS = {
+  vehiclevsp: 'Permis', carcontract: 'Vente en LOA/LLD', recentusedvehicle: 'VO récent', isimport: 'Importé',
+  vehicletechnicalinspectiona: 'Contrôle technique', vehicledamage: 'Dommages', vehicleupholstery: 'Sellerie',
+  vehiclespecifications: 'Équipements', vehicleinteriorspecs: 'Équipements intérieurs', critair: "Crit'Air",
+};
 
 // Toutes les caractéristiques de l'annonce, à plat : { libellé: valeur }. Accepte les formats
 // tableau [{key, key_label, value, value_label}] et objet { clé: valeur }.
 export function flattenAttributes(item) {
   const out = {};
-  for (const attrs of [item.attributesRaw, item.attributes]) {
+  // L'objet (libellés lisibles : « Essence ») passe avant le tableau brut (codes : « 1 »).
+  const sources = [item.attributes, item.attributesRaw].sort((a, b) => Number(Array.isArray(a)) - Number(Array.isArray(b)));
+  for (const attrs of sources) {
     if (Array.isArray(attrs)) {
       for (const a of attrs) {
         if (!a) continue;
-        const k = a.key_label || a.label || a.name || a.key;
-        const v = a.value_label ?? a.value ?? (Array.isArray(a.values) ? a.values.join(', ') : undefined);
+        // Avec une clé technique (format LeBonCoin), « label » est le libellé de la VALEUR ;
+        // sans clé, « label » est le nom du champ.
+        const k = a.key ? a.key_label || a.key : a.label || a.name;
+        const v = a.key
+          ? a.value_label ?? a.label ?? a.value ?? (Array.isArray(a.values) ? a.values.join(', ') : undefined)
+          : a.value_label ?? a.value;
         if (k && v !== undefined && v !== null && v !== '' && !(k in out)) out[k] = String(v);
-        if (a.key && a.key !== k && !(a.key in out) && v != null) out[`#${a.key}`] = String(v);
       }
     } else if (attrs && typeof attrs === 'object') {
       for (const [k, v0] of Object.entries(attrs)) {
@@ -77,16 +102,16 @@ function interpretAttributes(flat) {
   const used = new Set();
   for (const [field, syns] of Object.entries(NAMED_ATTRS)) {
     for (const [k, v] of Object.entries(flat)) {
-      if (syns.includes(squash(k.replace(/^#/, '')))) {
+      if (syns.includes(squash(k))) {
         if (named[field] === undefined) named[field] = v;
         used.add(k);
       }
     }
   }
   for (const [k, v] of Object.entries(flat)) {
-    const sk = squash(k.replace(/^#/, ''));
-    if (used.has(k) || SKIP_ATTRS.has(sk) || k.startsWith('#')) continue;
-    others[k] = v;
+    const sk = squash(k);
+    if (used.has(k) || SKIP_ATTRS.has(sk) || /^https?:/.test(v)) continue;
+    others[ATTR_LABELS[sk] || k] = v;
   }
   return { named, others };
 }
@@ -98,7 +123,7 @@ function attrValue(item, key) {
   for (const attrs of [item.attributesRaw, item.attributes]) {
     if (Array.isArray(attrs)) {
       const a = attrs.find((x) => x && [x.key, x.key_label, x.label, x.name].some((k) => k && wanted.includes(squash(k))));
-      if (a) return a.value_label ?? a.value ?? a.values?.[0];
+      if (a) return a.value_label ?? a.value ?? a.values?.[0] ?? a.label;
     } else if (attrs && typeof attrs === 'object') {
       for (const [k, v] of Object.entries(attrs)) {
         if (!wanted.includes(squash(k))) continue;
@@ -145,7 +170,8 @@ export function normalizeItem(raw) {
   const { named, others } = interpretAttributes(flattenAttributes(raw));
   const loc = raw.location || {};
   const num = (v) => (Number.isFinite(Number(v)) ? Number(v) : null);
-  const images = Array.isArray(raw.images) ? raw.images.length : num(raw.images?.nb_images ?? raw.imagesCount ?? raw.nbImages);
+  const images = Array.isArray(raw.images) ? raw.images.length : num(raw.images?.count ?? raw.images?.nb_images ?? raw.imagesCount ?? raw.nbImages);
+  const opts = raw.options || {};
   return {
     // Informations complémentaires conservées pour l'historique et l'Excel. Aucune donnée
     // personnelle du vendeur (nom, téléphone) : seulement pro / particulier.
@@ -156,7 +182,8 @@ export function normalizeItem(raw) {
       region: loc.region_name ?? loc.regionName ?? loc.region ?? null,
       images,
       favorites: num(raw.favorites ?? raw.favoritesCount ?? raw.counters?.favorites),
-      boosted: typeof raw.isBoosted === 'boolean' ? raw.isBoosted : null,
+      boosted: typeof raw.isBoosted === 'boolean' ? raw.isBoosted || !!opts.booster : null,
+      urgent: typeof opts.urgent === 'boolean' ? opts.urgent : null,
       hasPhone: typeof raw.hasPhone === 'boolean' ? raw.hasPhone : null,
       expiresAt: raw.expiresAt ? String(raw.expiresAt).slice(0, 10) : null,
       others,
