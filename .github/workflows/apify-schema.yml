@@ -1,7 +1,12 @@
 name: Apify — lire le schéma de l'actor (gratuit)
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      actor:
+        description: "Actor à inspecter (vide = celui configuré)"
+        required: false
+        default: ""
 
 jobs:
   schema:
@@ -15,5 +20,5 @@ jobs:
       - name: Schéma d'entrée (aucun run lancé)
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
-          APIFY_ACTOR: ${{ vars.APIFY_ACTOR || secrets.APIFY_ACTOR }}
+          APIFY_ACTOR: ${{ inputs.actor || vars.APIFY_ACTOR || secrets.APIFY_ACTOR }}
         run: node src/apify-schema.mjs

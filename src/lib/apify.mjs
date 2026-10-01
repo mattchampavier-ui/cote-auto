@@ -46,6 +46,20 @@ export async function fetchInputSchema({ token, actor, fetchImpl = fetch }) {
   }
 }
 
+// Fiche de l'actor : tarification et schéma de sortie (lecture seule, gratuit).
+export async function fetchActorInfo({ token, actor, fetchImpl = fetch }) {
+  try {
+    const res = await fetchImpl(`${API}/acts/${actorPath(actor)}?token=${token}`);
+    if (!res.ok) return null;
+    const act = (await res.json()).data || {};
+    const b = await fetchImpl(`${API}/acts/${actorPath(actor)}/builds/default?token=${token}`);
+    const build = b.ok ? (await b.json()).data || {} : {};
+    return { pricingInfos: act.pricingInfos, pricingInfo: act.pricingInfo, dataset: build.actorDefinition?.storages?.dataset };
+  } catch {
+    return null;
+  }
+}
+
 // Options facturées en plus de l'annonce et inutiles pour suivre une cote : profils vendeurs,
 // numéros de téléphone, détail de chaque annonce... On les force à false (ou 0).
 const COSTLY = /seller|vendeur|profil|profile|owner|phone|t[ée]l[ée]phone|contact|store|boutique/i;
