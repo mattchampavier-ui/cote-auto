@@ -54,6 +54,16 @@ export async function scrape({ only, fixture, today = todayISO(), fetchItems } =
       const { kept, rejected } = filterRelevant(listings, model, config.filters);
       if (kept.length === 0) {
         console.warn(`  0 annonce retenue sur ${listings.length} reçues — vérifier les critères de recherche ou le format de l'actor.`);
+        if (items?.length) {
+          // Diagnostic : de quoi est faite la réponse de l'actor, pour ajuster APIFY_INPUT ou le mapping.
+          const reasons = {};
+          for (const r of rejected) reasons[r.reason] = (reasons[r.reason] || 0) + 1;
+          const raw = items[0];
+          console.warn(`  raisons : ${JSON.stringify(reasons)}`);
+          console.warn(`  champs reçus : ${Object.keys(raw).join(', ')}`);
+          console.warn(`  exemple normalisé : ${JSON.stringify({ ...listings[0], body: listings[0].body.slice(0, 80) })}`);
+          console.warn(`  exemple brut : ${JSON.stringify(raw).slice(0, 1200)}`);
+        }
         run.empty.push(model.id);
         continue;
       }
