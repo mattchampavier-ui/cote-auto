@@ -48,7 +48,8 @@ export async function scrape({ only, fixture, today = todayISO(), fetchItems } =
   for (const model of models) {
     console.log(`→ ${model.name}`);
     try {
-      const { items, costUsd } = await fetchItems(model);
+      const { items, costUsd, log } = await fetchItems(model);
+      if (log) console.warn(`  --- journal de l'actor (réponse vide) ---\n${log}\n  ---`);
       if (costUsd) run.costUsd += costUsd;
       const listings = (Array.isArray(items) ? items : []).map(normalizeItem);
       const { kept, rejected } = filterRelevant(listings, model, config.filters);

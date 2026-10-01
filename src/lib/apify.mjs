@@ -56,14 +56,18 @@ export async function runActor({ token, actor, url, max, inputTemplate, maxWaitM
     await sleep(pollMs);
     run = (await call(`/actor-runs/${run.id}`)).data;
   }
-  if (run.status !== 'SUCCEEDED') {
-    let tail = '';
+  const logTail = async () => {
     try {
       const res = await fetchImpl(`${API}/actor-runs/${run.id}/log?token=${token}`);
-      tail = (await res.text()).slice(-1200);
-    } catch { /* le log n'est qu'une aide au diagnostic */ }
+      return (await res.text()).slice(-1500);
+    } catch { return ''; } // le log n'est qu'une aide au diagnostic
+  };
+  if (run.status !== 'SUCCEEDED') {
+    const tail = await logTail();
     throw new Error(`run ${run.id} terminé en ${run.status}${tail ? `\n${tail}` : ''}`);
   }
   const items = await call(`/datasets/${run.defaultDatasetId}/items?clean=true`);
-  return { items, costUsd: run.usageTotalUsd ?? null };
+  // Réponse vide : le journal de l'actor dit pourquoi (limite d'essai, URL refusée, blocage...).
+  const log = Array.isArray(items) && items.length === 0 ? await logTail() : undefined;
+  return { items, costUsd: run.usageTotalUsd ?? null, log };
 }
