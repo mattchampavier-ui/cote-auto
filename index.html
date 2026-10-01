@@ -86,6 +86,19 @@
   .item p{font-size:13px;color:var(--dim);margin:0;flex:1}
   .panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:6px 18px}
   .empty{color:var(--dim);font-size:14px}
+  dialog.add{border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--text);padding:0;width:min(560px,calc(100vw - 32px));max-height:calc(100vh - 32px)}
+  dialog.add::backdrop{background:rgba(0,0,0,.55)}
+  dialog.add form{padding:22px;display:flex;flex-direction:column;gap:12px}
+  dialog.add h2{margin:0;font-size:22px}
+  dialog.add p.hint{margin:0;color:var(--dim);font-size:13px}
+  dialog.add label{display:flex;flex-direction:column;gap:4px;font-size:12.5px;color:var(--dim)}
+  dialog.add input{background:var(--bg);border:1px solid var(--line);border-radius:6px;color:var(--text);padding:9px 10px;font:14px 'Inter',sans-serif;width:100%}
+  dialog.add input:focus{outline:2px solid var(--brass);outline-offset:-1px}
+  dialog.add .row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+  dialog.add .or{display:flex;align-items:center;gap:10px;color:var(--dim);font-size:12px}
+  dialog.add .or::before,dialog.add .or::after{content:"";flex:1;border-top:1px solid var(--line)}
+  dialog.add .actions{display:flex;justify-content:flex-end;gap:10px;margin-top:4px}
+  @media (max-width:520px){dialog.add .row{grid-template-columns:1fr 1fr}}
   details.method{margin-top:44px;border-top:1px solid var(--line);padding-top:20px}
   details.method summary{cursor:pointer;font-family:'Fraunces',serif;font-size:18px}
   details.method .body{color:var(--dim);font-size:14px;max-width:72ch;margin-top:14px}
@@ -110,7 +123,7 @@
   </header>
 
   <div class="tools">
-    <a class="btn primary" id="addBtn" target="_blank" rel="noopener">+ Ajouter un véhicule</a>
+    <button class="btn primary" id="addBtn" type="button">+ Ajouter un véhicule</button>
     <select class="btn" id="sort" aria-label="Trier">
       <option value="score">Trier : score</option>
       <option value="trend">Trier : tendance 1 mois</option>
@@ -160,6 +173,31 @@
   </details>
 
   <footer id="footer"></footer>
+
+  <dialog class="add" id="addDialog">
+    <form id="addForm" method="dialog">
+      <h2>Ajouter un véhicule</h2>
+      <p class="hint">Le robot l'ajoute au suivi, lance un premier relevé et le fait apparaître ici quelques minutes plus tard. Seul le nom est obligatoire.</p>
+      <label>Nom du véhicule *<input name="nom" required placeholder="Toyota MR2 Roadster"></label>
+      <label>URL de recherche LeBonCoin (le plus simple)
+        <input name="url_lbc" type="url" inputmode="url" placeholder="https://www.leboncoin.fr/recherche?category=2&text=…">
+      </label>
+      <p class="hint">Fais ta recherche sur leboncoin.fr avec tes filtres (modèle, années, km, prix), puis copie l'adresse de la page.</p>
+      <div class="or">ou</div>
+      <label>Texte de recherche<input name="recherche" placeholder="mr2 roadster"></label>
+      <div class="row">
+        <label>Année min.<input name="annee_min" inputmode="numeric" placeholder="1999"></label>
+        <label>Année max.<input name="annee_max" inputmode="numeric" placeholder="2007"></label>
+        <label>Km max.<input name="km_max" inputmode="numeric" placeholder="200000"></label>
+      </div>
+      <label>Mots à exclure (autres versions, séparés par des virgules)<input name="exclusions" placeholder="turbo, diesel"></label>
+      <p class="hint">GitHub s'ouvre avec la demande pré-remplie : il reste à cliquer sur « Create ». Catégorie, scores et années manquantes sont estimés automatiquement.</p>
+      <div class="actions">
+        <button class="btn" type="button" id="addCancel">Annuler</button>
+        <button class="btn primary" type="submit">Continuer sur GitHub →</button>
+      </div>
+    </form>
+  </dialog>
 </div>
 
 <script type="module">
@@ -189,7 +227,18 @@ const issueUrl = (template, params = {}) => {
   const q = new URLSearchParams({ template, ...params });
   return `https://github.com/${repo}/issues/new?${q}`;
 };
-$('addBtn').href = issueUrl('ajouter-vehicule.yml');
+// Formulaire d'ajout : compose la demande GitHub pré-remplie (traitée par le robot).
+$('addBtn').onclick = () => $('addDialog').showModal();
+$('addCancel').onclick = () => $('addDialog').close();
+$('addForm').onsubmit = (e) => {
+  e.preventDefault();
+  const f = Object.fromEntries(new FormData(e.target).entries());
+  const params = { title: `Ajouter : ${f.nom.trim()}` };
+  for (const [k, v] of Object.entries(f)) if (String(v).trim()) params[k] = String(v).trim();
+  window.open(issueUrl('ajouter-vehicule.yml', params), '_blank', 'noopener');
+  $('addDialog').close();
+  e.target.reset();
+};
 $('runBtn').href = `https://github.com/${repo}/actions/workflows/releve.yml`;
 
 const models = registry.models.filter((m) => m.active !== false);

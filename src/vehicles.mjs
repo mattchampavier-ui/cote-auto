@@ -10,12 +10,13 @@
 
 import fs from 'node:fs/promises';
 import { readJson, writeJson, writeText, todayISO, parseArgs } from './lib/io.mjs';
-import { slugify, buildSearchUrl } from './lib/search.mjs';
+import { slugify, buildSearchUrl, parseSearchUrl } from './lib/search.mjs';
 import { askClaude, extractJson } from './lib/claude.mjs';
 
 // Libellés exacts des champs des formulaires .github/ISSUE_TEMPLATE/*.yml
 export const FIELDS = {
   'Nom du véhicule': 'name',
+  'URL de recherche LeBonCoin': 'url',
   'Texte de recherche LeBonCoin': 'text',
   'Année minimum': 'yearMin',
   'Année maximum': 'yearMax',
@@ -67,11 +68,21 @@ export function draftModel(fields, today = todayISO()) {
     priceMax: num(fields.priceMax),
   };
   Object.keys(search).forEach((k) => search[k] === undefined && delete search[k]);
+  // URL LeBonCoin collée : elle sert telle quelle pour la collecte, et ses filtres complètent
+  // les critères (sans écraser ce qui a été saisi à la main).
+  let lbcSearchUrl;
+  if (fields.url) {
+    const parsed = parseSearchUrl(fields.url);
+    if (!parsed) throw new Error('L’URL fournie n’est pas une recherche leboncoin.fr (elle doit commencer par https://www.leboncoin.fr/recherche?).');
+    lbcSearchUrl = parsed.url;
+    for (const [k, v] of Object.entries(parsed.search)) if (search[k] === undefined || (k === 'text' && !fields.text)) search[k] = v;
+  }
   const model = {
     id: slugify(fields.name),
     name: fields.name.trim(),
     categorie: fields.categorie,
     search,
+    ...(lbcSearchUrl ? { lbcSearchUrl } : {}),
     mustInclude: list(fields.mustInclude),
     anyOf: list(fields.anyOf),
     exclude: list(fields.exclude),

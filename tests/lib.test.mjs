@@ -122,3 +122,21 @@ test('les options payantes (profil vendeur, téléphone) sont désactivées', as
   } };
   assert.deepEqual(costlyOptions(schema), { includeSellerProfile: false, includePhone: false, x: false });
 });
+
+test("lecture d'une URL de recherche LeBonCoin collée", async () => {
+  const { parseSearchUrl } = await import('../src/lib/search.mjs');
+  const r = parseSearchUrl('https://www.leboncoin.fr/recherche?category=2&text=bmw%20z3&regdate=1996-2002&price=min-15000&mileage=min-200000');
+  assert.deepEqual(r.search, { text: 'bmw z3', yearMin: 1996, yearMax: 2002, priceMax: 15000, kmMax: 200000 });
+  assert.equal(parseSearchUrl('https://www.google.com/recherche?text=a'), null);
+  assert.equal(parseSearchUrl('pas une url'), null);
+});
+
+test('format memo23/leboncoin-scraper : attributs en tableau ou en objet, libellés français', () => {
+  const base = { adId: 3277073683, title: 'Peugeot 206 RC', price: 5300, url: 'https://www.leboncoin.fr/ad/voitures/3277073683', firstPublishedAt: '2026-09-20T10:00:00Z', location: { city: 'Belley' }, seller: { type: 'private' } };
+  const a = normalizeItem({ ...base, attributesRaw: [{ key: 'mileage', value: '152000' }, { key: 'regdate', value: '2004' }] });
+  assert.deepEqual([a.id, a.km, a.year, a.publishedAt, a.city, a.pro], ['3277073683', 152000, 2004, '2026-09-20', 'Belley', false]);
+  const b = normalizeItem({ ...base, attributes: { 'Kilométrage': '152 000 km', 'Année modèle': '2004' } });
+  assert.deepEqual([b.km, b.year], [152000, 2004]);
+  const c = normalizeItem({ ...base, attributes: [{ key_label: 'Kilométrage', value_label: '152 000 km' }, { label: 'Mise en circulation', value: '05/2004' }] });
+  assert.deepEqual([c.km, c.year], [152000, 2004]);
+});

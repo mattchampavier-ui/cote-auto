@@ -23,3 +23,23 @@ export function buildSearchUrl(model) {
   if (q.gearbox === 'automatique') params.set('gearbox', '2');
   return `https://www.leboncoin.fr/recherche?${params.toString()}`;
 }
+
+// Lit une URL de recherche LeBonCoin copiée depuis le navigateur (filtres compris) et en déduit
+// les critères du véhicule : texte, années, prix, kilométrage. Renvoie null si l'URL n'en est pas une.
+export function parseSearchUrl(raw) {
+  let u;
+  try { u = new URL(String(raw).trim()); } catch { return null; }
+  if (!/(^|\.)leboncoin\.fr$/.test(u.hostname) || !u.pathname.startsWith('/recherche')) return null;
+  const p = u.searchParams;
+  const range = (v) => {
+    if (!v) return [undefined, undefined];
+    const [a, b] = v.split('-').map((x) => (/^\d+$/.test(x) ? Number(x) : undefined));
+    return [a, b];
+  };
+  const [yearMin, yearMax] = range(p.get('regdate'));
+  const [priceMin, priceMax] = range(p.get('price'));
+  const [, kmMax] = range(p.get('mileage'));
+  const search = { text: p.get('text') || undefined, yearMin, yearMax, priceMin, priceMax, kmMax };
+  Object.keys(search).forEach((k) => search[k] === undefined && delete search[k]);
+  return { url: u.toString(), search };
+}

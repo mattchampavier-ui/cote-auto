@@ -23,6 +23,12 @@ export const ACTOR_INPUTS = {
 
 // Options de lancement par actor : la mémoire détermine le prix du démarrage (0,03 $ par Go
 // pour memo23) ; 1 Go suffit pour une recherche de quelques dizaines d'annonces.
+// Tarifs publiés (pay-per-event) pour estimer la dépense quand Apify ne la renvoie pas.
+export const ACTOR_PRICING = {
+  'memo23/leboncoin-scraper': { perItem: 0.00079, start: 0.03 },
+  'clearpath/leboncoin-api': { perItem: 0.00149, start: 0.009 },
+};
+
 export const ACTOR_RUN_OPTIONS = {
   'memo23/leboncoin-scraper': { memory: 1024 },
 };
@@ -128,8 +134,10 @@ export async function runActor({ token, actor, url, max, inputTemplate, maxCharg
   const items = await call(`/datasets/${run.defaultDatasetId}/items?clean=true`);
   // Réponse vide : le journal de l'actor dit pourquoi (limite d'essai, URL refusée, blocage...).
   const log = Array.isArray(items) && items.length === 0 ? await logTail() : undefined;
-  // Coût : ce qu'Apify déclare, ou à défaut une estimation prudente (0,3 ct par annonce + démarrage).
+  // Coût : ce qu'Apify déclare, ou à défaut une estimation d'après le tarif de l'actor
+  // (prudente, 0,3 ct par annonce, pour un actor inconnu).
   const declared = Number(run.usageTotalUsd) || 0;
-  const estimate = (Array.isArray(items) ? items.length : 0) * 0.003 + 0.009;
+  const price = ACTOR_PRICING[String(actor).replace('~', '/').toLowerCase()] || { perItem: 0.003, start: 0.03 };
+  const estimate = (Array.isArray(items) ? items.length : 0) * price.perItem + price.start;
   return { items, costUsd: Math.max(declared, estimate), log };
 }

@@ -67,7 +67,10 @@ export async function scrape({ only, fixture, today = todayISO(), fetchItems } =
       if (listings.length) {
         const share = (k) => Math.round((100 * listings.filter((l) => l[k] != null).length) / listings.length);
         console.log(`  lus : prix ${share('price')} %, km ${share('km')} %, année ${share('year')} %, id ${share('id')} %`);
-        if (share('km') < 50 || share('year') < 50) console.log(`  champs reçus : ${Object.keys(items[0]).join(', ')}`);
+        if (share('km') < 50 || share('year') < 50) {
+          console.log(`  champs reçus : ${Object.keys(items[0]).join(', ')}`);
+          console.log(`  attributs (extrait) : ${JSON.stringify(items[0].attributes ?? null).slice(0, 600)} | ${JSON.stringify(items[0].attributesRaw ?? null).slice(0, 600)}`);
+        }
       }
       const { kept, rejected } = filterRelevant(listings, model, config.filters);
       if (kept.length === 0) {

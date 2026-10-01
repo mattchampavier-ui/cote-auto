@@ -14,9 +14,9 @@ const ALIASES = {
   mileage: ['mileage', 'km', 'kilometrage', 'kilometers', 'mileage_km'],
   year: ['regdate', 'year', 'annee', 'registrationYear', 'modelYear'],
   url: ['url', 'link', 'adUrl', 'href'],
-  date: ['first_publication_date', 'publishedAt', 'publicationDate', 'date', 'index_date'],
+  date: ['first_publication_date', 'firstPublishedAt', 'publishedAt', 'publicationDate', 'date', 'index_date'],
   city: ['city', 'ville', 'location.city', 'location.city_label'],
-  seller: ['owner.type', 'sellerType', 'seller_type', 'ownerType'],
+  seller: ['owner.type', 'seller.type', 'seller.accountType', 'sellerType', 'seller_type', 'ownerType'],
   gearbox: ['gearbox', 'boite', 'transmission'],
 };
 
@@ -24,11 +24,30 @@ function getPath(obj, path) {
   return path.split('.').reduce((o, k) => (o == null ? undefined : o[k]), obj);
 }
 
+const squash = (s) => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
+
+// Synonymes des attributs véhicule selon les actors : clé technique LeBonCoin ou libellé français.
+const ATTR_SYNONYMS = {
+  mileage: ['mileage', 'kilometrage', 'km'],
+  year: ['regdate', 'anneemodele', 'annee', 'year', 'miseencirculation', 'issuancedate'],
+};
+
+// Attributs rangés en tableau [{key, value}] (format brut LeBonCoin, « attributesRaw ») ou en
+// objet { mileage: …, regdate: … } / { "Kilométrage": "152 000 km", … } selon l'actor.
 function attrValue(item, key) {
-  const attrs = item.attributes;
-  if (!Array.isArray(attrs)) return undefined;
-  const a = attrs.find((x) => x && (x.key === key || x.key_label === key));
-  return a ? a.value_label ?? a.value : undefined;
+  const wanted = (ATTR_SYNONYMS[key] || [key]).map(squash);
+  for (const attrs of [item.attributesRaw, item.attributes]) {
+    if (Array.isArray(attrs)) {
+      const a = attrs.find((x) => x && [x.key, x.key_label, x.label, x.name].some((k) => k && wanted.includes(squash(k))));
+      if (a) return a.value_label ?? a.value ?? a.values?.[0];
+    } else if (attrs && typeof attrs === 'object') {
+      for (const [k, v] of Object.entries(attrs)) {
+        if (!wanted.includes(squash(k))) continue;
+        return v && typeof v === 'object' ? v.value_label ?? v.value ?? v.label : v;
+      }
+    }
+  }
+  return undefined;
 }
 
 function pick(item, field) {
@@ -36,7 +55,7 @@ function pick(item, field) {
     const v = key.includes('.') ? getPath(item, key) : item[key];
     if (v !== undefined && v !== null && v !== '') return v;
   }
-  for (const key of ALIASES[field]) {
+  for (const key of [field, ...ALIASES[field]]) {
     const v = attrValue(item, key);
     if (v !== undefined && v !== null && v !== '') return v;
   }
@@ -54,7 +73,9 @@ function toNumber(v) {
 export function normalizeItem(raw) {
   let price = toNumber(pick(raw, 'price'));
   if (raw.price_cents !== undefined && raw.price === undefined) price = price / 100;
-  const year = toNumber(pick(raw, 'year'));
+  const yearRaw = pick(raw, 'year');
+  const yearMatch = String(Array.isArray(yearRaw) ? yearRaw[0] : yearRaw ?? '').match(/(19|20)\d{2}/);
+  const year = yearMatch ? Number(yearMatch[0]) : NaN;
   const url = pick(raw, 'url');
   let id = pick(raw, 'id');
   if (id == null && typeof url === 'string') {
@@ -68,7 +89,7 @@ export function normalizeItem(raw) {
     body: String(pick(raw, 'body') || ''),
     price: Number.isFinite(price) ? price : null,
     km: Number.isFinite(toNumber(pick(raw, 'mileage'))) ? toNumber(pick(raw, 'mileage')) : null,
-    year: Number.isFinite(year) && year > 1900 ? (year > 3000 ? Number(String(year).slice(0, 4)) : year) : null,
+    year: Number.isFinite(year) ? year : null,
     url: typeof url === 'string' ? url : null,
     publishedAt: pick(raw, 'date') ? String(pick(raw, 'date')).slice(0, 10) : null,
     city: pick(raw, 'city') ? String(pick(raw, 'city')) : null,

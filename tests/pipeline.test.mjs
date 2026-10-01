@@ -153,3 +153,14 @@ test('le budget Apify du mois arrête les relevés', async () => {
   assert.equal(calls, 3); // 1,5 + 1,5 + 1,5 ≥ 4 : arrêt avant le 4e
   assert.equal(run.budgetReached, true);
 });
+
+test("ajout à partir d'une URL LeBonCoin collée", async () => {
+  const fields = parseIssueBody(`### Nom du véhicule\n\nToyota MR2 Roadster\n\n### URL de recherche LeBonCoin\n\nhttps://www.leboncoin.fr/recherche?category=2&text=mr2%20roadster&regdate=1999-2007\n`);
+  const res = await addVehicle(fields, { today: '2026-10-01' });
+  assert.equal(res.ok, true);
+  const m = box.read('models.json').models.find((x) => x.id === 'toyota-mr2-roadster');
+  assert.deepEqual(m.search, { text: 'mr2 roadster', yearMin: 1999, yearMax: 2007 });
+  assert.match(m.lbcSearchUrl, /^https:\/\/www\.leboncoin\.fr\/recherche\?/);
+  const bad = await addVehicle({ name: 'X', url: 'https://example.com' }).catch((e) => ({ ok: false, message: e.message }));
+  assert.equal(bad.ok, false);
+});

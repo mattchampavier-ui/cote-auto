@@ -16,6 +16,14 @@ body:
     validations:
       required: true
   - type: input
+    id: url_lbc
+    attributes:
+      label: URL de recherche LeBonCoin
+      description: >-
+        Facultatif et le plus simple : fais ta recherche sur leboncoin.fr avec tes filtres (modèle, années,
+        km, prix), copie l'adresse de la page et colle-la ici. Les champs ci-dessous deviennent alors facultatifs.
+      placeholder: "https://www.leboncoin.fr/recherche?category=2&text=bmw%20z3&regdate=1996-2002"
+  - type: input
     id: recherche
     attributes:
       label: Texte de recherche LeBonCoin
