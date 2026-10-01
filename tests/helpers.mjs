@@ -13,6 +13,10 @@ export function sandbox() {
   for (const f of ['config.json', 'models.json', 'data.json', 'listings.json']) {
     fs.copyFileSync(path.join(REPO, f), path.join(dir, f));
   }
+  // Repart d'un journal vierge : le data.json du dépôt contient les vrais passages du robot.
+  const data = JSON.parse(fs.readFileSync(path.join(dir, 'data.json'), 'utf-8'));
+  data.meta = { lastRun: null, lastRecap: null, runs: [] };
+  fs.writeFileSync(path.join(dir, 'data.json'), JSON.stringify(data));
   process.env.COTE_ROOT = dir;
   delete process.env.ANTHROPIC_API_KEY;
   delete process.env.GMAIL_USER;

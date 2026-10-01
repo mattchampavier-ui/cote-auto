@@ -5,7 +5,7 @@ set -euo pipefail
 msg="$1"
 git config user.name "cote-bot"
 git config user.email "cote-bot@users.noreply.github.com"
-git add models.json data.json listings.json recaps/ 2>/dev/null || true
+git add models.json data.json listings.json recaps/ cote-auto.xlsx 2>/dev/null || true
 if git diff --staged --quiet; then
   echo "Rien à committer."
   exit 0

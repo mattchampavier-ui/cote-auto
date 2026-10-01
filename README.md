@@ -7,6 +7,43 @@ Pour suivre un nouveau véhicule, un bouton du dashboard ouvre un formulaire : l
 
 - Dashboard : https://mattchampavier-ui.github.io/cote-auto/ (une fois GitHub Pages activé, étape 4)
 - Ajouter un véhicule : bouton **+ Ajouter un véhicule** du dashboard, ou [ce formulaire](https://github.com/mattchampavier-ui/cote-auto/issues/new?template=ajouter-vehicule.yml)
+- Base Excel : [`cote-auto.xlsx`](cote-auto.xlsx), mise à jour à chaque relevé et jointe au récap mensuel
+
+## Véhicules suivis (16)
+
+| Depuis septembre 2026 | Ajoutés en octobre 2026 |
+|---|---|
+| Peugeot 208 GTi 30th | Peugeot 306 S16 |
+| Porsche 911 997 Carrera S | BMW Z3 1.9i / 2.0i |
+| Porsche Boxster 986 | Volkswagen Golf IV GTI 25th Anniversary |
+| Porsche Boxster 987 | Alfa Romeo 156 2.5 V6 24V |
+| Renault Twingo 1 découvrable | Mazda MX-5 NA |
+| Peugeot 206 RC | Peugeot 205 GTI |
+| Renault Clio II RS (172/182 ch) | Honda S2000 |
+| Citroën Saxo VTS 16V | Renault Mégane II RS R26 |
+
+Radar (candidats non suivis, « Suivre » en un clic) : Toyota MR2 Roadster, BMW 330Ci E46,
+Fiat Coupé 20V Turbo, Renault Clio Williams.
+
+## Base Excel
+
+`cote-auto.xlsx` est régénérée à chaque relevé à partir de tout l'historique : elle s'alimente
+toute seule. Elle est jointe au récap mensuel et téléchargeable depuis le dashboard (« Base Excel »).
+
+| Onglet | Contenu |
+|---|---|
+| Analyse du mois | Indicateurs clés + une ligne par véhicule : score, signal, médiane, position dans la fourchette, tendances 1/3/12 mois, offre, ventes, bonnes affaires ; graphique des scores |
+| Historique mensuel | Une ligne par véhicule et par mois, avec variations vs mois précédent (médiane, cote à km constant, score) |
+| Médianes par mois | Tableau croisé véhicule × mois |
+| Indice base 100 | Évolution comparée de tous les véhicules (100 = premier mois suivi), avec graphique |
+| Relevés | Tous les relevés bruts |
+| Annonces | Chaque annonce suivie : en vente / partie, jours en ligne, baisse de prix, lien |
+| Bonnes affaires | Annonces nettement sous la cote, avec décote et lien |
+| Véhicules | Véhicules suivis ou retirés et leurs critères |
+
+Les colonnes d'analyse sont des formules, recalculées à l'ouverture dans Excel, Google Sheets ou
+Numbers (l'aperçu rapide d'un téléphone peut les afficher vides : ouvre le fichier dans une appli
+tableur). Le fichier est écrasé à chaque relevé : enregistre une copie si tu veux l'annoter.
 
 ## Nouveautés de la v4
 
@@ -76,7 +113,9 @@ Lundi + 1er du mois (GitHub Actions)
         │                                         ──► suivi annonce par annonce (listings.json)
         │                                         ──► relevé daté (data.json)
         ▼
-  src/recap.mjs ──► 1er passage du mois : mail récap (Gmail) + archive recaps/AAAA-MM.html
+  src/export.mjs + scripts/build_excel.py ──► cote-auto.xlsx (tout l'historique)
+        ▼
+  src/recap.mjs ──► 1er passage du mois : mail récap (Gmail) + Excel en pièce jointe + archive recaps/AAAA-MM.html
         ▼
   index.html (GitHub Pages) lit models.json / data.json / config.json
 
@@ -118,6 +157,7 @@ npm install
 npm test                                   # tests (aucun appel réseau)
 APIFY_TOKEN=... APIFY_ACTOR=... npm run scrape
 npm run recap:preview
+pip install openpyxl && npm run excel   # régénère cote-auto.xlsx
 python3 -m http.server   # puis http://localhost:8000
 ```
 
@@ -127,7 +167,7 @@ python3 -m http.server   # puis http://localhost:8000
   robot gère le format brut de l'API LeBonCoin et les formats aplatis courants. Si un véhicule
   remonte « 0 annonce retenue » alors qu'il y en a, regarde le log du workflow : il indique combien
   d'annonces ont été reçues et pourquoi elles ont été écartées.
-- **Crédits Apify** : 8 véhicules × 60 annonces × ~5 relevés par mois. Vérifie ta consommation le
+- **Crédits Apify** : 16 véhicules × 60 annonces × ~5 relevés par mois. Vérifie ta consommation le
   premier mois ; le récap affiche le coût du mois quand l'actor le communique. Baisse
   `maxItemsPerModel` dans `config.json` si besoin.
 - **Ventes** : une annonce disparue peut aussi avoir été retirée sans vente. Le décompte n'est fait
@@ -143,9 +183,11 @@ python3 -m http.server   # puis http://localhost:8000
 | `data.json` | Historique des relevés + journal des passages du robot |
 | `listings.json` | Suivi annonce par annonce (ventes, baisses de prix) |
 | `config.json` | Réglages : poids du score, filtres, seuils |
+| `cote-auto.xlsx` | Base Excel (générée automatiquement) |
 | `recaps/` | Archive des récaps mensuels |
 | `src/scrape.mjs` | Relevé des annonces |
 | `src/recap.mjs` | Récap mensuel par mail |
 | `src/vehicles.mjs` | Ajout / retrait de véhicules |
+| `src/export.mjs`, `scripts/build_excel.py` | Génération de la base Excel |
 | `src/lib/` | Statistiques, filtres, score (partagé avec le dashboard), Apify, Claude |
 | `.github/workflows/` | `releve.yml` (relevés + récap), `vehicules.yml` (formulaires), `tests.yml` |

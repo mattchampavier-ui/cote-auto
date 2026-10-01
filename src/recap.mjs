@@ -7,7 +7,9 @@
 //
 // Chaque récap est aussi archivé dans recaps/ (consultable depuis le dashboard).
 
-import { readJson, writeJson, writeText, todayISO, parseArgs } from './lib/io.mjs';
+import fs from 'node:fs';
+import path from 'node:path';
+import { ROOT, readJson, writeJson, writeText, todayISO, parseArgs } from './lib/io.mjs';
 import { buildRecap, renderRecap, recapForAi } from './lib/recap.mjs';
 import { askClaude } from './lib/claude.mjs';
 
@@ -28,7 +30,7 @@ Si l'historique est trop court pour conclure, dis-le simplement.`;
   return askClaude(prompt, { model: config.ai?.model, system: SYSTEM, maxTokens: 700 });
 }
 
-async function send({ subject, html, text }) {
+async function send({ subject, html, text, attachments = [] }) {
   const user = process.env.GMAIL_USER;
   const pass = process.env.GMAIL_APP_PASSWORD;
   const to = process.env.EMAIL_TO || user;
@@ -38,7 +40,7 @@ async function send({ subject, html, text }) {
   }
   const { default: nodemailer } = await import('nodemailer');
   const transport = nodemailer.createTransport({ service: 'gmail', auth: { user, pass } });
-  await transport.sendMail({ from: `COTE <${user}>`, to, subject, html, text });
+  await transport.sendMail({ from: `COTE <${user}>`, to, subject, html, text, attachments });
   console.log(`Récap envoyé à ${to}.`);
   return true;
 }
@@ -66,7 +68,10 @@ export async function recap({ force = false, dryRun = false, today = todayISO() 
     console.log(`Aperçu écrit dans recaps/${r.month}.html (aucun envoi).`);
     return { sent: false, reason: 'dry-run', subject: out.subject };
   }
-  const sent = await send(out);
+  // La base Excel (régénérée juste avant par le workflow) part en pièce jointe.
+  const xlsx = path.join(ROOT, 'cote-auto.xlsx');
+  const attachments = fs.existsSync(xlsx) ? [{ filename: `cote-auto-${r.month}.xlsx`, path: xlsx }] : [];
+  const sent = await send({ ...out, attachments });
   if (sent) {
     data.meta.lastRecap = r.month;
     await writeJson('data.json', data);

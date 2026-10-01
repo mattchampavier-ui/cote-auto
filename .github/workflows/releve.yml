@@ -35,6 +35,10 @@ jobs:
           node-version: "20"
           cache: npm
       - run: npm ci --omit=dev
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl
 
       - name: Relevé des annonces
         env:
@@ -44,6 +48,11 @@ jobs:
           ONLY: ${{ inputs.only }}
         run: |
           if [ -n "$ONLY" ]; then node src/scrape.mjs --only "$ONLY"; else node src/scrape.mjs; fi
+
+      # Base Excel régénérée à chaque passage avec tout l'historique (jointe au récap mensuel).
+      - name: Base Excel
+        if: always()
+        run: npm run excel
 
       # Le récap part au premier passage du mois (le 1er, ou au passage suivant si le cron
       # du 1er a été sauté) ; il ne part qu'une fois par mois.

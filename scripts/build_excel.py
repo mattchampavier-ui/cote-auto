@@ -1,0 +1,373 @@
+"""Construit la base Excel cote-auto.xlsx à partir du JSON produit par src/export.mjs.
+
+    node src/export.mjs | python3 scripts/build_excel.py cote-auto.xlsx
+
+Le fichier est entièrement régénéré à chaque passage du robot à partir de l'historique complet :
+il s'alimente donc tout seul, mois après mois. Les colonnes d'analyse (variations, position dans
+la fourchette, décote, jours en ligne...) sont des formules Excel, recalculées à l'ouverture.
+"""
+
+import json
+import sys
+from datetime import date
+
+from openpyxl import Workbook
+from openpyxl.chart import BarChart, LineChart, Reference
+from openpyxl.formatting.rule import FormulaRule
+from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
+from openpyxl.utils import get_column_letter
+
+FONT = "Arial"
+BRASS = "A8742F"
+INK = "1F1C18"
+DIM = "6E655A"
+LINE = "E1D8CA"
+F_BASE = Font(name=FONT, size=10, color=INK)
+F_HEAD = Font(name=FONT, size=10, bold=True, color="FFFFFF")
+F_TITLE = Font(name=FONT, size=16, bold=True, color=INK)
+F_DIM = Font(name=FONT, size=9, italic=True, color=DIM)
+F_LINK = Font(name=FONT, size=10, color="1F5FA8", underline="single")
+F_KPI = Font(name=FONT, size=14, bold=True, color=BRASS)
+FILL_HEAD = PatternFill("solid", fgColor=BRASS)
+FILL_BUY = PatternFill("solid", fgColor="E3F1EA")
+FILL_WATCH = PatternFill("solid", fgColor="F7EBD6")
+BORDER = Border(bottom=Side(style="thin", color=LINE))
+
+EUR = '#,##0 "€";-#,##0 "€";"-"'
+KM = '#,##0 "km";;"-"'
+PCT = '0.0%'
+TREND = '[Color10]+0.0%;[Red]-0.0%;0.0%'
+DELTA_PTS = '[Color10]+0.0;[Red]-0.0;0.0'
+INT = '0'
+DAYS = '0 "j"'
+DATE = 'dd/mm/yyyy'
+
+
+def d(s):
+    """Date ISO -> date Excel (ou None)."""
+    return date.fromisoformat(s[:10]) if s else None
+
+
+def table(ws, row, headers, rows, formats=None, widths=None, formulas=None, links=None):
+    """Écrit un tableau à partir de la ligne `row` : en-tête stylé, filtres, volets figés.
+
+    headers  : [(titre, clé du dict ou None pour une formule)]
+    formulas : {index de colonne: fonction(r) -> formule pour la ligne r}
+    links    : {index de colonne: clé de l'URL} — la cellule affiche « Voir » et pointe sur l'URL
+    """
+    formats = formats or {}
+    formulas = formulas or {}
+    links = links or {}
+    for c, (title, _) in enumerate(headers, start=1):
+        cell = ws.cell(row=row, column=c, value=title)
+        cell.font = F_HEAD
+        cell.fill = FILL_HEAD
+        cell.alignment = Alignment(vertical="center", wrap_text=True)
+    ws.row_dimensions[row].height = 30
+    for i, item in enumerate(rows):
+        r = row + 1 + i
+        for c, (_, key) in enumerate(headers, start=1):
+            cell = ws.cell(row=r, column=c)
+            if c in formulas:
+                cell.value = formulas[c](r)
+            elif c in links:
+                url = item.get(links[c])
+                if url:
+                    cell.value = "Voir"
+                    cell.hyperlink = url
+                    cell.font = F_LINK
+                    cell.border = BORDER
+                    continue
+            elif key is not None:
+                cell.value = item.get(key)
+            cell.font = F_BASE
+            cell.border = BORDER
+            if c in formats:
+                cell.number_format = formats[c]
+    last = row + max(len(rows), 1)
+    ws.auto_filter.ref = f"A{row}:{get_column_letter(len(headers))}{last}"
+    ws.freeze_panes = ws.cell(row=row + 1, column=2)
+    for c, w in enumerate(widths or [], start=1):
+        ws.column_dimensions[get_column_letter(c)].width = w
+    return row + 1, row + len(rows)
+
+
+def signal_colors(ws, col, first, last):
+    if last < first:
+        return
+    rng = f"{col}{first}:{col}{last}"
+    ws.conditional_formatting.add(rng, FormulaRule(formula=[f'ISNUMBER(SEARCH("achat",{col}{first}))'], fill=FILL_BUY))
+    ws.conditional_formatting.add(rng, FormulaRule(formula=[f'ISNUMBER(SEARCH("surveiller",{col}{first}))'], fill=FILL_WATCH))
+
+
+def build(data, out):
+    wb = Workbook()
+
+    # ------------------------------------------------------------------ Lisez-moi
+    ws = wb.active
+    ws.title = "Lisez-moi"
+    ws.sheet_view.showGridLines = False
+    ws.column_dimensions["A"].width = 26
+    ws.column_dimensions["B"].width = 100
+    ws["A1"] = "COTE — base de suivi des cotes"
+    ws["A1"].font = F_TITLE
+    lines = [
+        ("Généré le", d(data["genere_le"])),
+        ("Dernier relevé", d(data["dernier_releve"]) or "aucun relevé automatique pour l'instant"),
+        ("Dashboard", data["dashboard"]),
+        ("", ""),
+        ("Fonctionnement", "Ce fichier est régénéré automatiquement à chaque relevé (chaque lundi et le 1er du mois) à partir de tout l'historique."),
+        ("", "Il est aussi joint au récap mensuel par mail. Toute modification faite à la main ici sera écrasée : enregistre une copie pour annoter."),
+        ("", ""),
+        ("Onglets", ""),
+        ("Analyse du mois", "Situation actuelle de chaque véhicule : score, signal, prix, tendances, offre, ventes. Indicateurs clés en haut."),
+        ("Historique mensuel", "Une ligne par véhicule et par mois (dernier relevé du mois). Variations vs mois précédent calculées par formule."),
+        ("Médianes par mois", "Tableau croisé véhicule × mois des prix médians (formules sur l'onglet Historique mensuel)."),
+        ("Indice base 100", "Évolution de la médiane depuis le premier mois suivi (100 = premier mois), avec graphique."),
+        ("Relevés", "Tous les relevés bruts, y compris l'amorce manuelle de septembre 2026."),
+        ("Annonces", "Chaque annonce suivie : en vente ou partie (≈ vendue), durée en ligne, baisse de prix."),
+        ("Bonnes affaires", "Annonces du dernier relevé au moins 15 % sous la cote attendue pour leur kilométrage."),
+        ("Véhicules", "Liste des véhicules suivis ou retirés et leurs critères de recherche."),
+        ("", ""),
+        ("Définitions", ""),
+        ("Médiane", "Prix médian des annonces retenues (après filtres : pièces, épaves, autres versions, doublons, prix aberrants)."),
+        ("Cote à km réf.", "Prix attendu à un kilométrage de référence fixe (régression prix/km) : compare les mois sans biais de kilométrage."),
+        ("Position fourchette", "0 % = au plancher, 100 % = au plafond de prix observé (ou saisi pendant les 3 premiers mois)."),
+        ("Score", "Sur 100 : rareté 20 %, désirabilité 20 %, « dernier de » 10 %, proximité du plancher 20 %, momentum 15 %, marché 15 %."),
+        ("Ventes", "Annonces disparues entre deux relevés. Une annonce peut aussi être retirée sans vente : c'est une estimation."),
+        ("Avertissement", "Outil de suivi de marché, pas un conseil d'achat."),
+    ]
+    for i, (a, b) in enumerate(lines, start=3):
+        ws.cell(row=i, column=1, value=a).font = Font(name=FONT, size=10, bold=True, color=INK)
+        cell = ws.cell(row=i, column=2, value=b)
+        cell.font = F_BASE
+        if isinstance(b, date):
+            cell.number_format = DATE
+            cell.alignment = Alignment(horizontal="left")
+        if isinstance(b, str) and b.startswith("http"):
+            cell.hyperlink = b
+            cell.font = F_LINK
+
+    # ------------------------------------------------------------------ Analyse du mois
+    ws = wb.create_sheet("Analyse du mois")
+    ws.sheet_view.showGridLines = False
+    ws["A1"] = f"Analyse au {d(data['genere_le']).strftime('%d/%m/%Y')}"
+    ws["A1"].font = F_TITLE
+    syn = data["synthese"]
+    H = 8
+    first, last = H + 1, H + max(len(syn), 1)
+    kpis = [
+        ("Véhicules suivis", f"=COUNTA(A{first}:A{last})", INT),
+        ("Score moyen", f'=IFERROR(AVERAGEIF(N{first}:N{last},">0",C{first}:C{last}),0)', "0.0"),
+        ("Annonces actives", f"=SUM(N{first}:N{last})", INT),
+        ("Ventes sur 30 jours", f"=SUM(O{first}:O{last})", INT),
+        ("Signaux d'achat", f'=COUNTIF(D{first}:D{last},"Signal d\'achat")', INT),
+        ("Bonnes affaires", f"=SUM(Q{first}:Q{last})", INT),
+    ]
+    for i, (label, formula, fmt) in enumerate(kpis):
+        col = 1 + i * 2 if i < 3 else 1 + (i - 3) * 2
+        r = 3 if i < 3 else 5
+        ws.cell(row=r, column=col, value=label).font = F_DIM
+        cell = ws.cell(row=r + 1, column=col, value=formula)
+        cell.font = F_KPI
+        cell.number_format = fmt
+        cell.alignment = Alignment(horizontal="left")
+    headers = [
+        ("Véhicule", "vehicule"), ("Catégorie", "categorie"), ("Score /100", "score"), ("Signal", "signal"),
+        ("Médiane", "mediane"), ("Plancher", "plancher"), ("Plafond", "plafond"), ("Position fourchette", None),
+        ("Tendance 1 mois", "tendance_1m"), ("Tendance 3 mois", "tendance_3m"), ("Tendance 12 mois", "tendance_12m"),
+        ("Cote à km réf.", "cote_km_ref"), ("Km réf.", "km_ref"), ("Annonces", "annonces"), ("Vendues (30 j)", "vendues_30j"),
+        ("Délai de vente", "delai_vente"), ("Bonnes affaires", "bonnes_affaires"), ("Rareté", "rarete"),
+        ("Désirabilité", "desirabilite"), ("Dernier de", "dernier_de"), ("Proximité plancher", "proximite"),
+        ("Momentum", "momentum"), ("Marché", "marche"), ("Dernier relevé", "dernier_releve"), ("LeBonCoin", None),
+    ]
+    for row in syn:
+        row["dernier_releve"] = d(row["dernier_releve"])
+    fmts = {3: "0.0", 5: EUR, 6: EUR, 7: EUR, 8: PCT, 9: TREND, 10: TREND, 11: TREND, 12: EUR, 13: KM,
+            14: INT, 15: INT, 16: DAYS, 17: INT, 18: INT, 19: INT, 20: INT, 21: INT, 22: INT, 23: INT, 24: DATE}
+    table(ws, H, headers, syn, formats=fmts,
+          widths=[34, 30, 10, 15, 12, 12, 12, 12, 12, 12, 12, 13, 12, 10, 10, 10, 10, 9, 11, 10, 11, 11, 9, 13, 11],
+          formulas={8: lambda r: f'=IF(AND(ISNUMBER(E{r}),ISNUMBER(F{r}),ISNUMBER(G{r}),G{r}>F{r}),(E{r}-F{r})/(G{r}-F{r}),"")'},
+          links={25: "lien"})
+    signal_colors(ws, "D", first, last)
+
+    if syn:
+        chart = BarChart()
+        chart.type = "bar"
+        chart.title = "Score par véhicule"
+        chart.style = 2
+        chart.y_axis.scaling.min = 0
+        chart.y_axis.scaling.max = 100
+        chart.legend = None
+        chart.add_data(Reference(ws, min_col=3, min_row=H, max_row=last), titles_from_data=True)
+        chart.set_categories(Reference(ws, min_col=1, min_row=first, max_row=last))
+        chart.height = max(7, 0.55 * len(syn) + 2)
+        chart.width = 18
+        chart.x_axis.scaling.orientation = "maxMin"
+        ws.add_chart(chart, f"A{last + 3}")
+
+    # ------------------------------------------------------------------ Historique mensuel
+    ws = wb.create_sheet("Historique mensuel")
+    men = data["mensuel"]
+    headers = [
+        ("Mois", "mois"), ("Véhicule", "vehicule"), ("Médiane", "mediane"), ("Évol. médiane vs mois préc.", None),
+        ("P25", "p25"), ("P75", "p75"), ("Cote à km réf.", "cote_km_ref"), ("Évol. cote km réf.", None),
+        ("Annonces", "annonces"), ("Nouvelles annonces", "nouvelles"), ("Vendues", "vendues"), ("Délai de vente", "delai_vente"),
+        ("Relevés dans le mois", "releves"), ("Score /100", "score"), ("Évol. score (pts)", None), ("Signal", "signal"),
+    ]
+    same = lambda r: f"$B{r}=$B{r - 1}"
+    evol = lambda col: lambda r: f'=IF(AND({same(r)},ISNUMBER({col}{r}),ISNUMBER({col}{r - 1})),{col}{r}/{col}{r - 1}-1,"")'
+    f1, l1 = table(ws, 1, headers, men,
+                   formats={3: EUR, 4: TREND, 5: EUR, 6: EUR, 7: EUR, 8: TREND, 9: INT, 10: INT, 11: INT, 12: DAYS, 13: INT, 14: "0.0", 15: DELTA_PTS},
+                   widths=[10, 34, 12, 14, 12, 12, 13, 13, 10, 11, 9, 10, 10, 10, 11, 15],
+                   formulas={4: evol("C"), 8: evol("G"),
+                             15: lambda r: f'=IF(AND({same(r)},ISNUMBER(N{r}),ISNUMBER(N{r - 1})),N{r}-N{r - 1},"")'})
+    signal_colors(ws, "P", f1, l1)
+    hist_last = max(l1, 2)
+
+    # ------------------------------------------------------------------ Médianes par mois
+    months = sorted({m["mois"] for m in men})
+    vehicles = []
+    for m in men:
+        if m["vehicule"] not in vehicles:
+            vehicles.append(m["vehicule"])
+    ws = wb.create_sheet("Médianes par mois")
+    ws.cell(row=1, column=1, value="Véhicule")
+    for j, month in enumerate(months, start=2):
+        ws.cell(row=1, column=j, value=month)
+    for c in range(1, len(months) + 2):
+        cell = ws.cell(row=1, column=c)
+        cell.font = F_HEAD
+        cell.fill = FILL_HEAD
+    rng = lambda col: f"'Historique mensuel'!${col}$2:${col}${hist_last}"
+    for i, v in enumerate(vehicles, start=2):
+        ws.cell(row=i, column=1, value=v).font = F_BASE
+        for j in range(2, len(months) + 2):
+            col = get_column_letter(j)
+            cell = ws.cell(row=i, column=j,
+                           value=f'=IFERROR(AVERAGEIFS({rng("C")},{rng("B")},$A{i},{rng("A")},{col}$1),"")')
+            cell.font = F_BASE
+            cell.number_format = EUR
+    ws.column_dimensions["A"].width = 34
+    for j in range(2, len(months) + 2):
+        ws.column_dimensions[get_column_letter(j)].width = 12
+    ws.freeze_panes = "B2"
+
+    # ------------------------------------------------------------------ Indice base 100
+    ws = wb.create_sheet("Indice base 100")
+    ws["A1"] = "Évolution de la médiane, base 100 au premier mois suivi de chaque véhicule"
+    ws["A1"].font = Font(name=FONT, size=12, bold=True, color=INK)
+    ws["A2"] = ("Valeurs calculées par le robot à partir de l'onglet Historique mensuel (cases vides = pas de relevé ce mois-là, "
+                "pour que le graphique ne les compte pas comme des zéros).")
+    ws["A2"].font = F_DIM
+    R0 = 4
+    ws.cell(row=R0, column=1, value="Mois")
+    for j, v in enumerate(vehicles, start=2):
+        ws.cell(row=R0, column=j, value=v)
+    for c in range(1, len(vehicles) + 2):
+        cell = ws.cell(row=R0, column=c)
+        cell.font = F_HEAD
+        cell.fill = FILL_HEAD
+        cell.alignment = Alignment(wrap_text=True, vertical="center")
+    ws.row_dimensions[R0].height = 42
+    base = {}
+    by_key = {(m["vehicule"], m["mois"]): m["mediane"] for m in men if m["mediane"]}
+    for m in men:
+        if m["mediane"] and m["vehicule"] not in base:
+            base[m["vehicule"]] = m["mediane"]
+    for i, month in enumerate(months, start=R0 + 1):
+        ws.cell(row=i, column=1, value=month).font = F_BASE
+        for j, v in enumerate(vehicles, start=2):
+            val = by_key.get((v, month))
+            if val and base.get(v):
+                cell = ws.cell(row=i, column=j, value=round(val / base[v] * 100, 1))
+                cell.font = F_BASE
+                cell.number_format = "0.0"
+    ws.column_dimensions["A"].width = 12
+    for j in range(2, len(vehicles) + 2):
+        ws.column_dimensions[get_column_letter(j)].width = 13
+    ws.freeze_panes = ws.cell(row=R0 + 1, column=2)
+    if months and vehicles:
+        chart = LineChart()
+        chart.title = "Indice de la médiane (100 = premier mois suivi)"
+        chart.style = 2
+        chart.y_axis.title = "Indice"
+        chart.height = 11
+        chart.width = 26
+        chart.display_blanks = "gap"
+        chart.add_data(Reference(ws, min_col=2, max_col=len(vehicles) + 1, min_row=R0, max_row=R0 + len(months)), titles_from_data=True)
+        chart.set_categories(Reference(ws, min_col=1, min_row=R0 + 1, max_row=R0 + len(months)))
+        ws.add_chart(chart, f"A{R0 + len(months) + 3}")
+
+    # ------------------------------------------------------------------ Relevés
+    ws = wb.create_sheet("Relevés")
+    rel = data["releves"]
+    for r in rel:
+        r["date"] = d(r["date"])
+    headers = [
+        ("Date", "date"), ("Véhicule", "vehicule"), ("Source", "source"), ("Annonces", "annonces"), ("Min", "min"),
+        ("P25", "p25"), ("Médiane", "mediane"), ("P75", "p75"), ("Max", "max"), ("Km médian", "km_median"),
+        ("Cote à km réf.", "cote_km_ref"), ("Km réf.", "km_ref"), ("Nouvelles", "nouvelles"), ("Vendues", "vendues"),
+        ("Délai de vente", "delai_vente"), ("Annonces écartées", "ecartees"),
+    ]
+    table(ws, 1, headers, rel,
+          formats={1: DATE, 4: INT, 5: EUR, 6: EUR, 7: EUR, 8: EUR, 9: EUR, 10: KM, 11: EUR, 12: KM, 13: INT, 14: INT, 15: DAYS, 16: INT},
+          widths=[11, 34, 9, 10, 11, 11, 11, 11, 11, 12, 13, 12, 10, 9, 10, 11])
+
+    # ------------------------------------------------------------------ Annonces
+    ws = wb.create_sheet("Annonces")
+    ann = data["annonces"]
+    for a in ann:
+        for k in ("premiere_vue", "derniere_vue", "partie_le"):
+            a[k] = d(a[k])
+    headers = [
+        ("Véhicule", "vehicule"), ("Titre", "titre"), ("Statut", "statut"), ("Première vue", "premiere_vue"),
+        ("Dernière vue", "derniere_vue"), ("Partie le", "partie_le"), ("Jours en ligne", None), ("Prix initial", "prix_initial"),
+        ("Prix actuel", "prix"), ("Baisse de prix", None), ("Km", "km"), ("Année", "annee"), ("Ville", "ville"),
+        ("Annonce", None), ("Id", "id"),
+    ]
+    table(ws, 1, headers, ann,
+          formats={4: DATE, 5: DATE, 6: DATE, 7: DAYS, 8: EUR, 9: EUR, 10: PCT, 11: KM, 12: INT},
+          widths=[30, 44, 10, 12, 12, 12, 10, 11, 11, 10, 12, 8, 16, 9, 13],
+          formulas={7: lambda r: f'=IF(ISNUMBER(D{r}),IF(ISNUMBER(F{r}),F{r},E{r})-D{r},"")',
+                    10: lambda r: f'=IF(AND(ISNUMBER(H{r}),ISNUMBER(I{r}),H{r}>0),1-I{r}/H{r},"")'},
+          links={14: "lien"})
+
+    # ------------------------------------------------------------------ Bonnes affaires
+    ws = wb.create_sheet("Bonnes affaires")
+    aff = data["affaires"]
+    for a in aff:
+        a["releve"] = d(a["releve"])
+    headers = [
+        ("Véhicule", "vehicule"), ("Titre", "titre"), ("Prix", "prix"), ("Cote attendue", "cote_attendue"), ("Décote", None),
+        ("Km", "km"), ("Année", "annee"), ("Ville", "ville"), ("Annonce", None), ("Relevé", "releve"),
+    ]
+    table(ws, 1, headers, aff,
+          formats={3: EUR, 4: EUR, 5: PCT, 6: KM, 7: INT, 10: DATE},
+          widths=[30, 44, 11, 13, 9, 12, 8, 16, 9, 11],
+          formulas={5: lambda r: f'=IF(AND(ISNUMBER(C{r}),ISNUMBER(D{r}),D{r}>0),1-C{r}/D{r},"")'},
+          links={9: "lien"})
+    if not aff:
+        ws["A3"] = "Aucune annonce nettement sous la cote au dernier relevé."
+        ws["A3"].font = F_DIM
+
+    # ------------------------------------------------------------------ Véhicules
+    ws = wb.create_sheet("Véhicules")
+    veh = data["vehicules"]
+    for v in veh:
+        v["ajoute_le"] = d(v["ajoute_le"])
+    headers = [
+        ("Véhicule", "vehicule"), ("Identifiant", "id"), ("Statut", "statut"), ("Catégorie", "categorie"),
+        ("Recherche", "recherche"), ("Années", "annees"), ("Mots obligatoires", "obligatoires"), ("Variantes", "variantes"),
+        ("Mots exclus", "exclus"), ("Rareté", "rarete"), ("Dernier de", "dernier_de"), ("Désirabilité", "desirabilite"),
+        ("Ajouté le", "ajoute_le"), ("Notes", "notes"), ("LeBonCoin", None),
+    ]
+    table(ws, 1, headers, veh, formats={10: INT, 11: INT, 12: INT, 13: DATE},
+          widths=[34, 22, 9, 30, 20, 11, 16, 20, 28, 8, 9, 10, 11, 60, 11], links={15: "lien"})
+
+    wb.calculation.fullCalcOnLoad = True
+    wb.save(out)
+
+
+if __name__ == "__main__":
+    build(json.load(sys.stdin), sys.argv[1] if len(sys.argv) > 1 else "cote-auto.xlsx")

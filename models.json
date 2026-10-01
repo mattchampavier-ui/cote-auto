@@ -5,8 +5,16 @@
       "id": "peugeot-208-gti-30th",
       "name": "Peugeot 208 GTi 30th",
       "categorie": "Hot-hatch récente à tirage limité",
-      "search": { "text": "208 gti 30th", "yearMin": 2014, "yearMax": 2016 },
-      "anyOf": ["30th", "30 th", "trentieme"],
+      "search": {
+        "text": "208 gti 30th",
+        "yearMin": 2014,
+        "yearMax": 2016
+      },
+      "anyOf": [
+        "30th",
+        "30 th",
+        "trentieme"
+      ],
       "exclude": [],
       "rarete": 85,
       "dernierDe": 65,
@@ -21,9 +29,19 @@
       "id": "porsche-911-997",
       "name": "Porsche 911 997 Carrera S",
       "categorie": "Sportive iconique",
-      "search": { "text": "911 997 carrera s", "yearMin": 2004, "yearMax": 2012 },
-      "mustInclude": ["997"],
-      "exclude": ["turbo", "gt3", "gt2"],
+      "search": {
+        "text": "911 997 carrera s",
+        "yearMin": 2004,
+        "yearMax": 2012
+      },
+      "mustInclude": [
+        "997"
+      ],
+      "exclude": [
+        "turbo",
+        "gt3",
+        "gt2"
+      ],
       "rarete": 40,
       "dernierDe": 90,
       "desirabilite": 90,
@@ -37,8 +55,14 @@
       "id": "porsche-boxster-986",
       "name": "Porsche Boxster 986",
       "categorie": "Roadster d'entrée de gamme Porsche",
-      "search": { "text": "boxster 986", "yearMin": 1996, "yearMax": 2004 },
-      "mustInclude": ["boxster"],
+      "search": {
+        "text": "boxster 986",
+        "yearMin": 1996,
+        "yearMax": 2004
+      },
+      "mustInclude": [
+        "boxster"
+      ],
       "exclude": [],
       "rarete": 35,
       "dernierDe": 30,
@@ -53,9 +77,17 @@
       "id": "porsche-boxster-987",
       "name": "Porsche Boxster 987",
       "categorie": "Roadster Porsche",
-      "search": { "text": "boxster 987", "yearMin": 2005, "yearMax": 2012 },
-      "mustInclude": ["boxster"],
-      "exclude": ["spyder"],
+      "search": {
+        "text": "boxster 987",
+        "yearMin": 2005,
+        "yearMax": 2012
+      },
+      "mustInclude": [
+        "boxster"
+      ],
+      "exclude": [
+        "spyder"
+      ],
       "rarete": 30,
       "dernierDe": 40,
       "desirabilite": 75,
@@ -69,9 +101,23 @@
       "id": "renault-twingo-1",
       "name": "Renault Twingo 1 découvrable",
       "categorie": "Citadine iconique, variante toit ouvrant",
-      "search": { "text": "twingo toit ouvrant", "yearMin": 1993, "yearMax": 2007 },
-      "anyOf": ["toit ouvrant", "decouvrable", "toit toile", "toit souple"],
-      "exclude": ["twingo 2", "twingo ii", "twingo 3", "twingo iii"],
+      "search": {
+        "text": "twingo toit ouvrant",
+        "yearMin": 1993,
+        "yearMax": 2007
+      },
+      "anyOf": [
+        "toit ouvrant",
+        "decouvrable",
+        "toit toile",
+        "toit souple"
+      ],
+      "exclude": [
+        "twingo 2",
+        "twingo ii",
+        "twingo 3",
+        "twingo iii"
+      ],
       "rarete": 55,
       "dernierDe": 50,
       "desirabilite": 65,
@@ -85,9 +131,19 @@
       "id": "peugeot-206-rc",
       "name": "Peugeot 206 RC",
       "categorie": "Hot-hatch youngtimer 2000-2005",
-      "search": { "text": "206 rc", "yearMin": 2003, "yearMax": 2007 },
-      "mustInclude": ["rc"],
-      "exclude": ["hdi", "206+", "206 cc"],
+      "search": {
+        "text": "206 rc",
+        "yearMin": 2003,
+        "yearMax": 2007
+      },
+      "mustInclude": [
+        "rc"
+      ],
+      "exclude": [
+        "hdi",
+        "206+",
+        "206 cc"
+      ],
       "rarete": 45,
       "dernierDe": 75,
       "desirabilite": 70,
@@ -101,9 +157,25 @@
       "id": "renault-clio-2-rs",
       "name": "Renault Clio II RS (172/182 ch)",
       "categorie": "Hot-hatch youngtimer 2000-2005",
-      "search": { "text": "clio rs", "yearMin": 2000, "yearMax": 2006 },
-      "anyOf": ["172", "182", "rs"],
-      "exclude": ["v6", "dci", "clio 3", "clio iii", "clio 4", "clio iv", "gt line"],
+      "search": {
+        "text": "clio rs",
+        "yearMin": 2000,
+        "yearMax": 2006
+      },
+      "anyOf": [
+        "172",
+        "182",
+        "rs"
+      ],
+      "exclude": [
+        "v6",
+        "dci",
+        "clio 3",
+        "clio iii",
+        "clio 4",
+        "clio iv",
+        "gt line"
+      ],
       "rarete": 40,
       "dernierDe": 60,
       "desirabilite": 75,
@@ -117,9 +189,21 @@
       "id": "citroen-saxo-vts",
       "name": "Citroën Saxo VTS 16V",
       "categorie": "Hot-hatch youngtimer 2000-2005",
-      "search": { "text": "saxo vts", "yearMin": 1997, "yearMax": 2004 },
-      "mustInclude": ["vts"],
-      "exclude": ["rallye", "piste", "course", "preparee", "kit car"],
+      "search": {
+        "text": "saxo vts",
+        "yearMin": 1997,
+        "yearMax": 2004
+      },
+      "mustInclude": [
+        "vts"
+      ],
+      "exclude": [
+        "rallye",
+        "piste",
+        "course",
+        "preparee",
+        "kit car"
+      ],
       "rarete": 30,
       "dernierDe": 55,
       "desirabilite": 55,
@@ -128,6 +212,202 @@
       "refKm": 150000,
       "notes": "Marché parasité par les exemplaires modifiés/rallye, exclus par filtre : on suit les originaux.",
       "addedAt": "2026-09-08"
+    },
+    {
+      "id": "peugeot-306-s16",
+      "name": "Peugeot 306 S16",
+      "categorie": "Hot-hatch youngtimer 1990-2000",
+      "search": {
+        "text": "306 s16",
+        "yearMin": 1993,
+        "yearMax": 2001
+      },
+      "mustInclude": [
+        "s16"
+      ],
+      "exclude": [
+        "hdi",
+        "cabriolet"
+      ],
+      "rarete": 40,
+      "dernierDe": 50,
+      "desirabilite": 65,
+      "notes": "2.0 16v 150-167 ch, châssis encensé à l’époque. Beaucoup d’exemplaires fatigués : l’état d’origine fait la valeur.",
+      "addedAt": "2026-10-01"
+    },
+    {
+      "id": "bmw-z3-19-20",
+      "name": "BMW Z3 1.9i / 2.0i",
+      "categorie": "Roadster youngtimer",
+      "search": {
+        "text": "bmw z3",
+        "yearMin": 1996,
+        "yearMax": 2002
+      },
+      "anyOf": [
+        "1.9",
+        "1.9i",
+        "2.0",
+        "2.0i",
+        "1.8",
+        "1.8i",
+        "2.2",
+        "2.2i"
+      ],
+      "exclude": [
+        "m roadster",
+        "m coupe",
+        "coupe",
+        "3.0",
+        "2.8"
+      ],
+      "rarete": 35,
+      "dernierDe": 40,
+      "desirabilite": 65,
+      "notes": "Roadster BMW le plus abordable. M Roadster et coupé exclus (marchés à part).",
+      "addedAt": "2026-10-01"
+    },
+    {
+      "id": "vw-golf-4-gti-25",
+      "name": "Volkswagen Golf IV GTI 25th Anniversary",
+      "categorie": "Hot-hatch à série limitée",
+      "search": {
+        "text": "golf gti 25",
+        "yearMin": 2001,
+        "yearMax": 2002
+      },
+      "mustInclude": [
+        "gti"
+      ],
+      "anyOf": [
+        "25",
+        "25th",
+        "anniversary",
+        "anniversaire",
+        "edition 25"
+      ],
+      "exclude": [
+        "tdi",
+        "golf 5",
+        "golf v",
+        "golf 6",
+        "golf vi"
+      ],
+      "rarete": 70,
+      "dernierDe": 55,
+      "desirabilite": 65,
+      "notes": "1.8T 180 ch, sièges Recaro, jantes BBS. Série limitée : vérifier la plaque et les équipements spécifiques.",
+      "addedAt": "2026-10-01"
+    },
+    {
+      "id": "alfa-156-v6",
+      "name": "Alfa Romeo 156 2.5 V6 24V",
+      "categorie": "Berline sportive youngtimer",
+      "search": {
+        "text": "alfa 156 v6",
+        "yearMin": 1997,
+        "yearMax": 2005
+      },
+      "mustInclude": [
+        "v6"
+      ],
+      "exclude": [
+        "gta",
+        "jtd",
+        "diesel"
+      ],
+      "rarete": 50,
+      "dernierDe": 70,
+      "desirabilite": 65,
+      "notes": "V6 « Busso » atmosphérique. GTA exclue (marché à part). Courroie de distribution et variateur à surveiller.",
+      "addedAt": "2026-10-01"
+    },
+    {
+      "id": "mazda-mx5-na",
+      "name": "Mazda MX-5 NA",
+      "categorie": "Roadster youngtimer",
+      "search": {
+        "text": "mazda mx5",
+        "yearMin": 1989,
+        "yearMax": 1998
+      },
+      "exclude": [
+        "nb",
+        "nc",
+        "nd",
+        "hard top seul"
+      ],
+      "rarete": 25,
+      "dernierDe": 60,
+      "desirabilite": 75,
+      "notes": "Première génération, phares escamotables. Offre abondante : la corrosion des bas de caisse fait la différence.",
+      "addedAt": "2026-10-01"
+    },
+    {
+      "id": "peugeot-205-gti",
+      "name": "Peugeot 205 GTI",
+      "categorie": "Hot-hatch icône des années 80",
+      "search": {
+        "text": "205 gti",
+        "yearMin": 1984,
+        "yearMax": 1994
+      },
+      "mustInclude": [
+        "gti"
+      ],
+      "exclude": [
+        "look",
+        "replica",
+        "replique",
+        "gtx",
+        "xs",
+        "cti"
+      ],
+      "rarete": 45,
+      "dernierDe": 50,
+      "desirabilite": 85,
+      "notes": "1.6 et 1.9. Cote déjà élevée et soutenue ; nombreuses « répliques » à partir de 205 XS/GT, exclues par filtre mais à vérifier (numéro de série).",
+      "addedAt": "2026-10-01"
+    },
+    {
+      "id": "honda-s2000",
+      "name": "Honda S2000",
+      "categorie": "Roadster japonais culte",
+      "search": {
+        "text": "honda s2000",
+        "yearMin": 1999,
+        "yearMax": 2009
+      },
+      "rarete": 50,
+      "dernierDe": 85,
+      "desirabilite": 85,
+      "notes": "2.0 VTEC atmosphérique à 9 000 tr/min, sans successeur. Exemplaires d’origine non modifiés de plus en plus recherchés.",
+      "addedAt": "2026-10-01"
+    },
+    {
+      "id": "renault-megane-r26",
+      "name": "Renault Mégane II RS R26",
+      "categorie": "Hot-hatch à série limitée",
+      "search": {
+        "text": "megane rs r26",
+        "yearMin": 2007,
+        "yearMax": 2009
+      },
+      "anyOf": [
+        "r26",
+        "r 26"
+      ],
+      "exclude": [
+        "dci",
+        "gt line",
+        "megane 3",
+        "megane iii"
+      ],
+      "rarete": 55,
+      "dernierDe": 50,
+      "desirabilite": 75,
+      "notes": "Série R26 (différentiel autobloquant). La R26.R, beaucoup plus rare, sort du même filtre : à repérer à part.",
+      "addedAt": "2026-10-01"
     }
   ]
 }

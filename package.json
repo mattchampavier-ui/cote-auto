@@ -10,6 +10,7 @@
     "scrape": "node src/scrape.mjs",
     "recap": "node src/recap.mjs",
     "recap:preview": "node src/recap.mjs --dry-run",
+    "excel": "node src/export.mjs | python3 scripts/build_excel.py cote-auto.xlsx",
     "demo": "node src/scrape.mjs --fixture tests/fixtures/run1 --date 2026-09-07 && node src/scrape.mjs --fixture tests/fixtures/run2 --date 2026-09-28"
   },
   "dependencies": {

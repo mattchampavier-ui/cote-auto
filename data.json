@@ -97,36 +97,36 @@
   },
   "radar": [
     {
-      "name": "Peugeot 306 S16",
-      "periode": "1996-2001",
-      "text": "306 s16",
+      "name": "Toyota MR2 Roadster (W30)",
+      "periode": "1999-2007",
+      "text": "mr2 roadster",
+      "yearMin": 1999,
+      "yearMax": 2007,
+      "pourquoi": "Moteur central, poids plume, encore peu cher ; la cote des sportives japonaises tire tout le segment."
+    },
+    {
+      "name": "BMW 330Ci E46",
+      "periode": "2000-2006",
+      "text": "330ci e46",
+      "yearMin": 2000,
+      "yearMax": 2006,
+      "pourquoi": "Dernier 6 cylindres atmosphérique en coupé accessible, dans l’ombre de la M3 E46 déjà envolée."
+    },
+    {
+      "name": "Fiat Coupé 20V Turbo",
+      "periode": "1996-2000",
+      "text": "fiat coupe 20v turbo",
       "yearMin": 1996,
-      "yearMax": 2001,
-      "pourquoi": "Châssis loué par la presse de l'époque, encore très accessible, communauté active."
+      "yearMax": 2000,
+      "pourquoi": "Design Chris Bangle, 5 cylindres turbo 220 ch, production modeste : collector en devenir."
     },
     {
-      "name": "BMW Z3 1.9i / 2.0i",
-      "periode": "1996-2002",
-      "text": "bmw z3",
-      "yearMin": 1996,
-      "yearMax": 2002,
-      "pourquoi": "Roadster BMW le plus abordable, désirabilité de marque en hausse sur les youngtimers allemandes."
-    },
-    {
-      "name": "Volkswagen Golf IV GTI 25th Anniversary",
-      "periode": "2001-2002",
-      "text": "golf gti 25",
-      "yearMin": 2001,
-      "yearMax": 2002,
-      "pourquoi": "Édition limitée, dernière Golf GTI avant l'ère turbo généralisée grand public."
-    },
-    {
-      "name": "Alfa Romeo 156 2.5 V6 24V",
-      "periode": "1997-2005",
-      "text": "alfa 156 v6",
-      "yearMin": 1997,
-      "yearMax": 2005,
-      "pourquoi": "Design Giugiaro, V6 atmosphérique rare sur ce segment, cote encore raisonnable."
+      "name": "Renault Clio Williams",
+      "periode": "1993-1995",
+      "text": "clio williams",
+      "yearMin": 1993,
+      "yearMax": 1995,
+      "pourquoi": "Déjà collector et chère, mais référence du segment : utile pour situer les Clio RS suivies."
     }
   ]
 }

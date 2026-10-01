@@ -156,7 +156,9 @@ export async function removeVehicle(fields) {
   const registry = await readJson('models.json');
   const target = slugify(fields.target || fields.name || '');
   if (!target) return { ok: false, message: 'Indique le nom ou l’identifiant du véhicule à retirer.' };
-  const matches = registry.models.filter((m) => m.active !== false && (m.id === target || m.id.includes(target) || slugify(m.name).includes(target)));
+  const suivis = registry.models.filter((m) => m.active !== false);
+  const exact = suivis.filter((m) => m.id === target || slugify(m.name) === target);
+  const matches = exact.length ? exact : suivis.filter((m) => m.id.includes(target) || slugify(m.name).includes(target));
   if (matches.length !== 1) {
     const names = registry.models.filter((m) => m.active !== false).map((m) => `\`${m.id}\``).join(', ');
     return { ok: false, message: `${matches.length ? 'Plusieurs véhicules correspondent' : 'Aucun véhicule ne correspond'} à « ${fields.target} ». Identifiants suivis : ${names}.` };

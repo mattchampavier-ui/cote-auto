@@ -28,6 +28,10 @@ jobs:
           node-version: "20"
           cache: npm
       - run: npm ci --omit=dev
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl
 
       - name: Mise à jour de models.json
         id: edit
@@ -53,6 +57,7 @@ jobs:
           APIFY_INPUT: ${{ vars.APIFY_INPUT }}
         run: |
           node src/scrape.mjs --only "${{ steps.edit.outputs.id }}"
+          npm run excel
           .github/commit.sh "Premier relevé : ${{ steps.edit.outputs.id }}"
 
       - name: Réponse sur l'issue

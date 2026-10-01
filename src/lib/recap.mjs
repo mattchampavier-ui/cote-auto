@@ -228,7 +228,8 @@ export function renderRecap(r, analysis) {
   ${bargains}
   ${drops}
   ${problems}
-  <p style="margin:30px 0 6px;font-size:14px"><a href="${esc(r.dashboardUrl)}" style="color:${C.brass};font-weight:600">Ouvrir le dashboard</a> &nbsp;·&nbsp; <a href="${esc(r.addUrl)}" style="color:${C.brass}">Ajouter un véhicule</a></p>
+  <p style="margin:30px 0 6px;font-size:14px"><a href="${esc(r.dashboardUrl)}" style="color:${C.brass};font-weight:600">Ouvrir le dashboard</a> &nbsp;·&nbsp; <a href="${esc(r.dashboardUrl)}cote-auto.xlsx" style="color:${C.brass}">Base Excel</a> &nbsp;·&nbsp; <a href="${esc(r.addUrl)}" style="color:${C.brass}">Ajouter un véhicule</a></p>
+  <p style="font-size:12px;color:${C.dim};margin:0 0 6px">La base Excel complète (analyse du mois, historique mensuel, toutes les annonces) est jointe à ce mail.</p>
   <p style="font-size:11px;color:${C.dim};margin:0">Outil de suivi de marché, pas un conseil d'achat. Score = rareté, désirabilité, « dernier de », proximité du plancher, momentum de la cote, tension du marché.${r.kpis.costUsd ? ` Coût Apify du mois : ${r.kpis.costUsd} $.` : ''}</p>
 </td></tr></table>
 </td></tr></table>

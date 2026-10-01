@@ -11,9 +11,9 @@ const { parseIssueBody, addVehicle, removeVehicle } = await import('../src/vehic
 
 test('deux relevés : nouvelles annonces, ventes, baisses de prix, bonnes affaires', async () => {
   const r1 = await scrape({ fixture: path.join(FIXTURES, 'run1'), today: '2026-09-07' });
-  assert.equal(r1.ok.length, 8);
+  assert.equal(r1.ok.length, 16);
   const r2 = await scrape({ fixture: path.join(FIXTURES, 'run2'), today: '2026-09-28' });
-  assert.equal(r2.ok.length, 8);
+  assert.equal(r2.ok.length, 16);
 
   const data = box.read('data.json');
   const last = data.snapshots['peugeot-208-gti-30th'].at(-1);
@@ -23,7 +23,9 @@ test('deux relevés : nouvelles annonces, ventes, baisses de prix, bonnes affair
   assert.ok(last.soldMedianDays >= 10);
   assert.ok(last.rejected >= 3); // pièces, autre version, prix aberrant
   assert.ok(last.priceDrops.length >= 1);
-  assert.ok(last.bargains.length >= 1);
+  // l'annonce volontairement sous-cotée des fixtures ressort comme bonne affaire sur une bonne partie des modèles
+  const withDeals = Object.values(data.snapshots).filter((h) => h.at(-1).bargains?.length);
+  assert.ok(withDeals.length >= 5);
   assert.ok(Number.isFinite(last.refPrice));
   // le relevé manuel d'amorce est conservé
   assert.ok(data.snapshots['peugeot-208-gti-30th'].some((s) => s.source === 'manuel'));
@@ -112,11 +114,25 @@ test('ajout via formulaire GitHub, refus du doublon, retrait', async () => {
 
   assert.equal((await addVehicle(fields)).ok, false);
 
-  const removed = await removeVehicle({ target: 'bmw-z3' });
+  const removed = await removeVehicle({ target: 'bmw-z3-1-9i' });
   assert.equal(removed.ok, true);
   assert.equal(box.read('models.json').models.find((x) => x.id === 'bmw-z3-1-9i').active, false);
 
   const back = await addVehicle(fields);
   assert.equal(back.ok, true);
   assert.match(back.message, /réactivé/);
+});
+
+test('export pour la base Excel : une ligne par véhicule et par mois', async () => {
+  const { exportData } = await import('../src/export.mjs');
+  const out = await exportData({ today: '2026-10-01' });
+  const active = box.read('models.json').models.filter((m) => m.active !== false).length;
+  assert.equal(out.synthese.length, active);
+  const keys = out.mensuel.map((m) => `${m.vehicule}|${m.mois}`);
+  assert.equal(new Set(keys).size, keys.length);
+  // en septembre, le relevé du robot (28/09) prime sur l'amorce manuelle (08/09)
+  const saxo = out.mensuel.find((m) => m.vehicule === 'Citroën Saxo VTS 16V' && m.mois === '2026-09');
+  assert.notEqual(saxo.mediane, 6600);
+  assert.ok(out.annonces.length > 50);
+  assert.ok(out.annonces.some((a) => a.statut === 'Partie'));
 });
