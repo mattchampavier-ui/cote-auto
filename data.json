@@ -81,6 +81,31 @@
         "empty": [],
         "failed": [],
         "costUsd": 0.062
+      },
+      {
+        "date": "2026-10-01",
+        "ok": [
+          "peugeot-208-gti-30th",
+          "porsche-911-997",
+          "porsche-boxster-986",
+          "porsche-boxster-987",
+          "renault-twingo-1",
+          "peugeot-206-rc",
+          "renault-clio-2-rs",
+          "citroen-saxo-vts",
+          "peugeot-306-s16",
+          "bmw-z3-19-20",
+          "alfa-156-v6",
+          "mazda-mx5-na",
+          "peugeot-205-gti",
+          "honda-s2000",
+          "renault-megane-r26"
+        ],
+        "empty": [
+          "vw-golf-4-gti-25"
+        ],
+        "failed": [],
+        "costUsd": 0.892
       }
     ]
   },
@@ -94,6 +119,31 @@
         "median": 15990,
         "avgKm": 108000,
         "source": "manuel"
+      },
+      {
+        "date": "2026-10-01",
+        "source": "apify",
+        "count": 10,
+        "min": 10500,
+        "p25": 13368,
+        "median": 14940,
+        "p75": 17100,
+        "max": 23490,
+        "avgKm": 110000,
+        "medianKm": 110000,
+        "refKm": 100000,
+        "refPrice": 16280,
+        "eurPer10kKm": 780,
+        "newListings": 10,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 35,
+        "priceDrops": [],
+        "bargains": [],
+        "proShare": 0.4,
+        "rejected": 0,
+        "rejectedReasons": {},
+        "truncated": false
       }
     ],
     "porsche-911-997": [
@@ -105,6 +155,47 @@
         "median": 51000,
         "avgKm": 100000,
         "source": "manuel"
+      },
+      {
+        "date": "2026-10-01",
+        "source": "apify",
+        "count": 36,
+        "min": 39990,
+        "p25": 49988,
+        "median": 51395,
+        "p75": 56240,
+        "max": 69599,
+        "avgKm": 115000,
+        "medianKm": 110000,
+        "refKm": 100000,
+        "refPrice": 55200,
+        "eurPer10kKm": 1320,
+        "newListings": 36,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 21,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3231127202",
+            "title": "PORSCHE 911 Type 997 3.8 355ch Carrera S TipTronic S - 2005 - 182 000 km - Endoscope Cylindre réalisé - Suivi complet",
+            "url": "https://www.leboncoin.fr/ad/voitures/3231127202",
+            "price": 39990,
+            "km": 182000,
+            "year": 2005,
+            "city": "Chartres",
+            "expected": 48270,
+            "discountPct": 17
+          }
+        ],
+        "proShare": 0.83,
+        "rejected": 4,
+        "rejectedReasons": {
+          "mot exclu « gt3 »": 1,
+          "mot obligatoire absent": 1,
+          "prix hors marché": 2
+        },
+        "truncated": true
       }
     ],
     "porsche-boxster-986": [
@@ -116,6 +207,87 @@
         "median": 22425,
         "avgKm": 110000,
         "source": "manuel"
+      },
+      {
+        "date": "2026-10-01",
+        "source": "apify",
+        "count": 40,
+        "min": 5000,
+        "p25": 13998,
+        "median": 17650,
+        "p75": 19900,
+        "max": 26000,
+        "avgKm": 149000,
+        "medianKm": 136000,
+        "refKm": 110000,
+        "refPrice": 19280,
+        "eurPer10kKm": 620,
+        "newListings": 40,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 17,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3276464340",
+            "title": "Porsche Boxster 986 2.7",
+            "url": "https://www.leboncoin.fr/ad/voitures/3276464340",
+            "price": 5000,
+            "km": 169000,
+            "year": 2003,
+            "city": "Alfortville",
+            "expected": 15640,
+            "discountPct": 68
+          },
+          {
+            "id": "3266137442",
+            "title": "Porsche BOXSTER (986) 3.2 S 252 CH",
+            "url": "https://www.leboncoin.fr/ad/voitures/3266137442",
+            "price": 6990,
+            "km": 118900,
+            "year": 1999,
+            "city": "Perreux",
+            "expected": 18730,
+            "discountPct": 63
+          },
+          {
+            "id": "3277303432",
+            "title": "Porsche Boxster 986 avec 77053 km",
+            "url": "https://www.leboncoin.fr/ad/voitures/3277303432",
+            "price": 13650,
+            "km": 77053,
+            "year": 1998,
+            "city": "La Valette-du-Var",
+            "expected": 20060,
+            "discountPct": 32
+          },
+          {
+            "id": "3171445222",
+            "title": "Porsche Boxster 986 (Vente ou Echange)",
+            "url": "https://www.leboncoin.fr/ad/voitures/3171445222",
+            "price": 9700,
+            "km": 225000,
+            "year": 1999,
+            "city": "Hagetmau",
+            "expected": 12540,
+            "discountPct": 23
+          },
+          {
+            "id": "3277850572",
+            "title": "Porsche Boxster 986",
+            "url": "https://www.leboncoin.fr/ad/voitures/3277850572",
+            "price": 14000,
+            "km": 131500,
+            "year": 1999,
+            "city": "Montpellier",
+            "expected": 17950,
+            "discountPct": 22
+          }
+        ],
+        "proShare": 0.35,
+        "rejected": 0,
+        "rejectedReasons": {},
+        "truncated": true
       }
     ],
     "porsche-boxster-987": [
@@ -127,6 +299,89 @@
         "median": 43990,
         "avgKm": 65000,
         "source": "manuel"
+      },
+      {
+        "date": "2026-10-01",
+        "source": "apify",
+        "count": 38,
+        "min": 18950,
+        "p25": 27048,
+        "median": 29245,
+        "p75": 35373,
+        "max": 46990,
+        "avgKm": 104000,
+        "medianKm": 96000,
+        "refKm": 80000,
+        "refPrice": 33340,
+        "eurPer10kKm": 870,
+        "newListings": 38,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 16,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3258419971",
+            "title": "Porsche boxster 987",
+            "url": "https://www.leboncoin.fr/ad/voitures/3258419971",
+            "price": 20000,
+            "km": 116000,
+            "year": 2005,
+            "city": "Sèvremoine",
+            "expected": 30200,
+            "discountPct": 34
+          },
+          {
+            "id": "3271574505",
+            "title": "Porsche Boxster 987 2.7L BVA",
+            "url": "https://www.leboncoin.fr/ad/voitures/3271574505",
+            "price": 23500,
+            "km": 69900,
+            "year": 2006,
+            "city": "Vigneux-de-Bretagne",
+            "expected": 34220,
+            "discountPct": 31
+          },
+          {
+            "id": "3263120554",
+            "title": "Porsche Boxster 987 S",
+            "url": "https://www.leboncoin.fr/ad/voitures/3263120554",
+            "price": 18950,
+            "km": 240145,
+            "year": 2005,
+            "city": "Monlezun",
+            "expected": 26360,
+            "discountPct": 28
+          },
+          {
+            "id": "3266721735",
+            "title": "Porsche Boxster 987.1 2.7L 240CV",
+            "url": "https://www.leboncoin.fr/ad/voitures/3266721735",
+            "price": 28000,
+            "km": 35000,
+            "year": 2005,
+            "city": "Chaumes-en-Retz",
+            "expected": 35310,
+            "discountPct": 21
+          },
+          {
+            "id": "3273797460",
+            "title": "Porsche boxster 987",
+            "url": "https://www.leboncoin.fr/ad/voitures/3273797460",
+            "price": 25900,
+            "km": 100900,
+            "year": 2006,
+            "city": "Bourg-la-Reine",
+            "expected": 31520,
+            "discountPct": 18
+          }
+        ],
+        "proShare": 0.63,
+        "rejected": 2,
+        "rejectedReasons": {
+          "mot exclu « spyder »": 2
+        },
+        "truncated": true
       }
     ],
     "renault-twingo-1": [
@@ -138,6 +393,91 @@
         "median": 5490,
         "avgKm": 150000,
         "source": "manuel"
+      },
+      {
+        "date": "2026-10-01",
+        "source": "apify",
+        "count": 27,
+        "min": 699,
+        "p25": 2095,
+        "median": 2990,
+        "p75": 3550,
+        "max": 5990,
+        "avgKm": 168000,
+        "medianKm": 165000,
+        "refKm": 150000,
+        "refPrice": 3380,
+        "eurPer10kKm": 170,
+        "newListings": 27,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 18,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3246605855",
+            "title": "Twingo I Matic toit ouvrant",
+            "url": "https://www.leboncoin.fr/ad/voitures/3246605855",
+            "price": 699,
+            "km": 194000,
+            "year": 1997,
+            "city": "Cahors",
+            "expected": 2610,
+            "discountPct": 73
+          },
+          {
+            "id": "3265418338",
+            "title": "Twingo 1 toit ouvrant",
+            "url": "https://www.leboncoin.fr/ad/voitures/3265418338",
+            "price": 1200,
+            "km": 202000,
+            "year": 1998,
+            "city": "Crest",
+            "expected": 2470,
+            "discountPct": 51
+          },
+          {
+            "id": "3271251775",
+            "title": "Twingo 2003 toit ouvrant",
+            "url": "https://www.leboncoin.fr/ad/voitures/3271251775",
+            "price": 1750,
+            "km": 150000,
+            "year": 2003,
+            "city": "Réguisheim",
+            "expected": 3380,
+            "discountPct": 48
+          },
+          {
+            "id": "3265072540",
+            "title": "Renault Twingo 1.2 16V 75 ch Initiale – Toit ouvrant",
+            "url": "https://www.leboncoin.fr/ad/voitures/3265072540",
+            "price": 2200,
+            "km": 175395,
+            "year": 2003,
+            "city": "Suresnes",
+            "expected": 2930,
+            "discountPct": 25
+          },
+          {
+            "id": "3276478695",
+            "title": "Twingo phase 2 1.2I 16V 75vh toit ouvrant",
+            "url": "https://www.leboncoin.fr/ad/voitures/3276478695",
+            "price": 1990,
+            "km": 193000,
+            "year": 2001,
+            "city": "Grenoble",
+            "expected": 2630,
+            "discountPct": 24
+          }
+        ],
+        "proShare": 0.22,
+        "rejected": 13,
+        "rejectedReasons": {
+          "mot exclu « twingo 2 »": 2,
+          "variante non reconnue": 10,
+          "prix hors marché": 1
+        },
+        "truncated": true
       }
     ],
     "peugeot-206-rc": [
@@ -153,18 +493,18 @@
       {
         "date": "2026-10-01",
         "source": "apify",
-        "count": 40,
-        "min": 5300,
-        "p25": 7000,
-        "median": 9650,
-        "p75": 12125,
+        "count": 39,
+        "min": 5400,
+        "p25": 7500,
+        "median": 9990,
+        "p75": 12600,
         "max": 18500,
-        "avgKm": 174000,
-        "medianKm": 162000,
+        "avgKm": 171000,
+        "medianKm": 159000,
         "refKm": 150000,
-        "refPrice": 10940,
-        "eurPer10kKm": 390,
-        "newListings": 0,
+        "refPrice": 11240,
+        "eurPer10kKm": 410,
+        "newListings": 2,
         "sold": 0,
         "soldMedianDays": null,
         "activeMedianAge": 0,
@@ -178,30 +518,8 @@
             "km": 159000,
             "year": 2003,
             "city": "Tulle",
-            "expected": 10600,
-            "discountPct": 44
-          },
-          {
-            "id": "3276929411",
-            "title": "206 rc line 1.6 110 cv",
-            "url": "https://www.leboncoin.fr/ad/voitures/3276929411",
-            "price": 6800,
-            "km": 124000,
-            "year": 2006,
-            "city": "Cernay",
-            "expected": 11950,
-            "discountPct": 43
-          },
-          {
-            "id": "3277073683",
-            "title": "Peugeot 206 RC 2.0 177ch - Bleu Récif",
-            "url": "https://www.leboncoin.fr/ad/voitures/3277073683",
-            "price": 5300,
-            "km": 234000,
-            "year": 2003,
-            "city": "Belley",
-            "expected": 7680,
-            "discountPct": 31
+            "expected": 10880,
+            "discountPct": 46
           },
           {
             "id": "3251217335",
@@ -211,8 +529,8 @@
             "km": 215500,
             "year": 2005,
             "city": "Coulonges-sur-Sarthe",
-            "expected": 8400,
-            "discountPct": 26
+            "expected": 8570,
+            "discountPct": 28
           },
           {
             "id": "3278866640",
@@ -222,12 +540,37 @@
             "km": 244000,
             "year": 2003,
             "city": "La Roche-sur-Foron",
-            "expected": 7290,
-            "discountPct": 26
+            "expected": 7410,
+            "discountPct": 27
+          },
+          {
+            "id": "3256639318",
+            "title": "206 rc",
+            "url": "https://www.leboncoin.fr/ad/voitures/3256639318",
+            "price": 7000,
+            "km": 215000,
+            "year": 2003,
+            "city": "Sanary-sur-Mer",
+            "expected": 8600,
+            "discountPct": 19
+          },
+          {
+            "id": "3193819824",
+            "title": "Peugeot 206 RC",
+            "url": "https://www.leboncoin.fr/ad/voitures/3193819824",
+            "price": 10500,
+            "km": 114000,
+            "year": 2003,
+            "city": "Tagnon",
+            "expected": 12710,
+            "discountPct": 17
           }
         ],
-        "rejected": 0,
-        "rejectedReasons": {},
+        "proShare": 0.1,
+        "rejected": 1,
+        "rejectedReasons": {
+          "mot exclu « rc line »": 1
+        },
         "truncated": true
       }
     ],
@@ -240,6 +583,90 @@
         "median": 8899.5,
         "avgKm": 168000,
         "source": "manuel"
+      },
+      {
+        "date": "2026-10-01",
+        "source": "apify",
+        "count": 38,
+        "min": 5500,
+        "p25": 8600,
+        "median": 10500,
+        "p75": 12865,
+        "max": 19500,
+        "avgKm": 162000,
+        "medianKm": 165000,
+        "refKm": 160000,
+        "refPrice": 11000,
+        "eurPer10kKm": 390,
+        "newListings": 38,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 21,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3252273657",
+            "title": "Clio rs 182 rhd",
+            "url": "https://www.leboncoin.fr/ad/voitures/3252273657",
+            "price": 5500,
+            "km": 182000,
+            "year": 2004,
+            "city": "Arras",
+            "expected": 10150,
+            "discountPct": 46
+          },
+          {
+            "id": "3264837795",
+            "title": "Clio rs",
+            "url": "https://www.leboncoin.fr/ad/voitures/3264837795",
+            "price": 7300,
+            "km": 136000,
+            "year": 2001,
+            "city": "Saint-Laurent-du-Var",
+            "expected": 11920,
+            "discountPct": 39
+          },
+          {
+            "id": "3258667592",
+            "title": "Clio 2 rs phase 2, 2L 16v 172chv",
+            "url": "https://www.leboncoin.fr/ad/voitures/3258667592",
+            "price": 6000,
+            "km": 225000,
+            "year": 2001,
+            "city": "Grandvillers-aux-Bois",
+            "expected": 8680,
+            "discountPct": 31
+          },
+          {
+            "id": "3262040554",
+            "title": "Clio rs",
+            "url": "https://www.leboncoin.fr/ad/voitures/3262040554",
+            "price": 8900,
+            "km": 133000,
+            "year": 2006,
+            "city": "Villages du Lac de Paladru",
+            "expected": 12040,
+            "discountPct": 26
+          },
+          {
+            "id": "3262391547",
+            "title": "Clio RS",
+            "url": "https://www.leboncoin.fr/ad/voitures/3262391547",
+            "price": 6500,
+            "km": 260000,
+            "year": 2000,
+            "city": "Montauban",
+            "expected": 8680,
+            "discountPct": 25
+          }
+        ],
+        "proShare": 0.13,
+        "rejected": 2,
+        "rejectedReasons": {
+          "variante non reconnue": 1,
+          "mot exclu « clio 3 »": 1
+        },
+        "truncated": true
       }
     ],
     "citroen-saxo-vts": [
@@ -251,6 +678,638 @@
         "median": 6600,
         "avgKm": 153683,
         "source": "manuel"
+      },
+      {
+        "date": "2026-10-01",
+        "source": "apify",
+        "count": 40,
+        "min": 1600,
+        "p25": 4875,
+        "median": 6350,
+        "p75": 8350,
+        "max": 12980,
+        "avgKm": 187000,
+        "medianKm": 189000,
+        "refKm": 150000,
+        "refPrice": 7750,
+        "eurPer10kKm": 280,
+        "newListings": 40,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 17,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3269890983",
+            "title": "Citroën saxo vts",
+            "url": "https://www.leboncoin.fr/ad/voitures/3269890983",
+            "price": 2500,
+            "km": 150000,
+            "year": 2000,
+            "city": "Naintré",
+            "expected": 7750,
+            "discountPct": 68
+          },
+          {
+            "id": "3271080732",
+            "title": "Saxo vts 1.6 8s",
+            "url": "https://www.leboncoin.fr/ad/voitures/3271080732",
+            "price": 1600,
+            "km": 281740,
+            "year": 2003,
+            "city": "Le Robert",
+            "expected": 4860,
+            "discountPct": 67
+          },
+          {
+            "id": "3278304303",
+            "title": "Vend saxo vts 1l4 essence",
+            "url": "https://www.leboncoin.fr/ad/voitures/3278304303",
+            "price": 2000,
+            "km": 254000,
+            "year": 2002,
+            "city": "La Plaine-des-Palmistes",
+            "expected": 4880,
+            "discountPct": 59
+          },
+          {
+            "id": "3253798936",
+            "title": "Saxo vts",
+            "url": "https://www.leboncoin.fr/ad/voitures/3253798936",
+            "price": 3000,
+            "km": 170000,
+            "year": 1999,
+            "city": "Delme",
+            "expected": 7200,
+            "discountPct": 58
+          },
+          {
+            "id": "3249782225",
+            "title": "Saxo vts 1l6",
+            "url": "https://www.leboncoin.fr/ad/voitures/3249782225",
+            "price": 3000,
+            "km": 213500,
+            "year": 1999,
+            "city": "Forges-les-Eaux",
+            "expected": 6000,
+            "discountPct": 50
+          }
+        ],
+        "proShare": 0.03,
+        "rejected": 0,
+        "rejectedReasons": {},
+        "truncated": true
+      }
+    ],
+    "peugeot-306-s16": [
+      {
+        "date": "2026-10-01",
+        "source": "apify",
+        "count": 25,
+        "min": 1000,
+        "p25": 6800,
+        "median": 8200,
+        "p75": 12800,
+        "max": 26800,
+        "avgKm": 183000,
+        "medianKm": 185000,
+        "refKm": 180000.00000000003,
+        "refPrice": 9790,
+        "eurPer10kKm": 130,
+        "newListings": 25,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 16,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3267049380",
+            "title": "306 1.6 90cv",
+            "url": "https://www.leboncoin.fr/ad/voitures/3267049380",
+            "price": 1000,
+            "km": 145000,
+            "year": 1997,
+            "city": "Dijon",
+            "expected": 10240,
+            "discountPct": 90
+          },
+          {
+            "id": "3267140247",
+            "title": "Peugeot 306 S16 Bleu",
+            "url": "https://www.leboncoin.fr/ad/voitures/3267140247",
+            "price": 1000,
+            "km": 184614,
+            "year": 2000,
+            "city": "Bourges",
+            "expected": 9730,
+            "discountPct": 90
+          },
+          {
+            "id": "3267746572",
+            "title": "306 xsi swap TCT",
+            "url": "https://www.leboncoin.fr/ad/voitures/3267746572",
+            "price": 3500,
+            "km": 240000,
+            "year": 1996,
+            "city": "Les Angles",
+            "expected": 9030,
+            "discountPct": 61
+          },
+          {
+            "id": "3280107297",
+            "title": "306 s16",
+            "url": "https://www.leboncoin.fr/ad/voitures/3280107297",
+            "price": 4000,
+            "km": 215000,
+            "year": 2000,
+            "city": "Le Pellerin",
+            "expected": 9350,
+            "discountPct": 57
+          },
+          {
+            "id": "3273929462",
+            "title": "306",
+            "url": "https://www.leboncoin.fr/ad/voitures/3273929462",
+            "price": 5200,
+            "km": 179800,
+            "year": 1997,
+            "city": "Yenne",
+            "expected": 9800,
+            "discountPct": 47
+          }
+        ],
+        "proShare": 0,
+        "rejected": 5,
+        "rejectedReasons": {
+          "mot exclu « hdi »": 3,
+          "mot obligatoire absent": 1,
+          "prix hors marché": 1
+        },
+        "truncated": false
+      }
+    ],
+    "bmw-z3-19-20": [
+      {
+        "date": "2026-10-01",
+        "source": "apify",
+        "count": 14,
+        "min": 7490,
+        "p25": 9990,
+        "median": 11240,
+        "p75": 12740,
+        "max": 17900,
+        "avgKm": 145000,
+        "medianKm": 125000,
+        "refKm": 130000.00000000001,
+        "refPrice": 12020,
+        "eurPer10kKm": 220,
+        "newListings": 14,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 36,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3258548235",
+            "title": "Bmw Z3 2.0 150 ch 6 cylindres cabriolet",
+            "url": "https://www.leboncoin.fr/ad/voitures/3258548235",
+            "price": 7490,
+            "km": 231500,
+            "year": 2000,
+            "city": "Saint-Étienne",
+            "expected": 10000,
+            "discountPct": 25
+          },
+          {
+            "id": "3249519594",
+            "title": "Bmw z3 1.9 i",
+            "url": "https://www.leboncoin.fr/ad/voitures/3249519594",
+            "price": 9500,
+            "km": 128482,
+            "year": 1999,
+            "city": "Andilly",
+            "expected": 12050,
+            "discountPct": 21
+          },
+          {
+            "id": "3171562700",
+            "title": "BMW Z3 1.9i 140ch Pack M Sport tbé Cuir Clim",
+            "url": "https://www.leboncoin.fr/ad/voitures/3171562700",
+            "price": 8990,
+            "km": 186000,
+            "year": 1998,
+            "city": "Jury",
+            "expected": 10780,
+            "discountPct": 17
+          }
+        ],
+        "proShare": 0.86,
+        "rejected": 26,
+        "rejectedReasons": {
+          "mot exclu « 3.0 »": 1,
+          "mot exclu « m coupe »": 1,
+          "variante non reconnue": 20,
+          "mot exclu « m roadster »": 1,
+          "mot exclu « 2.8 »": 2,
+          "mot exclu « coupe »": 1
+        },
+        "truncated": true
+      }
+    ],
+    "alfa-156-v6": [
+      {
+        "date": "2026-10-01",
+        "source": "apify",
+        "count": 8,
+        "min": 3200,
+        "p25": 4293,
+        "median": 5695,
+        "p75": 7125,
+        "max": 8800,
+        "avgKm": 201000,
+        "medianKm": 198000,
+        "refKm": 200000.00000000003,
+        "refPrice": 5700,
+        "eurPer10kKm": null,
+        "newListings": 8,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 33,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3261414202",
+            "title": "Alfa 156 2.5 v6 GPL",
+            "url": "https://www.leboncoin.fr/ad/voitures/3261414202",
+            "price": 3200,
+            "km": 202000,
+            "year": 1999,
+            "city": "Romans",
+            "expected": 5700,
+            "discountPct": 44
+          },
+          {
+            "id": "3275564839",
+            "title": "Alfa Romeo 156 v6 SW 2.5",
+            "url": "https://www.leboncoin.fr/ad/voitures/3275564839",
+            "price": 4000,
+            "km": 175000,
+            "year": 2004,
+            "city": "Mortcerf",
+            "expected": 5700,
+            "discountPct": 30
+          },
+          {
+            "id": "3262191550",
+            "title": "Alfa romeo 166 v6 busso 2003",
+            "url": "https://www.leboncoin.fr/ad/voitures/3262191550",
+            "price": 4390,
+            "km": 207800,
+            "year": 2003,
+            "city": "Lapalisse",
+            "expected": 5700,
+            "discountPct": 23
+          }
+        ],
+        "proShare": 0.25,
+        "rejected": 6,
+        "rejectedReasons": {
+          "mot exclu « gta »": 6
+        },
+        "truncated": false
+      }
+    ],
+    "mazda-mx5-na": [
+      {
+        "date": "2026-10-01",
+        "source": "apify",
+        "count": 37,
+        "min": 3990,
+        "p25": 9500,
+        "median": 11980,
+        "p75": 13500,
+        "max": 17990,
+        "avgKm": 161000,
+        "medianKm": 163000,
+        "refKm": 160000,
+        "refPrice": 11580,
+        "eurPer10kKm": 160,
+        "newListings": 37,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 16,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3270050795",
+            "title": "Mazda MX5 décapotable vintage CT",
+            "url": "https://www.leboncoin.fr/ad/voitures/3270050795",
+            "price": 3990,
+            "km": 198000,
+            "year": 1998,
+            "city": "Pontarlier",
+            "expected": 10970,
+            "discountPct": 64
+          },
+          {
+            "id": "3268726676",
+            "title": "Mazda MX5 NA",
+            "url": "https://www.leboncoin.fr/ad/voitures/3268726676",
+            "price": 6000,
+            "km": 124100,
+            "year": 1991,
+            "city": "Binic-Étables-sur-Mer",
+            "expected": 12150,
+            "discountPct": 51
+          },
+          {
+            "id": "3270232311",
+            "title": "Mazda mx5, mx-5,",
+            "url": "https://www.leboncoin.fr/ad/voitures/3270232311",
+            "price": 6200,
+            "km": 182000,
+            "year": 1998,
+            "city": "Saint-Alban-Leysse",
+            "expected": 11230,
+            "discountPct": 45
+          },
+          {
+            "id": "3234020888",
+            "title": "Mazda mx5 na",
+            "url": "https://www.leboncoin.fr/ad/voitures/3234020888",
+            "price": 6500,
+            "km": 215000,
+            "year": 1995,
+            "city": "Villeneuve-d'Ascq",
+            "expected": 10700,
+            "discountPct": 39
+          },
+          {
+            "id": "3270203905",
+            "title": "Mazda Mx5 NA",
+            "url": "https://www.leboncoin.fr/ad/voitures/3270203905",
+            "price": 7000,
+            "km": 175000,
+            "year": 1997,
+            "city": "Faverges-Seythenex",
+            "expected": 11340,
+            "discountPct": 38
+          }
+        ],
+        "proShare": 0.14,
+        "rejected": 3,
+        "rejectedReasons": {
+          "mot exclu « nb »": 2,
+          "prix aberrant": 1
+        },
+        "truncated": true
+      }
+    ],
+    "peugeot-205-gti": [
+      {
+        "date": "2026-10-01",
+        "source": "apify",
+        "count": 38,
+        "min": 5500,
+        "p25": 14925,
+        "median": 18000,
+        "p75": 20675,
+        "max": 31000,
+        "avgKm": 177000,
+        "medianKm": 185000,
+        "refKm": 190000.00000000003,
+        "refPrice": 17870,
+        "eurPer10kKm": 10,
+        "newListings": 38,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 11,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3274510816",
+            "title": "205 gti 1.6 105",
+            "url": "https://www.leboncoin.fr/ad/voitures/3274510816",
+            "price": 5500,
+            "km": 136000,
+            "year": 1985,
+            "city": "Saint-Flour",
+            "expected": 17930,
+            "discountPct": 69
+          },
+          {
+            "id": "3274885691",
+            "title": "205 gti",
+            "url": "https://www.leboncoin.fr/ad/voitures/3274885691",
+            "price": 6000,
+            "km": 170000,
+            "year": 1985,
+            "city": "Rignac",
+            "expected": 17890,
+            "discountPct": 66
+          },
+          {
+            "id": "3267921242",
+            "title": "205 gti",
+            "url": "https://www.leboncoin.fr/ad/voitures/3267921242",
+            "price": 9999,
+            "km": 105650,
+            "year": 1993,
+            "city": "Lambres-lez-Douai",
+            "expected": 17960,
+            "discountPct": 44
+          },
+          {
+            "id": "3262353989",
+            "title": "205 gti",
+            "url": "https://www.leboncoin.fr/ad/voitures/3262353989",
+            "price": 10000,
+            "km": 210000,
+            "year": 1991,
+            "city": "Anet",
+            "expected": 17840,
+            "discountPct": 44
+          },
+          {
+            "id": "3236436226",
+            "title": "205 gti 1l6",
+            "url": "https://www.leboncoin.fr/ad/voitures/3236436226",
+            "price": 11500,
+            "km": 180000,
+            "year": 1986,
+            "city": "La Roche-sur-Foron",
+            "expected": 17880,
+            "discountPct": 36
+          }
+        ],
+        "proShare": 0.11,
+        "rejected": 2,
+        "rejectedReasons": {
+          "prix hors marché": 2
+        },
+        "truncated": true
+      }
+    ],
+    "honda-s2000": [
+      {
+        "date": "2026-10-01",
+        "source": "apify",
+        "count": 39,
+        "min": 4599,
+        "p25": 14900,
+        "median": 21000,
+        "p75": 27500,
+        "max": 49990,
+        "avgKm": 138000,
+        "medianKm": 139000,
+        "refKm": 140000,
+        "refPrice": 22260,
+        "eurPer10kKm": 1420,
+        "newListings": 39,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 35,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3234430383",
+            "title": "MG MGF/MGTF TF 115 CV fiabilisée RHD + HARDTOP",
+            "url": "https://www.leboncoin.fr/ad/voitures/3234430383",
+            "price": 4599,
+            "km": 147999,
+            "year": 2005,
+            "city": "Salouël",
+            "expected": 21120,
+            "discountPct": 78
+          },
+          {
+            "id": "3270236878",
+            "title": "TOYOTA MR2 1.8 140 VVT-i 2005 - 110 430 km - Réfection complète peinture - sellerie - capote - pneus arrière neufs -",
+            "url": "https://www.leboncoin.fr/ad/voitures/3270236878",
+            "price": 11990,
+            "km": 110430,
+            "year": 2005,
+            "city": "Reims",
+            "expected": 26460,
+            "discountPct": 55
+          },
+          {
+            "id": "3237454171",
+            "title": "Mazda Mx5 ROADSTER 1.8 MZR 125 ELEGANCE",
+            "url": "https://www.leboncoin.fr/ad/voitures/3237454171",
+            "price": 12990,
+            "km": 101000,
+            "year": 2006,
+            "city": "Creuzier-le-Vieux",
+            "expected": 27800,
+            "discountPct": 53
+          },
+          {
+            "id": "3183271891",
+            "title": "Audi tt 1.8 180 coupe",
+            "url": "https://www.leboncoin.fr/ad/voitures/3183271891",
+            "price": 7990,
+            "km": 220000,
+            "year": 1999,
+            "city": "Sausheim",
+            "expected": 14360,
+            "discountPct": 44
+          },
+          {
+            "id": "3254395601",
+            "title": "Honda S2000",
+            "url": "https://www.leboncoin.fr/ad/voitures/3254395601",
+            "price": 13000,
+            "km": 140000,
+            "year": 2006,
+            "city": "Lens",
+            "expected": 22260,
+            "discountPct": 42
+          }
+        ],
+        "proShare": 0.38,
+        "rejected": 1,
+        "rejectedReasons": {
+          "prix hors marché": 1
+        },
+        "truncated": true
+      }
+    ],
+    "renault-megane-r26": [
+      {
+        "date": "2026-10-01",
+        "source": "apify",
+        "count": 18,
+        "min": 14900,
+        "p25": 20050,
+        "median": 23485,
+        "p75": 24990,
+        "max": 31490,
+        "avgKm": 100000,
+        "medianKm": 94000,
+        "refKm": 100000.00000000001,
+        "refPrice": 22980,
+        "eurPer10kKm": 580,
+        "newListings": 18,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 34,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3152592919",
+            "title": "Renault megane rs 2.0t 16v 230 f1 team r26 numerotee 41mkm",
+            "url": "https://www.leboncoin.fr/ad/voitures/3152592919",
+            "price": 19900,
+            "km": 41461,
+            "year": 2007,
+            "city": "Sorgues",
+            "expected": 26390,
+            "discountPct": 25
+          },
+          {
+            "id": "3261154881",
+            "title": "Renault MEGANE II (2) 2.0 T RS F1 TEAM R26 / USAGE CIRCUIT, PISTE, TRACKDAY, TRACKTOOL",
+            "url": "https://www.leboncoin.fr/ad/voitures/3261154881",
+            "price": 14900,
+            "km": 179700,
+            "year": 2007,
+            "city": "Les Sables-d'Olonne",
+            "expected": 19680,
+            "discountPct": 24
+          },
+          {
+            "id": "3245939851",
+            "title": "Megane RS R26",
+            "url": "https://www.leboncoin.fr/ad/voitures/3245939851",
+            "price": 19000,
+            "km": 88000,
+            "year": 2008,
+            "city": "Grandchamps-des-Fontaines",
+            "expected": 23680,
+            "discountPct": 20
+          },
+          {
+            "id": "3243871328",
+            "title": "Mégane 2 rs f1 Team r26",
+            "url": "https://www.leboncoin.fr/ad/voitures/3243871328",
+            "price": 22000,
+            "km": 48000,
+            "year": 2007,
+            "city": "Saint-Pierre",
+            "expected": 26010,
+            "discountPct": 15
+          }
+        ],
+        "proShare": 0.61,
+        "rejected": 7,
+        "rejectedReasons": {
+          "variante non reconnue": 3,
+          "mot exclu « megane 3 »": 1,
+          "mot exclu « dci »": 1,
+          "prix hors marché": 2
+        },
+        "truncated": false
       }
     ]
   },

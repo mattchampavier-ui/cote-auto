@@ -1,0 +1,281 @@
+{
+  "actor": "memo23/leboncoin-scraper",
+  "date": "2026-10-01",
+  "item": {
+    "rowType": "ad",
+    "adId": "3210880878",
+    "title": "PEUGEOT 208 GTI 30th 1.6 THP 208CV FULL OPTION",
+    "description": "",
+    "price": 12000,
+    "priceCents": 1200000,
+    "currency": "EUR",
+    "url": "https://www.leboncoin.fr/ad/voitures/3210880878",
+    "categoryId": "2",
+    "categoryName": "Voitures",
+    "adType": "offer",
+    "status": "active",
+    "firstPublishedAt": "2026-08-05 00:10:58",
+    "indexedAt": "2026-10-01 14:35:20",
+    "expiresAt": "2026-10-04 00:10:58",
+    "location": {
+      "city": "Freyming-Merlebach",
+      "zipcode": "57800",
+      "district": null,
+      "department": "Moselle",
+      "region": "Lorraine",
+      "country": "FR",
+      "lat": 49.14827,
+      "lng": 6.8157,
+      "source": "address",
+      "isShape": false,
+      "cityLabel": "Freyming-Merlebach 57800"
+    },
+    "images": {
+      "count": 10,
+      "thumb": "https://img.leboncoin.fr/api/v1/lbcpb1/images/6c/1f/36/6c1f36a2e08523bddde654fcd69c3abd2821da47.jpg?rule=ad-thumb",
+      "urls": [
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/6c/1f/36/6c1f36a2e08523bddde654fcd69c3abd2821da47.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/7a/9c/a1/7a9ca1d31a524d92eb940d2a94014796fb493626.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/29/fd/75/29fd75e5ce46bfd07881b1f9f94573b3c59fbfe7.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/a5/12/61/a512616f2a60f0b64dedc245f4dfffe852dd8335.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/59/0e/b8/590eb834a215256b0bc97c5798a92c591fd5aecb.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/c4/c9/56/c4c95680b20456f5626c65a13139f7b3bd839756.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/33/a9/54/33a9543af5a054d71c1ccee44493cf06261b8230.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/18/26/6f/18266fb22853c864eb68447e0c4aa0cc947f1f35.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/10/1f/03/101f033aea6b3fd50e1a72b57fbb891e3cb73e61.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/cc/c7/99/ccc7994345dfaf573ca0b7795174faa95e4e2b1e.jpg?rule=ad-image"
+      ]
+    },
+    "attributes": {
+      "activity_sector": "1",
+      "rating_score": "1",
+      "rating_count": "2",
+      "brand": "Peugeot",
+      "model": "208",
+      "u_car_brand": "PEUGEOT",
+      "u_car_model": "208",
+      "regdate": "2015",
+      "mileage": "168800 km",
+      "fuel": "Essence",
+      "gearbox": "Manuelle",
+      "doors": "3",
+      "seats": "5",
+      "u_car_finition": "GTi",
+      "u_car_version": "1.6 THP 208ch GTi S&S 3p",
+      "issuance_date": "10/2015",
+      "vehicle_type": "Citadine",
+      "vehicle_history": "Véhicule importé",
+      "vehicle_maintenance": "Carnet d'entretien disponible, Véhicule non fumeur",
+      "horsepower": "11 Cv",
+      "horse_power_din": "208 Ch",
+      "vehicle_vsp": "Avec permis",
+      "car_contract": "Non",
+      "recent_used_vehicle": "false",
+      "has_visibility_option": "true",
+      "store_logo": "https://img.leboncoin.fr/api/v1/lbcpb1/images/1e/25/a4/1e25a489-f292-40b5-8c43-ced0dc8bb4e9?rule=bo-thumb",
+      "store_name": "GARAGE SPORT AUTO",
+      "online_store_id": "85447",
+      "is_import": "false",
+      "old_price": "12900",
+      "car_price_min": "7650",
+      "car_price_max": "8450",
+      "car_price_positioning": "Estimation indisponible",
+      "argus_object_id": "1431053",
+      "spare_parts_availability": "Non renseignée"
+    },
+    "attributesRaw": [
+      {
+        "key": "activity_sector",
+        "value": "1",
+        "label": "1"
+      },
+      {
+        "key": "rating_score",
+        "value": "1",
+        "label": "1"
+      },
+      {
+        "key": "rating_count",
+        "value": "2",
+        "label": "2"
+      },
+      {
+        "key": "brand",
+        "value": "Peugeot",
+        "label": "Peugeot"
+      },
+      {
+        "key": "model",
+        "value": "208",
+        "label": "208"
+      },
+      {
+        "key": "u_car_brand",
+        "value": "PEUGEOT",
+        "label": "PEUGEOT"
+      },
+      {
+        "key": "u_car_model",
+        "value": "PEUGEOT_208",
+        "label": "208"
+      },
+      {
+        "key": "regdate",
+        "value": "2015",
+        "label": "2015"
+      },
+      {
+        "key": "mileage",
+        "value": "168800",
+        "label": "168800 km"
+      },
+      {
+        "key": "fuel",
+        "value": "1",
+        "label": "Essence"
+      },
+      {
+        "key": "gearbox",
+        "value": "1",
+        "label": "Manuelle"
+      },
+      {
+        "key": "doors",
+        "value": "3",
+        "label": "3"
+      },
+      {
+        "key": "seats",
+        "value": "5",
+        "label": "5"
+      },
+      {
+        "key": "u_car_finition",
+        "value": "PEUGEOT_208_GTi",
+        "label": "GTi"
+      },
+      {
+        "key": "u_car_version",
+        "value": "1.6 THP 208ch GTi S&S 3p",
+        "label": "1.6 THP 208ch GTi S&S 3p"
+      },
+      {
+        "key": "issuance_date",
+        "value": "10/2015",
+        "label": "10/2015"
+      },
+      {
+        "key": "vehicle_type",
+        "value": "citadine",
+        "label": "Citadine"
+      },
+      {
+        "key": "vehicle_history",
+        "value": "",
+        "label": "Véhicule importé"
+      },
+      {
+        "key": "vehicle_maintenance",
+        "value": "",
+        "label": "Carnet d'entretien disponible, Véhicule non fumeur"
+      },
+      {
+        "key": "horsepower",
+        "value": "11",
+        "label": "11 Cv"
+      },
+      {
+        "key": "horse_power_din",
+        "value": "208",
+        "label": "208 Ch"
+      },
+      {
+        "key": "vehicle_vsp",
+        "value": "avecpermis",
+        "label": "Avec permis"
+      },
+      {
+        "key": "car_contract",
+        "value": "1",
+        "label": "Non"
+      },
+      {
+        "key": "recent_used_vehicle",
+        "value": "false",
+        "label": "false"
+      },
+      {
+        "key": "has_visibility_option",
+        "value": "true",
+        "label": "true"
+      },
+      {
+        "key": "store_logo",
+        "value": "https://img.leboncoin.fr/api/v1/lbcpb1/images/1e/25/a4/1e25a489-f292-40b5-8c43-ced0dc8bb4e9?rule=bo-thumb",
+        "label": "https://img.leboncoin.fr/api/v1/lbcpb1/images/1e/25/a4/1e25a489-f292-40b5-8c43-ced0dc8bb4e9?rule=bo-thumb"
+      },
+      {
+        "key": "store_name",
+        "value": "GARAGE SPORT AUTO",
+        "label": "GARAGE SPORT AUTO"
+      },
+      {
+        "key": "online_store_id",
+        "value": "85447",
+        "label": "85447"
+      },
+      {
+        "key": "is_import",
+        "value": "false",
+        "label": "false"
+      },
+      {
+        "key": "old_price",
+        "value": "12900",
+        "label": "12900"
+      },
+      {
+        "key": "car_price_min",
+        "value": "7650",
+        "label": "7650"
+      },
+      {
+        "key": "car_price_max",
+        "value": "8450",
+        "label": "8450"
+      },
+      {
+        "key": "car_price_positioning",
+        "value": "badge_key_0_5",
+        "label": "Estimation indisponible"
+      },
+      {
+        "key": "argus_object_id",
+        "value": "1431053",
+        "label": "1431053"
+      },
+      {
+        "key": "spare_parts_availability",
+        "value": "non_renseignee",
+        "label": "Non renseignée"
+      }
+    ],
+    "hasPhone": true,
+    "isBoosted": true,
+    "options": {
+      "has_option": false,
+      "booster": false,
+      "photosup": false,
+      "urgent": false,
+      "gallery": false,
+      "sub_toplist": false,
+      "continuous_top_ads": false,
+      "highlight": false
+    },
+    "favorites": null,
+    "scrapedAt": "2026-10-01T16:11:35.303Z",
+    "seller": {
+      "type": "pro"
+    }
+  }
+}

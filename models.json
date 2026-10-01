@@ -239,7 +239,8 @@
       "dernierDe": 50,
       "desirabilite": 65,
       "notes": "2.0 16v 150-167 ch, châssis encensé à l’époque. Beaucoup d’exemplaires fatigués : l’état d’origine fait la valeur.",
-      "addedAt": "2026-10-01"
+      "addedAt": "2026-10-01",
+      "refKm": 180000.00000000003
     },
     {
       "id": "bmw-z3-19-20",
@@ -271,7 +272,8 @@
       "dernierDe": 40,
       "desirabilite": 65,
       "notes": "Roadster BMW le plus abordable. M Roadster et coupé exclus (marchés à part).",
-      "addedAt": "2026-10-01"
+      "addedAt": "2026-10-01",
+      "refKm": 130000.00000000001
     },
     {
       "id": "vw-golf-4-gti-25",
@@ -326,7 +328,8 @@
       "dernierDe": 70,
       "desirabilite": 65,
       "notes": "V6 « Busso » atmosphérique. GTA exclue (marché à part). Courroie de distribution et variateur à surveiller.",
-      "addedAt": "2026-10-01"
+      "addedAt": "2026-10-01",
+      "refKm": 200000.00000000003
     },
     {
       "id": "mazda-mx5-na",
@@ -347,7 +350,8 @@
       "dernierDe": 60,
       "desirabilite": 75,
       "notes": "Première génération, phares escamotables. Offre abondante : la corrosion des bas de caisse fait la différence.",
-      "addedAt": "2026-10-01"
+      "addedAt": "2026-10-01",
+      "refKm": 160000
     },
     {
       "id": "peugeot-205-gti",
@@ -373,7 +377,8 @@
       "dernierDe": 50,
       "desirabilite": 85,
       "notes": "1.6 et 1.9. Cote déjà élevée et soutenue ; nombreuses « répliques » à partir de 205 XS/GT, exclues par filtre mais à vérifier (numéro de série).",
-      "addedAt": "2026-10-01"
+      "addedAt": "2026-10-01",
+      "refKm": 190000.00000000003
     },
     {
       "id": "honda-s2000",
@@ -388,7 +393,8 @@
       "dernierDe": 85,
       "desirabilite": 85,
       "notes": "2.0 VTEC atmosphérique à 9 000 tr/min, sans successeur. Exemplaires d’origine non modifiés de plus en plus recherchés.",
-      "addedAt": "2026-10-01"
+      "addedAt": "2026-10-01",
+      "refKm": 140000
     },
     {
       "id": "renault-megane-r26",
@@ -413,7 +419,8 @@
       "dernierDe": 50,
       "desirabilite": 75,
       "notes": "Série R26 (différentiel autobloquant). La R26.R, beaucoup plus rare, sort du même filtre : à repérer à part.",
-      "addedAt": "2026-10-01"
+      "addedAt": "2026-10-01",
+      "refKm": 100000.00000000001
     }
   ]
 }
