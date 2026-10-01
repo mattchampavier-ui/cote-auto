@@ -18,6 +18,10 @@ export function sandbox() {
   data.meta = { lastRun: null, lastRecap: null, runs: [] };
   fs.writeFileSync(path.join(dir, 'data.json'), JSON.stringify(data));
   process.env.COTE_ROOT = dir;
+  // Le robot écrit sa progression sur la console ; sous Node 20, ces lignes se mêlent au canal
+  // du lanceur de tests et le font parfois échouer (« Unable to deserialize cloned data »).
+  console.log = () => {};
+  console.warn = () => {};
   delete process.env.ANTHROPIC_API_KEY;
   delete process.env.GMAIL_USER;
   delete process.env.GMAIL_APP_PASSWORD;
