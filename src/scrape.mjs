@@ -34,7 +34,8 @@ export async function scrape({ only, fixture, today = todayISO(), fetchItems } =
       const token = process.env.APIFY_TOKEN;
       const actor = process.env.APIFY_ACTOR;
       if (!token || !actor) {
-        console.warn('APIFY_TOKEN ou APIFY_ACTOR manquant : relevé sauté (voir README, étape 2).');
+        const missing = [!token && 'APIFY_TOKEN', !actor && 'APIFY_ACTOR'].filter(Boolean).join(' et ');
+        console.warn(`${missing} manquant : relevé sauté (voir README, étape 2 — APIFY_ACTOR peut être une variable ou un secret).`);
         return { skipped: true };
       }
       fetchItems = (m) => runActor({ token, actor, url: buildSearchUrl(m), max, inputTemplate: process.env.APIFY_INPUT || undefined });

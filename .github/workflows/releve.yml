@@ -43,8 +43,8 @@ jobs:
       - name: Relevé des annonces
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
-          APIFY_ACTOR: ${{ vars.APIFY_ACTOR }}
-          APIFY_INPUT: ${{ vars.APIFY_INPUT }}
+          APIFY_ACTOR: ${{ vars.APIFY_ACTOR || secrets.APIFY_ACTOR }}
+          APIFY_INPUT: ${{ vars.APIFY_INPUT || secrets.APIFY_INPUT }}
           ONLY: ${{ inputs.only }}
         run: |
           if [ -n "$ONLY" ]; then node src/scrape.mjs --only "$ONLY"; else node src/scrape.mjs; fi

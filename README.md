@@ -89,7 +89,7 @@ Dans le dépôt → **Settings → Secrets and variables → Actions** :
 1. **Apify** (collecte) — crée un compte gratuit sur [apify.com](https://apify.com), choisis un
    actor de scraping LeBonCoin sur la marketplace et récupère ton token (Settings → Integrations).
    - secret `APIFY_TOKEN` : ton token
-   - variable `APIFY_ACTOR` : l'identifiant de l'actor, ex. `username/leboncoin-scraper`
+   - `APIFY_ACTOR` (variable ou secret, au choix) : l'identifiant de l'actor, ex. `username/leboncoin-scraper`
    - variable `APIFY_INPUT` *(facultative)* : seulement si l'actor attend une entrée différente de
      `{"startUrls":[{"url":"{{url}}"}],"maxItems":{{max}}}`. Copie l'exemple d'entrée de la page de
      l'actor et mets `{{url}}` à la place de l'URL de recherche, `{{max}}` à la place de la limite.
