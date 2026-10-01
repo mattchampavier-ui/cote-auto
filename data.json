@@ -54,6 +54,15 @@
         ],
         "failed": [],
         "costUsd": 0.009
+      },
+      {
+        "date": "2026-10-01",
+        "ok": [],
+        "empty": [
+          "peugeot-206-rc"
+        ],
+        "failed": [],
+        "costUsd": 0.009
       }
     ]
   },
