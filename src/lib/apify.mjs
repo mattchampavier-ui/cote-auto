@@ -13,7 +13,18 @@ export function actorPath(actor) {
   return encodeURIComponent(actor.replace('/', '~')).replace('%7E', '~');
 }
 
-// APIFY_INPUT permet d'adapter l'entrée à n'importe quel actor sans toucher au code :
+// Entrées connues des actors LeBonCoin testés : pas besoin de régler APIFY_INPUT pour eux.
+// (Un actor qui ne reconnaît pas ses paramètres renvoie ses résultats par défaut, hors sujet.)
+export const ACTOR_INPUTS = {
+  'clearpath/leboncoin-api': '{"searchUrl":"{{url}}","adLimit":{{max}}}',
+  'clearpath/leboncoin-api-ppe': '{"searchUrl":"{{url}}","adLimit":{{max}}}',
+};
+
+export function inputTemplateFor(actor, override) {
+  return override || ACTOR_INPUTS[String(actor).replace('~', '/').toLowerCase()] || DEFAULT_INPUT;
+}
+
+// APIFY_INPUT permet d'adapter l'entrée à n'importe quel autre actor sans toucher au code :
 // {{url}} est remplacé par l'URL de recherche, {{max}} par la limite d'annonces.
 export function buildInput(template, url, max) {
   const json = (template || DEFAULT_INPUT)
@@ -36,7 +47,7 @@ export async function runActor({ token, actor, url, max, inputTemplate, maxWaitM
   const start = await call(`/acts/${actorPath(actor)}/runs`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(buildInput(inputTemplate, url, max)),
+    body: JSON.stringify(buildInput(inputTemplateFor(actor, inputTemplate), url, max)),
   });
   let run = start.data;
   const deadline = Date.now() + maxWaitMs;
