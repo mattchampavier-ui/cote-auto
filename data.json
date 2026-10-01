@@ -72,6 +72,15 @@
         "empty": [],
         "failed": [],
         "costUsd": 0.129
+      },
+      {
+        "date": "2026-10-01",
+        "ok": [
+          "peugeot-206-rc"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0.062
       }
     ]
   },
@@ -150,71 +159,71 @@
         "median": 9650,
         "p75": 12125,
         "max": 18500,
-        "avgKm": null,
-        "medianKm": null,
+        "avgKm": 174000,
+        "medianKm": 162000,
         "refKm": 150000,
-        "refPrice": 9650,
-        "eurPer10kKm": null,
-        "newListings": 40,
+        "refPrice": 10940,
+        "eurPer10kKm": 390,
+        "newListings": 0,
         "sold": 0,
         "soldMedianDays": null,
         "activeMedianAge": 0,
         "priceDrops": [],
         "bargains": [
           {
+            "id": "3273170431",
+            "title": "206 rc",
+            "url": "https://www.leboncoin.fr/ad/voitures/3273170431",
+            "price": 5900,
+            "km": 159000,
+            "year": 2003,
+            "city": "Tulle",
+            "expected": 10600,
+            "discountPct": 44
+          },
+          {
+            "id": "3276929411",
+            "title": "206 rc line 1.6 110 cv",
+            "url": "https://www.leboncoin.fr/ad/voitures/3276929411",
+            "price": 6800,
+            "km": 124000,
+            "year": 2006,
+            "city": "Cernay",
+            "expected": 11950,
+            "discountPct": 43
+          },
+          {
             "id": "3277073683",
             "title": "Peugeot 206 RC 2.0 177ch - Bleu Récif",
             "url": "https://www.leboncoin.fr/ad/voitures/3277073683",
             "price": 5300,
-            "km": null,
-            "year": null,
+            "km": 234000,
+            "year": 2003,
             "city": "Belley",
-            "expected": 9650,
-            "discountPct": 45
+            "expected": 7680,
+            "discountPct": 31
+          },
+          {
+            "id": "3251217335",
+            "title": "206 rc",
+            "url": "https://www.leboncoin.fr/ad/voitures/3251217335",
+            "price": 6200,
+            "km": 215500,
+            "year": 2005,
+            "city": "Coulonges-sur-Sarthe",
+            "expected": 8400,
+            "discountPct": 26
           },
           {
             "id": "3278866640",
             "title": "Peugeot 206 RC",
             "url": "https://www.leboncoin.fr/ad/voitures/3278866640",
             "price": 5400,
-            "km": null,
-            "year": null,
+            "km": 244000,
+            "year": 2003,
             "city": "La Roche-sur-Foron",
-            "expected": 9650,
-            "discountPct": 44
-          },
-          {
-            "id": "3273170431",
-            "title": "206 rc",
-            "url": "https://www.leboncoin.fr/ad/voitures/3273170431",
-            "price": 5900,
-            "km": null,
-            "year": null,
-            "city": "Tulle",
-            "expected": 9650,
-            "discountPct": 39
-          },
-          {
-            "id": "3279053465",
-            "title": "206 rc",
-            "url": "https://www.leboncoin.fr/ad/voitures/3279053465",
-            "price": 5900,
-            "km": null,
-            "year": null,
-            "city": "Lons-le-Saunier",
-            "expected": 9650,
-            "discountPct": 39
-          },
-          {
-            "id": "3278317897",
-            "title": "206 rc",
-            "url": "https://www.leboncoin.fr/ad/voitures/3278317897",
-            "price": 6000,
-            "km": null,
-            "year": null,
-            "city": "La Côte-Saint-André",
-            "expected": 9650,
-            "discountPct": 38
+            "expected": 7290,
+            "discountPct": 26
           }
         ],
         "rejected": 0,
