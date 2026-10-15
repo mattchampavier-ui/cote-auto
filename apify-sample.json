@@ -1,103 +1,103 @@
 {
   "actor": "memo23/leboncoin-scraper",
-  "date": "2026-10-01",
+  "date": "2026-10-15",
   "item": {
     "rowType": "ad",
-    "adId": "3210880878",
-    "title": "PEUGEOT 208 GTI 30th 1.6 THP 208CV FULL OPTION",
-    "description": "",
-    "price": 12000,
-    "priceCents": 1200000,
+    "adId": "3242289072",
+    "title": "Peugeot 208 gti 30th by peugeot sport 208ch 2 ou 5 places",
+    "description": "La Peugeot 208 2015 est une voiture énergique essence avec une finition GTI 30th by Peugeot Sport. Ce véhicule compact et élégant offre des performances sportives et un style distinctif. Dotée d'un moteur puissant et d'une suspension précise, la 208 assure une conduite dynamique et agréable. L'intérieur est spacieux et confortable, avec des équipements mode es et des finitions de qualité. La 208 est également équipée de technologies avancées en matière de sécurité et de connectivité, offrant une expérience de conduite sûre et intelligente. Avec son design audacieux et ses performances remarquables, la Peugeot 208 2015 est un choix idéal pour les amateurs de conduite passionnés.\n\nOPTIONS ET ÉQUIPEMENTS :\nAudio - Télécommunications :\n  - Bluetooth\n  - Peugeot Connect SOS et Assistance\n  - Prise USB\n\nConduite :\n  - Aide au démarrage en côte\n  - Allumage automatique des phares\n  - Limiteur de vitesse\n  - Régulateur de vitesse\n  - TRANSMISSION AUTOBLOQUANT\n\nCouleur :\n  - Peinture métallisée\n\nExtérieur :\n  - Feux de jour à LED\n  - Jantes alliage 18 pouces\n  - Projecteurs xénon\n  - Radar de recul\n\nIntérieur :\n  - Accoudoir central avant\n  - Banquette arrière rabattable\n  - Climatisation automatique bi-zone\n  - Direction assistée\n  - Ordinateur de bord\n  - Pédalier en aluminium\n  - Sièges baquets sport Alcantara/Tissu\n  - Sièges chauffants\n  - Vitres avant électriques\n  - Volant sport cuir multifonction\n\nPack :\n  - Fermeture centralisée des portes\n  - GPS couleur\n  - Rétroviseurs extérieurs électriques et dégivrants\n  - SUSPENSION BILSTEIN\n  - Système audio avec écran tactile\n\nSécurité :\n  - ABS\n  - Airbags frontaux\n  - Airbags latéraux avant\n  - Airbags rideaux\n  - Assistance au freinage d'urgence\n  - Contrôle de traction (ASR)\n  - Détecteur de sous-gonflage\n  - ESP (contrôle de stabilité)\n  - Projecteurs antibrouillard\n\nAutres équipements et informations :\n  - Service Carte Grise\n  - Véhicule visible sur RDV",
+    "price": 14990,
+    "priceCents": 1499000,
     "currency": "EUR",
-    "url": "https://www.leboncoin.fr/ad/voitures/3210880878",
+    "url": "https://www.leboncoin.fr/ad/voitures/3242289072",
     "categoryId": "2",
     "categoryName": "Voitures",
     "adType": "offer",
     "status": "active",
-    "firstPublishedAt": "2026-08-05 00:10:58",
-    "indexedAt": "2026-10-01 14:35:20",
-    "expiresAt": "2026-10-04 00:10:58",
+    "firstPublishedAt": "2026-07-31 10:40:28",
+    "indexedAt": "2026-10-15 09:12:51",
+    "expiresAt": null,
     "location": {
-      "city": "Freyming-Merlebach",
-      "zipcode": "57800",
+      "city": "Grenoble",
+      "zipcode": "38000",
       "district": null,
-      "department": "Moselle",
-      "region": "Lorraine",
+      "department": "Isère",
+      "region": "Rhône-Alpes",
       "country": "FR",
-      "lat": 49.14827,
-      "lng": 6.8157,
+      "lat": 45.18118,
+      "lng": 5.72048,
       "source": "address",
       "isShape": false,
-      "cityLabel": "Freyming-Merlebach 57800"
+      "cityLabel": "Grenoble 38000"
     },
     "images": {
-      "count": 10,
-      "thumb": "https://img.leboncoin.fr/api/v1/lbcpb1/images/6c/1f/36/6c1f36a2e08523bddde654fcd69c3abd2821da47.jpg?rule=ad-thumb",
+      "count": 18,
+      "thumb": "https://img.leboncoin.fr/api/v1/lbcpb1/images/10/90/e0/1090e0b5afc595a7727bb2721c7af45e79f1f75c.jpg?rule=ad-thumb",
       "urls": [
-        "https://img.leboncoin.fr/api/v1/lbcpb1/images/6c/1f/36/6c1f36a2e08523bddde654fcd69c3abd2821da47.jpg?rule=ad-image",
-        "https://img.leboncoin.fr/api/v1/lbcpb1/images/7a/9c/a1/7a9ca1d31a524d92eb940d2a94014796fb493626.jpg?rule=ad-image",
-        "https://img.leboncoin.fr/api/v1/lbcpb1/images/29/fd/75/29fd75e5ce46bfd07881b1f9f94573b3c59fbfe7.jpg?rule=ad-image",
-        "https://img.leboncoin.fr/api/v1/lbcpb1/images/a5/12/61/a512616f2a60f0b64dedc245f4dfffe852dd8335.jpg?rule=ad-image",
-        "https://img.leboncoin.fr/api/v1/lbcpb1/images/59/0e/b8/590eb834a215256b0bc97c5798a92c591fd5aecb.jpg?rule=ad-image",
-        "https://img.leboncoin.fr/api/v1/lbcpb1/images/c4/c9/56/c4c95680b20456f5626c65a13139f7b3bd839756.jpg?rule=ad-image",
-        "https://img.leboncoin.fr/api/v1/lbcpb1/images/33/a9/54/33a9543af5a054d71c1ccee44493cf06261b8230.jpg?rule=ad-image",
-        "https://img.leboncoin.fr/api/v1/lbcpb1/images/18/26/6f/18266fb22853c864eb68447e0c4aa0cc947f1f35.jpg?rule=ad-image",
-        "https://img.leboncoin.fr/api/v1/lbcpb1/images/10/1f/03/101f033aea6b3fd50e1a72b57fbb891e3cb73e61.jpg?rule=ad-image",
-        "https://img.leboncoin.fr/api/v1/lbcpb1/images/cc/c7/99/ccc7994345dfaf573ca0b7795174faa95e4e2b1e.jpg?rule=ad-image"
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/10/90/e0/1090e0b5afc595a7727bb2721c7af45e79f1f75c.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/d2/92/81/d292815697351df27c137d36a297d78a8d0dd906.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/05/db/2e/05db2e36e779e4b1aa9a936b35057e4a8727d7c7.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/91/b2/ff/91b2ff45e743513cc9ea6ed5993da120233a7596.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/27/1b/cd/271bcdcd4ca94b60d35264000475651a4888bf8f.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/c3/b0/3e/c3b03e8c0e260fadf20877db8f6cba13a9fb9a45.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/20/22/e7/2022e7457d2d59b2c0ca78bf018f20cf10932c0a.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/45/f5/50/45f550d7ab36cd328be82bdb50ae1d2063680fbe.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/df/36/94/df3694890c1e123eafe5e11ffbf9864afa3d5cf8.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/24/9e/6f/249e6fdc2ae53dc6bb90d162c226beadd74be3cc.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/bf/c3/51/bfc3517c850a5e6fd59db42bb7999019b16cb1c6.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/0c/41/9a/0c419a2d92d52d2dff67f8435c64ce3d9b199e44.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/77/0f/c3/770fc367083e807592ef8dc5af1d09e4dd84e93a.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/dd/19/f4/dd19f46e9b45522f84fb353eea45fe1f47381c27.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/6b/dd/f1/6bddf16cfd8e4a5f54be2fd19b974d530e4d0895.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/1e/9e/c3/1e9ec3dc858f9985b4c2ad4ba3fdd46d17c2984d.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/08/71/bf/0871bf30f30df39152f9622b60f28a964a7e8b9e.jpg?rule=ad-image",
+        "https://img.leboncoin.fr/api/v1/lbcpb1/images/62/72/c1/6272c1b850a6a54ed154bd1c4833cfba0581e9b3.jpg?rule=ad-image"
       ]
     },
     "attributes": {
       "activity_sector": "1",
-      "rating_score": "1",
-      "rating_count": "2",
       "brand": "Peugeot",
       "model": "208",
       "u_car_brand": "PEUGEOT",
       "u_car_model": "208",
       "regdate": "2015",
-      "mileage": "168800 km",
+      "mileage": "136572 km",
       "fuel": "Essence",
       "gearbox": "Manuelle",
       "doors": "3",
       "seats": "5",
-      "u_car_finition": "GTi",
-      "u_car_version": "1.6 THP 208ch GTi S&S 3p",
-      "issuance_date": "10/2015",
-      "vehicle_type": "Citadine",
-      "vehicle_history": "Véhicule importé",
-      "vehicle_maintenance": "Carnet d'entretien disponible, Véhicule non fumeur",
-      "horsepower": "11 Cv",
+      "u_car_finition": "GTi by Peugeot Sport",
+      "u_car_version": "1.6 THP 208ch GTi by Peugeot Sport S&S 3p",
+      "issuance_date": "06/2015",
+      "vehicle_damage": "Excellent état (proche du neuf)",
+      "vehicle_type": "Berline",
+      "vehicle_interior_specs": "Allumage automatique des phares, Bluetooth, Climatisation, Jantes en alliage, Ordinateur de bord, Régulateur de vitesse, Sièges chauffants",
+      "vehicule_color": "Blanc",
+      "vehicle_euro_emissions_standard": "Euro 1",
+      "horsepower": "9 Cv",
       "horse_power_din": "208 Ch",
-      "vehicle_vsp": "Avec permis",
-      "car_contract": "Non",
       "recent_used_vehicle": "false",
       "has_visibility_option": "true",
-      "store_logo": "https://img.leboncoin.fr/api/v1/lbcpb1/images/1e/25/a4/1e25a489-f292-40b5-8c43-ced0dc8bb4e9?rule=bo-thumb",
-      "store_name": "GARAGE SPORT AUTO",
-      "online_store_id": "85447",
-      "is_import": "false",
-      "old_price": "12900",
-      "car_price_min": "7650",
-      "car_price_max": "8450",
+      "store_logo": "https://img.leboncoin.fr/api/v1/lbcpb1/images/7d/14/23/7d1423df-ecab-47f5-8c52-c0d419d7d771?rule=bo-thumb",
+      "store_name": "ESPACE AUTOS 38",
+      "online_store_id": "6284720",
+      "custom_ref": "1512819",
+      "is_import": "true",
+      "old_price": "15990",
+      "car_price_min": "9410",
+      "car_price_max": "10410",
       "car_price_positioning": "Estimation indisponible",
-      "argus_object_id": "1431053",
-      "spare_parts_availability": "Non renseignée"
+      "vehicle_history_report_public_url": "https://autoviza.fr/report/report?uid=2e4353a7-de96-42f0-ac03-b48c485fb72d",
+      "vehicle_history_report_status": "visible",
+      "argus_object_id": "1431110",
+      "spare_parts_availability": "Non renseignée",
+      "licence_plate_available": "true"
     },
     "attributesRaw": [
       {
         "key": "activity_sector",
         "value": "1",
         "label": "1"
-      },
-      {
-        "key": "rating_score",
-        "value": "1",
-        "label": "1"
-      },
-      {
-        "key": "rating_count",
-        "value": "2",
-        "label": "2"
       },
       {
         "key": "brand",
@@ -126,8 +126,8 @@
       },
       {
         "key": "mileage",
-        "value": "168800",
-        "label": "168800 km"
+        "value": "136572",
+        "label": "136572 km"
       },
       {
         "key": "fuel",
@@ -151,53 +151,53 @@
       },
       {
         "key": "u_car_finition",
-        "value": "PEUGEOT_208_GTi",
-        "label": "GTi"
+        "value": "PEUGEOT_208_GTi by Peugeot Sport",
+        "label": "GTi by Peugeot Sport"
       },
       {
         "key": "u_car_version",
-        "value": "1.6 THP 208ch GTi S&S 3p",
-        "label": "1.6 THP 208ch GTi S&S 3p"
+        "value": "1.6 THP 208ch GTi by Peugeot Sport S&S 3p",
+        "label": "1.6 THP 208ch GTi by Peugeot Sport S&S 3p"
       },
       {
         "key": "issuance_date",
-        "value": "10/2015",
-        "label": "10/2015"
+        "value": "06/2015",
+        "label": "06/2015"
+      },
+      {
+        "key": "vehicle_damage",
+        "value": "excellent_condition",
+        "label": "Excellent état (proche du neuf)"
       },
       {
         "key": "vehicle_type",
-        "value": "citadine",
-        "label": "Citadine"
+        "value": "berline",
+        "label": "Berline"
       },
       {
-        "key": "vehicle_history",
+        "key": "vehicle_interior_specs",
         "value": "",
-        "label": "Véhicule importé"
+        "label": "Allumage automatique des phares, Bluetooth, Climatisation, Jantes en alliage, Ordinateur de bord, Régulateur de vitesse, Sièges chauffants"
       },
       {
-        "key": "vehicle_maintenance",
-        "value": "",
-        "label": "Carnet d'entretien disponible, Véhicule non fumeur"
+        "key": "vehicule_color",
+        "value": "blanc",
+        "label": "Blanc"
+      },
+      {
+        "key": "vehicle_euro_emissions_standard",
+        "value": "euro1",
+        "label": "Euro 1"
       },
       {
         "key": "horsepower",
-        "value": "11",
-        "label": "11 Cv"
+        "value": "9",
+        "label": "9 Cv"
       },
       {
         "key": "horse_power_din",
         "value": "208",
         "label": "208 Ch"
-      },
-      {
-        "key": "vehicle_vsp",
-        "value": "avecpermis",
-        "label": "Avec permis"
-      },
-      {
-        "key": "car_contract",
-        "value": "1",
-        "label": "Non"
       },
       {
         "key": "recent_used_vehicle",
@@ -211,38 +211,43 @@
       },
       {
         "key": "store_logo",
-        "value": "https://img.leboncoin.fr/api/v1/lbcpb1/images/1e/25/a4/1e25a489-f292-40b5-8c43-ced0dc8bb4e9?rule=bo-thumb",
-        "label": "https://img.leboncoin.fr/api/v1/lbcpb1/images/1e/25/a4/1e25a489-f292-40b5-8c43-ced0dc8bb4e9?rule=bo-thumb"
+        "value": "https://img.leboncoin.fr/api/v1/lbcpb1/images/7d/14/23/7d1423df-ecab-47f5-8c52-c0d419d7d771?rule=bo-thumb",
+        "label": "https://img.leboncoin.fr/api/v1/lbcpb1/images/7d/14/23/7d1423df-ecab-47f5-8c52-c0d419d7d771?rule=bo-thumb"
       },
       {
         "key": "store_name",
-        "value": "GARAGE SPORT AUTO",
-        "label": "GARAGE SPORT AUTO"
+        "value": "ESPACE AUTOS 38",
+        "label": "ESPACE AUTOS 38"
       },
       {
         "key": "online_store_id",
-        "value": "85447",
-        "label": "85447"
+        "value": "6284720",
+        "label": "6284720"
+      },
+      {
+        "key": "custom_ref",
+        "value": "1512819",
+        "label": "1512819"
       },
       {
         "key": "is_import",
-        "value": "false",
-        "label": "false"
+        "value": "true",
+        "label": "true"
       },
       {
         "key": "old_price",
-        "value": "12900",
-        "label": "12900"
+        "value": "15990",
+        "label": "15990"
       },
       {
         "key": "car_price_min",
-        "value": "7650",
-        "label": "7650"
+        "value": "9410",
+        "label": "9410"
       },
       {
         "key": "car_price_max",
-        "value": "8450",
-        "label": "8450"
+        "value": "10410",
+        "label": "10410"
       },
       {
         "key": "car_price_positioning",
@@ -250,14 +255,29 @@
         "label": "Estimation indisponible"
       },
       {
+        "key": "vehicle_history_report_public_url",
+        "value": "https://autoviza.fr/report/report?uid=2e4353a7-de96-42f0-ac03-b48c485fb72d",
+        "label": "https://autoviza.fr/report/report?uid=2e4353a7-de96-42f0-ac03-b48c485fb72d"
+      },
+      {
+        "key": "vehicle_history_report_status",
+        "value": "visible",
+        "label": "visible"
+      },
+      {
         "key": "argus_object_id",
-        "value": "1431053",
-        "label": "1431053"
+        "value": "1431110",
+        "label": "1431110"
       },
       {
         "key": "spare_parts_availability",
         "value": "non_renseignee",
         "label": "Non renseignée"
+      },
+      {
+        "key": "licence_plate_available",
+        "value": "true",
+        "label": "true"
       }
     ],
     "hasPhone": true,
@@ -273,7 +293,7 @@
       "highlight": false
     },
     "favorites": null,
-    "scrapedAt": "2026-10-01T16:11:35.303Z",
+    "scrapedAt": "2026-10-15T10:00:19.770Z",
     "seller": {
       "type": "pro"
     }
