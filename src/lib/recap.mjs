@@ -86,7 +86,7 @@ export function buildRecap({ models, data, config, today }) {
     else if (neverOk) problems.push(`${r.model.name} : aucun relevé réussi ce mois-ci${failed ? ' (erreur Apify)' : ''}.`);
     else if (r.count < 3) problems.push(`${r.model.name} : seulement ${r.count} annonce(s), le score est fragile.`);
   }
-  if (runs.length === 0) problems.unshift('Aucun relevé automatique ce mois-ci : vérifier les secrets APIFY_TOKEN / APIFY_ACTOR et l’onglet Actions.');
+  if (runs.length === 0) problems.unshift('Aucun relevé ce mois-ci : le relevé manuel avec Claude dans Chrome n’a pas été fait (page « Relevé manuel » du dashboard).');
 
   const highlights = [];
   const buys = rows.filter((r) => r.eval.signal.tone === 'buy');
@@ -209,7 +209,7 @@ export function renderRecap(r, analysis) {
 <table width="100%" cellpadding="0" cellspacing="0" style="max-width:680px">
 <tr><td>
   <div style="font-family:Georgia,serif;font-size:30px;color:${C.ink}">COTE</div>
-  <div style="color:${C.dim};font-size:14px;margin-bottom:18px">Récap de ${esc(r.label)} · ${r.kpis.runs} relevé(s) automatique(s)</div>
+  <div style="color:${C.dim};font-size:14px;margin-bottom:18px">Récap de ${esc(r.label)} · ${r.kpis.runs} relevé(s)</div>
   <table width="100%" cellpadding="0" cellspacing="6" style="border-collapse:separate"><tr>
     ${kpi(r.kpis.models, 'véhicules suivis')}
     ${kpi(r.kpis.avgScore, 'score moyen', r.kpis.avgScoreDelta ? ` <span style="font-size:13px">${delta(r.kpis.avgScoreDelta, (v) => `${v > 0 ? '+' : ''}${v}`)}</span>` : '')}

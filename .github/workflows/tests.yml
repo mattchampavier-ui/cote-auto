@@ -2,7 +2,7 @@ name: Tests
 
 on:
   push:
-    paths-ignore: ["data.json", "listings.json", "recaps/**", "cote-auto.xlsx"]
+    paths-ignore: ["data.json", "listings.json", "recaps/**", "cote-auto.xlsx", "imports/**"]
   pull_request:
 
 jobs:

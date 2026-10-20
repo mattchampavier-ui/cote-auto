@@ -1,0 +1,49 @@
+name: Récap mensuel (filet de sécurité)
+
+# Le récap part normalement juste après le relevé manuel complet (import.yml). Le 5 du mois,
+# s'il n'est pas encore parti, il part quand même, en signalant les véhicules sans relevé.
+on:
+  schedule:
+    - cron: "23 6 5 * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Renvoyer le récap même s'il est déjà parti"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cote-data
+  cancel-in-progress: false
+
+jobs:
+  recap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci --omit=dev
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl
+      - run: npm run excel
+      - name: Récap mensuel par mail
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FORCE: ${{ inputs.force }}
+        run: |
+          if [ "$FORCE" = "true" ]; then node src/recap.mjs --force; else node src/recap.mjs; fi
+      - name: Commit des données
+        if: always()
+        run: .github/commit.sh "Récap mensuel $(date -u +%Y-%m)"

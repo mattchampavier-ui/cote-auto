@@ -45,7 +45,15 @@ async function send({ subject, html, text, attachments = [] }) {
   return true;
 }
 
-export async function recap({ force = false, dryRun = false, today = todayISO() } = {}) {
+// Véhicules suivis qui n'ont pas encore de relevé ce mois-ci (relevé manuel en cours).
+export function missingThisMonth(models, data, today) {
+  const month = today.slice(0, 7);
+  return models
+    .filter((m) => m.active !== false)
+    .filter((m) => !(data.snapshots[m.id] || []).some((s) => s.source !== 'manuel' && s.date.slice(0, 7) === month));
+}
+
+export async function recap({ force = false, dryRun = false, ifComplete = false, today = todayISO() } = {}) {
   const config = await readJson('config.json');
   const { models } = await readJson('models.json');
   const data = await readJson('data.json');
@@ -54,6 +62,14 @@ export async function recap({ force = false, dryRun = false, today = todayISO() 
   if (!force && !dryRun && data.meta?.lastRecap === r.month) {
     console.log(`Récap de ${r.label} déjà envoyé.`);
     return { sent: false, reason: 'déjà envoyé' };
+  }
+  // Après un import partiel : on attend que tous les véhicules aient leur relevé du mois.
+  if (ifComplete && !force) {
+    const missing = missingThisMonth(models, data, today);
+    if (missing.length) {
+      console.log(`Récap en attente : ${missing.length} véhicule(s) sans relevé ce mois-ci (${missing.map((m) => m.id).join(', ')}).`);
+      return { sent: false, reason: 'relevé incomplet', missing: missing.map((m) => m.id) };
+    }
   }
 
   const analysis = await analysisFor(r, config);
@@ -81,6 +97,6 @@ export async function recap({ force = false, dryRun = false, today = todayISO() 
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const args = parseArgs(process.argv.slice(2));
-  recap({ force: args.force === true || args.force === 'true', dryRun: !!args['dry-run'], today: args.date || undefined })
+  recap({ force: args.force === true || args.force === 'true', dryRun: !!args['dry-run'], ifComplete: !!args['if-complete'], today: args.date || undefined })
     .catch((err) => { console.error(err); process.exit(1); });
 }

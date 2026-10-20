@@ -117,7 +117,7 @@
   <header class="top">
     <div>
       <h1>COTE</h1>
-      <p>Suivi automatisé de la cote de véhicules d'occasion à potentiel de valorisation. Relevé chaque semaine, récap par mail chaque mois.</p>
+      <p>Suivi automatisé de la cote de véhicules d'occasion à potentiel de valorisation. Relevé chaque mois avec Claude dans Chrome, récap par mail.</p>
     </div>
     <div class="stats" id="stats"></div>
   </header>
@@ -138,7 +138,7 @@
     </select>
     <span class="spacer"></span>
     <a class="btn" href="cote-auto.xlsx" download title="Analyse du mois, historique mensuel, relevés, annonces">Base Excel ↓</a>
-    <a class="btn" id="runBtn" target="_blank" rel="noopener">Lancer un relevé</a>
+    <a class="btn" href="releve.html">Relevé manuel du mois</a>
   </div>
 
   <div class="grid" id="grid"></div>
@@ -164,7 +164,7 @@
   <details class="method">
     <summary>Méthodologie</summary>
     <div class="body">
-      <p><strong>Collecte.</strong> Chaque lundi et le 1er du mois, un robot (GitHub Actions + Apify) relève les annonces LeBonCoin de chaque véhicule. Les annonces hors sujet sont écartées : pièces détachées, épaves, autres versions (mots exclus), années ou kilométrages hors plage, doublons, prix statistiquement aberrants.</p>
+      <p><strong>Collecte.</strong> Chaque mois, Claude dans Chrome relève les 20 annonces LeBonCoin les plus récentes de chaque véhicule (page « Relevé manuel du mois ») ; un robot (GitHub Actions) les importe et les analyse. Les annonces hors sujet sont écartées : pièces détachées, épaves, autres versions (mots exclus), années ou kilométrages hors plage, doublons, prix statistiquement aberrants.</p>
       <p><strong>Suivi annonce par annonce.</strong> Chaque annonce est suivie d'un relevé à l'autre : une annonce qui disparaît est comptée comme vendue (avec son délai de vente), une baisse de prix est repérée. Le prix est aussi ramené à un kilométrage de référence par régression prix/km, pour comparer les mois entre eux sans que la tendance soit faussée par le kilométrage des annonces du moment.</p>
       <p><strong>Score sur 100</strong> (poids modifiables dans <code>config.json</code>) : rareté 20 %, désirabilité 20 %, « dernier de » 10 % — saisis à la main ou estimés par Claude —, proximité du plancher de prix 20 %, momentum (tendance de la cote sur 3 mois) 15 %, marché (nombre d'annonces et vitesse de vente) 15 %.</p>
       <p><strong>Plancher / plafond.</strong> Bornes saisies à la main pendant les 3 premiers mois, puis remplacées par les prix réellement observés (plus bas P25, plus haut P75).</p>
@@ -239,7 +239,6 @@ $('addForm').onsubmit = (e) => {
   $('addDialog').close();
   e.target.reset();
 };
-$('runBtn').href = `https://github.com/${repo}/actions/workflows/releve.yml`;
 
 const models = registry.models.filter((m) => m.active !== false);
 const views = models.map((m) => ({ model: m, history: data.snapshots[m.id] || [], ev: evaluate(m, data.snapshots[m.id] || [], config.scoring || {}) }));
@@ -370,7 +369,7 @@ $('recaps').innerHTML = recaps.length
 
 const runs = data.meta?.runs || [];
 const last = runs[runs.length - 1];
-$('footer').innerHTML = `Données : LeBonCoin via Apify, relevées par GitHub Actions.${last ? ` Dernier relevé : ${last.ok.length} véhicule(s) à jour${last.failed.length ? `, ${last.failed.length} en échec` : ''}${last.empty.length ? `, ${last.empty.length} sans annonce` : ''}.` : ''} <a href="https://github.com/${esc(repo)}">Code source</a>`;
+$('footer').innerHTML = `Données : LeBonCoin, relevées par Claude dans Chrome et analysées par GitHub Actions.${last ? ` Dernier relevé : ${last.ok.length} véhicule(s) à jour${last.failed.length ? `, ${last.failed.length} en échec` : ''}${last.empty.length ? `, ${last.empty.length} sans annonce` : ''}.` : ''} <a href="https://github.com/${esc(repo)}">Code source</a>`;
 </script>
 </body>
 </html>

@@ -116,7 +116,7 @@ def build(data, out):
         ("Dernier relevé", d(data["dernier_releve"]) or "aucun relevé automatique pour l'instant"),
         ("Dashboard", data["dashboard"]),
         ("", ""),
-        ("Fonctionnement", "Ce fichier est régénéré automatiquement à chaque relevé (chaque lundi et le 1er du mois) à partir de tout l'historique."),
+        ("Fonctionnement", "Ce fichier est régénéré automatiquement à chaque relevé (relevé mensuel fait par Claude dans Chrome) à partir de tout l'historique."),
         ("", "Il est aussi joint au récap mensuel par mail. Toute modification faite à la main ici sera écrasée : enregistre une copie pour annoter."),
         ("", ""),
         ("Onglets", ""),

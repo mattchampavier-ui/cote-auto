@@ -162,3 +162,10 @@ test("pas de tendance calculée contre l'amorce manuelle", () => {
   assert.equal(ev.trend1m, null);
   assert.equal(ev.momentum, 50);
 });
+
+test('pas de tendance entre relevés de méthodes différentes (API / Chrome)', () => {
+  const ev = evaluate(model, [snap('2026-10-01', 10000, { source: 'apify' }), snap('2026-11-01', 12000, { source: 'chrome' })]);
+  assert.equal(ev.trend1m, null);
+  const ev2 = evaluate(model, [snap('2026-10-01', 10000, { source: 'chrome' }), snap('2026-11-01', 11000, { source: 'chrome' })]);
+  assert.equal(ev2.trend1m, 10);
+});

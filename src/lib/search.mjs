@@ -10,8 +10,17 @@ export function slugify(s) {
     .replace(/^-+|-+$/g, '');
 }
 
-export function buildSearchUrl(model) {
-  if (model.lbcSearchUrl) return model.lbcSearchUrl; // URL forcée à la main : prioritaire
+// sortByDate : annonces les plus récentes en premier. Avec un échantillon limité (20 par mois),
+// c'est ce qui rend les relevés comparables d'un mois sur l'autre.
+export function buildSearchUrl(model, { sortByDate = false } = {}) {
+  if (model.lbcSearchUrl) {
+    // URL forcée à la main : prioritaire, seul le tri est ajouté si besoin.
+    if (!sortByDate) return model.lbcSearchUrl;
+    const u = new URL(model.lbcSearchUrl);
+    u.searchParams.set('sort', 'time');
+    u.searchParams.set('order', 'desc');
+    return u.toString();
+  }
   const q = model.search || {};
   const params = new URLSearchParams();
   params.set('category', '2'); // 2 = Voitures
@@ -21,6 +30,10 @@ export function buildSearchUrl(model) {
   if (q.kmMax) params.set('mileage', `min-${q.kmMax}`);
   if (q.gearbox === 'manuelle') params.set('gearbox', '1');
   if (q.gearbox === 'automatique') params.set('gearbox', '2');
+  if (sortByDate) {
+    params.set('sort', 'time');
+    params.set('order', 'desc');
+  }
   return `https://www.leboncoin.fr/recherche?${params.toString()}`;
 }
 

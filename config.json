@@ -19,12 +19,17 @@
   },
   "scrape": {
     "actor": "memo23/leboncoin-scraper",
-    "maxItemsPerModel": 40,
+    "maxItemsPerModel": 20,
     "bargainThreshold": 0.15,
     "maxChargePerRunUsd": 0.12,
-    "monthlyBudgetUsd": 4
+    "monthlyBudgetUsd": 2
   },
   "ai": {
     "model": "claude-sonnet-5-5"
+  },
+  "releve": {
+    "mode": "manuel-chrome",
+    "annoncesParVehicule": 20,
+    "_comment": "Relevé mensuel fait à la main par Claude dans Chrome (page releve.html du dashboard). Les fichiers déposés dans imports/ sont importés automatiquement."
   }
 }

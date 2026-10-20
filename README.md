@@ -1,13 +1,32 @@
 # COTE — suivi de cotes de véhicules d'occasion (v4)
 
 Dashboard + robot qui suit la cote de véhicules d'occasion à potentiel de valorisation.
-Tu n'as rien à faire à la main : le robot relève LeBonCoin chaque semaine, calcule les scores,
-détecte les bonnes affaires et t'envoie **un récap par mail le 1er de chaque mois**.
+Une fois par mois, **Claude dans Chrome** relève les 20 annonces LeBonCoin les plus récentes de chaque
+véhicule ; le robot (GitHub Actions) les importe, calcule les scores, détecte les bonnes affaires, met
+à jour l'Excel et t'envoie **le récap du mois par mail**. Aucun abonnement payant.
 Pour suivre un nouveau véhicule, un bouton du dashboard ouvre un formulaire : le robot fait le reste.
 
 - Dashboard : https://mattchampavier-ui.github.io/cote-auto/ (une fois GitHub Pages activé, étape 4)
 - Ajouter un véhicule : bouton **+ Ajouter un véhicule** du dashboard, ou [ce formulaire](https://github.com/mattchampavier-ui/cote-auto/issues/new?template=ajouter-vehicule.yml)
 - Base Excel : [`cote-auto.xlsx`](cote-auto.xlsx), mise à jour à chaque relevé et jointe au récap mensuel
+
+## Relevé mensuel (entre le 1er et le 5)
+
+1. Ouvre la page **Relevé manuel du mois** du dashboard
+   (https://mattchampavier-ui.github.io/cote-auto/releve.html) dans Chrome, connecté à GitHub.
+2. Ouvre Claude dans Chrome et écris : *« Fais le relevé COTE du mois en suivant les instructions de cette page. »*
+3. Claude ouvre les 16 recherches (triées par date), relève 20 annonces par véhicule et dépose un
+   fichier par véhicule dans `imports/AAAA-MM-JJ/` via GitHub (environ 30 à 45 minutes).
+4. Le workflow « Import du relevé manuel » importe chaque fichier dès son dépôt. Quand les 16
+   véhicules sont faits, le récap part par mail avec l'Excel. Sinon il part le 5 du mois en
+   signalant les véhicules manquants. La page affiche l'avancement : un relevé interrompu se reprend
+   là où il s'est arrêté.
+
+Méthode : les 20 annonces les plus récentes donnent un échantillon comparable d'un mois sur l'autre.
+Les ventes ne sont déduites que quand le relevé couvre toute l'offre (modèles rares, total de résultats
+≤ 20) ; les tendances ne comparent que des relevés faits de la même façon.
+
+Secours : le workflow « Relevé Apify (secours, à la demande) » reste disponible (payant, voir plus bas).
 
 ## Ajouter un véhicule
 
@@ -100,7 +119,7 @@ tableur). Le fichier est écrasé à chaque relevé : enregistre une copie si tu
 
 Dans le dépôt → **Settings → Secrets and variables → Actions** :
 
-1. **Apify** (collecte) — compte sur [apify.com](https://apify.com) et token (Settings → Integrations).
+1. **Apify** (facultatif, relevé de secours payant) — compte sur [apify.com](https://apify.com) et token (Settings → Integrations).
    L'actor utilisé est fixé dans `config.json` (`scrape.actor`, actuellement `memo23/leboncoin-scraper` :
    0,00079 $ par annonce + 0,03 $ par recherche, profils vendeurs désactivés).
    - secret `APIFY_TOKEN` : ton token
@@ -117,7 +136,7 @@ Dans le dépôt → **Settings → Secrets and variables → Actions** :
    et remplit automatiquement les champs laissés vides à l'ajout d'un véhicule. Sans clé, tout
    fonctionne avec des valeurs neutres.
 4. **Settings → Pages** → Source « Deploy from a branch », branche `main`, dossier `/ (root)`.
-5. **Actions** → « Relevé + récap mensuel » → **Run workflow** pour un premier relevé tout de suite.
+5. Relevé mensuel : voir « Relevé mensuel » plus haut (Apify n'est plus nécessaire, étape 1 facultative).
    Coche « Envoyer le récap mensuel maintenant » pour recevoir un premier mail de test.
 
 ## Comment ça marche
@@ -182,11 +201,9 @@ python3 -m http.server   # puis http://localhost:8000
   robot gère le format brut de l'API LeBonCoin et les formats aplatis courants. Si un véhicule
   remonte « 0 annonce retenue » alors qu'il y en a, regarde le log du workflow : il indique combien
   d'annonces ont été reçues et pourquoi elles ont été écartées.
-- **Budget Apify** : 16 véhicules × 40 annonces × 2 relevés ≈ 2 à 3 $ par mois avec
-  `clearpath/leboncoin-api` (environ 1,5 $ les 1 000 annonces). Garde-fous dans `config.json` : chaque
-  recherche est plafonnée par Apify (`maxChargePerRunUsd`), et les relevés s'arrêtent quand le
-  budget du mois (`monthlyBudgetUsd`, 4 $) est atteint. Les options payantes inutiles (profils
-  vendeurs, téléphones) sont désactivées automatiquement d'après le schéma de l'actor.
+- **Relevé manuel** : dépend de la lecture des pages LeBonCoin par Claude dans Chrome. Si LeBonCoin
+  affiche un captcha ou change sa page, Claude s'arrête et le signale ; le relevé de secours Apify reste
+  possible (environ 0,06 $ par véhicule).
 - **Ventes** : une annonce disparue peut aussi avoir été retirée sans vente. Le décompte n'est fait
   que si le relevé n'a pas été tronqué par la limite d'annonces.
 - Le signal est une heuristique de repérage, pas un conseil financier.
@@ -196,6 +213,9 @@ python3 -m http.server   # puis http://localhost:8000
 | Fichier | Rôle |
 |---|---|
 | `index.html` | Dashboard (sans build) |
+| `releve.html` | Page du relevé manuel mensuel (instructions pour Claude dans Chrome) |
+| `imports/` | Fichiers déposés par le relevé manuel (un par véhicule et par mois) |
+| `src/import.mjs` | Import des relevés manuels |
 | `models.json` | Véhicules suivis et leurs critères |
 | `data.json` | Historique des relevés + journal des passages du robot |
 | `listings.json` | Suivi annonce par annonce (ventes, baisses de prix) |

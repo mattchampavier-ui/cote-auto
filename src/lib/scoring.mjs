@@ -21,6 +21,9 @@ export function snapshotAgo(history, ref, days) {
   let best = null;
   for (const s of history) {
     if (ref.source !== 'manuel' && s.source === 'manuel') continue;
+    // Relevés de méthodes différentes (API 40 annonces par pertinence / Chrome 20 plus récentes) :
+    // pas comparables entre eux, la tendance ne compare que des relevés de même source.
+    if (ref.source && s.source && ref.source !== 'manuel' && s.source !== ref.source) continue;
     const age = daysBetween(s.date, ref.date);
     if (age >= days * 0.75) best = s;
   }

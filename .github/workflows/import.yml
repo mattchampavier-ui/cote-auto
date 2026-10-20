@@ -1,0 +1,54 @@
+name: Import du relevé manuel (Claude dans Chrome)
+
+# Déclenché dès qu'un fichier est déposé dans imports/ (voir la page releve.html du dashboard).
+on:
+  push:
+    branches: [main]
+    paths: ["imports/**.json"]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cote-data
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci --omit=dev
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl
+
+      # Un autre import a pu pousser entre-temps : on part de la dernière version.
+      - run: git pull --ff-only
+
+      - name: Import des fichiers déposés
+        run: node src/import.mjs --pending
+
+      - name: Base Excel
+        run: npm run excel
+
+      # Le récap part dès que les 16 véhicules ont leur relevé du mois (sinon le 5 du mois,
+      # voir recap.yml).
+      - name: Récap mensuel (si le relevé est complet)
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node src/recap.mjs --if-complete
+
+      - name: Commit des données
+        if: always()
+        run: .github/commit.sh "Import du relevé manuel $(date -u +%Y-%m-%d)"

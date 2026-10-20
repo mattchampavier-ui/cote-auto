@@ -17,12 +17,12 @@ import { normalizeItem, filterRelevant } from './lib/listings.mjs';
 import { updateTracking, buildSnapshot } from './lib/market.mjs';
 import { round } from './lib/stats.mjs';
 
-export async function scrape({ only, fixture, today = todayISO(), fetchItems } = {}) {
+export async function scrape({ only, fixture, today = todayISO(), fetchItems, source = 'apify', max: maxOverride } = {}) {
   const config = await readJson('config.json');
   const registry = await readJson('models.json');
   const data = await readJson('data.json');
   const tracking = await readJson('listings.json');
-  const max = Number(process.env.MAX_ITEMS_PER_MODEL || config.scrape.maxItemsPerModel || 60);
+  const max = Number(maxOverride || process.env.MAX_ITEMS_PER_MODEL || config.scrape.maxItemsPerModel || 60);
 
   const wanted = only ? new Set(String(only).split(',').map((s) => s.trim())) : null;
   const models = registry.models.filter((m) => m.active !== false && (!wanted || wanted.has(m.id)));
@@ -43,7 +43,7 @@ export async function scrape({ only, fixture, today = todayISO(), fetchItems } =
     }
   }
 
-  const run = { date: today, ok: [], empty: [], failed: [], costUsd: 0 };
+  const run = { date: today, source, ok: [], empty: [], failed: [], costUsd: 0 };
   let registryChanged = false;
   let sampleSaved = false;
 
@@ -60,13 +60,13 @@ export async function scrape({ only, fixture, today = todayISO(), fetchItems } =
     }
     console.log(`→ ${model.name}`);
     try {
-      const { items, costUsd, log } = await fetchItems(model);
+      const { items, costUsd, log, complete } = await fetchItems(model);
       if (log) console.warn(`  --- journal de l'actor (réponse vide) ---\n${log}\n  ---`);
       if (costUsd) run.costUsd += costUsd;
       const listings = (Array.isArray(items) ? items : []).map(normalizeItem);
       // Échantillon brut anonymisé (vendeur réduit à son type) : sert à vérifier la lecture des
       // champs quand l'actor évolue.
-      if (!fixture && !sampleSaved && items?.length) {
+      if (!fixture && source === 'apify' && !sampleSaved && items?.length) {
         const { seller, ...rest } = items[0];
         await writeJson('apify-sample.json', { actor: config.scrape.actor || process.env.APIFY_ACTOR, date: today, item: { ...rest, seller: seller ? { type: seller.type ?? seller.accountType ?? null } : null } });
         sampleSaved = true;
@@ -103,13 +103,15 @@ export async function scrape({ only, fixture, today = todayISO(), fetchItems } =
           registryChanged = true;
         }
       }
-      const truncated = listings.length >= max;
+      // Relevé complet = toute l'offre a été vue : seule condition pour déduire qu'une annonce
+      // absente est partie (vendue). La source peut l'indiquer elle-même (nombre total de résultats).
+      const truncated = complete === undefined ? listings.length >= max : !complete;
       const state = (tracking[model.id] ||= {});
       const t = updateTracking(state, kept, today, { complete: !truncated });
-      const snap = buildSnapshot(kept, rejected, model, t, { today, truncated, bargainThreshold: config.scrape.bargainThreshold });
+      const snap = buildSnapshot(kept, rejected, model, t, { today, truncated, bargainThreshold: config.scrape.bargainThreshold, source });
       const history = (data.snapshots[model.id] ||= []);
       // Relancé le même jour : on remplace le relevé du jour au lieu d'en empiler un second.
-      const same = history.findIndex((s) => s.date === today && s.source !== 'manuel');
+      const same = history.findIndex((s) => s.date === today && s.source === source);
       if (same >= 0) history[same] = snap;
       else history.push(snap);
       history.sort((a, b) => a.date.localeCompare(b.date));

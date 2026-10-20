@@ -93,7 +93,7 @@ export function updateTracking(state, kept, today, { complete }) {
   };
 }
 
-export function buildSnapshot(kept, rejected, model, tracking, { today, truncated, bargainThreshold = 0.15 }) {
+export function buildSnapshot(kept, rejected, model, tracking, { today, truncated, bargainThreshold = 0.15, source = 'apify' }) {
   const prices = kept.map((l) => l.price);
   const kms = kept.map((l) => l.km).filter(Boolean);
   const pm = priceModel(kept);
@@ -117,7 +117,7 @@ export function buildSnapshot(kept, rejected, model, tracking, { today, truncate
 
   return {
     date: today,
-    source: 'apify',
+    source,
     count: kept.length,
     min: prices.length ? Math.min(...prices) : null,
     p25: round(percentile(prices, 25)),

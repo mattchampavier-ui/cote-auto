@@ -1,11 +1,8 @@
-name: Relevé + récap mensuel
+name: Relevé Apify (secours, à la demande)
 
+# Le relevé est désormais manuel, fait par Claude dans Chrome (releve.html + import.yml).
+# Ce workflow reste disponible à la demande si l'on veut un relevé par l'API Apify (payant).
 on:
-  schedule:
-    # Relevé le 1er (suivi du récap mensuel par mail) et le 15 de chaque mois.
-    # Deux relevés par mois suffisent pour les ventes et baisses de prix, et tiennent dans le
-    # crédit Apify gratuit (voir config.json → scrape.monthlyBudgetUsd).
-    - cron: "23 5 1,15 * *"
   workflow_dispatch:
     inputs:
       only:

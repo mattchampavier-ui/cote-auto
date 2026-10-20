@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COTE — relevé manuel</title>
+<style>
+  :root{
+    --bg:#1B1917; --panel:#242220; --panel-2:#2C2924; --line:#3A362F;
+    --text:#EDE6D9; --dim:#A79C8C; --brass:#C9954B; --ok:#6FB096; --todo:#D27A63;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#F5F1EA; --panel:#FFFFFF; --panel-2:#EFE9DF; --line:#E1D8CA; --text:#1F1C18; --dim:#6E655A; --brass:#A8742F; --ok:#2F7A5F; --todo:#B0412E; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+  .wrap{max-width:980px;margin:0 auto;padding:32px 16px 80px}
+  h1{font-family:Georgia,serif;font-weight:normal;font-size:32px;margin:0 0 4px}
+  h2{font-family:Georgia,serif;font-weight:normal;font-size:21px;margin:32px 0 10px}
+  a{color:var(--brass)}
+  .dim{color:var(--dim)}
+  .box{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+  .user{border-left:3px solid var(--brass)}
+  ol li{margin-bottom:8px}
+  code,pre{background:var(--panel-2);border-radius:5px;font-size:13px}
+  code{padding:1px 5px}
+  pre{padding:12px;overflow-x:auto;white-space:pre-wrap;word-break:break-word}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:12px;color:var(--dim);text-transform:uppercase;letter-spacing:.04em}
+  .done{color:var(--ok);font-weight:600;white-space:nowrap}
+  .todo{color:var(--todo);font-weight:600;white-space:nowrap}
+  .id{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:var(--dim)}
+  .tablewrap{overflow-x:auto}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="dim"><a href="./">← Dashboard</a></p>
+  <h1>Relevé manuel du mois</h1>
+  <p class="dim" id="when"></p>
+
+  <div class="box user">
+    <strong>Pour toi</strong> — une fois par mois, entre le 1er et le 5 : ouvre cette page dans Chrome, ouvre
+    Claude dans Chrome et écris :
+    <pre>Fais le relevé COTE du mois en suivant les instructions de cette page.</pre>
+    Compte environ 30 à 45 minutes, sans rien faire. Il faut être connecté à GitHub dans Chrome.
+    Le robot importe chaque véhicule dès qu'il est déposé ; le récap part par mail une fois les
+    <span id="nbVeh">16</span> véhicules faits (sinon le 5 du mois, avec la liste des manquants).
+  </div>
+
+  <h2>Instructions pour Claude</h2>
+  <div class="box">
+    <p>Tu fais le relevé mensuel des annonces LeBonCoin des véhicules ci-dessous. Date du relevé :
+      <strong><code id="date"></code></strong>. Les véhicules marqués « fait » ce mois-ci sont à sauter.</p>
+    <ol>
+      <li>Pour chaque véhicule « à faire » du tableau, ouvre son lien <strong>Recherche</strong> (annonces les plus récentes en premier).</li>
+      <li>Relève les <strong><span id="nb">20</span> premières annonces</strong> de la liste de résultats, sans ouvrir chaque annonce, dans l'ordre affiché.
+        Ne fais <strong>aucun tri toi-même</strong> (le robot écarte seul les pièces, épaves et autres versions). S'il y a moins d'annonces, prends toutes celles affichées.</li>
+      <li>Note le <strong>nombre total de résultats</strong> affiché en haut de la recherche (ex. « 152 annonces ») dans <code>total</code>.</li>
+      <li>Pour chaque annonce, note uniquement ce qui est visible : <code>id</code> (les chiffres de l'adresse de l'annonce, <code>/ad/voitures/<b>3277073683</b></code>),
+        <code>titre</code>, <code>prix</code> (nombre, sans €), <code>km</code> (nombre), <code>annee</code>, <code>carburant</code>, <code>boite</code>,
+        <code>ville</code>, <code>cp</code> (code postal), <code>pro</code> (<code>true</code> si badge « Pro », sinon <code>false</code>), <code>publiee</code> (date de mise en ligne AAAA-MM-JJ si affichée).
+        <strong>N'invente jamais une valeur</strong> : mets <code>null</code> si elle n'est pas affichée.</li>
+      <li>Ouvre le lien <strong>Déposer</strong> du véhicule : GitHub ouvre un nouveau fichier déjà nommé et pré-rempli.
+        Remplace tout son contenu par le JSON du véhicule (format ci-dessous), puis clique <em>Commit changes…</em> et confirme <em>Commit changes</em> (directement sur <code>main</code>).</li>
+      <li>Passe au véhicule suivant. À la fin, donne un bilan : nombre d'annonces relevées par véhicule et tout problème rencontré
+        (recherche vide, page bloquée, captcha — dans ce cas arrête-toi et préviens).</li>
+    </ol>
+    <p><strong>Format exact du fichier</strong> (un fichier par véhicule) :</p>
+    <pre id="example"></pre>
+  </div>
+
+  <h2>Véhicules (<span id="progress"></span>)</h2>
+  <div class="box tablewrap">
+    <table>
+      <thead><tr><th>Véhicule</th><th>Identifiant</th><th>Ce mois-ci</th><th>Recherche</th><th>Dépôt</th></tr></thead>
+      <tbody id="rows"><tr><td colspan="5" class="dim">Chargement…</td></tr></tbody>
+    </table>
+  </div>
+
+  <p class="dim" style="margin-top:28px;font-size:13px">Les fichiers déposés vont dans <code>imports/</code> et sont importés par le workflow
+    « Import du relevé manuel ». Aucune donnée personnelle n'est relevée (pas de nom ni de numéro de vendeur).</p>
+</div>
+
+<script type="module">
+import { buildSearchUrl } from './src/lib/search.mjs';
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const load = async (f, d) => { try { const r = await fetch(f, { cache: 'no-store' }); return r.ok ? r.json() : d; } catch { return d; } };
+
+const [config, registry, data] = await Promise.all([load('config.json', {}), load('models.json', { models: [] }), load('data.json', { snapshots: {} })]);
+const repo = config.repo || 'mattchampavier-ui/cote-auto';
+const nb = config.releve?.annoncesParVehicule || 20;
+const today = new Date();
+const date = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+const month = date.slice(0, 7);
+const models = registry.models.filter((m) => m.active !== false);
+
+$('date').textContent = date;
+$('nb').textContent = nb;
+$('nbVeh').textContent = models.length;
+$('when').textContent = `Relevé de ${today.toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' })} · ${nb} annonces par véhicule`;
+$('example').textContent = JSON.stringify({
+  vehicule: 'peugeot-206-rc', date, total: 47,
+  annonces: [
+    { id: '3277073683', titre: 'Peugeot 206 RC 2.0 177ch', prix: 7300, km: 154000, annee: 2004, carburant: 'Essence', boite: 'Manuelle', ville: 'Belley', cp: '01300', pro: false, publiee: '2026-10-28' },
+    { id: '3278866640', titre: 'Peugeot 206 RC', prix: 9900, km: null, annee: 2005, carburant: 'Essence', boite: 'Manuelle', ville: 'Annecy', cp: '74000', pro: true, publiee: null },
+  ],
+}, null, 2);
+
+const doneThisMonth = (id) => (data.snapshots[id] || []).some((s) => s.source !== 'manuel' && s.date.slice(0, 7) === month);
+const done = models.filter((m) => doneThisMonth(m.id)).length;
+$('progress').textContent = `${done} / ${models.length} faits ce mois-ci`;
+
+const newFileUrl = (m) => {
+  const skeleton = JSON.stringify({ vehicule: m.id, date, total: null, annonces: [] }, null, 2);
+  const q = new URLSearchParams({ filename: `imports/${date}/${m.id}.json`, value: skeleton });
+  return `https://github.com/${repo}/new/main?${q}`;
+};
+
+$('rows').innerHTML = models.map((m) => {
+  const ok = doneThisMonth(m.id);
+  return `<tr>
+    <td>${esc(m.name)}</td>
+    <td class="id">${esc(m.id)}</td>
+    <td class="${ok ? 'done' : 'todo'}">${ok ? '✓ fait' : 'à faire'}</td>
+    <td><a href="${esc(buildSearchUrl(m, { sortByDate: true }))}" target="_blank" rel="noopener">Recherche ↗</a></td>
+    <td><a href="${esc(newFileUrl(m))}" target="_blank" rel="noopener">Déposer ↗</a></td>
+  </tr>`;
+}).join('');
+</script>
+</body>
+</html>
