@@ -211,12 +211,22 @@
         "failed": [],
         "costUsd": 0,
         "budgetReached": true
+      },
+      {
+        "date": "2026-10-21",
+        "source": "chrome",
+        "ok": [],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0,
+        "budgetReached": true
       }
     ],
     "importedFiles": [
       "imports/2026-10-21/alfa-156-v6.json",
       "imports/2026-10-21/bmw-z3-19-20.json",
       "imports/2026-10-21/citroen-saxo-vts.json",
+      "imports/2026-10-21/honda-s2000.json",
       "imports/2026-10-21/mazda-mx5-na.json",
       "imports/2026-10-21/peugeot-205-gti.json",
       "imports/2026-10-21/peugeot-206-rc.json",
