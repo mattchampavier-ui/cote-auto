@@ -1,7 +1,7 @@
 {
   "_comment": "Historique des relevés, ajoutés par le robot (jamais réécrits). Les relevés « manuel » du 08/09/2026 sont l'amorce de départ.",
   "meta": {
-    "lastRun": "2026-10-15",
+    "lastRun": "2026-10-21",
     "lastRecap": "2026-09",
     "runs": [
       {
@@ -130,7 +130,19 @@
         "empty": [],
         "failed": [],
         "costUsd": 0.898
+      },
+      {
+        "date": "2026-10-21",
+        "source": "chrome",
+        "ok": [],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0,
+        "budgetReached": true
       }
+    ],
+    "importedFiles": [
+      "imports/2026-10-21/peugeot-208-gti-30th.json"
     ]
   },
   "snapshots": {
