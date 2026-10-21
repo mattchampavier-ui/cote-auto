@@ -50,10 +50,11 @@ export async function scrape({ only, fixture, today = todayISO(), fetchItems, so
   // Garde-fou budget : dépense Apify du mois en cours (relevés précédents + celui-ci).
   const month = today.slice(0, 7);
   const budget = Number(config.scrape.monthlyBudgetUsd) || Infinity;
-  const spentBefore = (data.meta?.runs || []).filter((r) => r.date.slice(0, 7) === month).reduce((a, r) => a + (r.costUsd || 0), 0);
+  const spentBefore = (data.meta?.runs || []).filter((r) => r.date.slice(0, 7) === month && (r.source || 'apify') === 'apify').reduce((a, r) => a + (r.costUsd || 0), 0);
 
   for (const model of models) {
-    if (spentBefore + run.costUsd >= budget) {
+    // Le budget ne concerne que l'API payante (les imports Chrome ne coûtent rien).
+    if (source === 'apify' && spentBefore + run.costUsd >= budget) {
       console.warn(`Budget Apify du mois atteint (${round(spentBefore + run.costUsd, 2)} $ / ${budget} $) : relevé arrêté.`);
       run.budgetReached = true;
       break;

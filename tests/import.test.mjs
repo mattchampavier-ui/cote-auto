@@ -76,3 +76,14 @@ test('sans relevé complet, une annonce absente n’est pas comptée comme vendu
   assert.equal(last.sold, 3); // 0, 1 et 2 absents d'un relevé complet
   assert.equal(last.source, 'chrome');
 });
+
+test('le budget Apify ne bloque pas un import Chrome', async () => {
+  const data = box.read('data.json');
+  data.meta.runs = [{ date: '2026-11-01', source: 'apify', ok: [], empty: [], failed: [], costUsd: 9 }];
+  fs.writeFileSync(path.join(box.dir, 'data.json'), JSON.stringify(data));
+  const file = path.join(box.dir, 'imports', 'budget.json');
+  fs.writeFileSync(file, JSON.stringify({ vehicule: 'peugeot-306-s16', date: '2026-11-03', annonces: [annonce(1, { titre: 'Peugeot 306 S16', annee: 1999 }), annonce(2, { titre: 'Peugeot 306 S16', annee: 1999 })] }));
+  const { runs, done } = await importFiles([file]);
+  assert.deepEqual(runs[0].ok, ['peugeot-306-s16']);
+  assert.deepEqual(done, [file]);
+});

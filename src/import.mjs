@@ -47,6 +47,7 @@ export function toRawItem(a) {
 export async function readImports(files) {
   const byDate = {};
   const errors = [];
+  const contents = {}; // fichier → [{ date, id }]
   for (const file of files) {
     let json;
     try {
@@ -68,6 +69,7 @@ export async function readImports(files) {
     }
     // "total" = nombre de résultats affiché par LeBonCoin pour la recherche (facultatif).
     const totals = json.totaux || (json.vehicule ? { [json.vehicule]: json.total } : {});
+    contents[file] = Object.keys(groups).map((id) => ({ date, id }));
     for (const [id, list] of Object.entries(groups)) {
       const g = ((byDate[date] ||= {})[id] ||= { items: [], total: null });
       g.items.push(...(Array.isArray(list) ? list : []).map(toRawItem));
@@ -75,31 +77,39 @@ export async function readImports(files) {
       if (t != null) g.total = t;
     }
   }
-  return { byDate, errors };
+  return { byDate, errors, contents };
 }
 
 export async function importFiles(files) {
   const { models } = await readJson('models.json');
   const config = await readJson('config.json');
   const known = new Set(models.filter((m) => m.active !== false).map((m) => m.id));
-  const { byDate, errors } = await readImports(files);
+  const { byDate, errors, contents } = await readImports(files);
   const runs = [];
+  const handled = new Set(); // "date|id" importés, vides ou refusés (véhicule inconnu)
   for (const [date, groups] of Object.entries(byDate).sort()) {
     const unknown = Object.keys(groups).filter((id) => !known.has(id));
-    for (const id of unknown) errors.push(`véhicule inconnu ou retiré : « ${id} » (identifiants : ${[...known].join(', ')})`);
+    for (const id of unknown) {
+      errors.push(`véhicule inconnu ou retiré : « ${id} » (identifiants : ${[...known].join(', ')})`);
+      handled.add(`${date}|${id}`);
+    }
     const ids = Object.keys(groups).filter((id) => known.has(id));
     if (!ids.length) continue;
-    runs.push(await scrape({
+    const run = await scrape({
       today: date,
       only: ids.join(','),
       source: 'chrome',
       max: config.releve?.annoncesParVehicule || 20,
       // Sans total connu, on considère le relevé partiel : pas de « vente » déduite d'une absence.
       fetchItems: async (m) => ({ items: groups[m.id].items, complete: groups[m.id].total != null && groups[m.id].items.length >= groups[m.id].total }),
-    }));
+    });
+    runs.push(run);
+    for (const id of [...(run.ok || []), ...(run.empty || [])]) handled.add(`${date}|${id}`);
   }
   for (const e of errors) console.error(`⚠ ${e}`);
-  return { runs, errors };
+  // Un fichier n'est « traité » que si tous ses véhicules l'ont été (sinon il sera repris).
+  const done = Object.entries(contents).filter(([, list]) => list.every((x) => handled.has(`${x.date}|${x.id}`))).map(([f]) => f);
+  return { runs, errors, done };
 }
 
 // Fichiers de imports/ pas encore importés (la liste des fichiers traités est gardée dans
@@ -145,8 +155,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     process.exit(2);
   }
   importFiles(files)
-    .then(async ({ runs, errors }) => {
-      await markImported(rels.map((f) => path.relative(ROOT, path.resolve(ROOT, f))));
+    .then(async ({ runs, errors, done }) => {
+      await markImported(done.map((f) => path.relative(ROOT, f)));
       const ok = runs.reduce((a, r) => a + r.ok.length, 0);
       console.log(`Import terminé : ${ok} véhicule(s) importé(s)${errors.length ? `, ${errors.length} problème(s)` : ''}.`);
       if (!ok && errors.length) process.exit(1);

@@ -110,7 +110,10 @@
         "toit ouvrant",
         "decouvrable",
         "toit toile",
-        "toit souple"
+        "toit souple",
+        "decapotable",
+        "ciel ouvert",
+        "open air"
       ],
       "exclude": [
         "twingo 2",
