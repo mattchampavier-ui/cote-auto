@@ -166,13 +166,25 @@
         "failed": [],
         "costUsd": 0,
         "budgetReached": true
+      },
+      {
+        "date": "2026-10-21",
+        "source": "chrome",
+        "ok": [],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0,
+        "budgetReached": true
       }
     ],
     "importedFiles": [
+      "imports/2026-10-21/citroen-saxo-vts.json",
+      "imports/2026-10-21/peugeot-206-rc.json",
       "imports/2026-10-21/peugeot-208-gti-30th.json",
       "imports/2026-10-21/porsche-911-997.json",
       "imports/2026-10-21/porsche-boxster-986.json",
       "imports/2026-10-21/porsche-boxster-987.json",
+      "imports/2026-10-21/renault-clio-2-rs.json",
       "imports/2026-10-21/renault-twingo-1.json"
     ]
   },
