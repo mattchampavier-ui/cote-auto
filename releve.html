@@ -49,6 +49,14 @@
     <span id="nbVeh">16</span> véhicules faits (sinon le 5 du mois, avec la liste des manquants).
   </div>
 
+  <h2>Prompt pour Claude dans Chrome</h2>
+  <div class="box">
+    <p class="dim" style="margin-top:0">Prompt complet, à jour avec la liste des véhicules : copie-le et colle-le dans Claude dans Chrome (depuis n'importe quel onglet).</p>
+    <button id="copyPrompt" type="button" style="background:var(--brass);color:#1B1917;border:0;border-radius:6px;padding:9px 16px;font-weight:600;cursor:pointer">Copier le prompt</button>
+    <span id="copied" class="dim" style="margin-left:10px"></span>
+    <details style="margin-top:10px"><summary class="dim" style="cursor:pointer">Voir le prompt</summary><pre id="prompt"></pre></details>
+  </div>
+
   <h2>Instructions pour Claude</h2>
   <div class="box">
     <p>Tu fais le relevé mensuel des annonces LeBonCoin des véhicules ci-dessous. Date du relevé :
@@ -118,6 +126,38 @@ const newFileUrl = (m) => {
   const skeleton = JSON.stringify({ vehicule: m.id, date, total: null, annonces: [] }, null, 2);
   const q = new URLSearchParams({ filename: `imports/${date}/${m.id}.json`, value: skeleton });
   return `https://github.com/${repo}/new/main?${q}`;
+};
+
+// Prompt autonome (n'a pas besoin de cette page) : liste des véhicules, champs, format, dépôt.
+const prompt = `Tu fais le relevé mensuel COTE : les annonces LeBonCoin de ${models.length} véhicules de collection, à déposer sur GitHub (dépôt ${repo}, je suis connecté à GitHub dans ce navigateur).
+
+Date du relevé : la date du jour au format AAAA-MM-JJ (ci-dessous « DATE »).
+
+Pour CHAQUE véhicule de la liste, dans l'ordre :
+1. Ouvre son lien de recherche (déjà trié : annonces les plus récentes d'abord). Si une bannière de cookies s'affiche, choisis « Continuer sans accepter » ou refuse. Si un captcha ou un blocage apparaît, ARRÊTE-TOI et préviens-moi.
+2. Note le nombre total de résultats affiché en haut de la recherche (ex. « 152 annonces ») → "total" (null si non affiché).
+3. Relève les ${nb} PREMIÈRES annonces de la liste, dans l'ordre affiché, sans ouvrir les annonces. S'il y en a moins, prends toutes celles affichées. Ne fais AUCUN tri ni filtre toi-même (même si une annonce semble hors sujet) : le robot s'en charge.
+4. Pour chaque annonce, uniquement ce qui est visible sur la liste — n'invente jamais, mets null si absent :
+   - id : les chiffres de l'adresse de l'annonce (…/ad/voitures/3277073683 → "3277073683")
+   - titre, prix (nombre sans €), km (nombre), annee, carburant, boite, ville, cp (code postal)
+   - pro : true si l'annonce porte le badge « Pro », sinon false
+   - publiee : date de mise en ligne AAAA-MM-JJ si affichée, sinon null
+5. Ouvre ce lien GitHub en remplaçant DATE et IDENTIFIANT :
+   https://github.com/${repo}/new/main?filename=imports/DATE/IDENTIFIANT.json
+   Efface tout le contenu de l'éditeur, colle le JSON ci-dessous complété, puis clique « Commit changes… » et confirme « Commit changes » (directement sur main).
+   {"vehicule": "IDENTIFIANT", "date": "DATE", "total": 47, "annonces": [
+     {"id": "3277073683", "titre": "Peugeot 206 RC 2.0 177ch", "prix": 7300, "km": 154000, "annee": 2004, "carburant": "Essence", "boite": "Manuelle", "ville": "Belley", "cp": "01300", "pro": false, "publiee": "2026-10-28"}
+   ]}
+6. Passe au véhicule suivant.
+
+Véhicules :
+${models.map((m, i) => `${i + 1}. ${m.name} — identifiant : ${m.id}\n   ${buildSearchUrl(m, { sortByDate: true })}`).join('\n')}
+
+À la fin, fais-moi un bilan : nombre d'annonces relevées et total affiché pour chaque véhicule, et tout problème rencontré (recherche vide, dépôt GitHub refusé, page bloquée). Si un fichier existe déjà pour un véhicule à cette date (relevé repris après interruption), passe ce véhicule.`;
+$('prompt').textContent = prompt;
+$('copyPrompt').onclick = async () => {
+  try { await navigator.clipboard.writeText(prompt); $('copied').textContent = 'Copié ✓'; }
+  catch { $('copied').textContent = 'Copie impossible : ouvre « Voir le prompt » et copie le texte.'; }
 };
 
 $('rows').innerHTML = models.map((m) => {
