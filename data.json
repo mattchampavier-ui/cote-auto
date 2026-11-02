@@ -306,6 +306,17 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "ok": [
+          "citroen-saxo-vts",
+          "peugeot-306-s16"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -325,8 +336,10 @@
       "imports/2026-10-21/renault-megane-r26.json",
       "imports/2026-10-21/renault-twingo-1.json",
       "imports/2026-10-21/vw-golf-4-gti-25.json",
+      "imports/2026-11-02/citroen-saxo-vts.json",
       "imports/2026-11-02/peugeot-206-rc.json",
       "imports/2026-11-02/peugeot-208-gti-30th.json",
+      "imports/2026-11-02/peugeot-306-s16.json",
       "imports/2026-11-02/porsche-911-997.json",
       "imports/2026-11-02/porsche-boxster-986.json",
       "imports/2026-11-02/porsche-boxster-987.json",
@@ -2727,6 +2740,112 @@
           "prix aberrant": 1
         },
         "truncated": true
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "count": 12,
+        "min": 1400,
+        "p25": 3900,
+        "median": 6700,
+        "p75": 8200,
+        "max": 11500,
+        "avgKm": 168000,
+        "medianKm": 183000,
+        "refKm": 150000,
+        "refPrice": 6700,
+        "eurPer10kKm": 140,
+        "newListings": 8,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 34,
+        "priceDrops": [
+          {
+            "id": "3260831234",
+            "title": "Saxo Vts 1.6 8s 100ch",
+            "url": "https://www.leboncoin.fr/ad/voitures/3260831234",
+            "from": 6700,
+            "to": 5900,
+            "totalDropPct": 11.9
+          },
+          {
+            "id": "3292156057",
+            "title": "Citroën Saxo VTS Bic",
+            "url": "https://www.leboncoin.fr/ad/voitures/3292156057",
+            "from": 1500,
+            "to": 1400,
+            "totalDropPct": 6.7
+          },
+          {
+            "id": "3260650856",
+            "title": "Saxo vts 120ch",
+            "url": "https://www.leboncoin.fr/ad/voitures/3260650856",
+            "from": 9990,
+            "to": 9750,
+            "totalDropPct": 2.4
+          },
+          {
+            "id": "3281577931",
+            "title": "Saxo VTS 1l4 75cv",
+            "url": "https://www.leboncoin.fr/ad/voitures/3281577931",
+            "from": 5000,
+            "to": 4000,
+            "totalDropPct": 20
+          }
+        ],
+        "bargains": [
+          {
+            "id": "3292156057",
+            "title": "Citroën Saxo VTS Bic",
+            "url": "https://www.leboncoin.fr/ad/voitures/3292156057",
+            "price": 1400,
+            "km": 280000,
+            "year": 1998,
+            "city": "L'Isle-Jourdain",
+            "expected": 5490,
+            "discountPct": 74
+          },
+          {
+            "id": "3298302862",
+            "title": "Citroen Saxo VTS 75 Ch",
+            "url": "https://www.leboncoin.fr/ad/voitures/3298302862",
+            "price": 3600,
+            "km": 56098,
+            "year": 2001,
+            "city": "Cintegabelle",
+            "expected": 7790,
+            "discountPct": 54
+          },
+          {
+            "id": "3298035340",
+            "title": "Saxo vts 1l4",
+            "url": "https://www.leboncoin.fr/ad/voitures/3298035340",
+            "price": 3500,
+            "km": 182000,
+            "year": 2000,
+            "city": "La Bastide",
+            "expected": 6260,
+            "discountPct": 44
+          },
+          {
+            "id": "3281577931",
+            "title": "Saxo VTS 1l4 75cv",
+            "url": "https://www.leboncoin.fr/ad/voitures/3281577931",
+            "price": 4000,
+            "km": 210000,
+            "year": 1999,
+            "city": "Champdray",
+            "expected": 5880,
+            "discountPct": 32
+          }
+        ],
+        "proShare": 0,
+        "rejected": 8,
+        "rejectedReasons": {
+          "mot obligatoire absent": 7,
+          "prix aberrant": 1
+        },
+        "truncated": true
       }
     ],
     "peugeot-306-s16": [
@@ -2962,6 +3081,69 @@
           "mot obligatoire absent": 6,
           "mot exclu « cabriolet »": 1,
           "prix hors marché": 2
+        },
+        "truncated": true
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "count": 11,
+        "min": 2999,
+        "p25": 5395,
+        "median": 7800,
+        "p75": 8100,
+        "max": 11000,
+        "avgKm": 216000,
+        "medianKm": 211000,
+        "refKm": 180000.00000000003,
+        "refPrice": 7180,
+        "eurPer10kKm": 50,
+        "newListings": 6,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 32,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3300590277",
+            "title": "Projet 306 S16 trackday",
+            "url": "https://www.leboncoin.fr/ad/voitures/3300590277",
+            "price": 2999,
+            "km": 200000,
+            "year": 1995,
+            "city": "Cholet",
+            "expected": 7070,
+            "discountPct": 58
+          },
+          {
+            "id": "3296507909",
+            "title": "Peugeot 306 XSI S16 135ch 2.0",
+            "url": "https://www.leboncoin.fr/ad/voitures/3296507909",
+            "price": 3500,
+            "km": 327000,
+            "year": 1997,
+            "city": "Angers",
+            "expected": 6590,
+            "discountPct": 47
+          },
+          {
+            "id": "3290512252",
+            "title": "Peugeot 206 CC 2.0 S16 1er main",
+            "url": "https://www.leboncoin.fr/ad/voitures/3290512252",
+            "price": 4790,
+            "km": 156000,
+            "year": 2001,
+            "city": "Lailly-en-Val",
+            "expected": 7310,
+            "discountPct": 34
+          }
+        ],
+        "proShare": 0.09,
+        "rejected": 9,
+        "rejectedReasons": {
+          "mot exclu « cabriolet »": 1,
+          "mot obligatoire absent": 5,
+          "mot exclu « hdi »": 3
         },
         "truncated": true
       }
