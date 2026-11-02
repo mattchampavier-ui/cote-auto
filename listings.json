@@ -31794,7 +31794,7 @@
       "city": "Malemort",
       "year": 1989,
       "pro": true,
-      "publishedAt": "2026-06-19",
+      "publishedAt": "2026-11-01",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -31819,7 +31819,7 @@
         }
       ],
       "firstSeen": "2026-06-19",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3219736796": {
@@ -32793,34 +32793,20 @@
       "city": "Morlaix",
       "year": 1992,
       "pro": false,
-      "publishedAt": "2026-09-21",
+      "publishedAt": "2026-11-01",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "color": "Vert",
-        "doors": "3",
-        "seats": "5",
-        "vehicleType": "Coupé",
-        "critair": "Non classé",
-        "issuance": "05/1992",
         "zipcode": "29600",
-        "department": "Finistère",
-        "region": "Bretagne",
-        "images": 3,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
         "boosted": null,
-        "urgent": false,
-        "hasPhone": false,
-        "expiresAt": "2026-11-20",
-        "others": {
-          "vehicle_technical_inspection_valid": "Oui",
-          "Contrôle technique": "2028",
-          "Dommages": "Réparations mineures à prévoir",
-          "Sellerie": "Tout cuir",
-          "Permis": "Avec permis",
-          "Importé": "false",
-          "vehicle_history_report_status": "visible"
-        }
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
       },
       "km": 201600,
       "price": 18000,
@@ -32832,7 +32818,7 @@
         }
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "description": "Vends 205 GTI sur la base d'une gentry avec moteur 405 MI16 ~180ch ( 150000km)pour cause d'handicap, ct OK, collecteur inox 4en1, silencieux Remus, entretien fait ( vidange, filtres, distribution), de nombreuses pièces neuves et récentes.\nReste à faire, triangle de suspension av G, silent bloc moteur inférieur, petite fuite crémaillère de direction. \nNiveau carrosserie, quelques coups de portières du aux parkings, éventuellement remise en place d'un toit ouvrant rebouché par l'ancien propriétaire, quelques points de rouilles superficielles typiques des 205, bas de caisse ok. \nUn stock de pièces sera donné avec le véhicule non détaillée.\nPas d'essai du véhicule sans motivation d'achat."
     },
@@ -33123,6 +33109,40 @@
       "lastSeen": "2026-10-15",
       "gone": null,
       "description": "PEUGEOT 205 GTI 1,6 L\nVéhicule roulant avec CT\nToit ouvrant d’origine\nProjet de restauration abandonné \nAutres photos sur demandes\nPrix négociable dans la limite du raisonnable"
+    },
+    "3278370382": {
+      "title": "PEUGEOT 205 GTI 1.6i 105cv PHASE 1 1 ère main",
+      "url": "https://www.leboncoin.fr/ad/voitures/3278370382",
+      "city": "Couchey",
+      "year": 1984,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "21160",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 114500,
+      "price": 16490,
+      "firstPrice": 16490,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 16490
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
     },
     "3278388119": {
       "title": "PEUGEOT 205 1.6i - 115 GTi 1989",
@@ -34503,6 +34523,40 @@
       "lastSeen": "2026-10-15",
       "gone": null
     },
+    "3289542945": {
+      "title": "PEUGEOT 205 GTI 1.6 115ch – Collection / Boîte Manuelle 5 / Peinture Métallisée",
+      "url": "https://www.leboncoin.fr/ad/voitures/3289542945",
+      "city": "Venerque",
+      "year": 1990,
+      "pro": true,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "31810",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 140900,
+      "price": 14990,
+      "firstPrice": 14990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 14990
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
     "3291560773": {
       "title": "205 GTI 1,9 130cv",
       "url": "https://www.leboncoin.fr/ad/voitures/3291560773",
@@ -34637,6 +34691,210 @@
       ],
       "firstSeen": "2026-10-20",
       "lastSeen": "2026-10-21",
+      "gone": null
+    },
+    "3298081775": {
+      "title": "Golf 2 GTI 16S",
+      "url": "https://www.leboncoin.fr/ad/voitures/3298081775",
+      "city": "Gex",
+      "year": 1988,
+      "pro": false,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "01170",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 164500,
+      "price": 11900,
+      "firstPrice": 11900,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 11900
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3299709172": {
+      "title": "Peugeot 205 gti 1.9 130ch",
+      "url": "https://www.leboncoin.fr/ad/voitures/3299709172",
+      "city": "Pau",
+      "year": 1987,
+      "pro": false,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "64000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 253400,
+      "price": 15600,
+      "firstPrice": 15600,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 15600
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3299771121": {
+      "title": "205 Gti kit style dimma",
+      "url": "https://www.leboncoin.fr/ad/voitures/3299771121",
+      "city": "Moislains",
+      "year": 1987,
+      "pro": false,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "80200",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 122000,
+      "price": 15000,
+      "firstPrice": 15000,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 15000
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3299894979": {
+      "title": "Golf 1 cabriolet édition spéciale limitée ''Classic'' numérotée - Moteur 1.8l injection type GTI - VW Volkswagen Matching Numbers collection 1000 derniers exemplaires",
+      "url": "https://www.leboncoin.fr/ad/voitures/3299894979",
+      "city": "Salon-de-Provence",
+      "year": 1994,
+      "pro": false,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "13300",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 217500,
+      "price": 14750,
+      "firstPrice": 14750,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 14750
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3300513662": {
+      "title": "Peugeot 205 GTI 1.9",
+      "url": "https://www.leboncoin.fr/ad/voitures/3300513662",
+      "city": "Auvers-sur-Oise",
+      "year": 1987,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "95430",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 171500,
+      "price": 14990,
+      "firstPrice": 14990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 14990
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3300608489": {
+      "title": "205 gti 1.6",
+      "url": "https://www.leboncoin.fr/ad/voitures/3300608489",
+      "city": "Le Puy-en-Velay",
+      "year": 1991,
+      "pro": false,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "43000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 174000,
+      "price": 15000,
+      "firstPrice": 15000,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 15000
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
       "gone": null
     }
   },
@@ -35206,7 +35464,7 @@
       "city": "Creuzier-le-Vieux",
       "year": 2006,
       "pro": true,
-      "publishedAt": "2026-07-22",
+      "publishedAt": "2026-10-31",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -35231,7 +35489,7 @@
         }
       ],
       "firstSeen": "2026-07-22",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "description": "Mazda Mx5 ROADSTER 1.8 MZR 125 ELEGANCE, roadster, gris, 8 cv, 2 portes, première mise en circulation le 16/06/2006.\n\n2 places\n\n\r\r\n\n🚚 Livraison du véhicule en France possible (uniquement sur devis) \n\n📅 Nos véhicules sont visibles uniquement sur RDV pendant nos heures d'ouvertures au sein de notre agence CAR AND BIKE \n\n✅ Reprise de votre ancien véhicule possible (sous conditions) | Garantie mécanique (extensions 3 à 48 mois) | Financement possible \n\n🟣🔵 CAR & BIKE Vichy\nRue du Sergent Bourdeaux, 03300 Creuzier-le-Vieux\n\n📌 Prix affiché hors frais de mise à disposition et de carte grise (montant sur demande par téléphone).\n\n📞 Privilégiez les appels téléphoniques pour nous contacter plutôt que la messagerie LE BON COIN.\n\n🕒 Nos Horaires\nMardi au Samedi : 9h30 – 18h00\n \n *Des erreurs peuvent être présentes dans nos descriptifs (annonce non contractuelle). Merci de nous contacter pour plus de renseignements.\n \n *La garantie légale de conformité ne s'applique pas dans une vente entre particulier.\n\nVéhicule dans la même catégorie : BMW Z3, BMW Z4, Mercedes SLK, Audi TT, Porsche Boxster, Toyota GT86, Subaru BRZ, Fiat 124 Spider, Peugeot RCZ, Nissan 350Z, Opel GT, Mini Roadster, Honda S"
     },
@@ -35421,7 +35679,7 @@
       "city": "Creuzier-le-Vieux",
       "year": 2005,
       "pro": true,
-      "publishedAt": "2026-08-10",
+      "publishedAt": "2026-10-31",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -35446,7 +35704,7 @@
         }
       ],
       "firstSeen": "2026-08-10",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "description": "Porsche Boxster 2.7 240, roadster, gris, 16 cv, 2 portes, première mise en circulation le 12/04/2005.\n\n2 places\n\n\r\r\n\n🚚 Livraison du véhicule en France possible (uniquement sur devis) \n\n📅 Nos véhicules sont visibles uniquement sur RDV pendant nos heures d'ouvertures au sein de notre agence CAR AND BIKE \n\n✅ Reprise de votre ancien véhicule possible (sous conditions) | Garantie mécanique (extensions 3 à 48 mois) | Financement possible \n\n🟣🔵 CAR & BIKE Vichy\nRue du Sergent Bourdeaux, 03300 Creuzier-le-Vieux\n\n📌 Prix affiché hors frais de mise à disposition et de carte grise (montant sur demande par téléphone).\n\n📞 Privilégiez les appels téléphoniques pour nous contacter plutôt que la messagerie LE BON COIN.\n\n🕒 Nos Horaires\nMardi au Samedi : 9h30 – 18h00\n \n \n *Des erreurs peuvent être présentes dans nos descriptifs (annonce non contractuelle). Merci de nous contacter pour plus de renseignements.\n \n *La garantie légale de conformité ne s'applique pas dans une vente entre particulier.\n\nVéhicule dans la même catégorie : Porsche Boxster S 987 987.1 986 Boxter, Porsche Cayman, BMW Z4, Mercedes SLK, Audi TT, Mazda MX-5, Honda S2000, Nissan 350Z, Toyota MR2, Toyota GT86, Subaru BRZ, Porsch"
     },
@@ -35686,7 +35944,7 @@
       "city": "Courcelles-lès-Lens",
       "year": 2006,
       "pro": true,
-      "publishedAt": "2026-08-25",
+      "publishedAt": "2026-10-30",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -35715,7 +35973,7 @@
         }
       ],
       "firstSeen": "2026-08-25",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "description": "Vroom Market Douai vous propose : NISSAN 350Z Roadster Pack 280ch 2006 • 87 500 km • Essence • Boîte manuelle\n\n📌 Tarif hors frais d'agence | Des erreurs peuvent se glisser dans nos annonces.\n\n🚙 Véhicule classique — 990 €\n⭐ Véhicule premium — 1 090 €\n🥇 Véhicules Prestige/Sport — 1 290 €\n\n*La catégorie du véhicule est déterminée par l'agence selon le modèle et son positionnement sur le marché.\n\n📁 État & Historique\nKilométrage : 87 500 km\nMise en circulation : 2006\nCarrosserie : 2 portes • 2 places\nFinition : Pack\nContrôle technique : Moins de 6 mois\nÉtat : Bon état\n\n⚙️ Motorisation & Performances\nMotorisation : Essence 280 ch\nCylindrée : 3498 cm³\nBoîte : Manuelle 6 rapports\nTransmission : Propulsion\nCrit'Air : Non spécifié\n\n📸 Photos professionnelles disponibles sur simple demande.\n\n📞 Disponible immédiatement chez Vroom Market Douai\n🚚 Livraison possible partout en France (sur devis)\n📅 Véhicule visible sur rendez-vous uniquement\n\nVéhicule similaire à : Audi TT Roadster, BMW Z4, Mazda MX-5, Mercedes SLK, Honda S2000\n\n👉 Financement possible | Reprise de votre ancien véhicule | Garantie possible (extensions 12 à 36 mois)\n\n🟦 Vroom Market Douai\n2 Rue Jules Ferry, 62970 Courcelles-"
     },
@@ -35856,7 +36114,7 @@
       "city": "Reims",
       "year": 2009,
       "pro": true,
-      "publishedAt": "2026-09-12",
+      "publishedAt": "2026-11-01",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -35881,7 +36139,7 @@
         }
       ],
       "firstSeen": "2026-09-12",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3268164763": {
@@ -36258,7 +36516,7 @@
       "city": "Couchey",
       "year": 2003,
       "pro": true,
-      "publishedAt": "2026-06-25",
+      "publishedAt": "2026-10-31",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -36283,7 +36541,7 @@
         }
       ],
       "firstSeen": "2026-06-25",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3278262538": {
@@ -36292,7 +36550,7 @@
       "city": "Couchey",
       "year": 2002,
       "pro": true,
-      "publishedAt": "2026-06-25",
+      "publishedAt": "2026-10-30",
       "description": "Suite Automobile Votre intermédiaire de confiance pour l’achat et la vente de voitures d’occasion.\nLe bonus avec ce véhicule ? Vous bénéficiez d'une garantie de .\nN'hésitez pas à nous contacter pour un essai routier !\nVéhicule visible sur rendez-vous.\n\nModèles équivalents : BMW Z4, Mercedes-Benz SLK, Mercedes-Benz SLC, Audi TT Roadster, Jaguar F-Type, Lotus Elise, Alpine A110, Nissan 370Z Roadster, Mazda MX-5, Honda S2000, Porsche Boxster\n252cv 252ch 252 cv ch\nFrais de mise a la route optionnel 650 € (Pack Complet) :\n\n- Plein du réservoir.\n- Nettoyage complet du véhicule : 150 €\n- Garantie 12 mois : 300 €\n- Service Carte grise + Frais de virement (Obligatoire) Hors Carte Grise : 199 €\n\nServices complémentaires de l'Agence (Sur devis) :\n\n- Reprise de véhicule\n- Nettoyage véhicule\n- Conciergerie véhicule\n- Livraison à domicile\n- Sous-Traitance Mécanique\n- Sous-Traitance Carrosserie\n- Sous-Traitance Débosselage\n- Traitement Céramique\n\nHoraires :\nDu Lundi au Vendredi de 9h00 à 12h00 et de 14h00 à 18h00\nLe Samedi de 9h00 à 12h30\nInstagram : Suiteautomobiledijon\nVéhicule visible sur rendez-vous.\n\nBesoin de vendre votre voiture ? On s'occupe de tout !\n\nAcheter ou vendre une voiture d’occa",
       "details": {
         "fuel": "Essence",
@@ -36318,7 +36576,7 @@
         }
       ],
       "firstSeen": "2026-06-25",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3278304133": {
@@ -36327,7 +36585,7 @@
       "city": "Bretignolles-sur-Mer",
       "year": 2007,
       "pro": true,
-      "publishedAt": "2026-07-31",
+      "publishedAt": "2026-10-31",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -36352,7 +36610,7 @@
         }
       ],
       "firstSeen": "2026-07-31",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "description": "Honda S2000 2.0 i-VTEC Coupe Phase 2 2007\nLolan Mobility vous propose cette Honda S2000, cabriolet mythique d'exception alliant le légendaire moteur VTEC capable de montées en régime fulgurantes, un équilibre parfait et un plaisir de conduite pur. Un véhicule de collection iconique, taillé pour les passionnés de sensations authentiques, sublimé par une sellerie cuir rouge et noir très recherchée, dans un coloris Gris élégant et intemporel.\nOptions\nSellerie cuir rouge et noir (très recherchée)\nCapote changée (une fois au cours de sa vie)\nBatterie neuve\nColoris Gris\nJantes alliage spécifiques\nEquipements de série\nBoîte manuelle 6 rapports\nMoteur 2.0 i-VTEC 240 ch\nPhase 2\n2 portes\n2 places\nVitesse maximum 240 km/h\nAccélération 0 à 100 km/h en 6 secondes\nCylindrée 1 997 cm3\nConsommation mixte 10.0 l/100km\nEmissions CO2 236 g/km\nRéservoir 50 litres\nPuissance fiscale 16 CV\nInformations générales\nMarque | Honda\nModèle | S2000\nVersion | 2.0 i-VTEC Coupe Phase 2\nAnnée | 2007\nKilométrage | 105 000 km\nCarrosserie | Coupé / Cabriolet\nEnergie | Essence\nBoîte | Manuelle (6 rapports)\nTransmission | Propulsion\nCouleur extérieure | Gris\nMise en circulation | 25 janvier 2007\nInformations & Services "
     },
@@ -36362,7 +36620,7 @@
       "city": "Laval",
       "year": 2002,
       "pro": true,
-      "publishedAt": "2026-09-22",
+      "publishedAt": "2026-10-31",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -36387,7 +36645,7 @@
         }
       ],
       "firstSeen": "2026-09-22",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3278370282": {
@@ -36396,7 +36654,7 @@
       "city": "Couchey",
       "year": 2005,
       "pro": true,
-      "publishedAt": "2026-09-28",
+      "publishedAt": "2026-10-31",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -36421,7 +36679,7 @@
         }
       ],
       "firstSeen": "2026-09-28",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3278433705": {
@@ -36430,7 +36688,7 @@
       "city": "Coignières",
       "year": 2007,
       "pro": true,
-      "publishedAt": "2026-09-22",
+      "publishedAt": "2026-10-31",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -36455,7 +36713,7 @@
         }
       ],
       "firstSeen": "2026-09-22",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3278592014": {
@@ -36464,7 +36722,7 @@
       "city": "Cabestany",
       "year": 2001,
       "pro": true,
-      "publishedAt": "2026-09-28",
+      "publishedAt": "2026-10-31",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -36489,7 +36747,7 @@
         }
       ],
       "firstSeen": "2026-09-28",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3278641460": {
@@ -36656,7 +36914,7 @@
       "city": "Saint-Aunès",
       "year": 2002,
       "pro": true,
-      "publishedAt": "2026-09-24",
+      "publishedAt": "2026-10-31",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -36681,7 +36939,7 @@
         }
       ],
       "firstSeen": "2026-09-24",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3279647179": {
@@ -36690,40 +36948,20 @@
       "city": "Venelles",
       "year": 2004,
       "pro": true,
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-10-28",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "240 Ch",
-        "powerFiscal": "16 Cv",
-        "color": "Bleu",
-        "doors": "2",
-        "seats": "2",
-        "vehicleType": "Coupé",
-        "critair": "3",
-        "version": "S2000 2.0 VTEC",
-        "finition": "Base",
-        "issuance": "03/2004",
-        "oldPrice": "23990",
         "zipcode": "13770",
-        "department": "Bouches-du-Rhône",
-        "region": "Provence-Alpes-Côte d'Azur",
-        "images": 23,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
         "boosted": null,
-        "urgent": false,
-        "hasPhone": true,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
-        "others": {
-          "Dommages": "Bon état général",
-          "Sellerie": "Tout cuir",
-          "Permis": "Avec permis",
-          "VO récent": "false",
-          "custom_ref": "1670-0000584",
-          "Importé": "true",
-          "vehicle_history_report_status": "visible",
-          "spare_parts_availability": "Non renseignée"
-        }
+        "others": {}
       },
       "km": 80000,
       "price": 20990,
@@ -36739,7 +36977,7 @@
         }
       ],
       "firstSeen": "2026-09-19",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "description": "AGENCY CAR – Showroom automobile à Aix en Provence\nDepuis 2014, AGENCY CAR vous accompagne dans vos projets d'achat de véhicules d'occasion avec sérieux et transparence.\nNotre agence de Aix en Provence vous propose ce véhicule :\nHONDA S 2000 2.0 i-VTEC 240ch – AP1 – BLEU FONCE (Royal Navy Blue) – 16 cv – 2 portes – première mise en circulation le 19-03-2004 – 78 000 km – garantie 6 MOIS\nLE VÉHICULE\nLe dernier roadster atmosphérique de Honda. Moteur F20C 2.0 de 240 ch sans turbo, rupteur à 9 000 tr/min, distribution par chaîne, boîte manuelle 6 rapports, propulsion, différentiel autobloquant Torsen. Coloris d'origine Royal Navy Blue, sellerie noire. Conduite à droite.\nUN DOSSIER COMPLET, DE 2004 À AUJOURD'HUI\nCarnet d'entretien renseigné depuis la livraison neuve, réseau Honda puis entretien en France\nSuivie chez Honda Quagliozzi (Mâcon), spécialiste reconnu de la marque\n2016 à 54 608 km : 3 597 € de travaux – 4 jantes alu d'origine neuves, pneumatiques Yokohama Advan V105, ressorts avant Showa neufs, biellettes de barre stabilisatrice, bras oscillant, face de pare-chocs avant, géométrie complète avant et arrière, vidange et filtres\n2019 à 61 012 km : 1 021 € de travaux chez Honda Q"
     },
@@ -36749,7 +36987,7 @@
       "city": "Saint-Alban-Leysse",
       "year": 2002,
       "pro": true,
-      "publishedAt": "2026-08-07",
+      "publishedAt": "2026-10-29",
       "description": "AGENCY CAR réseau national de transaction automobile vous accompagne depuis 2019 dans vos projets d'achat de véhicules d'occasion.\nNous vous proposons PORSCHE 911, NOIR, 23 cv, 2 portes, première mise en circulation le 27-12-2002, garantie 6 mois.\n\nVéhicule visible UNIQUEMENT SUR RDV à l'agence de Chambéry (73).\n\nDu mardi au vendredi 10h-12h30 et 14h-18h30 et le samedi de 10h à 16h.\n- Financement possible de 12 à 72 mois.\n- Possibilité d'extension de garantie jusqu'à 48 mois.\n- Livraison dans toute la France (sur devis).\n- Des erreurs peuvent se glisser dans nos annonces, n'hésitez pas à nous contacter par téléphone pour plus de renseignements.\n\nRetrouvez également la vidéo 360° du véhicule sur notre site internet.\n\nvéhicules similaires : BMW Z4 M Roadster, Honda S2000, Mercedes-Benz SLK 55 AMG, Jaguar XK Convertible\n\nOPTIONS ET ÉQUIPEMENTS :\nAudio - Télécommunications :\n  - Pack Audio \"BOSE\" Sound System\n\nExtérieur :\n  - Commandes électriques d'ouverture des coffres AV et AR\n  - Jantes Carrera 18\"\n\nIntérieur :\n  - Sièges avant chauffants\n\nPack :\n  - Baguettes de seuil acier spécial avec inscription du modèle\n\nSécurité :\n  - Alarme antivol\n\nAutres équipements et informations :\n  - ",
       "details": {
         "fuel": "Essence",
@@ -36775,7 +37013,7 @@
         }
       ],
       "firstSeen": "2026-08-07",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3280188594": {
@@ -36968,6 +37206,40 @@
       ],
       "firstSeen": "2026-10-06",
       "lastSeen": "2026-10-15",
+      "gone": null
+    },
+    "3283732333": {
+      "title": "Honda s2000 - 1999",
+      "url": "https://www.leboncoin.fr/ad/voitures/3283732333",
+      "city": "Fécamp",
+      "year": 1999,
+      "pro": false,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "76400",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 158000,
+      "price": 21000,
+      "firstPrice": 21000,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 21000
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3284317549": {
@@ -37337,6 +37609,40 @@
       "lastSeen": "2026-10-15",
       "gone": null
     },
+    "3288938656": {
+      "title": "Porsche Boxster 987 - 2.7 FLAT 6 / 245 Ch",
+      "url": "https://www.leboncoin.fr/ad/voitures/3288938656",
+      "city": "Narbonne",
+      "year": 2007,
+      "pro": true,
+      "publishedAt": "2026-10-31",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "11100",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 89000,
+      "price": 25990,
+      "firstPrice": 25990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 25990
+        }
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
     "3289723631": {
       "title": "Jeep wrangler jk",
       "url": "https://www.leboncoin.fr/ad/voitures/3289723631",
@@ -37369,6 +37675,108 @@
       ],
       "firstSeen": "2026-10-17",
       "lastSeen": "2026-10-21",
+      "gone": null
+    },
+    "3298051749": {
+      "title": "Honda S2000 2.0 IVTEC 240 réf 452",
+      "url": "https://www.leboncoin.fr/ad/voitures/3298051749",
+      "city": "Muret",
+      "year": 2003,
+      "pro": true,
+      "publishedAt": "2026-10-30",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "31600",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 139800,
+      "price": 19490,
+      "firstPrice": 19490,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 19490
+        }
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3298483466": {
+      "title": "Mercedes SLK 200K BA KOMPRESSOR 163 CH",
+      "url": "https://www.leboncoin.fr/ad/voitures/3298483466",
+      "city": "Vesoul",
+      "year": 2005,
+      "pro": true,
+      "publishedAt": "2026-10-31",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "70000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 181000,
+      "price": 8290,
+      "firstPrice": 8290,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 8290
+        }
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3299523988": {
+      "title": "Honda S2000 2003",
+      "url": "https://www.leboncoin.fr/ad/voitures/3299523988",
+      "city": "Prévessin-Moëns",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": "2026-10-31",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "01280",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 260000,
+      "price": 16000,
+      "firstPrice": 16000,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 16000
+        }
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-11-02",
       "gone": null
     }
   },
@@ -37414,7 +37822,7 @@
       "city": "Sorgues",
       "year": 2007,
       "pro": true,
-      "publishedAt": "2026-02-28",
+      "publishedAt": "2026-10-29",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -37430,16 +37838,20 @@
         "others": {}
       },
       "km": 41461,
-      "price": 19900,
+      "price": 18900,
       "firstPrice": 19900,
       "priceHistory": [
         {
           "date": "2026-10-01",
           "price": 19900
+        },
+        {
+          "date": "2026-11-02",
+          "price": 18900
         }
       ],
       "firstSeen": "2026-02-28",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "description": "***************************************************\nRENAULT MEGANE RS 2.0T 16V 230 F1 TEAM R26 NUMEROTEE 429/500\nMEC 01/2007\nKM 41461\n***************************************************\n\nVEHICULE REVISE / GARANTI \nREPRISE POSSIBLE\n\n**************************************************\nAUTO NEGOCE 84\n960 ROUTE D'ENTRAIGUES \n84700 SORGUES \n**************************************************\n\nOPTIONS ET ÉQUIPEMENTS :\nAudio - Télécommunications :\n  - Radio CD MP3\n\nConduite :\n  - Régulateur de vitesse\n  - Système ISOFIX\n\nCouleur :\n  - Peinture métallisée\n\nExtérieur :\n  - Jantes alliage\n  - Lave-phares\n  - Projecteurs au xénon\n  - Rétroviseurs électriques\n\nIntérieur :\n  - Banquette arrière rabattable\n  - Climatisation automatique\n  - Commande audio au volant\n  - Direction assistée\n  - Fermeture centralisée à distance\n  - Sièges avant sport\n  - Sièges réglables en hauteur\n  - Vitres avant électriques\n  - Volant cuir\n  - Volant réglable en hauteur et profondeur\n\nPack :\n  - Appuis-tête avant réglables\n  - Boîte manuelle 6 vitesses\n  - Lunette arrière dégivrante\n\nSellerie :\n  - Sellerie tissu/alcantara\n\nSécurité :\n  - ABS\n  - Airbags frontaux\n  - Airbags latéraux\n  - Antidémarrage électronique\n "
     },
@@ -37449,7 +37861,7 @@
       "city": "Gleizé",
       "year": 2008,
       "pro": true,
-      "publishedAt": "2026-03-21",
+      "publishedAt": "2026-10-26",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -37474,7 +37886,7 @@
         }
       ],
       "firstSeen": "2026-03-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "description": "Renault Megane II RS F1 Team R26 2.0 230 ch - Équipé Complet R26-R, berline, noir, 14 cv, 3 portes, première mise en circulation le 30/12/2008.\n\n2 places\n\n\r\r\n\nOPTIONS:\n\n- Allumage des phares automatique\n- Régulateur / Limiteur de vitesse\n- Climatisation automatique\n\n- Peinture métal Noir\n\nPRÉPARATION R26-R\n\nExtérieur : \n\n- Kit déco type R26R Jester Création \n- Obturateur antibrouillard OEM R26R\n- Obturateur lave phare OEM R26R\n- Phares halogène à fond noir OEM R26R\n- Capot moteur en carbone OEM R26R\n- Vitres en arrières en lexan OEM R26R\n- Béquet  OEM R26R\n- Jantes OZ Alleggerita 18 pouces\n\nMoteur et Châssis :\n\n- Amortisseurs et ressort AV/AR OEM R26R\n- Disques de frein AV PFC V3 330mm avec plaquettes Ferrodo DSUNO\n- Disques de frein arrière OEM R26R avec plaquettes Ferrodo DS2500\n- Durites aviation avec liquide RBF600\n- Piston et bielles forgés ( 6 mois/ 4000km)\n- Kit distribution neuf ( 6 mois / 4000KM)\n- Injecteurs + Rampe d’injection OEM Mégane 3 RS\n- Turbo OEM Mégane 3 RS \n- Filtre à air BMC dans la boîte à air d’origine\n- Tubulure d’admission renforcé \n- Échangeur gros volume Airtec\n- Pompe à essence gros débit \n- Batterie lithium\n- Catalyseur 200 cellules \n- Ligne d’échappem"
     },
@@ -37484,7 +37896,7 @@
       "city": "Argelès-sur-Mer",
       "year": 2008,
       "pro": true,
-      "publishedAt": "2026-03-27",
+      "publishedAt": "2026-10-25",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -37509,7 +37921,7 @@
         }
       ],
       "firstSeen": "2026-03-27",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "description": "Renault Megane 2.0 R26 F1-TEAM RS 230 ch \"ECHAPPEMENT N°15/34\", berline, blanc, 14 cv, 3 portes, première mise en circulation le 30/05/2008.\n\n5 places\n\n\r\r\n\nClickandbuyauto Argelès-sur-Mer vous propose cette Renault Mégane 2 RS 2.0 Turbo 230 ch R26 F1 Team, équipée du moteur 2.0 Turbo essence de 230 ch associé à une boîte mécanique 6 rapports.\n\nUne véritable sportive devenue particulièrement recherchée, dans sa série limitée R26 F1 Team et dans une configuration rare. Cet exemplaire « Échappement » numéroté N°15/34 profite notamment des emblématiques sièges Recaro, des étriers de frein rouges et des jantes aluminium. Une Mégane RS destinée aux passionnés et collectionneurs, avec un rapport d'expertise réalisé en juin 2023.\n\nCONFORT & AGRÉMENT\n\n- Sièges sport Recaro\n- Régulateur de vitesse\n- Limiteur de vitesse\n- Volant cuir multifonction\n- Ordinateur de bord\n- Vitres électriques\n- Vitres surteintées\n- Fermeture centralisée à distance\n- Boîte mécanique 6 rapports\n\nMULTIMÉDIA & CONNECTIVITÉ\n\n- Bluetooth\n- Lecteur CD\n- Commandes au volant\n\nSÉCURITÉ & ÉCLAIRAGE\n\n- ESP\n- Airbags frontaux\n- Airbags latéraux\n- Fixations ISOFIX\n- Projecteurs Xénon\n\nR26 F1 TEAM & ÉQUIPEMENTS\n\n- Série limitée"
     },
@@ -37544,7 +37956,7 @@
         }
       ],
       "firstSeen": "2026-08-13",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "description": "Renault Mégane 2 RS R26 F1 Team – 2007 – 124 400 km\n\nJe mets en vente ma Renault Mégane 2 RS R26 F1 Team de 2007, une sportive emblématique entretenue avec le plus grand soin.\n\nCaractéristiques\n\n* Année : 2007\n* Kilométrage : 124 400 km\n* Carburant : Essence\n* Version : RS R26 F1 Team\n* 2ᵉ main (véhicule acquis à 9 000 km)\n\nEntretien et historique\n\n* Toutes les factures disponibles.\n* Véhicule suivi et entretenu rigoureusement.\n* Distribution effectuée il y a 1 an.\n* Pour la vente, la voiture sera livrée avec :\n    * 4 pneus neufs\n    * Disques et plaquettes neufs\n\nInformations complémentaires\n\n* Véhicule utilisé uniquement le week-end.\n* Toujours respectée et entretenue avec soin.\n* Très bon état général.\n* Mécanique saine, prête à rouler.\n\nPour plus d’informations, n’hésitez pas à me contacter."
     },
@@ -37554,7 +37966,7 @@
       "city": "Furiani",
       "year": 2007,
       "pro": false,
-      "publishedAt": "2026-09-20",
+      "publishedAt": "2026-10-22",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -37579,7 +37991,7 @@
         }
       ],
       "firstSeen": "2026-09-20",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "description": "Bonjour, \n\nA la suite d'un changement de projet, je mets à la vente à contre-coeur ma Renault Megane 2 RS 2.0l R26 F1 Team qui comptabilise 130 000km peu évolutifs car voiture de Week-end. \n\nDerniers frais depuis qu'elle est en ma possesssion : \n\nVidange : 07/2026\nDistribution : 07/2026\n\nGros dossier de factures à l'appui des anciens propriétaires, aucun frais à prévoir, contrôle technique sera fait pour la vente. \n\nAucun rallye / Reconnaissance / Piste, temps de chauffe toujours respectés.\n\nBecquet d'origine fourni (becquet de la R26-R présent) \n\nTourne comme une horloge, aucune rouille, peinture en parfait état.\n\nPlus d'infos sur demande."
     },
@@ -37589,7 +38001,7 @@
       "city": "Antibes",
       "year": 2007,
       "pro": true,
-      "publishedAt": "2026-09-27",
+      "publishedAt": "2026-10-30",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -37614,7 +38026,7 @@
         }
       ],
       "firstSeen": "2026-09-27",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "description": "Renault Mégane 230 R26 F1-TEAM RS / N°6/34 Origine France berline, blanc, 14 cv, 3 portes, première mise en circulation le 28/12/2007.\n\nOrigine France\nExemplaire n°6 sur 34\nDernier entretien réalisé en 2026\nVendu avec 2 clés\n\n5 places, contrôle technique : OK\n\nOPTIONS ET ÉQUIPEMENTS :\nAutres équipements et informations :\n  - Classe Crit'air : 2\n  - Puissance kilowatt : 169 kw\n  - origine pays : FRA\n  - puissance réelle : 230 ch\n  - émission CO2 : 200 g/km\n\nRéférence annonce : VIA_DDA05C"
     },
@@ -37692,7 +38104,7 @@
         }
       ],
       "firstSeen": "2026-08-07",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3252684628": {
@@ -37726,7 +38138,7 @@
         }
       ],
       "firstSeen": "2026-08-19",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "description": "Renault Megane 2 RS R26 F1 Team\n\n⚠️Véritable R26 F1 Team numérotée, jaune Sirius⚠️ \n⚠️ 4 pneus Michelin pilot sport 5 neufs.⚠️ \n\n✅Un Véhicule Entièrement Révisé avant la livraison✅\n\n✅ Véhicule Garantie 6 mois dans toute l'Europe et dans n'importe quel garage avec possibilité d'extension jusqu'à 5 ans ✅\n\n⚠️Véhicule très propre, pas de travaux à prévoir ⚠️\n\nPremière Immatriculation: 09/2008\n82 900 Kilomètres\n\nPrincipaux Equipements (liste non exhaustive) :\n\n🔸️Baquets Recaro d'origine cuir / Alcantara\n🔸️Climatisation Automatique\n🔸️Commandes au volant\n🔸️Régulateur de vitesse\n🔸️Limiteur de Vitesse\n🔸️Rétroviseurs à réglage électrique\n🔸️Système Media CD\n🔸️Vitres Electriques\n🔸️Volant réglable\n\nLe Garage Tarrade, Agent Renault, à Hiersac (16290) depuis 1974 vous propose :\n\n✅Pas de tracas administratif ! Nous nous occupons de la nouvelle immatriculation !\n\n✅Possibilité de livrer votre véhicule par la route sur devis.\n\n⚠️ Rapport Histovec disponible sur demande Possibilité d'envoi d'autres photos"
     },
@@ -37736,7 +38148,7 @@
       "city": "Narbonne",
       "year": 2008,
       "pro": true,
-      "publishedAt": "2026-10-20",
+      "publishedAt": "2026-10-31",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -37765,7 +38177,7 @@
         }
       ],
       "firstSeen": "2026-08-25",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "description": "Renault Mégane 2.0 RS F1 TEAM R26 - Série Échappement N° 4/34 230 Ch DISTRIBUTION ÉFFECTUÉE compacte, blanc, 14 cv, 3 portes, première mise en circulation le 12/02/2008.\n\nEntretiens à jours sur factures de 2009 à 2026 Disponibles - KIT DISTRIBUTION + PAE   en 2018 à 62246 kms et en 2024 à 111535 kms - COURROIE ACCESSOIRE en 2018 a 62246 kms et en 2023 a 109279 kms\nDerniers entretiens en 04/2026 = Vidange + Filtres + Paraléllisme + Contrôle Technique Favorable Vierge\n\nExemplaire N°4/34  accompagné Revue Échappement n°484 – novembre 2007, comprenant le dossier « Élection de la Sportive de l'année 2007 », dans lequel figure notamment la Renault Mégane RS F1 Team R26,\ndevant  l'Audi S3, BMW M3, Honda Civic Type-R, Lotus Europa S, Mazda 3 MPS, VW Golf GTI Edition 30, Opel Corsa OPC , Peugeot 207 RC, Renault Clio RS F1 Team R27\n\nOptions et équipements :\n\n* Sièges sport RECARO\n* Étriers de frein Brembo rouges\n* Jantes alliage 18 pouces\n* Double sortie d'échappement centrale\n* Climatisation automatique\n* Régulateur de vitesse\n* Volant sport multifonction\n* Pédalier aluminium\n* Repose-pied aluminium\n* Lave-phares\n* Projecteurs AV lenticulaires\n* Feux antibrouillard AV\n* Accoudoir central AV"
     },
@@ -37810,7 +38222,7 @@
       "city": "Grand-Couronne",
       "year": 2008,
       "pro": true,
-      "publishedAt": "2026-09-04",
+      "publishedAt": "2026-10-29",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -37839,7 +38251,7 @@
         }
       ],
       "firstSeen": "2026-09-04",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "description": "Renault Megane 2.0 R.S F1 TEAM R26 230ch - Série limitée (Échappement N° 25/34) , blanc, 14 cv, 3 portes, première mise en circulation le 25/01/2008.\n\nExemplaire N°25/34 en Série limitée tiré du partenariat avec le célèbre magazine Échappement !\n\nDistribution à jour !\n\nOptions et équipements :\n\n* Sièges sport RECARO\n* Étriers de frein rouges\n* Jantes alliage R26 R\n* Roue secours R26 R\n* Pommeau de vitesse Renault Sport\n* Carplay / poste auto radio d'origine disponible\n* Catalyseur sport 200 cellules\n* Silencieux Inox\n* Double sortie d'échappement centrale\n* Climatisation automatique\n* Régulateur de vitesse\n* Volant sport multifonction\n* Pédalier aluminium\n* Repose-pied aluminium\n* Lave-phares\n* Projecteurs AV lenticulaires\n* Feux antibrouillard AV\n* Accoudoir central AV\n* Vitres électriques AV\n* Sellerie noire à présentation sportive\n* Becquet AR\n* Décoration Renault F1 Team\n* Marquage R26\n* Sticker « 1ère Sportive de l'année 2007 – Échappement – R26 »\n* Vitres AR teintées / surteintées\n* Stage 1 réalisé en centre spécialisé\n\nVEHICULE VISIBLE SUR RENDEZ-VOUS UNIQUEMENT !\nVéhicule en dépôt vente, non garantie. \n\nDes erreurs pouvant se glisser dans nos annonces, merci de nous contact"
     },
@@ -37924,7 +38336,7 @@
       "city": "Segré-en-Anjou Bleu",
       "year": 2007,
       "pro": true,
-      "publishedAt": "2026-09-25",
+      "publishedAt": "2026-10-29",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -37940,16 +38352,20 @@
         "others": {}
       },
       "km": 146579,
-      "price": 22990,
+      "price": 22490,
       "firstPrice": 22990,
       "priceHistory": [
         {
           "date": "2026-10-01",
           "price": 22990
+        },
+        {
+          "date": "2026-11-02",
+          "price": 22490
         }
       ],
       "firstSeen": "2026-09-25",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "description": "Renault Mégane 2 rs F1 Team R26, Jaune Sirius, 2.0L 230CH, 14 chevaux fiscaux, 3 portes, 5 places, première mise en circulation le 30/05/2007, 146579 kilomètres non évolutif\n\nVÉHICULE EN DEPOT VENTE, garantie possible via le garage\n\nOrigine France\n\nElle a eu 4 propriétaires au total : 2 agents Renault ainsi que 2 commerciaux Renault.\nLa voiture est toujours restée dans le réseau.\nDouble de clés et pochette constructeur fournis\n\nLa voiture est en excellent état pour l’année et le kilométrage.\nElle a eu plusieurs frais récents:\n09/2026 : Changement pignon 3 et 4 de boite de vitesse ainsi que synchro de 3 et 4, vidange de boite. \n07/2026 : Vidange, bougies, liquide de frein, filtre à huile, réparation lève vitre AVG\n07/2026 : Rénovation et couture volant + pommeau de levier de vitesse\n05/2026 : Disques et plaquettes avant\n12/2025 : Disques de freins AR + moyeu de disque AR\n12/2025 : Vidange filtre à huile\n09/2024 : Kit embrayage complet\n08/2024 : Vidange filtre à huile, filtre habitacle\n10/2023 : Kit courroie de distribution pompe à eau + biellette inf + rotule axiale\n03/2023 : 4 pneus neufs à 139000 kilomètres  \n\nQuelques modifications minimes effectuées sur la voiture: \nFiltre à air"
     },
@@ -38065,7 +38481,7 @@
         }
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3285622672": {
@@ -38101,6 +38517,108 @@
       ],
       "firstSeen": "2026-10-10",
       "lastSeen": "2026-10-21",
+      "gone": null
+    },
+    "3293481955": {
+      "title": "Mégane 2 RS r26 f1 team",
+      "url": "https://www.leboncoin.fr/ad/voitures/3293481955",
+      "city": "La Ferté-sous-Jouarre",
+      "year": 2007,
+      "pro": false,
+      "publishedAt": "2026-10-23",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "77260",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 101000,
+      "price": 16000,
+      "firstPrice": 16000,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 16000
+        }
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3295524921": {
+      "title": "Mégane 2 RS R26",
+      "url": "https://www.leboncoin.fr/ad/voitures/3295524921",
+      "city": "Bédée",
+      "year": 2007,
+      "pro": false,
+      "publishedAt": "2026-10-26",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "35137",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 69000,
+      "price": 24999,
+      "firstPrice": 24999,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 24999
+        }
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3299240273": {
+      "title": "Megane rs f1team r26",
+      "url": "https://www.leboncoin.fr/ad/voitures/3299240273",
+      "city": "Gramat",
+      "year": 2007,
+      "pro": false,
+      "publishedAt": "2026-10-31",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "46500",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 130000,
+      "price": 20000,
+      "firstPrice": 20000,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 20000
+        }
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-11-02",
       "gone": null
     }
   },

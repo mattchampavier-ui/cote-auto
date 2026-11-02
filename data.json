@@ -2,7 +2,7 @@
   "_comment": "Historique des relevés, ajoutés par le robot (jamais réécrits). Les relevés « manuel » du 08/09/2026 sont l'amorce de départ.",
   "meta": {
     "lastRun": "2026-11-02",
-    "lastRecap": "2026-09",
+    "lastRecap": "2026-10",
     "runs": [
       {
         "date": "2026-10-01",
@@ -339,6 +339,18 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "ok": [
+          "peugeot-205-gti",
+          "honda-s2000",
+          "renault-megane-r26"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -361,7 +373,9 @@
       "imports/2026-11-02/alfa-156-v6.json",
       "imports/2026-11-02/bmw-z3-19-20.json",
       "imports/2026-11-02/citroen-saxo-vts.json",
+      "imports/2026-11-02/honda-s2000.json",
       "imports/2026-11-02/mazda-mx5-na.json",
+      "imports/2026-11-02/peugeot-205-gti.json",
       "imports/2026-11-02/peugeot-206-rc.json",
       "imports/2026-11-02/peugeot-208-gti-30th.json",
       "imports/2026-11-02/peugeot-306-s16.json",
@@ -369,6 +383,7 @@
       "imports/2026-11-02/porsche-boxster-986.json",
       "imports/2026-11-02/porsche-boxster-987.json",
       "imports/2026-11-02/renault-clio-2-rs.json",
+      "imports/2026-11-02/renault-megane-r26.json",
       "imports/2026-11-02/renault-twingo-1.json",
       "imports/2026-11-02/vw-golf-4-gti-25.json"
     ]
@@ -4310,6 +4325,47 @@
           "prix hors marché": 1
         },
         "truncated": true
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "count": 10,
+        "min": 11900,
+        "p25": 14990,
+        "median": 15000,
+        "p75": 16268,
+        "max": 20990,
+        "avgKm": 174000,
+        "medianKm": 173000,
+        "refKm": 190000.00000000003,
+        "refPrice": 15000,
+        "eurPer10kKm": null,
+        "newListings": 8,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 33,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3298081775",
+            "title": "Golf 2 GTI 16S",
+            "url": "https://www.leboncoin.fr/ad/voitures/3298081775",
+            "price": 11900,
+            "km": 164500,
+            "year": 1988,
+            "city": "Gex",
+            "expected": 15000,
+            "discountPct": 21
+          }
+        ],
+        "proShare": 0.4,
+        "rejected": 10,
+        "rejectedReasons": {
+          "mot obligatoire absent": 7,
+          "mot exclu « xs »": 1,
+          "prix hors marché": 2
+        },
+        "truncated": true
       }
     ],
     "honda-s2000": [
@@ -4611,6 +4667,89 @@
           "doublon": 1
         },
         "truncated": true
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "count": 19,
+        "min": 8290,
+        "p25": 17490,
+        "median": 19990,
+        "p75": 24490,
+        "max": 37990,
+        "avgKm": 121000,
+        "medianKm": 104000,
+        "refKm": 140000,
+        "refPrice": 20940,
+        "eurPer10kKm": 250,
+        "newListings": 5,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 47,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3298483466",
+            "title": "Mercedes SLK 200K BA KOMPRESSOR 163 CH",
+            "url": "https://www.leboncoin.fr/ad/voitures/3298483466",
+            "price": 8290,
+            "km": 181000,
+            "year": 2005,
+            "city": "Vesoul",
+            "expected": 19990,
+            "discountPct": 59
+          },
+          {
+            "id": "3278261940",
+            "title": "MG TF 135 136cv - Hardtop/Sièges cuir/Jantes 16\\\"",
+            "url": "https://www.leboncoin.fr/ad/voitures/3278261940",
+            "price": 9990,
+            "km": 91000,
+            "year": 2003,
+            "city": "Couchey",
+            "expected": 22180,
+            "discountPct": 55
+          },
+          {
+            "id": "3268109545",
+            "title": "MAZDA MX-5 1.8 MZR 126ch ÉLÉGANCE CUIR 2009 - 75 000 km -Sièges chauffants - Bluetooth - Climatisation",
+            "url": "https://www.leboncoin.fr/ad/voitures/3268109545",
+            "price": 12990,
+            "km": 75000,
+            "year": 2009,
+            "city": "Reims",
+            "expected": 22490,
+            "discountPct": 42
+          },
+          {
+            "id": "3237454171",
+            "title": "Mazda Mx5 ROADSTER 1.8 MZR 125 ELEGANCE",
+            "url": "https://www.leboncoin.fr/ad/voitures/3237454171",
+            "price": 12990,
+            "km": 101000,
+            "year": 2006,
+            "city": "Creuzier-le-Vieux",
+            "expected": 21930,
+            "discountPct": 41
+          },
+          {
+            "id": "3299523988",
+            "title": "Honda S2000 2003",
+            "url": "https://www.leboncoin.fr/ad/voitures/3299523988",
+            "price": 16000,
+            "km": 260000,
+            "year": 2003,
+            "city": "Prévessin-Moëns",
+            "expected": 19990,
+            "discountPct": 20
+          }
+        ],
+        "proShare": 0.89,
+        "rejected": 1,
+        "rejectedReasons": {
+          "prix hors marché": 1
+        },
+        "truncated": true
       }
     ],
     "renault-megane-r26": [
@@ -4828,6 +4967,87 @@
           "prix hors marché": 2
         },
         "truncated": false
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "count": 15,
+        "min": 16000,
+        "p25": 19950,
+        "median": 23900,
+        "p75": 24745,
+        "max": 31490,
+        "avgKm": 96000,
+        "medianKm": 99000,
+        "refKm": 100000.00000000001,
+        "refPrice": 22590,
+        "eurPer10kKm": 450,
+        "newListings": 3,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 45,
+        "priceDrops": [
+          {
+            "id": "3152592919",
+            "title": "Renault megane rs 2.0t 16v 230 f1 team r26 numerotee 41mkm",
+            "url": "https://www.leboncoin.fr/ad/voitures/3152592919",
+            "from": 19900,
+            "to": 18900,
+            "totalDropPct": 5
+          },
+          {
+            "id": "3276458601",
+            "title": "Renault Mégane 2 rs F1 Team R26",
+            "url": "https://www.leboncoin.fr/ad/voitures/3276458601",
+            "from": 22990,
+            "to": 22490,
+            "totalDropPct": 2.2
+          }
+        ],
+        "bargains": [
+          {
+            "id": "3293481955",
+            "title": "Mégane 2 RS r26 f1 team",
+            "url": "https://www.leboncoin.fr/ad/voitures/3293481955",
+            "price": 16000,
+            "km": 101000,
+            "year": 2007,
+            "city": "La Ferté-sous-Jouarre",
+            "expected": 22550,
+            "discountPct": 29
+          },
+          {
+            "id": "3152592919",
+            "title": "Renault megane rs 2.0t 16v 230 f1 team r26 numerotee 41mkm",
+            "url": "https://www.leboncoin.fr/ad/voitures/3152592919",
+            "price": 18900,
+            "km": 41461,
+            "year": 2007,
+            "city": "Sorgues",
+            "expected": 24730,
+            "discountPct": 24
+          },
+          {
+            "id": "3245939851",
+            "title": "Megane RS R26",
+            "url": "https://www.leboncoin.fr/ad/voitures/3245939851",
+            "price": 18000,
+            "km": 88000,
+            "year": 2008,
+            "city": "Grandchamps-des-Fontaines",
+            "expected": 23130,
+            "discountPct": 22
+          }
+        ],
+        "proShare": 0.53,
+        "rejected": 5,
+        "rejectedReasons": {
+          "doublon": 1,
+          "variante non reconnue": 1,
+          "mot exclu « dci »": 1,
+          "prix hors marché": 2
+        },
+        "truncated": true
       }
     ],
     "vw-golf-4-gti-25": [
