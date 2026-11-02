@@ -317,6 +317,17 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "ok": [
+          "bmw-z3-19-20",
+          "vw-golf-4-gti-25"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -336,6 +347,7 @@
       "imports/2026-10-21/renault-megane-r26.json",
       "imports/2026-10-21/renault-twingo-1.json",
       "imports/2026-10-21/vw-golf-4-gti-25.json",
+      "imports/2026-11-02/bmw-z3-19-20.json",
       "imports/2026-11-02/citroen-saxo-vts.json",
       "imports/2026-11-02/peugeot-206-rc.json",
       "imports/2026-11-02/peugeot-208-gti-30th.json",
@@ -344,7 +356,8 @@
       "imports/2026-11-02/porsche-boxster-986.json",
       "imports/2026-11-02/porsche-boxster-987.json",
       "imports/2026-11-02/renault-clio-2-rs.json",
-      "imports/2026-11-02/renault-twingo-1.json"
+      "imports/2026-11-02/renault-twingo-1.json",
+      "imports/2026-11-02/vw-golf-4-gti-25.json"
     ]
   },
   "snapshots": {
@@ -3337,6 +3350,83 @@
           "mot exclu « 3.0 »": 1
         },
         "truncated": true
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "count": 13,
+        "min": 4800,
+        "p25": 8800,
+        "median": 9990,
+        "p75": 12990,
+        "max": 17500,
+        "avgKm": 143000,
+        "medianKm": 137000,
+        "refKm": 130000.00000000001,
+        "refPrice": 11160,
+        "eurPer10kKm": 370,
+        "newListings": 12,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 35,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3297158888",
+            "title": "Bmw Z3 1.9l 140cv",
+            "url": "https://www.leboncoin.fr/ad/voitures/3297158888",
+            "price": 4800,
+            "km": 275000,
+            "year": 1997,
+            "city": "Grisolles",
+            "expected": 7820,
+            "discountPct": 39
+          },
+          {
+            "id": "3208615078",
+            "title": "BMW Z3 1.8 ROADSTER 115Ch Garantie 12 mois",
+            "url": "https://www.leboncoin.fr/ad/voitures/3208615078",
+            "price": 8980,
+            "km": 106000,
+            "year": 1996,
+            "city": "Puget-sur-Argens",
+            "expected": 12040,
+            "discountPct": 25
+          },
+          {
+            "id": "3251036820",
+            "title": "BMW Z3 1.9i",
+            "url": "https://www.leboncoin.fr/ad/voitures/3251036820",
+            "price": 8000,
+            "km": 164000,
+            "year": 2001,
+            "city": "Prévessin-Moëns",
+            "expected": 9910,
+            "discountPct": 19
+          },
+          {
+            "id": "3261700699",
+            "title": "Bmw z3 1.9l 140cv",
+            "url": "https://www.leboncoin.fr/ad/voitures/3261700699",
+            "price": 6500,
+            "km": 230000,
+            "year": 1996,
+            "city": "Zonza",
+            "expected": 7820,
+            "discountPct": 17
+          }
+        ],
+        "proShare": 0.46,
+        "rejected": 7,
+        "rejectedReasons": {
+          "mot exclu « m roadster »": 2,
+          "mot exclu « 2.8 »": 1,
+          "mot exclu « m coupe »": 1,
+          "mot exclu « coupe »": 1,
+          "mot exclu « 2.8i »": 1,
+          "prix hors marché": 1
+        },
+        "truncated": true
       }
     ],
     "alfa-156-v6": [
@@ -4612,6 +4702,34 @@
         "rejected": 6,
         "rejectedReasons": {
           "mot exclu « tdi »": 4,
+          "variante non reconnue": 2
+        },
+        "truncated": false
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "count": 1,
+        "min": 11000,
+        "p25": 11000,
+        "median": 11000,
+        "p75": 11000,
+        "max": 11000,
+        "avgKm": 195000,
+        "medianKm": 195000,
+        "refKm": 200000.00000000003,
+        "refPrice": 11000,
+        "eurPer10kKm": null,
+        "newListings": 0,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 25,
+        "priceDrops": [],
+        "bargains": [],
+        "proShare": 0,
+        "rejected": 5,
+        "rejectedReasons": {
+          "mot exclu « tdi »": 3,
           "variante non reconnue": 2
         },
         "truncated": false

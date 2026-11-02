@@ -26100,6 +26100,40 @@
       "lastSeen": "2026-10-01",
       "gone": null
     },
+    "3208615078": {
+      "title": "BMW Z3 1.8 ROADSTER 115Ch Garantie 12 mois",
+      "url": "https://www.leboncoin.fr/ad/voitures/3208615078",
+      "city": "Puget-sur-Argens",
+      "year": 1996,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "83480",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 106000,
+      "price": 8980,
+      "firstPrice": 8980,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 8980
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
     "3211730689": {
       "title": "BMW z3",
       "url": "https://www.leboncoin.fr/ad/voitures/3211730689",
@@ -26405,6 +26439,40 @@
       "lastSeen": "2026-10-21",
       "gone": null
     },
+    "3245464697": {
+      "title": "BMW Z3 cabriolet",
+      "url": "https://www.leboncoin.fr/ad/voitures/3245464697",
+      "city": "Lélex",
+      "year": 2000,
+      "pro": false,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "01410",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 165000,
+      "price": 11000,
+      "firstPrice": 11000,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 11000
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
     "3245635449": {
       "title": "BMW Z3 Roadster 1.9i ROADSTER E36 Roadster BVM - GARANTIE 12 MOIS",
       "url": "https://www.leboncoin.fr/ad/voitures/3245635449",
@@ -26616,6 +26684,40 @@
       "lastSeen": "2026-10-01",
       "gone": null
     },
+    "3251036820": {
+      "title": "BMW Z3 1.9i",
+      "url": "https://www.leboncoin.fr/ad/voitures/3251036820",
+      "city": "Prévessin-Moëns",
+      "year": 2001,
+      "pro": false,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "01280",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 164000,
+      "price": 8000,
+      "firstPrice": 8000,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 8000
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
     "3256683007": {
       "title": "Bmw z3 roadster 1.9 118 cv - 85 500 km - 13 900.00",
       "url": "https://www.leboncoin.fr/ad/voitures/3256683007",
@@ -26653,6 +26755,40 @@
       ],
       "firstSeen": "2026-08-25",
       "lastSeen": "2026-10-01",
+      "gone": null
+    },
+    "3256710705": {
+      "title": "BMW Z3 Roadster 1.9 I 140 ch Bvm5 / Couleur Hellrot Uni",
+      "url": "https://www.leboncoin.fr/ad/voitures/3256710705",
+      "city": "Pornichet",
+      "year": 1997,
+      "pro": true,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "44380",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 89980,
+      "price": 14990,
+      "firstPrice": 14990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 14990
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3256898231": {
@@ -26860,44 +26996,61 @@
       "lastSeen": "2026-10-01",
       "gone": null
     },
+    "3261700699": {
+      "title": "Bmw z3 1.9l 140cv",
+      "url": "https://www.leboncoin.fr/ad/voitures/3261700699",
+      "city": "Zonza",
+      "year": 1996,
+      "pro": false,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "20144",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 230000,
+      "price": 6500,
+      "firstPrice": 6500,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 6500
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
     "3262111623": {
       "title": "Bmw z3 1.9 140ch roadster + entretien à jour + garantie",
       "url": "https://www.leboncoin.fr/ad/voitures/3262111623",
       "city": "Saint-Laurent-des-Vignes",
       "year": 1998,
       "pro": true,
-      "publishedAt": "2026-09-03",
+      "publishedAt": "2026-11-02",
       "description": "BMW Z3 1.9 140CH ROADSTER + ENTRETIEN À JOUR + GARANTIE cabriolet, gris, 9 cv, 2 portes, première mise en circulation le 13/05/1998, garantie 98 mois.\n\n2 places\n\nOPTIONS ET ÉQUIPEMENTS :\nGarantie :\n  -  Garantie 3 mois\n  -  Garantie 6 mois\n\nPack :\n  -  équipements\n\nSécurité :\n  - Airbags\n\nAutres équipements et informations :\n  -  Démarche ( hors carte gris)\n  -  Les véhicules sont visible uniquement sur rendez-vous\n  -  Malgré tout le soin apporté à nos annonces des erreurs peuvent s'être glissées (options\n  -  Nettoyage Premium\n  -  Nettoyage confort\n  -  Nettoyage standard\n  -  Nous proposons trois packs de livraison obligatoire adaptés à vos besoins :\n  -  Pack à 390 € : 1/4 de carburant\n  -  Pack à 590 € : 1/4 de carburant\n  -  Pack à 790 € : 1/4 de carburant\n  -  Réalisation et le coût de la carte grise inclus ( maximum de 6 chevaux fiscaux au-delà de 6 le coût du cheval fiscal sera en complément)\n  -  etc.) Merci de vérifier ces éléments avec notre équipe\n  - Classe Crit'air : 3\n  - Puissance kilowatt : 103 kw\n  - puissance réelle : 140 ch\n\nRéférence annonce : 0001136",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "140 Ch",
-        "powerFiscal": "9 Cv",
-        "color": "Gris",
-        "doors": "2",
-        "seats": "2",
-        "vehicleType": "Cabriolet",
-        "critair": "3",
-        "version": "Z3 Roadster 1.9i 140ch",
-        "finition": "Base",
-        "issuance": "05/1998",
         "zipcode": "24100",
-        "department": "Dordogne",
-        "region": "Aquitaine",
-        "images": 15,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
-        "boosted": true,
-        "urgent": false,
-        "hasPhone": true,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
-        "others": {
-          "Permis": "Avec permis",
-          "VO récent": "false",
-          "custom_ref": "0001136",
-          "Importé": "true",
-          "vehicle_history_report_status": "visible",
-          "spare_parts_availability": "Non renseignée"
-        }
+        "others": {}
       },
       "km": 137000,
       "price": 9990,
@@ -26909,7 +27062,7 @@
         }
       ],
       "firstSeen": "2026-09-03",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3265952895": {
@@ -27319,6 +27472,40 @@
       ],
       "firstSeen": "2026-09-24",
       "lastSeen": "2026-10-15",
+      "gone": null
+    },
+    "3276459783": {
+      "title": "BMW Z3 Z3 1.9i/HARD TOP",
+      "url": "https://www.leboncoin.fr/ad/voitures/3276459783",
+      "city": "Fresnes",
+      "year": 2002,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "94260",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 185171,
+      "price": 11590,
+      "firstPrice": 11590,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 11590
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3278275196": {
@@ -27820,6 +28007,40 @@
       "lastSeen": "2026-10-15",
       "gone": null
     },
+    "3289554373": {
+      "title": "Bmw Z3 ROADSTER 1.9",
+      "url": "https://www.leboncoin.fr/ad/voitures/3289554373",
+      "city": "Saint-Maur-des-Fossés",
+      "year": 1996,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "94100",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 42672,
+      "price": 12990,
+      "firstPrice": 12990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 12990
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
     "3292100248": {
       "title": "Bmw z3 roadster",
       "url": "https://www.leboncoin.fr/ad/voitures/3292100248",
@@ -27954,6 +28175,176 @@
       ],
       "firstSeen": "2026-10-20",
       "lastSeen": "2026-10-21",
+      "gone": null
+    },
+    "3297158888": {
+      "title": "Bmw Z3 1.9l 140cv",
+      "url": "https://www.leboncoin.fr/ad/voitures/3297158888",
+      "city": "Grisolles",
+      "year": 1997,
+      "pro": false,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "82170",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 275000,
+      "price": 4800,
+      "firstPrice": 4800,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 4800
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3300636935": {
+      "title": "BMW Z3 1.8i 116cv (E36)",
+      "url": "https://www.leboncoin.fr/ad/voitures/3300636935",
+      "city": "Douai",
+      "year": 1996,
+      "pro": false,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "59500",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 117000,
+      "price": 9990,
+      "firstPrice": 9990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 9990
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3300704397": {
+      "title": "Voiture cabriolet",
+      "url": "https://www.leboncoin.fr/ad/voitures/3300704397",
+      "city": "Rupt-sur-Moselle",
+      "year": 2000,
+      "pro": false,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "88360",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 60000,
+      "price": 13500,
+      "firstPrice": 13500,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 13500
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3300745381": {
+      "title": "Bmw z3 roadster 2.3l 170 ch m52 6 cylindres “sienarot” cuir et capote beige rare",
+      "url": "https://www.leboncoin.fr/ad/voitures/3300745381",
+      "city": "Fontaine-sous-Jouy",
+      "year": 2000,
+      "pro": true,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "27120",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 137000,
+      "price": 17500,
+      "firstPrice": 17500,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 17500
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3300791796": {
+      "title": "Bmw z3 chrome line bleu",
+      "url": "https://www.leboncoin.fr/ad/voitures/3300791796",
+      "city": "Nîmes",
+      "year": 2000,
+      "pro": false,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "30000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 156000,
+      "price": 8800,
+      "firstPrice": 8800,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 8800
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
       "gone": null
     }
   },
@@ -37453,7 +37844,7 @@
         }
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     }
   }
