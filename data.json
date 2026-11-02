@@ -284,6 +284,17 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "ok": [
+          "porsche-boxster-986",
+          "renault-twingo-1"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -305,7 +316,9 @@
       "imports/2026-10-21/vw-golf-4-gti-25.json",
       "imports/2026-11-02/peugeot-208-gti-30th.json",
       "imports/2026-11-02/porsche-911-997.json",
-      "imports/2026-11-02/porsche-boxster-987.json"
+      "imports/2026-11-02/porsche-boxster-986.json",
+      "imports/2026-11-02/porsche-boxster-987.json",
+      "imports/2026-11-02/renault-twingo-1.json"
     ]
   },
   "snapshots": {
@@ -1002,6 +1015,106 @@
           "prix hors marché": 1
         },
         "truncated": true
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "count": 19,
+        "min": 15490,
+        "p25": 16990,
+        "median": 19500,
+        "p75": 22540,
+        "max": 27990,
+        "avgKm": 114000,
+        "medianKm": 113000,
+        "refKm": 110000,
+        "refPrice": 20230,
+        "eurPer10kKm": 440,
+        "newListings": 11,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 36,
+        "priceDrops": [
+          {
+            "id": "3213662506",
+            "title": "Porsche BOXSTER (986) 2.7",
+            "url": "https://www.leboncoin.fr/ad/voitures/3213662506",
+            "from": 17900,
+            "to": 16990,
+            "totalDropPct": 5.1
+          },
+          {
+            "id": "3280631151",
+            "title": "Porsche Boxster 986 2.7L 220CH",
+            "url": "https://www.leboncoin.fr/ad/voitures/3280631151",
+            "from": 15900,
+            "to": 15500,
+            "totalDropPct": 2.5
+          }
+        ],
+        "bargains": [
+          {
+            "id": "3280631151",
+            "title": "Porsche Boxster 986 2.7L 220CH",
+            "url": "https://www.leboncoin.fr/ad/voitures/3280631151",
+            "price": 15500,
+            "km": 112500,
+            "year": 2000,
+            "city": "Saint-Laurent-du-Var",
+            "expected": 20120,
+            "discountPct": 23
+          },
+          {
+            "id": "3221333100",
+            "title": "Porsche Boxster TYPE 986 2.5 204",
+            "url": "https://www.leboncoin.fr/ad/voitures/3221333100",
+            "price": 15990,
+            "km": 102000,
+            "year": 1997,
+            "city": "Hésingue",
+            "expected": 20580,
+            "discountPct": 22
+          },
+          {
+            "id": "3293642960",
+            "title": "Porsche boxster 2.5 type 986 – 204 ch – tiptronic – cabriolet – garantie 12 mois",
+            "url": "https://www.leboncoin.fr/ad/voitures/3293642960",
+            "price": 15490,
+            "km": 124145,
+            "year": 2000,
+            "city": "Échiré",
+            "expected": 19610,
+            "discountPct": 21
+          },
+          {
+            "id": "3300535749",
+            "title": "Porsche boxster",
+            "url": "https://www.leboncoin.fr/ad/voitures/3300535749",
+            "price": 15500,
+            "km": 141000,
+            "year": 1998,
+            "city": "Sainte-Pazanne",
+            "expected": 18880,
+            "discountPct": 18
+          },
+          {
+            "id": "3278388347",
+            "title": "PORSCHE BOXSTER Porsche 986 2.5i Tiptronic / Phase 1 / Cabriolet / Suivi Porsche Complet",
+            "url": "https://www.leboncoin.fr/ad/voitures/3278388347",
+            "price": 17499,
+            "km": 87878,
+            "year": 1998,
+            "city": "Élancourt",
+            "expected": 21190,
+            "discountPct": 17
+          }
+        ],
+        "proShare": 0.84,
+        "rejected": 1,
+        "rejectedReasons": {
+          "mot obligatoire absent": 1
+        },
+        "truncated": true
       }
     ],
     "porsche-boxster-987": [
@@ -1592,6 +1705,58 @@
         "rejectedReasons": {
           "variante non reconnue": 15,
           "prix hors marché": 1
+        },
+        "truncated": true
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "count": 7,
+        "min": 2490,
+        "p25": 2850,
+        "median": 2980,
+        "p75": 3995,
+        "max": 6190,
+        "avgKm": 162000,
+        "medianKm": 165000,
+        "refKm": 150000,
+        "refPrice": 3770,
+        "eurPer10kKm": 120,
+        "newListings": 6,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 34,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3299270945",
+            "title": "🚙-twingo toit ouvrant faible km-🚙",
+            "url": "https://www.leboncoin.fr/ad/voitures/3299270945",
+            "price": 2490,
+            "km": 100000,
+            "year": 2000,
+            "city": "Avignon",
+            "expected": 4380,
+            "discountPct": 43
+          },
+          {
+            "id": "3201621635",
+            "title": "RENAULT TWINGO PACK AUTHENTIQUE 1.2 60Ch Toit Ouvrant Garantie 12 mois",
+            "url": "https://www.leboncoin.fr/ad/voitures/3201621635",
+            "price": 2980,
+            "km": 164500,
+            "year": 2003,
+            "city": "Barberey-Saint-Sulpice",
+            "expected": 3590,
+            "discountPct": 17
+          }
+        ],
+        "proShare": 0.29,
+        "rejected": 13,
+        "rejectedReasons": {
+          "variante non reconnue": 11,
+          "mot exclu « pour pieces »": 1,
+          "mot exclu « twingo 2 »": 1
         },
         "truncated": true
       }

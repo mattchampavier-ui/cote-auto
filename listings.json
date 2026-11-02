@@ -7584,12 +7584,12 @@
       "gone": null
     },
     "3185912361": {
-      "title": "PORSCHE Porsche Boxster Type 986 (986) 3.2 250 S-TRES FAIBLE KILOMETRAGE-SUIVI D'ENTRETIEN PORSCHE-",
+      "title": "Porsche Porsche Boxster Type 986 (986) 3.2 250 S-TRES FAIBLE KILOMETRAGE-SUIVI D'ENTRETIEN PORSCHE-",
       "url": "https://www.leboncoin.fr/ad/voitures/3185912361",
       "city": "Viroflay",
       "year": 2001,
       "pro": true,
-      "publishedAt": "2026-04-25",
+      "publishedAt": "2026-10-29",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -7614,7 +7614,7 @@
         }
       ],
       "firstSeen": "2026-04-25",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3194804756": {
@@ -7764,49 +7764,37 @@
       "city": "Royan",
       "year": 2003,
       "pro": true,
-      "publishedAt": "2026-10-02",
+      "publishedAt": "2026-10-30",
       "description": "Porsche BOXSTER (986) 2.7, (Cabriolet), GRIS F, 15cv, mise en circulation le 01-01-2003, garantie 6 mois (6 MOIS).\n\n longueur : 4,32 mètres,\nboîte de vitesse : manuelle\n\nOPTIONS ET EQUIPEMENTS :\nExtérieur\n- Jantes Alu\n- Pack Nord\n\nIntérieur\n- Direction assistée\n- Pack électrique\n\nSécurité\n- ABS\n- Airbag conducteur\n- Airbags frontaux\n- Airbags latéraux avant\n\nKilométrage non garanti.\n\nRéférence annonce : 329",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "228 Ch",
-        "powerFiscal": "15 Cv",
-        "color": "Gris",
-        "vehicleType": "Cabriolet",
-        "critair": "3",
-        "version": "Boxster 2.7",
-        "finition": "Base",
-        "issuance": "01/2003",
-        "oldPrice": "21900",
         "zipcode": "17200",
-        "department": "Charente-Maritime",
-        "region": "Poitou-Charentes",
-        "images": 14,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
         "boosted": null,
-        "urgent": false,
-        "hasPhone": true,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
-        "others": {
-          "Permis": "Avec permis",
-          "VO récent": "false",
-          "custom_ref": "329",
-          "Importé": "true",
-          "vehicle_history_report_status": "visible",
-          "spare_parts_availability": "Non renseignée"
-        }
+        "others": {}
       },
       "km": 115400,
-      "price": 17900,
+      "price": 16990,
       "firstPrice": 17900,
       "priceHistory": [
         {
           "date": "2026-10-15",
           "price": 17900
+        },
+        {
+          "date": "2026-11-02",
+          "price": 16990
         }
       ],
       "firstSeen": "2026-10-02",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3214892442": {
@@ -7905,6 +7893,40 @@
       ],
       "firstSeen": "2026-10-12",
       "lastSeen": "2026-10-15",
+      "gone": null
+    },
+    "3221333100": {
+      "title": "Porsche Boxster TYPE 986 2.5 204",
+      "url": "https://www.leboncoin.fr/ad/voitures/3221333100",
+      "city": "Hésingue",
+      "year": 1997,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "68220",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 102000,
+      "price": 15990,
+      "firstPrice": 15990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 15990
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3223210758": {
@@ -8046,7 +8068,7 @@
       "city": "Saran",
       "year": 2004,
       "pro": true,
-      "publishedAt": "2026-07-03",
+      "publishedAt": "2026-11-01",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -8071,7 +8093,7 @@
         }
       ],
       "firstSeen": "2026-07-03",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3227346667": {
@@ -8359,23 +8381,19 @@
       "city": "Aix-en-Provence",
       "year": 2001,
       "pro": true,
-      "publishedAt": "2026-07-21",
+      "publishedAt": "2026-11-01",
       "description": "L'Agence TransakAuto AIX EN PROVENCE SUD, société spécialisée en courtage automobile, 1er réseau d'intermédiation automobile auprès des particuliers avec + de 180 agences en France depuis 2011, vous propose ce véhicule Porsche, BOXSTER, Noir, 17 chevaux fiscaux, 2 portes, 115 000 km.\n \n⚠ 🔦 Véhicule visible uniquement sur rdv à l'agence TransakAuto AIX EN PROVENCE SUD, du mardi au samedi de Du mardi au samedi de 9h30 à 18h30\n \nVéhicule en dépôt-vente [non stocké sur place]. Visible uniquement sur rendez-vous dans votre agence après avoir appelé le commercial pour valider les modalités de la visite.\nCommercial en charge de la vente : Nicolas\n⚙ Garantie mécanique possible de 6 à 36 mois.\n(Une garantie minimale de 3 mois est comprise dans les frais d'intermédiation – voir conditions en agence)\n \n🤝 Véhicule avec factures d'entretien et historique\nVéhicule nettoyé intérieur et extérieur par préparateur pro pour la vente.\n \n⚠ Des erreurs pouvant se glisser dans nos annonces, merci de nous contacter, le descriptif est non contractuel et nous vous invitons à consulter nos conditions générales de prestations ([URL masquée pour votre sécurité]).\n \n📸 Plus de photos sur demande.\n \n🔦 Prix ho",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "252",
-        "powerFiscal": "17",
-        "color": "Noir",
-        "doors": "2",
-        "seats": "2",
         "zipcode": "13290",
-        "department": "Bouches-du-Rhône",
-        "region": "Provence-Alpes-Côte d'Azur",
+        "department": null,
+        "region": null,
         "images": null,
         "favorites": null,
-        "boosted": true,
-        "hasPhone": true,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
         "others": {}
       },
@@ -8389,7 +8407,7 @@
         }
       ],
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3244969526": {
@@ -8433,39 +8451,21 @@
       "city": "Saint-Priest",
       "year": 2002,
       "pro": true,
-      "publishedAt": "2026-10-10",
+      "publishedAt": "2026-11-01",
       "description": "Porsche Boxster I (986) 3.2 S cabriolet, gris, 18 cv, 2 portes, première mise en circulation le 05/12/2002, garantie 12 mois.\n\n- Financement possible avec ou sans apport\n\n- S3 Auto vous propose de vous racheter votre ancien véhicule sans conditions de rachat.\n\n.-\n\nTous nos véhicules sont vendus avec une révision un contrôle technique et plus de 150 points de contrôle afin de vous garantir une qualité optimale une garantie de 12 mois commerciale incluse extensible jusqu'à 60 mois.\n\n.-\n\n- Horaires du Lundi au Samedi de 9h30 à 12h et 14h à 18h.\n\n.-\n\n- S3 Auto\n\n159, route de grenoble (RN6)\n\n69800 Saint Priest a proximité d'Animalis Brico dépot Burger King.\n\n.-\n\n- ps : sous réserve de validation des équipements avec l'équipe commerciale.\n\n2 places, poids en charge : 1320 kg, contrôle technique : OK\n\nOPTIONS ET ÉQUIPEMENTS :\nExtérieur :\n  - Pack nord\n  - jantes : aluminium\n\nIntérieur :\n  - direction assistée\n  - pack électrique\n\nPack :\n  - nombre de rapports : 6 vitesses\n\nSécurité :\n  - ABS\n  - airbag conducteur\n  - airbags frontaux\n  - airbags latéraux\n\nAutres équipements et informations :\n  - Classe Crit'air : 3\n  - Puissance kilowatt : 191 kw\n  - puissance réelle : 260 ch\n  - émission",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "260 Ch",
-        "powerFiscal": "18 Cv",
-        "color": "Gris",
-        "doors": "2",
-        "seats": "2",
-        "vehicleType": "Cabriolet",
-        "critair": "3",
-        "version": "Boxster 3.2 S",
-        "finition": "S",
-        "issuance": "12/2002",
         "zipcode": "69800",
-        "department": "Rhône",
-        "region": "Rhône-Alpes",
-        "images": 19,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
-        "boosted": true,
-        "urgent": false,
-        "hasPhone": true,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
-        "others": {
-          "vehicle_technical_inspection_valid": "Oui",
-          "Permis": "Avec permis",
-          "VO récent": "false",
-          "custom_ref": "4293",
-          "Importé": "true",
-          "vehicle_history_report_status": "visible",
-          "spare_parts_availability": "Non renseignée"
-        }
+        "others": {}
       },
       "km": 118000,
       "price": 25380,
@@ -8477,7 +8477,41 @@
         }
       ],
       "firstSeen": "2026-08-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3250502855": {
+      "title": "Porsche Boxster Type 986 2.5 204ch TIptronic",
+      "url": "https://www.leboncoin.fr/ad/voitures/3250502855",
+      "city": "Eysines",
+      "year": 1999,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "33320",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 105300,
+      "price": 17490,
+      "firstPrice": 17490,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 17490
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3252930821": {
@@ -8701,6 +8735,40 @@
       ],
       "firstSeen": "2026-09-01",
       "lastSeen": "2026-10-01",
+      "gone": null
+    },
+    "3263045429": {
+      "title": "Porsche Boxster S 3.2I 252cv * *GARANTIE 1 AN",
+      "url": "https://www.leboncoin.fr/ad/voitures/3263045429",
+      "city": "Les Monts d'Aunay",
+      "year": 2002,
+      "pro": true,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "14260",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 130000,
+      "price": 21990,
+      "firstPrice": 21990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 21990
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3265294019": {
@@ -9512,6 +9580,40 @@
       "lastSeen": "2026-10-21",
       "gone": null
     },
+    "3278252962": {
+      "title": "PORSCHE BOXSTER 2.7 220CV BVM5 - Sièges chauffants - Jantes Turbo Look",
+      "url": "https://www.leboncoin.fr/ad/voitures/3278252962",
+      "city": "Le Petit-Quevilly",
+      "year": 2001,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "76140",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 102000,
+      "price": 20690,
+      "firstPrice": 20690,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 20690
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
     "3278261747": {
       "title": "PORSCHE BOXSTER 3.2i - 252 TYPE 986 CABRIOLET S",
       "url": "https://www.leboncoin.fr/ad/voitures/3278261747",
@@ -9597,6 +9699,40 @@
       ],
       "firstSeen": "2026-09-28",
       "lastSeen": "2026-10-15",
+      "gone": null
+    },
+    "3278388347": {
+      "title": "PORSCHE BOXSTER Porsche 986 2.5i Tiptronic / Phase 1 / Cabriolet / Suivi Porsche Complet",
+      "url": "https://www.leboncoin.fr/ad/voitures/3278388347",
+      "city": "Élancourt",
+      "year": 1998,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "78990",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 87878,
+      "price": 17499,
+      "firstPrice": 17499,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 17499
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3278450457": {
@@ -9792,51 +9928,37 @@
       "city": "Saint-Laurent-du-Var",
       "year": 2000,
       "pro": false,
-      "publishedAt": "2026-10-02",
+      "publishedAt": "2026-11-01",
       "description": "Je vends ma Porsche Boxster 986 de 2000, dans une magnifique configuration encore garantie 7 mois.\n- Marque : Porsche\n- Modèle : Boxster 986\n- Année : 2000\n- Date de mise en circulation : 02/2000\n- Kilométrage : 111 700 km (évolutif)\n- Motorisation : 2.7L 220 ch\n- Carburant : Essence\n- Boîte de vitesses : Manuelle\n- Type de véhicule : Cabriolet\n- Nombre de sièges : 2\n- Nombre de portes : 2\n- Couleur : Bleu\n- Puissance fiscale : 15 CV\n- Carte grise plus de 10ans (moitié prix)\n- Crit'Air : 3\n- Norme Euro : Euro 3\n- Contrôle technique : Valide\nPrincipales options : Sièges chauffants, compteurs blancs, jantes gt3, Volant sport bicolore, couleur extérieure bleu océan métallisé, couleur intérieure gris Graphite, levier de vitesse en alu,...\nAchat du mois mai 2025 dans un garage, avec la garantie de 1an en cours.\nVente cause départ. \nN'hésitez pas à me contacter pour plus d'informations.",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "220 Ch",
-        "powerFiscal": "15 Cv",
-        "color": "Bleu",
-        "doors": "2",
-        "seats": "2",
-        "vehicleType": "Cabriolet",
-        "critair": "3",
-        "issuance": "02/2000",
-        "maintenance": "Factures disponibles",
-        "oldPrice": "17800",
         "zipcode": "06700",
-        "department": "Alpes-Maritimes",
-        "region": "Provence-Alpes-Côte d'Azur",
-        "images": 19,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
         "boosted": null,
-        "urgent": false,
-        "hasPhone": false,
-        "expiresAt": "2026-12-01",
-        "others": {
-          "vehicle_technical_inspection_valid": "Oui",
-          "Dommages": "Bon état général",
-          "Sellerie": "Tout cuir",
-          "Équipements intérieurs": "Bluetooth, Chargeurs USB, Climatisation, Siège réglable en hauteur, Sièges chauffants, Sièges en cuir, Sièges électriques",
-          "vehicle_euro_emissions_standard": "Euro 3",
-          "Permis": "Avec permis",
-          "Importé": "false"
-        }
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
       },
-      "km": 111700,
-      "price": 15900,
+      "km": 112500,
+      "price": 15500,
       "firstPrice": 15900,
       "priceHistory": [
         {
           "date": "2026-10-15",
           "price": 15900
+        },
+        {
+          "date": "2026-11-02",
+          "price": 15500
         }
       ],
       "firstSeen": "2026-10-02",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3280951759": {
@@ -9845,7 +9967,7 @@
       "city": "Aubenas",
       "year": 1999,
       "pro": true,
-      "publishedAt": "2026-10-02",
+      "publishedAt": "2026-11-02",
       "description": "Porsche Boxster BOXTER 986 3.2i S roadster, beige clair, 17 cv, 2 portes, couleur intérieure : marron, première mise en circulation le 20/12/1999.\n\n***NOS VEHICULES SONT VISIBLES UNIQUEMENT SUR RDV***\n***POSSIBILITE DE REPRISE - FINANCEMENT ET D'EXTENSION DE GARANTIE***\n***HORS FRAIS D'IMMATRICULATION ET DE MISE EN CIRCULATION 489€***\n***SOUS RESERVE D'ERREURS DE REDACTION ET D'OPTIONS***\n\n2 places\n\nOPTIONS ET ÉQUIPEMENTS :\nExtérieur :\n  -  Projecteurs additionnels\n  - jantes : alliage\n  - jantes alliage\n  - rétroviseurs électriques\n\nIntérieur :\n  - Air conditionne\n  - direction assistée\n  - fermeture centralisée\n  - intérieur : cuir\n  - ordinateur de bord\n  - siège conducteur réglable en hauteur\n  - vitres électriques\n\nPack :\n  -  Elargisseurs d'ailes\n\nSécurité :\n  - ABS\n  - airbags latéraux\n\nAutres équipements et informations :\n  -  Double Air bag\n  - Classe Crit'air : 3\n  - Puissance kilowatt : 185 kw\n  - consommation extra urbaine : 7,80 litres\n  - consommation mixte : 10,70 litres\n  - consommation urbaine : 15,60 litres\n  - pare-buffle\n  - puissance réelle : 252 ch\n\nRéférence annonce : 9zeo18",
       "details": {
         "fuel": "Essence",
@@ -9871,7 +9993,7 @@
         }
       ],
       "firstSeen": "2026-10-02",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3281142481": {
@@ -10173,39 +10295,21 @@
       "city": "Limoges",
       "year": 2002,
       "pro": true,
-      "publishedAt": "2026-10-06",
+      "publishedAt": "2026-11-01",
       "description": "Porsche Boxster 986 3.2 252 ch, roadster, noir, 17 cv, 2 portes, première mise en circulation le 08/02/2002.\n\n2 places\n\nOPTIONS ET ÉQUIPEMENTS :\nAudio - Télécommunications :\n  - Bluetooth\n  - Prise audio auxilliaire : usb\n  - Téléphone Bluetooth\n\nExtérieur :\n  - feux de détresse\n\nIntérieur :\n  - climatisation : automatique\n  - fermeture centralisée\n  - ordinateur de bord\n  - pack cuir\n  - sieges reglables en hauteur\n\nPack :\n  - volant réglable\n\nSécurité :\n  - ABS\n  - Airbags frontaux\n  - Airbags rideaux\n  - ESP\n  - airbags latéraux\n  - contrôle pression des pneus\n  - fixations ISOFIX\n\nAutres équipements et informations :\n  - warning\n\nBoite 6 rapports, \r2 roues motrices, \rjantes alu, \rboite 6 vitesses, \rCarte grise possible sur place, \rHistorique du véhicule, \r\r\r\n\n.\n\n******* Informations et Visite du véhicule *******\nVisite en agence, essai routier uniquement sur rendez-vous\nVisite virtuelle possible sur demande (WhatsApp)\nVéhicule en stock ou véhicule en arrivage ? N’hésitez pas à nous contacter pour plus d'informations\nRecherches personnalisées\n\n******* Nos Prestations *******\nNos véhicules sont vendus contrôlés dans nos ateliers.\nUne prise en main personnalisée du véhicule vous e",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "252 Ch",
-        "powerFiscal": "17 Cv",
-        "color": "Noir",
-        "doors": "2",
-        "seats": "2",
-        "vehicleType": "Cabriolet",
-        "critair": "2",
-        "version": "Boxster 3.2 S",
-        "finition": "S",
-        "issuance": "02/2002",
         "zipcode": "87280",
-        "department": "Haute-Vienne",
-        "region": "Limousin",
-        "images": 19,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
         "boosted": null,
-        "urgent": false,
-        "hasPhone": true,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
-        "others": {
-          "Équipements intérieurs": "Bluetooth, Climatisation, Ordinateur de bord, Siège réglable en hauteur",
-          "Permis": "Avec permis",
-          "VO récent": "false",
-          "custom_ref": "BHC_902949",
-          "Importé": "true",
-          "vehicle_history_report_status": "visible",
-          "spare_parts_availability": "Non renseignée"
-        }
+        "others": {}
       },
       "km": 83500,
       "price": 22090,
@@ -10217,7 +10321,7 @@
         }
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3283952066": {
@@ -10563,6 +10667,210 @@
       ],
       "firstSeen": "2026-10-20",
       "lastSeen": "2026-10-21",
+      "gone": null
+    },
+    "3293642960": {
+      "title": "Porsche boxster 2.5 type 986 – 204 ch – tiptronic – cabriolet – garantie 12 mois",
+      "url": "https://www.leboncoin.fr/ad/voitures/3293642960",
+      "city": "Échiré",
+      "year": 2000,
+      "pro": true,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "79410",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 124145,
+      "price": 15490,
+      "firstPrice": 15490,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 15490
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3299780001": {
+      "title": "Porsche boxster 986 – 2.5 204 ch – tiptronic – 1999 – cabriolet",
+      "url": "https://www.leboncoin.fr/ad/voitures/3299780001",
+      "city": "Saint-Estève",
+      "year": 1999,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "66240",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 217500,
+      "price": 16990,
+      "firstPrice": 16990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 16990
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3299859687": {
+      "title": "Porsche boxster s",
+      "url": "https://www.leboncoin.fr/ad/voitures/3299859687",
+      "city": "Montfermeil",
+      "year": 2000,
+      "pro": false,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "93370",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 110000,
+      "price": 19500,
+      "firstPrice": 19500,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 19500
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3300535749": {
+      "title": "Porsche boxster",
+      "url": "https://www.leboncoin.fr/ad/voitures/3300535749",
+      "city": "Sainte-Pazanne",
+      "year": 1998,
+      "pro": false,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "44680",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 141000,
+      "price": 15500,
+      "firstPrice": 15500,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 15500
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3300764215": {
+      "title": "Porsche Boxster I (986) 3.2 S 2002",
+      "url": "https://www.leboncoin.fr/ad/voitures/3300764215",
+      "city": "Juillan",
+      "year": 2002,
+      "pro": true,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "65290",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 65000,
+      "price": 22990,
+      "firstPrice": 22990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 22990
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3300797803": {
+      "title": "Porsche Boxster 3.2i - 252 TYPE 986 CABRIOLET S PHASE 1 / GARANTIE 12 MOIS",
+      "url": "https://www.leboncoin.fr/ad/voitures/3300797803",
+      "city": "Malemort",
+      "year": 2002,
+      "pro": true,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "19360",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 140000,
+      "price": 23490,
+      "firstPrice": 23490,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 23490
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
       "gone": null
     }
   },
@@ -14372,39 +14680,20 @@
       "city": "Barberey-Saint-Sulpice",
       "year": 2003,
       "pro": true,
-      "publishedAt": "2026-05-20",
+      "publishedAt": "2026-10-30",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "60 Ch",
-        "powerFiscal": "4 Cv",
-        "color": "Noir",
-        "doors": "3",
-        "seats": "4",
-        "vehicleType": "Berline",
-        "critair": "1",
-        "version": "Twingo 1.2 60ch Authentique",
-        "finition": "Authentique",
-        "issuance": "06/2003",
-        "oldPrice": "3480",
         "zipcode": "10600",
-        "department": "Aube",
-        "region": "Champagne-Ardenne",
-        "images": 20,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
         "boosted": null,
-        "urgent": false,
-        "hasPhone": true,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
-        "others": {
-          "Équipements intérieurs": "Toit ouvrant / Toit panoramique, Vitres électriques arrières",
-          "Vente en LOA/LLD": "Non",
-          "VO récent": "false",
-          "custom_ref": "3826",
-          "Importé": "true",
-          "vehicle_history_report_status": "visible",
-          "spare_parts_availability": "Non renseignée"
-        }
+        "others": {}
       },
       "km": 164500,
       "price": 2980,
@@ -14416,7 +14705,7 @@
         }
       ],
       "firstSeen": "2026-05-20",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "description": "🚗 Nous sommes Simplicicar\n\nLe 1er réseau de vente de véhicules neufs et d’occasion en dépôt-vente, présent partout en France, DOM-TOM et Belgique.\n\n📍 Simplicicar Barbery Saint Sulpice vous présente cette RENAULT TWINGO, soigneusement sélectionnée par notre équipe.\n\n✅ Garantie : 12 mois (extension de garantie possible)\n\n📑 Véhicule contrôlé, prêt à partir, reprise possible, financement disponible.\n\n-----------------------------------------------------------\n\nOptions et équipements : \n\n> Intérieur\n\nSystème Isofix\n\nToit ouvrant\n\nVitres électriques\n\n> Aide à la conduite\n\nAirbags\n\nVerrouillage centralisé télécommandé\n\n-----------------------------------------------------------\n\n-----------------------------------------------------------\n\nVéhicule visible sur rendez-vous dans votre agence Simplicicar.\n\n🏠 Simplicicar Barbery Saint Sulpice\n\n📍 17  Rue des Valeres, 10600 Barbery Saint Sulpice\n\n💼 Des frais d’agence peuvent s’appliquer.\n\n-----------------------------------------------------------\n\n🎯 Vous souhaitez vendre votre véhicule ? :\n\nConfiez-le à Simplicicar !\n\nUn service 100 % gratuit et sans contrainte pour booster la vente de votre voiture :\n\n📸 Photos professionnelles\n\n🔒 Paie"
     },
@@ -16766,6 +17055,40 @@
       "lastSeen": "2026-10-15",
       "gone": null
     },
+    "3288436880": {
+      "title": "Volkswagen Golf 5 1.6i 102Ch - Clim -Toit Ouvrant - Garantie - Suivi d'Entretien Complet",
+      "url": "https://www.leboncoin.fr/ad/voitures/3288436880",
+      "city": "La Sentinelle",
+      "year": 2004,
+      "pro": true,
+      "publishedAt": "2026-10-31",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "59174",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 160000,
+      "price": 4490,
+      "firstPrice": 4490,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 4490
+        }
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
     "3288442729": {
       "title": "Renault Twingo Kenzo 1.2",
       "url": "https://www.leboncoin.fr/ad/voitures/3288442729",
@@ -16884,6 +17207,176 @@
       ],
       "firstSeen": "2026-10-21",
       "lastSeen": "2026-10-21",
+      "gone": null
+    },
+    "3298653169": {
+      "title": "Twingo 1 toit ouvrant",
+      "url": "https://www.leboncoin.fr/ad/voitures/3298653169",
+      "city": "Souillac",
+      "year": 2000,
+      "pro": false,
+      "publishedAt": "2026-10-30",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "46200",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 235577,
+      "price": 2800,
+      "firstPrice": 2800,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 2800
+        }
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3299270945": {
+      "title": "🚙-twingo toit ouvrant faible km-🚙",
+      "url": "https://www.leboncoin.fr/ad/voitures/3299270945",
+      "city": "Avignon",
+      "year": 2000,
+      "pro": false,
+      "publishedAt": "2026-10-31",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "84000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 100000,
+      "price": 2490,
+      "firstPrice": 2490,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 2490
+        }
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3299952902": {
+      "title": "Twingo \" Finition Alizé \" • Toit Ouvrant • Clim • Centralisation • Distribution NEUVE • [ CT OK ]",
+      "url": "https://www.leboncoin.fr/ad/voitures/3299952902",
+      "city": "Montpellier",
+      "year": 1997,
+      "pro": false,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "34090",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 223000,
+      "price": 2900,
+      "firstPrice": 2900,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 2900
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3300503467": {
+      "title": "Renault Twingo Toit ouvrant Open Air en toile , climatisation, attelage",
+      "url": "https://www.leboncoin.fr/ad/voitures/3300503467",
+      "city": "Rohan",
+      "year": 2004,
+      "pro": false,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "56580",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 51960,
+      "price": 6190,
+      "firstPrice": 6190,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 6190
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3300727385": {
+      "title": "Mini Cooper toit ouvrant",
+      "url": "https://www.leboncoin.fr/ad/voitures/3300727385",
+      "city": "Albi",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "81000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 197600,
+      "price": 3500,
+      "firstPrice": 3500,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 3500
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
       "gone": null
     }
   },
