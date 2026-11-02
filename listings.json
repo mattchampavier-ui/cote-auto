@@ -122,32 +122,37 @@
       "city": "Blesle",
       "km": 240000,
       "year": 2003,
-      "price": 18500,
+      "price": 18000,
       "firstPrice": 18500,
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "pro": false,
-      "publishedAt": "2026-08-29",
+      "publishedAt": "2026-10-29",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "180",
-        "powerFiscal": "11",
-        "color": "Autre",
-        "doors": "3",
-        "seats": "5",
-        "vehicleType": "Berline",
         "zipcode": "43450",
-        "department": "Haute-Loire",
-        "region": "Auvergne",
+        "department": null,
+        "region": null,
         "images": null,
         "favorites": null,
         "boosted": null,
-        "hasPhone": false,
-        "expiresAt": "2026-10-28",
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
         "others": {}
-      }
+      },
+      "priceHistory": [
+        {
+          "date": "2026-10-01",
+          "price": 18500
+        },
+        {
+          "date": "2026-11-02",
+          "price": 18000
+        }
+      ]
     },
     "3193819824": {
       "title": "Peugeot 206 RC",
@@ -323,10 +328,10 @@
       "price": 9990,
       "firstPrice": 9990,
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "pro": true,
-      "publishedAt": "2026-07-17",
+      "publishedAt": "2026-10-28",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -444,18 +449,18 @@
       "gone": null
     },
     "3248463615": {
-      "title": "Peugeot 206 2.0 177ch RC - SUIVI COMPLET - DISTRIBUTION OK - BLUETOOTH",
+      "title": "Peugeot 206 2.0 177ch RC - FACTURES DISPONOBLES - DISTRIBUTION OK - BLUETOOTH",
       "url": "https://www.leboncoin.fr/ad/voitures/3248463615",
       "city": "La Ciotat",
-      "km": 67500,
+      "km": 65663,
       "year": 2006,
-      "price": 13990,
+      "price": 13490,
       "firstPrice": 13990,
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "pro": true,
-      "publishedAt": "2026-08-11",
+      "publishedAt": "2026-10-28",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -469,7 +474,17 @@
         "hasPhone": null,
         "expiresAt": null,
         "others": {}
-      }
+      },
+      "priceHistory": [
+        {
+          "date": "2026-10-01",
+          "price": 13990
+        },
+        {
+          "date": "2026-11-02",
+          "price": 13490
+        }
+      ]
     },
     "3250734192": {
       "title": "Peugeot 206 RC",
@@ -1701,7 +1716,7 @@
       "city": "Chilly-Mazarin",
       "year": 2006,
       "pro": true,
-      "publishedAt": "2026-10-01",
+      "publishedAt": "2026-11-01",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -1717,16 +1732,20 @@
         "others": {}
       },
       "km": 121500,
-      "price": 11990,
+      "price": 10990,
       "firstPrice": 11990,
       "priceHistory": [
         {
           "date": "2026-10-01",
           "price": 11990
+        },
+        {
+          "date": "2026-11-02",
+          "price": 10990
         }
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3280598049": {
@@ -2203,7 +2222,7 @@
       "city": "Saint-Christophe-Vallon",
       "year": 2003,
       "pro": true,
-      "publishedAt": "2026-10-07",
+      "publishedAt": "2026-10-29",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -2228,7 +2247,7 @@
         }
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3284050430": {
@@ -2502,38 +2521,21 @@
       "city": "Perpignan",
       "year": 2004,
       "pro": false,
-      "publishedAt": "2026-10-12",
+      "publishedAt": "2026-11-02",
       "description": "Vend Peugeot 206 rc 2.0 180cv totalisant 126000km (peu évolutif) année 2004 \n\nDouble de clé \nDossier factures disponibles \nVéhicule qui dort dans un garage et roule peu\nTrès peu d exemplaires en rouge Aden  \n\nOptions :\n-Climatisation \n-Direction assistée \n-Rétroviseur rabattable  électrique \n-Jante d origine en 17p\n-Silencieux cobra sur ligne d origine \n-4 amortisseur KR\n-Phare auto \n\nUne révision avec bougies sera faite pour la vente \n4 pneus proche du neuf \nFreinage récent \nDernière distribution faite il y’a 5 ans à 104000km ( peu être refaire pour la vente ou négociation possible sur le prix ) \n\nContrôle technique vierge moins d un mois",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "180 Ch",
-        "powerFiscal": "11 Cv",
-        "color": "Rouge",
-        "doors": "3",
-        "seats": "5",
-        "vehicleType": "Berline",
-        "critair": "1",
-        "version": "206 2.0 16v RC 3p",
-        "finition": "RC",
-        "issuance": "09/2004",
-        "maintenance": "Factures disponibles",
         "zipcode": "66000",
-        "department": "Pyrénées-Orientales",
-        "region": "Languedoc-Roussillon",
-        "images": 3,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
         "boosted": null,
-        "urgent": false,
-        "hasPhone": true,
-        "expiresAt": "2026-12-11",
-        "others": {
-          "Dommages": "Excellent état (proche du neuf)",
-          "Équipements intérieurs": "Climatisation, Essuie-glaces automatiques, Jantes en alliage, Ordinateur de bord, Rétroviseurs dégivrants, Rétroviseurs rabattables électriquement",
-          "vehicle_euro_emissions_standard": "Euro 6",
-          "Permis": "Avec permis",
-          "Importé": "false"
-        }
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
       },
       "km": 126000,
       "price": 11900,
@@ -2545,7 +2547,7 @@
         }
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3287278903": {
@@ -2696,6 +2698,40 @@
       ],
       "firstSeen": "2026-10-14",
       "lastSeen": "2026-10-15",
+      "gone": null
+    },
+    "3288803281": {
+      "title": "Peugeot 206 RC 2.0i 16V 177cv",
+      "url": "https://www.leboncoin.fr/ad/voitures/3288803281",
+      "city": "Caissargues",
+      "year": 2005,
+      "pro": true,
+      "publishedAt": "2026-10-27",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "30132",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 126000,
+      "price": 10990,
+      "firstPrice": 10990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 10990
+        }
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3289625765": {
@@ -2900,6 +2936,210 @@
       ],
       "firstSeen": "2026-10-20",
       "lastSeen": "2026-10-21",
+      "gone": null
+    },
+    "3295802481": {
+      "title": "206 rc",
+      "url": "https://www.leboncoin.fr/ad/voitures/3295802481",
+      "city": "Ronchamp",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": "2026-10-26",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "70250",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 192000,
+      "price": 8500,
+      "firstPrice": 8500,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 8500
+        }
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3296428317": {
+      "title": "206 rc",
+      "url": "https://www.leboncoin.fr/ad/voitures/3296428317",
+      "city": "Belfort",
+      "year": 2004,
+      "pro": false,
+      "publishedAt": "2026-10-27",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "90000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 173000,
+      "price": 9000,
+      "firstPrice": 9000,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 9000
+        }
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3296480798": {
+      "title": "Peugeot 206 RC 2.0 177cv",
+      "url": "https://www.leboncoin.fr/ad/voitures/3296480798",
+      "city": "Mours-Saint-Eusèbe",
+      "year": 2003,
+      "pro": true,
+      "publishedAt": "2026-10-27",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "26540",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 239000,
+      "price": 6300,
+      "firstPrice": 6300,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 6300
+        }
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3297491473": {
+      "title": "Peugeot 206 RC",
+      "url": "https://www.leboncoin.fr/ad/voitures/3297491473",
+      "city": "La Gaude",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": "2026-10-29",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "06610",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 82500,
+      "price": 15500,
+      "firstPrice": 15500,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 15500
+        }
+      ],
+      "firstSeen": "2026-10-29",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3299559286": {
+      "title": "Peugeot 206 RC",
+      "url": "https://www.leboncoin.fr/ad/voitures/3299559286",
+      "city": "Valbonne",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": "2026-10-31",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "06560",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 155000,
+      "price": 9950,
+      "firstPrice": 9950,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 9950
+        }
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3300035412": {
+      "title": "Peugeot 206 2.0 rc",
+      "url": "https://www.leboncoin.fr/ad/voitures/3300035412",
+      "city": "Saint-Grégoire",
+      "year": 2006,
+      "pro": false,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "35760",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 152000,
+      "price": 12000,
+      "firstPrice": 12000,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 12000
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
       "gone": null
     }
   },
@@ -17816,7 +18056,7 @@
       "city": "Montauban",
       "year": 2000,
       "pro": true,
-      "publishedAt": "2026-08-05",
+      "publishedAt": "2026-11-01",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -17832,16 +18072,20 @@
         "others": {}
       },
       "km": 190237,
-      "price": 9980,
+      "price": 8980,
       "firstPrice": 9980,
       "priceHistory": [
         {
           "date": "2026-10-21",
           "price": 9980
+        },
+        {
+          "date": "2026-11-02",
+          "price": 8980
         }
       ],
       "firstSeen": "2026-08-05",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3248026868": {
@@ -18143,46 +18387,36 @@
       "city": "Pertuis",
       "year": 2001,
       "pro": false,
-      "publishedAt": "2026-09-02",
+      "publishedAt": "2026-11-01",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "172 Ch",
-        "powerFiscal": "10 Cv",
-        "color": "Noir",
-        "doors": "3",
-        "seats": "5",
-        "vehicleType": "Berline",
-        "issuance": "01/2001",
         "zipcode": "84120",
-        "department": "Vaucluse",
-        "region": "Provence-Alpes-Côte d'Azur",
-        "images": 3,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
         "boosted": null,
-        "urgent": false,
-        "hasPhone": false,
-        "expiresAt": "2026-11-01",
-        "others": {
-          "vehicle_technical_inspection_valid": "Oui",
-          "Contrôle technique": "2028",
-          "Dommages": "Bon état général",
-          "Sellerie": "Cuir partiel, Alcantara",
-          "Permis": "Avec permis",
-          "Importé": "false"
-        }
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
       },
       "km": 247780,
-      "price": 10000,
+      "price": 9000,
       "firstPrice": 10000,
       "priceHistory": [
         {
           "date": "2026-10-01",
           "price": 10000
+        },
+        {
+          "date": "2026-11-02",
+          "price": 9000
         }
       ],
       "firstSeen": "2026-09-02",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "description": "Cause santé(j’ai été amputé de la jambe droite et je ne peux plus la conduire), je vends à contrecœur ma Clio RS Ph1 noire.\nLe moteur a été refait entièrement et a environ 15000 kms \nLa boîte(celle de la ragnotti a etait monté dessus) et l’embrayage ont 15000 kms aussi.\nLa distribution, pompe a eau, courroie accessoire et la vidange ont etait faites a 247780 kms\nElle est équipé d’un poste avec écran CarPlay.\nPrix à débattre, pas de paiement par chèque de banque ou autre, uniquement par virement de la totalité le jour de la vente."
     },
@@ -18616,7 +18850,7 @@
       "city": "Tullins",
       "year": 2004,
       "pro": true,
-      "publishedAt": "2026-09-17",
+      "publishedAt": "2026-10-31",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -18632,16 +18866,20 @@
         "others": {}
       },
       "km": 51500,
-      "price": 19990,
+      "price": 17990,
       "firstPrice": 19990,
       "priceHistory": [
         {
           "date": "2026-10-21",
           "price": 19990
+        },
+        {
+          "date": "2026-11-02",
+          "price": 17990
         }
       ],
       "firstSeen": "2026-09-17",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3272175500": {
@@ -18907,6 +19145,40 @@
       "gone": null,
       "description": "Renault Clio RS, peinture récente, distribution neuve avec les joints remplacés, courroie d'accessoire avec tendeur dynamique neuf, catalyseur neuf, factures présentes ,silencieux inox, freins disques perforés rainurés plaquettes racing et durites aviation, barre anti rapprochement avant et arrière, jantes spidline, volant RS j'ai le volant d'origine, optiques de phare neufs,intérieur en bon état malgré ses 26 ans , fonctionne parfaitement moteur sans fumée ni bruits anormal, boîte sans accroche ni patinage de l'embrayage, le moteur F4R Renault à une excellente réputation de solidité, première voiture de la génération Rs disparu chez Renault, collector évident ! cette génération de clio est certainement la plus désirable avec encore un poids contenu et des sensations des premières GTI , à voir absolument."
     },
+    "3275141767": {
+      "title": "Renault Clio 2.0 16V 200 RS RENAULT SPORT (Ligne GT Performance)",
+      "url": "https://www.leboncoin.fr/ad/voitures/3275141767",
+      "city": "Pont-l'Évêque",
+      "year": 2006,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "14130",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 125100,
+      "price": 14990,
+      "firstPrice": 14990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 14990
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
     "3275151981": {
       "title": "Clio RS 2 phase 1",
       "url": "https://www.leboncoin.fr/ad/voitures/3275151981",
@@ -19030,6 +19302,40 @@
       ],
       "firstSeen": "2026-09-25",
       "lastSeen": "2026-10-01",
+      "gone": null
+    },
+    "3277247879": {
+      "title": "Renault CLIO RS Renault-Sport *ORIGINE FRANCE* *SUIVI COMPLET DEPUIS USINE",
+      "url": "https://www.leboncoin.fr/ad/voitures/3277247879",
+      "city": "Alençon",
+      "year": 2004,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "61000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 35268,
+      "price": 23990,
+      "firstPrice": 23990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 23990
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3277297648": {
@@ -19180,7 +19486,7 @@
       "city": "Nancy",
       "year": 2000,
       "pro": true,
-      "publishedAt": "2026-09-28",
+      "publishedAt": "2026-10-31",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -19205,7 +19511,7 @@
         }
       ],
       "firstSeen": "2026-09-28",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3278695532": {
@@ -20144,6 +20450,244 @@
       ],
       "firstSeen": "2026-10-21",
       "lastSeen": "2026-10-21",
+      "gone": null
+    },
+    "3292957337": {
+      "title": "Renault Clio RS 2.0 172ch",
+      "url": "https://www.leboncoin.fr/ad/voitures/3292957337",
+      "city": "Sélestat",
+      "year": 2000,
+      "pro": true,
+      "publishedAt": "2026-10-31",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "67600",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 107100,
+      "price": 10990,
+      "firstPrice": 10990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 10990
+        }
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3294169508": {
+      "title": "Renault CLIO 2 RS 2.0",
+      "url": "https://www.leboncoin.fr/ad/voitures/3294169508",
+      "city": "Anglet",
+      "year": 2000,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "64600",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 92500,
+      "price": 11490,
+      "firstPrice": 11490,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 11490
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3295262169": {
+      "title": "Renault Clio 2 RS",
+      "url": "https://www.leboncoin.fr/ad/voitures/3295262169",
+      "city": "Caussade",
+      "year": 2001,
+      "pro": false,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "82300",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 108000,
+      "price": 16000,
+      "firstPrice": 16000,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 16000
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3299555038": {
+      "title": "Renault Clio 2 Rs phase 1",
+      "url": "https://www.leboncoin.fr/ad/voitures/3299555038",
+      "city": "Létra",
+      "year": 2001,
+      "pro": false,
+      "publishedAt": "2026-10-31",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "69620",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 209800,
+      "price": 4000,
+      "firstPrice": 4000,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 4000
+        }
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3299989320": {
+      "title": "Clio 2 rs 1 Limited",
+      "url": "https://www.leboncoin.fr/ad/voitures/3299989320",
+      "city": "Le Pontet",
+      "year": 2001,
+      "pro": false,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "84130",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 155000,
+      "price": 9500,
+      "firstPrice": 9500,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 9500
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3300345123": {
+      "title": "Clio 2 rs phase 2 172cv",
+      "url": "https://www.leboncoin.fr/ad/voitures/3300345123",
+      "city": "Eaubonne",
+      "year": 2002,
+      "pro": false,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "95600",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 61000,
+      "price": 12000,
+      "firstPrice": 12000,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 12000
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3300589073": {
+      "title": "Clio 2 rs",
+      "url": "https://www.leboncoin.fr/ad/voitures/3300589073",
+      "city": "Faches-Thumesnil",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "59155",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 49500,
+      "price": 17499,
+      "firstPrice": 17499,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 17499
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
       "gone": null
     }
   },

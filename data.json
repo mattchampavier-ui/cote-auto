@@ -295,6 +295,17 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "ok": [
+          "peugeot-206-rc",
+          "renault-clio-2-rs"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -314,10 +325,12 @@
       "imports/2026-10-21/renault-megane-r26.json",
       "imports/2026-10-21/renault-twingo-1.json",
       "imports/2026-10-21/vw-golf-4-gti-25.json",
+      "imports/2026-11-02/peugeot-206-rc.json",
       "imports/2026-11-02/peugeot-208-gti-30th.json",
       "imports/2026-11-02/porsche-911-997.json",
       "imports/2026-11-02/porsche-boxster-986.json",
       "imports/2026-11-02/porsche-boxster-987.json",
+      "imports/2026-11-02/renault-clio-2-rs.json",
       "imports/2026-11-02/renault-twingo-1.json"
     ]
   },
@@ -1975,6 +1988,94 @@
           "mot exclu « hdi »": 1
         },
         "truncated": true
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "count": 13,
+        "min": 6300,
+        "p25": 9950,
+        "median": 10990,
+        "p75": 12900,
+        "max": 18000,
+        "avgKm": 151000,
+        "medianKm": 150000,
+        "refKm": 150000,
+        "refPrice": 11510,
+        "eurPer10kKm": 160,
+        "newListings": 7,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 32,
+        "priceDrops": [
+          {
+            "id": "3280307630",
+            "title": "Peugeot 206 2.0 177ch RC",
+            "url": "https://www.leboncoin.fr/ad/voitures/3280307630",
+            "from": 11990,
+            "to": 10990,
+            "totalDropPct": 8.3
+          },
+          {
+            "id": "3151025653",
+            "title": "206 rc f2014",
+            "url": "https://www.leboncoin.fr/ad/voitures/3151025653",
+            "from": 18500,
+            "to": 18000,
+            "totalDropPct": 2.7
+          },
+          {
+            "id": "3248463615",
+            "title": "Peugeot 206 2.0 177ch RC - FACTURES DISPONOBLES - DISTRIBUTION OK - BLUETOOTH",
+            "url": "https://www.leboncoin.fr/ad/voitures/3248463615",
+            "from": 13990,
+            "to": 13490,
+            "totalDropPct": 3.6
+          }
+        ],
+        "bargains": [
+          {
+            "id": "3296480798",
+            "title": "Peugeot 206 RC 2.0 177cv",
+            "url": "https://www.leboncoin.fr/ad/voitures/3296480798",
+            "price": 6300,
+            "km": 239000,
+            "year": 2003,
+            "city": "Mours-Saint-Eusèbe",
+            "expected": 10260,
+            "discountPct": 39
+          },
+          {
+            "id": "3295802481",
+            "title": "206 rc",
+            "url": "https://www.leboncoin.fr/ad/voitures/3295802481",
+            "price": 8500,
+            "km": 192000,
+            "year": 2003,
+            "city": "Ronchamp",
+            "expected": 10850,
+            "discountPct": 22
+          },
+          {
+            "id": "3296428317",
+            "title": "206 rc",
+            "url": "https://www.leboncoin.fr/ad/voitures/3296428317",
+            "price": 9000,
+            "km": 173000,
+            "year": 2004,
+            "city": "Belfort",
+            "expected": 11150,
+            "discountPct": 19
+          }
+        ],
+        "proShare": 0.46,
+        "rejected": 7,
+        "rejectedReasons": {
+          "mot exclu « 206 cc »": 1,
+          "mot obligatoire absent": 4,
+          "mot exclu « 1.6 »": 2
+        },
+        "truncated": true
       }
     ],
     "renault-clio-2-rs": [
@@ -2240,6 +2341,107 @@
           "mot exclu « dci »": 1,
           "mot exclu « clio 3 »": 1,
           "prix hors marché": 1
+        },
+        "truncated": true
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "count": 13,
+        "min": 4000,
+        "p25": 9500,
+        "median": 12000,
+        "p75": 16000,
+        "max": 23990,
+        "avgKm": 123000,
+        "medianKm": 108000,
+        "refKm": 160000,
+        "refPrice": 10860,
+        "eurPer10kKm": 590,
+        "newListings": 9,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 40,
+        "priceDrops": [
+          {
+            "id": "3245018469",
+            "title": "RENAULT CLIO 2.0i 16V RS",
+            "url": "https://www.leboncoin.fr/ad/voitures/3245018469",
+            "from": 9980,
+            "to": 8980,
+            "totalDropPct": 10
+          },
+          {
+            "id": "3261622205",
+            "title": "Renault Clio RS Ph1",
+            "url": "https://www.leboncoin.fr/ad/voitures/3261622205",
+            "from": 10000,
+            "to": 9000,
+            "totalDropPct": 10
+          },
+          {
+            "id": "3271479321",
+            "title": "Renault clio ii rs 2.0 182ch renault sport 3p",
+            "url": "https://www.leboncoin.fr/ad/voitures/3271479321",
+            "from": 19990,
+            "to": 17990,
+            "totalDropPct": 10
+          }
+        ],
+        "bargains": [
+          {
+            "id": "3299555038",
+            "title": "Renault Clio 2 Rs phase 1",
+            "url": "https://www.leboncoin.fr/ad/voitures/3299555038",
+            "price": 4000,
+            "km": 209800,
+            "year": 2001,
+            "city": "Létra",
+            "expected": 8130,
+            "discountPct": 51
+          },
+          {
+            "id": "3300345123",
+            "title": "Clio 2 rs phase 2 172cv",
+            "url": "https://www.leboncoin.fr/ad/voitures/3300345123",
+            "price": 12000,
+            "km": 61000,
+            "year": 2002,
+            "city": "Eaubonne",
+            "expected": 16740,
+            "discountPct": 28
+          },
+          {
+            "id": "3294169508",
+            "title": "Renault CLIO 2 RS 2.0",
+            "url": "https://www.leboncoin.fr/ad/voitures/3294169508",
+            "price": 11490,
+            "km": 92500,
+            "year": 2000,
+            "city": "Anglet",
+            "expected": 14870,
+            "discountPct": 23
+          },
+          {
+            "id": "3292957337",
+            "title": "Renault Clio RS 2.0 172ch",
+            "url": "https://www.leboncoin.fr/ad/voitures/3292957337",
+            "price": 10990,
+            "km": 107100,
+            "year": 2000,
+            "city": "Sélestat",
+            "expected": 14000,
+            "discountPct": 22
+          }
+        ],
+        "proShare": 0.54,
+        "rejected": 7,
+        "rejectedReasons": {
+          "doublon": 1,
+          "mot exclu « accidentee »": 1,
+          "mot exclu « clio 3 »": 2,
+          "mot exclu « v6 »": 2,
+          "variante non reconnue": 1
         },
         "truncated": true
       }
