@@ -10567,6 +10567,74 @@
     }
   },
   "porsche-boxster-987": {
+    "3065060883": {
+      "title": "Porsche Boxster S 987 3.4 i 310 ch PDK Gris Méteor + Turbo 19 + Suivi complet",
+      "url": "https://www.leboncoin.fr/ad/voitures/3065060883",
+      "city": "Villenave-d'Ornon",
+      "year": 2010,
+      "pro": true,
+      "publishedAt": "2026-10-31",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "33140",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 98000,
+      "price": 39990,
+      "firstPrice": 39990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 39990
+        }
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3088114089": {
+      "title": "Porsche Boxster S 987 3.2i 280 ch Gris Atlas 85 000 kms + Suivi PORSCHE",
+      "url": "https://www.leboncoin.fr/ad/voitures/3088114089",
+      "city": "Villenave-d'Ornon",
+      "year": 2006,
+      "pro": true,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "33140",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 85000,
+      "price": 29990,
+      "firstPrice": 29990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 29990
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
     "3128001937": {
       "title": "PORSCHE BOXSTER 987-1 2.7 i Cabriolet 240cv",
       "url": "https://www.leboncoin.fr/ad/voitures/3128001937",
@@ -10657,6 +10725,74 @@
       "lastSeen": "2026-10-15",
       "gone": null,
       "description": "Porsche BOXSTER (987) 3.4 S, (Cabriolet), NOIR, 21cv, 2 portes, mise en circulation le 20-07-2007.\n\n2 places, longueur : 4,33 mètres,\nboîte de vitesse : manuelle\n\nOPTIONS ET EQUIPEMENTS :\nAudio - Télécommunications\n- Radio CD\n\nExtérieur\n- Jantes Alu\n- Rétroviseurs électriques dégivrants\n\nIntérieur\n- Clim manuelle\n- Direction assistée\n- Fixations Isofix aux places arrières\n- Ordinateur de bord\n- Verrouillage centralisé des portes\n- Vitres avant électriques\n\nSécurité\n- ABS\n- Airbags latéraux avant\n- Airbags rideaux\n- Antipatinage\n- ESP\n- Phares antibrouillard\n\nAutres équipements et informations :\n- Sellerie cuir & alcantara\n\nKilométrage non garanti.\n\n- Révision Centre Porsche Caen 30 Octobre 2025 127 606 kms\n- Révision des 6 ans, Vidange moteur + boite 2600€ (facture fournie)\n- Révision Centre Porsche Rennes 29 Décembre 2023 122 397 kms\n- Révision Centre Porsche Rennes 15 Décembre 2021 111 472 kms\n\n- PCCM+ Porsche neuf (Carplay) 1700€\n- 4 pneus neufs Michelin NO\n\nRéférence annonce : 1717"
+    },
+    "3158943112": {
+      "title": "Porsche Boxster 2.7 245ch BVM5 (987)",
+      "url": "https://www.leboncoin.fr/ad/voitures/3158943112",
+      "city": "Vire Normandie",
+      "year": 2006,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "14500",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 83248,
+      "price": 29990,
+      "firstPrice": 29990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 29990
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3183639410": {
+      "title": "Porsche boxster 987 flat-6 2,7 245cv tiptronic",
+      "url": "https://www.leboncoin.fr/ad/voitures/3183639410",
+      "city": "Baillargues",
+      "year": 2008,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "34670",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 83000,
+      "price": 28990,
+      "firstPrice": 28990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 28990
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
     },
     "3192502697": {
       "title": "Porsche BOXSTER 987 3.2 S 280 CV BOITE MANUELLE",
@@ -11129,41 +11265,21 @@
       "city": "Roquebrune-sur-Argens",
       "year": 2010,
       "pro": true,
-      "publishedAt": "2026-10-03",
+      "publishedAt": "2026-11-01",
       "description": "Porsche Boxster II (987.2) 2.9 BVM ORIGINE FRANCE cabriolet, blanc, 17 cv, 2 portes, première mise en circulation le 13/07/2010, garantie 6 mois.\n\n- ENTRETIEN À JOUR PORSCHE & SPÉCIALISTES\n\n- VÉHICULE FRANÇAIS, PAS DE MALUS !\n\n- RIEN À PRÉVOIR\n\n- CARNET TAMPONNÉ ET FACTURES\n\n- PHASE 2\n\n- PAS CONCERNÉ PAR LES CYLINDRES OU L'IMS\n\n- FAIBLE KILOMÉTRAGE CERTIFIÉ\n\n- VISITE OU VISIO SUR RDV\n\n- REPRISES POSSIBLE\n\nAU PLAISIR DE VOUS RENCONTRER ET DE VOUS FAIRE PARTAGER NOTRE PASSION.\n\n*Des erreurs peuvent se glisser dans nos annonces n'hésitez pas à nous contacter pour plus d'informations\n\n2 places, poids en charge : 1335 kg, contrôle technique : OK, carnet d'entretien\n\nOPTIONS ET ÉQUIPEMENTS :\nAudio - Télécommunications :\n  -  Chargeur cd : 526 € ttc\n  - Bluetooth\n  - CD\n  - GPS\n  - auto-radio : CD\n\nConduite :\n  -  Régulateur de vitesse (régul. vitesse) : 309\n  - détecteur de pluie\n  - régulateur de vitesse\n\nExtérieur :\n  -  Déflecteur d'air : 230\n  -  Peinture métal : 909 € ttc\n  - jantes : aluminium\n  - projecteurs bi-xénon\n  - projecteurs xénon\n  - radar arrière de détection d'obstacles\n  - radar d'aide au stationnement\n  - rétroviseurs électriques\n  - système d'aide au stationnement\n\nI",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "256 Ch",
-        "powerFiscal": "17 Cv",
-        "color": "Blanc",
-        "doors": "2",
-        "seats": "2",
-        "vehicleType": "Cabriolet",
-        "critair": "2",
-        "version": "Boxster 2.9",
-        "finition": "Base",
-        "issuance": "07/2010",
-        "maintenance": "Carnet d'entretien disponible",
         "zipcode": "83520",
-        "department": "Var",
-        "region": "Provence-Alpes-Côte d'Azur",
-        "images": 21,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
-        "boosted": true,
-        "urgent": false,
-        "hasPhone": true,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
-        "others": {
-          "vehicle_technical_inspection_valid": "Oui",
-          "Équipements intérieurs": "Aide au stationnement, Bluetooth, Climatisation, Ordinateur de bord, Phares anti-brouillard, Régulateur de vitesse, Système de navigation",
-          "Permis": "Avec permis",
-          "VO récent": "false",
-          "custom_ref": "352",
-          "Importé": "true",
-          "vehicle_history_report_status": "visible",
-          "spare_parts_availability": "Non renseignée"
-        }
+        "others": {}
       },
       "km": 64000,
       "price": 38990,
@@ -11175,7 +11291,7 @@
         }
       ],
       "firstSeen": "2026-10-03",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3225720706": {
@@ -11663,6 +11779,40 @@
       "lastSeen": "2026-10-01",
       "gone": null
     },
+    "3254374905": {
+      "title": "Porsche BOXSTER (987) 3.2 S 280 Ch PH2 / PACK SPORT CHRONO",
+      "url": "https://www.leboncoin.fr/ad/voitures/3254374905",
+      "city": "Luc-la-Primaube",
+      "year": 2006,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "12450",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 113980,
+      "price": 26990,
+      "firstPrice": 26990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 26990
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
     "3254700229": {
       "title": "Porsche Boxster Type 987.2 2.9 i PDK 256 ch Suivi Porsche + Cuir étendu + PASM + Pack mémoire",
       "url": "https://www.leboncoin.fr/ad/voitures/3254700229",
@@ -11974,6 +12124,40 @@
       "lastSeen": "2026-10-15",
       "gone": null,
       "description": "Porsche Boxster S (987.2) 3.4 310ch PDK - Pack Chrono / Sport Design PCM cabriolet, noir, 21 cv, 2 portes, couleur intérieure : beige, première mise en circulation le 01/11/2011, garantie 6 mois.\n\nChez Hexagone Motors, nous sélectionnons, contrôlons et inspectons avec soin tous nos véhicules pour nous assurer de vous proposer des produits de qualité.\n\nNous vous proposons à la commande chez notre fournisseur cette magnifique Porsche Boxster S type 987.2 en boîte PDK, affichant seulement 74 600 km.\n\nNous précisons que le prix de vente du véhicule comprend l'inspection avant vente et le dossier complet de photos fourni par notre fournisseur, ainsi que toutes les démarches d'importation, d'homologation et de malus (si applicable).\n\nNe sont pas inclus en revanche les frais de carte grise, puisque dépendants de votre département d'immatriculation.\n\nN'hésitez pas à nous appeler pour en savoir + !\n\nCe superbe Boxster 987.2 est entre autres équipées des options et équipements suivants :\n\n- Sellerie intérieure cuir naturel beige\n\n- Pack Chrono Sport +\n\n- Volant 3 branches Sport Design avec palettes\n\n- Porsche Communication Management (PCM) avec module de communication\n\n- Sièges chauffants\n\n-"
+    },
+    "3270462309": {
+      "title": "Porsche Boxster 987 2009 103.000 km",
+      "url": "https://www.leboncoin.fr/ad/voitures/3270462309",
+      "city": "Nantes",
+      "year": 2009,
+      "pro": true,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "44000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 103000,
+      "price": 32500,
+      "firstPrice": 32500,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 32500
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "gone": null
     },
     "3270568277": {
       "title": "Porsche boxster 987",
@@ -12677,7 +12861,7 @@
       "city": "Le Petit-Quevilly",
       "year": 2010,
       "pro": true,
-      "publishedAt": "2026-06-29",
+      "publishedAt": "2026-11-01",
       "details": {
         "fuel": "Essence",
         "gearbox": "Automatique",
@@ -12702,7 +12886,7 @@
         }
       ],
       "firstSeen": "2026-06-29",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3278260839": {
@@ -12751,7 +12935,7 @@
       "city": "Puget-sur-Argens",
       "year": 2007,
       "pro": true,
-      "publishedAt": "2026-09-18",
+      "publishedAt": "2026-11-01",
       "details": {
         "fuel": "Essence",
         "gearbox": "Automatique",
@@ -12776,7 +12960,75 @@
         }
       ],
       "firstSeen": "2026-09-18",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3278471112": {
+      "title": "PORSCHE BOXSTER S 3.2i 280 CH TYPE 987 CABRIOLET BVM6-PACK CHRONO-BOSE-GARANTIE 12 MOIS-",
+      "url": "https://www.leboncoin.fr/ad/voitures/3278471112",
+      "city": "Saint-Jean-d'Illac",
+      "year": 2005,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "33127",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 168700,
+      "price": 23990,
+      "firstPrice": 23990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 23990
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3278473441": {
+      "title": "PORSCHE BOXSTER 3.4i - 295 TYPE 987 CABRIOLET S",
+      "url": "https://www.leboncoin.fr/ad/voitures/3278473441",
+      "city": "Saint-Jory",
+      "year": 2007,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "31790",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 96000,
+      "price": 32490,
+      "firstPrice": 32490,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 32490
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3278728030": {
@@ -13235,6 +13487,40 @@
       "lastSeen": "2026-10-15",
       "gone": null
     },
+    "3282356823": {
+      "title": "Porsche boxster 987 2.7 revise-aucun frais",
+      "url": "https://www.leboncoin.fr/ad/voitures/3282356823",
+      "city": "L'Isle-Adam",
+      "year": 2007,
+      "pro": false,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "95290",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 141000,
+      "price": 24900,
+      "firstPrice": 24900,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 24900
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
     "3283262378": {
       "title": "Porsche Boxster 987 2.7L 245cv",
       "url": "https://www.leboncoin.fr/ad/voitures/3283262378",
@@ -13676,7 +13962,7 @@
       "city": "Seyssinet-Pariset",
       "year": 2011,
       "pro": true,
-      "publishedAt": "2026-10-13",
+      "publishedAt": "2026-11-01",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
@@ -13701,7 +13987,7 @@
         }
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3287721708": {
@@ -13840,6 +14126,74 @@
       "lastSeen": "2026-10-15",
       "gone": null
     },
+    "3288927495": {
+      "title": "Porsche BOXSTER S 987.2 3.4 310ch PDK – Noir / Cuir Noir – 62 025 km",
+      "url": "https://www.leboncoin.fr/ad/voitures/3288927495",
+      "city": "La Ciotat",
+      "year": 2010,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "13600",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 62025,
+      "price": 44990,
+      "firstPrice": 44990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 44990
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3289237140": {
+      "title": "Porsche BOXSTER S 987.2 Black Edition 3.4 320ch PDK – Noir – 55 044 km",
+      "url": "https://www.leboncoin.fr/ad/voitures/3289237140",
+      "city": "La Ciotat",
+      "year": 2011,
+      "pro": true,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "13600",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 55044,
+      "price": 49990,
+      "firstPrice": 49990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 49990
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
     "3292287451": {
       "title": "Porsche Boxster 987 \"Black Édition\"",
       "url": "https://www.leboncoin.fr/ad/voitures/3292287451",
@@ -13906,6 +14260,108 @@
       ],
       "firstSeen": "2026-10-21",
       "lastSeen": "2026-10-21",
+      "gone": null
+    },
+    "3295338779": {
+      "title": "Vend Porsche Boxster 3.2 S de 2005",
+      "url": "https://www.leboncoin.fr/ad/voitures/3295338779",
+      "city": "Saint-Avold",
+      "year": 2005,
+      "pro": false,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "57500",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 130000,
+      "price": 33700,
+      "firstPrice": 33700,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 33700
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3297258964": {
+      "title": "Boxster 987.2 PDK 2.9L | 2ème main | 19.913e d'options - Volant SportDesign - Bose - Cuir étendu - Suivi complet en Centre Porsche - Sort d'entretien - État exceptionnel",
+      "url": "https://www.leboncoin.fr/ad/voitures/3297258964",
+      "city": "Gif-sur-Yvette",
+      "year": 2010,
+      "pro": true,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "91190",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 87230,
+      "price": 35800,
+      "firstPrice": 35800,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 35800
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3297547798": {
+      "title": "Porsche BOXSTER Roadster 987 2.7 240CH / SUIVI D'ENTRETIEN / EXCELLENT ETAT",
+      "url": "https://www.leboncoin.fr/ad/voitures/3297547798",
+      "city": "Le Muy",
+      "year": 2006,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "83490",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 113500,
+      "price": 22490,
+      "firstPrice": 22490,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 22490
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
       "gone": null
     }
   },

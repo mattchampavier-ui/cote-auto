@@ -274,6 +274,16 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "ok": [
+          "porsche-boxster-987"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -294,7 +304,8 @@
       "imports/2026-10-21/renault-twingo-1.json",
       "imports/2026-10-21/vw-golf-4-gti-25.json",
       "imports/2026-11-02/peugeot-208-gti-30th.json",
-      "imports/2026-11-02/porsche-911-997.json"
+      "imports/2026-11-02/porsche-911-997.json",
+      "imports/2026-11-02/porsche-boxster-987.json"
     ]
   },
   "snapshots": {
@@ -1270,6 +1281,79 @@
         "rejected": 3,
         "rejectedReasons": {
           "mot obligatoire absent": 3
+        },
+        "truncated": true
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "count": 18,
+        "min": 22490,
+        "p25": 29240,
+        "median": 32495,
+        "p75": 38865,
+        "max": 49990,
+        "avgKm": 98000,
+        "medianKm": 97000,
+        "refKm": 80000,
+        "refPrice": 37310,
+        "eurPer10kKm": 1950,
+        "newListings": 14,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 35,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3297547798",
+            "title": "Porsche BOXSTER Roadster 987 2.7 240CH / SUIVI D'ENTRETIEN / EXCELLENT ETAT",
+            "url": "https://www.leboncoin.fr/ad/voitures/3297547798",
+            "price": 22490,
+            "km": 113500,
+            "year": 2006,
+            "city": "Le Muy",
+            "expected": 30790,
+            "discountPct": 27
+          },
+          {
+            "id": "3183639410",
+            "title": "Porsche boxster 987 flat-6 2,7 245cv tiptronic",
+            "url": "https://www.leboncoin.fr/ad/voitures/3183639410",
+            "price": 28990,
+            "km": 83000,
+            "year": 2008,
+            "city": "Baillargues",
+            "expected": 36730,
+            "discountPct": 21
+          },
+          {
+            "id": "3158943112",
+            "title": "Porsche Boxster 2.7 245ch BVM5 (987)",
+            "url": "https://www.leboncoin.fr/ad/voitures/3158943112",
+            "price": 29990,
+            "km": 83248,
+            "year": 2006,
+            "city": "Vire Normandie",
+            "expected": 36680,
+            "discountPct": 18
+          },
+          {
+            "id": "3088114089",
+            "title": "Porsche Boxster S 987 3.2i 280 ch Gris Atlas 85 000 kms + Suivi PORSCHE",
+            "url": "https://www.leboncoin.fr/ad/voitures/3088114089",
+            "price": 29990,
+            "km": 85000,
+            "year": 2006,
+            "city": "Villenave-d'Ornon",
+            "expected": 36340,
+            "discountPct": 17
+          }
+        ],
+        "proShare": 0.89,
+        "rejected": 2,
+        "rejectedReasons": {
+          "doublon": 1,
+          "mot exclu « spyder »": 1
         },
         "truncated": true
       }
