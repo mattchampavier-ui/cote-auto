@@ -3538,23 +3538,18 @@
       "city": "Aubière",
       "year": 2007,
       "pro": true,
-      "publishedAt": "2025-07-16",
+      "publishedAt": "2026-11-01",
       "details": {
         "fuel": "Essence",
         "gearbox": "Automatique",
-        "powerDin": "325",
-        "powerFiscal": "24",
-        "color": "Noir",
-        "seats": "4",
-        "vehicleType": "Cabriolet",
-        "critair": "2",
         "zipcode": "63170",
-        "department": "Puy-de-Dôme",
-        "region": "Auvergne",
+        "department": null,
+        "region": null,
         "images": null,
         "favorites": null,
-        "boosted": true,
-        "hasPhone": true,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
         "others": {}
       },
@@ -3568,7 +3563,7 @@
         }
       ],
       "firstSeen": "2025-07-16",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3058221809": {
@@ -3682,6 +3677,40 @@
       ],
       "firstSeen": "2026-09-09",
       "lastSeen": "2026-10-01",
+      "gone": null
+    },
+    "3110043983": {
+      "title": "Porsche 997.1 Carrera 4S Cabriolet Boite Méca Noir Basalte Métallisé Intérieur Cuir Noir Pack Chrono Sport Plus Echappement Sport Inox Scart Bose",
+      "url": "https://www.leboncoin.fr/ad/voitures/3110043983",
+      "city": "Chaponnay",
+      "year": 2006,
+      "pro": true,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "69970",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 123000,
+      "price": 57600,
+      "firstPrice": 57600,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 57600
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3135209876": {
@@ -4361,41 +4390,21 @@
       "city": "Jouy-le-Potier",
       "year": 2005,
       "pro": true,
-      "publishedAt": "2026-08-22",
+      "publishedAt": "2026-11-02",
       "description": "Porsche 911 997.1 Carrera S coupe BVM 3.8 355ch coupé, gris, 26 cv, 2 portes, couleur intérieure : marron, première mise en circulation le 13/01/2005, garantie 12 mois.\n\n-Une sélection 45 AUTOSPORT.\n\n-45 Autosport spécialiste en véhicules de sport prestige et de collection pour la vente l'entretien et la réparation.\n\n-Nous disposons d'une sélection de véhicules révisés et garantis.\n\n-Échange / Reprise possible  étudie toutes propositions\n\n-Recherche personnalisée :\n\n4 places, poids en charge : 1510 kg, contrôle technique : OK, carnet d'entretien\n\nOPTIONS ET ÉQUIPEMENTS :\nAudio - Télécommunications :\n  -  Radio\n  -  Système audio bose\n  - CD\n  - GPS\n\nConduite :\n  -  Différentiel autobloquant 40 %\n  - châssis sport\n  - régulateur de vitesse\n  - sièges sport\n\nExtérieur :\n  -  Jantes carrera s 19 p dorées\n  -  Système lave phare\n  - projecteurs xénon\n  - rétroviseurs électriques\n  - toit ouvrant\n  - toit ouvrant électrique\n\nIntérieur :\n  -  Allume cigare\n  -  Porte gobelet\n  - climatisation : automatique\n  - fermeture centralisée\n  - vitres électriques\n  - volant sport\n\nPack :\n  -  Ciel de toit en alcantara\n  -  Etriers de frein rouge\n  -  Fond de compteur blanc\n  -  Mode sport\n  -  Pa",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "355 Ch",
-        "powerFiscal": "26 Cv",
-        "color": "Gris",
-        "doors": "2",
-        "seats": "4",
-        "vehicleType": "Coupé",
-        "critair": "3",
-        "version": "911 Coupe Carrera S",
-        "finition": "Carrera S",
-        "issuance": "01/2005",
-        "maintenance": "Carnet d'entretien disponible",
         "zipcode": "45370",
-        "department": "Loiret",
-        "region": "Centre",
-        "images": 50,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
-        "boosted": true,
-        "urgent": false,
-        "hasPhone": true,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
-        "others": {
-          "vehicle_technical_inspection_valid": "Oui",
-          "Équipements intérieurs": "Climatisation, Régulateur de vitesse, Sièges sport, Toit ouvrant / Toit panoramique, Vitres électriques arrières",
-          "Permis": "Avec permis",
-          "VO récent": "false",
-          "custom_ref": "399",
-          "Importé": "true",
-          "vehicle_history_report_status": "visible",
-          "spare_parts_availability": "Non renseignée"
-        }
+        "others": {}
       },
       "km": 145900,
       "price": 53990,
@@ -4407,7 +4416,7 @@
         }
       ],
       "firstSeen": "2026-08-22",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3225420947": {
@@ -4851,7 +4860,7 @@
       "city": "Bazouges Cré sur Loir",
       "year": 2005,
       "pro": true,
-      "publishedAt": "2026-09-22",
+      "publishedAt": "2026-11-01",
       "description": "Porsche 911 COUPE (997) CARRERA TIPTRONIC S, (Coupé), GRIS, 23cv, mise en circulation le 18-02-2005, garantie 12 mois (12 MOIS).\n\n4 places, couleur intérieur : NOIR, longueur : 4,43 mètres,\nboîte de vitesse : automatique\n\nOPTIONS ET EQUIPEMENTS :\nAudio - Télécommunications\n- Radio CD MP3\n\nConduite\n- Régulateur de vitesse\n\nExtérieur\n- Jantes Alu\n- Radar de recul\n- Rétroviseurs électriques dégivrants\n- Toit ouvrant électrique\n\nIntérieur\n- Clim automatique\n- Direction assistée\n- Pack électrique\n- Verrouillage centralisé des portes\n- Vitres avant électriques\n\nSécurité\n- ABS\n- Airbags latéraux avant\n- Airbags rideaux\n- Antipatinage\n- ESP\n\nAutres équipements et informations :\n- Sellerie cuir\n\nKilométrage garanti.\n\nDes frais de mise à la route de 300 € TTC en sus du prix de vente sont à prévoir.\n\nRéférence annonce : 147",
       "details": {
         "fuel": "Essence",
@@ -4877,7 +4886,7 @@
         }
       ],
       "firstSeen": "2026-09-22",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3242206815": {
@@ -4912,6 +4921,40 @@
       ],
       "firstSeen": "2026-09-24",
       "lastSeen": "2026-10-21",
+      "gone": null
+    },
+    "3244250137": {
+      "title": "Porsche 911 997 997.2 Carrera S Cabriolet 385 cv PDK",
+      "url": "https://www.leboncoin.fr/ad/voitures/3244250137",
+      "city": "Drusenheim",
+      "year": 2009,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "67410",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 98000,
+      "price": 69900,
+      "firstPrice": 69900,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 69900
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3244949226": {
@@ -4963,6 +5006,40 @@
       ],
       "firstSeen": "2026-10-04",
       "lastSeen": "2026-10-15",
+      "gone": null
+    },
+    "3247733900": {
+      "title": "PORSCHE 911 CARRERA CABRIOLET 997 3.6i Tiptronic S A BOSE/JANTES 19\"/SIEGES ECUSSON ELEC CHAUFFANT/CARPLAY/SUIVI PORSCHE",
+      "url": "https://www.leboncoin.fr/ad/voitures/3247733900",
+      "city": "Pornic",
+      "year": 2007,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "44210",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 115600,
+      "price": 54990,
+      "firstPrice": 54990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 54990
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3249877280": {
@@ -5303,6 +5380,40 @@
       "lastSeen": "2026-10-01",
       "gone": null
     },
+    "3261062555": {
+      "title": "Porsche 997.2 Carrera S Coupé - Suivi complet Porsche - Nombreuses options - Garantie",
+      "url": "https://www.leboncoin.fr/ad/voitures/3261062555",
+      "city": "La Rochelle",
+      "year": 2009,
+      "pro": true,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "17000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 123628,
+      "price": 63900,
+      "firstPrice": 63900,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 63900
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
     "3262657061": {
       "title": "Porsche 911 997.1 Coupe 3.8 355 ch Carrera S TIPTRONIC / Toit ouvrant / PASM / IMS OK / Gris Météor",
       "url": "https://www.leboncoin.fr/ad/voitures/3262657061",
@@ -5382,44 +5493,61 @@
       "lastSeen": "2026-10-01",
       "gone": null
     },
+    "3267532815": {
+      "title": "Porsche 911 997.1 CARRERA S 3.8 355 ch TIPTRONIC-S - Entretien Porsche",
+      "url": "https://www.leboncoin.fr/ad/voitures/3267532815",
+      "city": "Limoges",
+      "year": 2004,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "87280",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 113000,
+      "price": 43990,
+      "firstPrice": 43990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 43990
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
     "3268528129": {
       "title": "Porsche 911 Coupe 997-1 Carrera S 3.8 BVM 355ch",
       "url": "https://www.leboncoin.fr/ad/voitures/3268528129",
       "city": "Marcq-en-Baroeul",
       "year": 2006,
       "pro": true,
-      "publishedAt": "2026-09-13",
+      "publishedAt": "2026-11-01",
       "description": "Porsche 911 Coupe 997-1 Carrera S 3.8 BVM 355ch, (Coupé), Gris, 26cv, 2 portes, mise en circulation le 02-03-2006, garantie 12 mois (GARANTIE 12 mois Cirano).\n\n4 places, couleur intérieur : TISSU, longueur : 4,43 mètres, poids en charge 1820 Kg, contrôle technique : 13-02-2025,\nboîte de vitesse : manuelle\n\nOPTIONS ET EQUIPEMENTS :\nAudio - Télécommunications\n- Radio CD MP3\n\nConduite\n- Régulateur de vitesse\n\nExtérieur\n- Jantes Alu\n- Peinture métal\n- Phares bi-xénon\n- Radar de recul\n- Rétroviseurs électriques dégivrants\n- Toit ouvrant électrique\n\nIntérieur\n- Clim automatique\n- Direction assistée\n- Pack électrique\n- Sièges avant chauffants\n- Verrouillage centralisé des portes\n- Vitres avant électriques\n\nSécurité\n- ABS\n- Airbags latéraux avant\n- Airbags rideaux\n- Antipatinage\n- ESP\n\nAutres équipements et informations :\n- Sellerie cuir\n\nKilométrage garanti.\n\nRéférence annonce : 008079",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "355 Ch",
-        "powerFiscal": "26 Cv",
-        "color": "Gris",
-        "doors": "2",
-        "seats": "4",
-        "vehicleType": "Coupé",
-        "critair": "2",
-        "version": "911 Coupe Carrera S",
-        "finition": "Carrera S",
-        "issuance": "03/2006",
         "zipcode": "59700",
-        "department": "Nord",
-        "region": "Nord-Pas-de-Calais",
-        "images": 31,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
-        "boosted": true,
-        "urgent": false,
-        "hasPhone": true,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
-        "others": {
-          "Permis": "Avec permis",
-          "VO récent": "false",
-          "custom_ref": "008079",
-          "Importé": "true",
-          "vehicle_history_report_status": "visible",
-          "spare_parts_availability": "5 ans"
-        }
+        "others": {}
       },
       "km": 113200,
       "price": 58990,
@@ -5431,7 +5559,7 @@
         }
       ],
       "firstSeen": "2026-09-13",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3268572742": {
@@ -5480,43 +5608,23 @@
       "city": "Outreau",
       "year": 2008,
       "pro": true,
-      "publishedAt": "2026-09-16",
+      "publishedAt": "2026-11-02",
       "details": {
         "fuel": "Essence",
         "gearbox": "Automatique",
-        "powerDin": "355 Ch",
-        "powerFiscal": "26 Cv",
-        "color": "Noir",
-        "doors": "2",
-        "seats": "2",
-        "vehicleType": "Cabriolet",
-        "critair": "2",
-        "version": "911 Cabriolet Carrera S TipTronic S",
-        "finition": "Carrera S",
-        "issuance": "01/2008",
-        "oldPrice": "49990",
         "zipcode": "62230",
-        "department": "Pas-de-Calais",
-        "region": "Nord-Pas-de-Calais",
-        "images": 17,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
-        "boosted": true,
-        "urgent": false,
-        "hasPhone": true,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
-        "others": {
-          "Sellerie": "Tout cuir",
-          "Équipements intérieurs": "Aide au stationnement, Climatisation, Phares LED / Xenon, Régulateur de vitesse, Suspension sport / adaptative",
-          "Permis": "Avec permis",
-          "VO récent": "false",
-          "custom_ref": "198fyg8u",
-          "Importé": "true",
-          "vehicle_history_report_status": "visible",
-          "spare_parts_availability": "Non renseignée"
-        }
+        "others": {}
       },
       "km": 136000,
-      "price": 48990,
+      "price": 47490,
       "firstPrice": 49990,
       "priceHistory": [
         {
@@ -5526,10 +5634,14 @@
         {
           "date": "2026-10-15",
           "price": 48990
+        },
+        {
+          "date": "2026-11-02",
+          "price": 47490
         }
       ],
       "firstSeen": "2026-09-16",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-02",
       "gone": null,
       "description": "Porsche 911 CARRERA CABRIOLET 997 S 3.8i Flat 6 Tiptronic Suivi Porsche cabriolet, noir, 26 cv, 2 portes, couleur intérieure : Cuir, première mise en circulation le 21/01/2008, garantie 12 mois.\n\n2 places\n\nOPTIONS ET ÉQUIPEMENTS :\nAudio - Télécommunications :\n  - GPS\n\nConduite :\n  -  Palette au volant\n  - régulateur de vitesse\n  - suspension sport\n\nExtérieur :\n  -  AILERON ELECTRIQUE\n  -  jante 19\"\n  - Radar de stationnement Ar\n  - phares à LED\n\nIntérieur :\n  - climatisation : automatique\n  - intérieur : cuir\n  - vitres avant éléctriques\n\nPack :\n  - GPS couleur\n\nAutres équipements et informations :\n  -  *** POSSIBILITE DE REPRISE - FINANCEMENT ET D'EXTENSION DE GARANTIE***\n  -  *** SOUS RESERVE D'ERREUR DE REDACTION ET D'OPTIONS ***\n  -  ***HORS FRAIS D'IMMATRICULATION ET DE MISE EN CIRCULATION (à partir de 399€)\n  -  ***NOS VEHICULES SONT VISIBLE UNIQUEMENT SUR RDV**\n  -  Boite Tiptronic\n  -  Porsche Communication \"PCM\"\n  -  Son Bose\n  - Classe Crit'air : 2\n  - Puissance kilowatt : 261 kw\n  - consommation extra urbaine : 8,40 litres\n  - consommation mixte : 11,70 litres\n  - consommation urbaine : 17,90 litres\n  - puissance réelle : 355 ch\n  - émission CO2 : 283 g/km\n\nRéférence ann"
     },
@@ -5866,51 +5978,71 @@
       "city": "Poisy",
       "year": 2004,
       "pro": true,
-      "publishedAt": "2026-08-04",
+      "publishedAt": "2026-11-01",
       "description": "PORSCHE 911 (997.1) CARRERA S TIPTRONIC S – FLAT-6 3.8 355 CH – PACK SPORT CHRONO – TOIT OUVRANT\nÉlégante, performante et intemporelle, cette Porsche 911 Carrera S Type 997 Phase 1 incarne parfaitement l'esprit de la 911 atmosphérique. Animée par le légendaire Flat-6 atmosphérique 3.8 développant 355 ch, associé à la boîte automatique Tiptronic S, elle offre un remarquable équilibre entre sportivité, confort et plaisir de conduite.\nPrésentée dans une élégante configuration Noir avec intérieur cuir noir, cette 911 bénéficie d'un carnet d'entretien à jour ainsi que d'une configuration particulièrement recherchée comprenant notamment le Pack Sport Chrono, le toit ouvrant électrique, les sièges chauffants, le PCM avec navigation ainsi que les jantes Porsche 19 pouces.\nPrésentée dans un très bon état général, cette Carrera S constitue une excellente opportunité pour les amateurs de Porsche à la recherche d'une 911 atmosphérique authentique, entretenue et parfaitement adaptée aussi bien aux longs trajets qu'à une utilisation plaisir.\nExtension de garantie disponible : 6, 12, 24 ou 36 mois.\nFinancement par crédit classique possible pour particuliers et professionnels.\nINFORMATIONS & ÉTAT\n",
       "details": {
         "fuel": "Essence",
         "gearbox": "Automatique",
-        "powerDin": "355 Ch",
-        "powerFiscal": "26 Cv",
-        "color": "Noir",
-        "doors": "2",
-        "seats": "4",
-        "vehicleType": "Coupé",
-        "critair": "3",
-        "version": "911 Coupe Carrera S TipTronic S",
-        "finition": "Carrera S",
-        "issuance": "09/2004",
         "zipcode": "74330",
-        "department": "Haute-Savoie",
-        "region": "Rhône-Alpes",
-        "images": 30,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
-        "boosted": true,
-        "urgent": false,
-        "hasPhone": true,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
-        "others": {
-          "Dommages": "Bon état général",
-          "Permis": "Avec permis",
-          "VO récent": "false",
-          "custom_ref": "1869-0000044",
-          "Importé": "true",
-          "vehicle_history_report_status": "visible",
-          "spare_parts_availability": "Non renseignée"
-        }
+        "others": {}
       },
-      "km": 103500,
-      "price": 49580,
+      "km": 104000,
+      "price": 49480,
       "firstPrice": 49580,
       "priceHistory": [
         {
           "date": "2026-10-15",
           "price": 49580
+        },
+        {
+          "date": "2026-11-02",
+          "price": 49480
         }
       ],
       "firstSeen": "2026-08-04",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3278252419": {
+      "title": "PORSCHE 911 3.8I I 997 Carrera 4S BVM I Bose I Toit ouvrant I Chrono I Garantie",
+      "url": "https://www.leboncoin.fr/ad/voitures/3278252419",
+      "city": "Le Petit-Quevilly",
+      "year": 2006,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "76140",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 146500,
+      "price": 49990,
+      "firstPrice": 49990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 49990
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3278304511": {
@@ -6298,6 +6430,40 @@
       "gone": null,
       "description": "Bonjour, \nLJMotorsport, votre spécialiste Porsche en région Lyonnaise vous propose à la vente ce magnifique exemplaire de Porsche 997 Carrera S cabriolet PDK 3.8L 355Ch, disponible dans notre showroom (30 Kms au sud de Lyon).\n\nVoici le détail des caractéristiques du véhicule :\n\nModèle : Porsche 997 Carrera S cabriolet PDK 3.8L 355Ch\nCouleur : Noir Basalte Métallisé\nCapote : Noire\nIntérieur : intérieur tout cuir Gris Pierre\nMise En Circulation : 01/02/2007\nKilométrage : 165 540 Kms\nBoite PDK\n\nRef 1318\n\nEquipements : \n\nBoîte Tiptronic S\nSièges chauffants\nJantes SportDesign 19 pouces\nHomeLink®\nAssistance parking\n Module téléphone pour PCM\n Combiné pour module téléphone\n Module de navigation pour PCM\nPré-équipement Vehicle Tracking System\nTapis de sol\nRétroviseurs intérieur et extérieurs automatiques anti-éblouissement avec capteur de pluie intégré\nSièges électriques\n Volant sport à jante épaisse 3 branches en cuir lisse\n Élargisseurs de voie\n Fonds de compteur argent\n Lave-phares\n Volant avec commande Tiptronic\n Sièges confort électriques\n Pack Mémoire Conducteur\n Porsche Active Suspension Management (PASM)\n Porsche Stability Management (PSM)\n Pack Audio Plus avec range-CD\n Alarme vol"
     },
+    "3279059389": {
+      "title": "PORSCHE 911 Cabriolet 3.8i - BVA Tiptronic TYPE 997 CABRIOLET Carrera S",
+      "url": "https://www.leboncoin.fr/ad/voitures/3279059389",
+      "city": "Pont-l'Abbé",
+      "year": 2005,
+      "pro": true,
+      "publishedAt": "2026-10-31",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "29120",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 75500,
+      "price": 54990,
+      "firstPrice": 54990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 54990
+        }
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
     "3279735982": {
       "title": "PORSCHE 911 CARRERA S CABRIOLET 3.8i 355 cv TYPE 997",
       "url": "https://www.leboncoin.fr/ad/voitures/3279735982",
@@ -6338,41 +6504,21 @@
       "city": "Chenôve",
       "year": 2007,
       "pro": true,
-      "publishedAt": "2026-10-01",
+      "publishedAt": "2026-11-02",
       "description": "PORSCHE 911 Carrera S 3.8i (Type 997) - 355 ch - BVA Tiptronic - 2007 - 62 500 km (évolutif) GARANTIE 12 MOIS.\n\nDécouvrez ce superbe PORSCHE 911 Carrera S, version Type 997, soigneusement préparé par nos équipes. Ce coupé 3.8i associe la motorisation atmosphérique 355 ch à la boîte automatique Tiptronic pour une conduite alliant caractère et facilité d’usage.\n\nPoints forts :\n- Motorisation 3.8i d’origine développant 355 ch : comportement moteur réactif et typique des Carrera S de la génération 997.\n- Boîte BVA Tiptronic adaptée à un usage routier quotidien sans renoncer aux performances, avec pack Sport Chrono Plus pour une conduite plus dynamique.\n- Finition intérieure cuir Havanne avec planche de bord et panneaux de porte garnis cuir, ciel de toit en Alcantara : présentation soignée et équipement habitacle haut de gamme.\n- Équipements attractifs comprenant jantes Carrera Sport 19\", système audio BOSE numérique et radar de recul à 4 capteurs, complétés par régulateur de vitesse et volant cuir 3 branches.\n\nÉquipements principaux :\nBOSE Surround Sound-System (numérique), jantes Carrera Sport 19 pouces, pack additionnel panneaux de porte en cuir lisse, pack additionnel planche de bor",
       "details": {
         "fuel": "Essence",
         "gearbox": "Automatique",
-        "powerDin": "355 Ch",
-        "powerFiscal": "26 Cv",
-        "color": "Gris",
-        "doors": "2",
-        "seats": "4",
-        "vehicleType": "Coupé",
-        "critair": "2",
-        "version": "911 Coupe Carrera S TipTronic S",
-        "finition": "Carrera S",
-        "issuance": "04/2007",
         "zipcode": "21300",
-        "department": "Côte-d'Or",
-        "region": "Bourgogne",
-        "images": 14,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
-        "boosted": true,
-        "urgent": false,
-        "hasPhone": true,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
-        "others": {
-          "Dommages": "Bon état général",
-          "Sellerie": "Tout cuir",
-          "Équipements intérieurs": "Climatisation, Ordinateur de bord, Régulateur de vitesse",
-          "Permis": "Avec permis",
-          "VO récent": "false",
-          "custom_ref": "1687-0000026",
-          "Importé": "true",
-          "vehicle_history_report_status": "visible",
-          "spare_parts_availability": "Non renseignée"
-        }
+        "others": {}
       },
       "km": 62500,
       "price": 54990,
@@ -6384,7 +6530,7 @@
         }
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3280482015": {
@@ -6437,6 +6583,40 @@
       ],
       "firstSeen": "2026-10-02",
       "lastSeen": "2026-10-15",
+      "gone": null
+    },
+    "3280786255": {
+      "title": "Porsche 911 Carrera S Cabriolet (997) 3.8 355 CV BVM6 - Financement à partir de 599e/Mois",
+      "url": "https://www.leboncoin.fr/ad/voitures/3280786255",
+      "city": "Ham-sous-Varsberg",
+      "year": 2005,
+      "pro": true,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "57880",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 119000,
+      "price": 53900,
+      "firstPrice": 53900,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 53900
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3280814617": {
@@ -6595,6 +6775,40 @@
       ],
       "firstSeen": "2026-10-04",
       "lastSeen": "2026-10-15",
+      "gone": null
+    },
+    "3283440833": {
+      "title": "Porsche 911 997 CARRERA 4S CABBRIOLET 3.8L 355CH",
+      "url": "https://www.leboncoin.fr/ad/voitures/3283440833",
+      "city": "Reims",
+      "year": 2006,
+      "pro": true,
+      "publishedAt": "2026-11-01",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "51100",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 102593,
+      "price": 54900,
+      "firstPrice": 54900,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 54900
+        }
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
       "gone": null
     },
     "3283563885": {
@@ -6859,6 +7073,40 @@
       "lastSeen": "2026-10-15",
       "gone": null
     },
+    "3291948715": {
+      "title": "PORSCHE 997.1 CARRERA S BVM 3.8 L 355 CV – Échappement sport / PASM / Phares Bi-Xénon",
+      "url": "https://www.leboncoin.fr/ad/voitures/3291948715",
+      "city": "Saint-Agnan",
+      "year": 2005,
+      "pro": true,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "71160",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 136000,
+      "price": 49990,
+      "firstPrice": 49990,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 49990
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
     "3292259639": {
       "title": "PORSCHE 911 Cabriolet 3.8i - BV PDK TYPE 997 II 2009 CABRIOLET Carrera S",
       "url": "https://www.leboncoin.fr/ad/voitures/3292259639",
@@ -6925,6 +7173,74 @@
       ],
       "firstSeen": "2026-10-21",
       "lastSeen": "2026-10-21",
+      "gone": null
+    },
+    "3295579411": {
+      "title": "Porsche 911 type 997 Carrera S",
+      "url": "https://www.leboncoin.fr/ad/voitures/3295579411",
+      "city": "Bayonne",
+      "year": 2005,
+      "pro": false,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "64100",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 99700,
+      "price": 55997,
+      "firstPrice": 55997,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 55997
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3300757973": {
+      "title": "Porsche 911 997.2 Carrera S 3.8 PDK 385 ch",
+      "url": "https://www.leboncoin.fr/ad/voitures/3300757973",
+      "city": "Rambouillet",
+      "year": 2008,
+      "pro": false,
+      "publishedAt": "2026-11-02",
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "78120",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 102500,
+      "price": 67900,
+      "firstPrice": 67900,
+      "priceHistory": [
+        {
+          "date": "2026-11-02",
+          "price": 67900
+        }
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
       "gone": null
     }
   },

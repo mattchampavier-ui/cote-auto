@@ -264,6 +264,16 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "ok": [
+          "porsche-911-997"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -283,7 +293,8 @@
       "imports/2026-10-21/renault-megane-r26.json",
       "imports/2026-10-21/renault-twingo-1.json",
       "imports/2026-10-21/vw-golf-4-gti-25.json",
-      "imports/2026-11-02/peugeot-208-gti-30th.json"
+      "imports/2026-11-02/peugeot-208-gti-30th.json",
+      "imports/2026-11-02/porsche-911-997.json"
     ]
   },
   "snapshots": {
@@ -646,6 +657,73 @@
         "rejectedReasons": {
           "mot obligatoire absent": 1,
           "prix hors marché": 2
+        },
+        "truncated": true
+      },
+      {
+        "date": "2026-11-02",
+        "source": "chrome",
+        "count": 19,
+        "min": 43990,
+        "p25": 49735,
+        "median": 54900,
+        "p75": 56799,
+        "max": 69900,
+        "avgKm": 115000,
+        "medianKm": 116000,
+        "refKm": 100000,
+        "refPrice": 56160,
+        "eurPer10kKm": 1040,
+        "newListings": 12,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 45,
+        "priceDrops": [
+          {
+            "id": "3270837815",
+            "title": "Porsche 911 CARRERA CABRIOLET 997 S 3.8i Flat 6 Tiptronic Suivi Porsche",
+            "url": "https://www.leboncoin.fr/ad/voitures/3270837815",
+            "from": 48990,
+            "to": 47490,
+            "totalDropPct": 5
+          },
+          {
+            "id": "3278211461",
+            "title": "Porsche 911 porsche (997.1) carrera s tiptronic s - flat-6 3.8 355 ch - pack sport chrono - toit ouvrant",
+            "url": "https://www.leboncoin.fr/ad/voitures/3278211461",
+            "from": 49580,
+            "to": 49480,
+            "totalDropPct": 0.2
+          }
+        ],
+        "bargains": [
+          {
+            "id": "3267532815",
+            "title": "Porsche 911 997.1 CARRERA S 3.8 355 ch TIPTRONIC-S - Entretien Porsche",
+            "url": "https://www.leboncoin.fr/ad/voitures/3267532815",
+            "price": 43990,
+            "km": 113000,
+            "year": 2004,
+            "city": "Limoges",
+            "expected": 54820,
+            "discountPct": 20
+          },
+          {
+            "id": "3241156907",
+            "title": "Porsche 911 COUPE (997) CARRERA TIPTRONIC S",
+            "url": "https://www.leboncoin.fr/ad/voitures/3241156907",
+            "price": 45990,
+            "km": 119000,
+            "year": 2005,
+            "city": "Bazouges Cré sur Loir",
+            "expected": 54190,
+            "discountPct": 15
+          }
+        ],
+        "proShare": 0.89,
+        "rejected": 1,
+        "rejectedReasons": {
+          "prix hors marché": 1
         },
         "truncated": true
       }
