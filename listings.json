@@ -35234,42 +35234,22 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3175837683",
       "city": "La Rochelle",
       "year": 1991,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-08-17",
       "description": "PEUGEOT 205 GTI 1.9 – 130 CH\nVert Sorento • 3 portes • Toit ouvrant • Moteur refait à neuf\nUne véritable icône automobile française dans une configuration particulièrement séduisante.\nCette Peugeot 205 GTI 1.9 de 130 ch, mise en circulation le 02/09/1991, se présente dans son emblématique teinte Vert Sorento et bénéficie d'un moteur entièrement refait à neuf.\n🔥 MOTEUR & TRAVAUX\nMoteur refait à neuf\nEnviron 500 km depuis la réfection\n8 000 € de travaux réalisés\nFacture disponible\nListe détaillée des éléments remplacés fournie\nRévision effectuée\nUn travail important a été réalisé sur la mécanique, permettant de repartir sur une base saine.\n🟢 CONFIGURATION\nFinition GTI 1.9\n130 ch\nTeinte Vert Sorento\n3 portes\nToit ouvrant\nJantes 15 pouces\nSellerie tissu & cuir\nVolant cuir\nLevier de vitesse cuir\nLogo 1.9 sur les montants des custodes arrière\n✨ ÉQUIPEMENTS\nVitres avant électriques\nAutoradio installé pour la vente\nVolant et levier de vitesse en cuir\nToit ouvrant\nJantes 15\"\nSellerie tissu & cuir\n📋 HISTORIQUE & INFORMATIONS\nPremière mise en circulation : 02/09/1991\nKilométrage châssis : 222 000 km\nMoteur refait à neuf : environ 500 km\n2 clés disponibles\nRévision effectuée\nFacture des tra",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "130 Ch",
-        "powerFiscal": "9 Cv",
-        "color": "Vert",
-        "doors": "3",
-        "seats": "5",
-        "vehicleType": "Citadine",
-        "issuance": "04/1991",
-        "oldPrice": "23990",
         "zipcode": "17000",
-        "department": "Charente-Maritime",
-        "region": "Poitou-Charentes",
-        "images": 8,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
-        "boosted": true,
-        "urgent": false,
-        "hasPhone": true,
-        "expiresAt": "2026-10-16",
-        "others": {
-          "vehicle_technical_inspection_valid": "Non",
-          "Dommages": "Bon état général",
-          "Sellerie": "Cuir partiel",
-          "Permis": "Avec permis",
-          "Vente en LOA/LLD": "Non",
-          "VO récent": "false",
-          "vehicle_commercial_warranty": "Non",
-          "vehicle_manufacturer_warranty": "Non",
-          "Importé": "false",
-          "vehicle_history_report_status": "visible",
-          "spare_parts_availability": "Non renseignée"
-        }
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
       },
       "km": 1000,
       "price": 21000,
@@ -35281,7 +35261,7 @@
         }
       ],
       "firstSeen": "2026-08-17",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3199378668": {
@@ -35322,6 +35302,40 @@
       ],
       "firstSeen": "2026-09-20",
       "lastSeen": "2026-10-01",
+      "gone": null
+    },
+    "3202466021": {
+      "title": "Peugeot 205 GTI 1.6 105 ch BVM5 ENTIEREMENT RESTAUREE",
+      "url": "https://www.leboncoin.fr/ad/voitures/3202466021",
+      "city": "Quincy-Voisins",
+      "year": 1986,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "77860",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 246000,
+      "price": 15990,
+      "firstPrice": 15990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 15990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3206868741": {
@@ -35538,24 +35552,19 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3228549093",
       "city": "Saint-Pardoux-du-Breuil",
       "year": 1987,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-07-06",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "128",
-        "powerFiscal": "9",
-        "color": "Gris",
-        "doors": "3",
-        "seats": "5",
-        "vehicleType": "Berline",
         "zipcode": "47200",
-        "department": "Lot-et-Garonne",
-        "region": "Aquitaine",
+        "department": null,
+        "region": null,
         "images": null,
         "favorites": null,
-        "boosted": true,
-        "hasPhone": true,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
         "others": {}
       },
@@ -35569,7 +35578,7 @@
         }
       ],
       "firstSeen": "2026-07-06",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3232618598": {
@@ -35960,6 +35969,40 @@
       ],
       "firstSeen": "2026-09-07",
       "lastSeen": "2026-10-01",
+      "gone": null
+    },
+    "3266218974": {
+      "title": "205 gti 1984 1,6 105 cv",
+      "url": "https://www.leboncoin.fr/ad/voitures/3266218974",
+      "city": "Château-Renault",
+      "year": 1984,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "37110",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 120220,
+      "price": 18000,
+      "firstPrice": 18000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 18000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3267921242": {
@@ -36612,6 +36655,40 @@
       "lastSeen": "2026-10-01",
       "gone": null
     },
+    "3275841264": {
+      "title": "💥PEUGEOT 205 1.6l - 115 GTI phase 1/152 000km /1ere main/origine France/Restauration complète",
+      "url": "https://www.leboncoin.fr/ad/voitures/3275841264",
+      "city": "Bourg-Blanc",
+      "year": 1987,
+      "pro": true,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "29860",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 152000,
+      "price": 25990,
+      "firstPrice": 25990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 25990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
     "3276172426": {
       "title": "205 gti 1.9",
       "url": "https://www.leboncoin.fr/ad/voitures/3276172426",
@@ -37040,6 +37117,40 @@
       "lastSeen": "2026-10-15",
       "gone": null,
       "description": "Vend 205 gti 1.9 dimma \nMoteur 2l tct\nÉtrier avant 406 v6\nMettre cylindre de frein 23.8\nSuspension koni\nInjecteurs neufs\nPneus neufs \nCarte grise en règle"
+    },
+    "3279404940": {
+      "title": "PEUGEOT 205 GTi phase 2 - 1.9I 122 - Garantie 6 mois",
+      "url": "https://www.leboncoin.fr/ad/voitures/3279404940",
+      "city": "Salon-de-Provence",
+      "year": 1992,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "13300",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 129000,
+      "price": 20990,
+      "firstPrice": 20990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 20990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
     },
     "3279615676": {
       "title": "205 gti 1.9l",
@@ -37754,39 +37865,22 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3285656861",
       "city": "Mazères-Lezons",
       "year": 1988,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-10-10",
       "description": "Peugeot 205 GTI 1.9L, berline, noir, 9 cv, 3 portes, première mise en circulation le 21/07/1988.\n\n5 places\n\n\r\r\n\n🏁 PASSION AUTO 64 vous propose :\n\n PEUGEOT - 205 GTI 1.9 - ESSENCE 128 CV\n\n⸻\n\n💥 GTI D'EXCEPTION – RESTAURATION COMPLÈTE  \n\n⸻—————————\n\n📋 INFORMATIONS GÉNÉRALES\n\n* Marque : Peugeot\n* Modèle : 205 GTI 1.9\n* Mise en circulation : 21/07/1988\n* Kilométrage : 149 500 km\n* Carburant : Essence\n* Boîte : Manuelle\n* Puissance fiscale : 9 CV\n* Nombre de places : 5\n* Origine : Espagne\n\n⸻—————————\n\n✨ POINTS FORTS DU VÉHICULE\n\n*  Grosse restauration complète réalisée par un garage spécialisé en Espagne\n*  Carrosserie et jantes entièrement repeintes, sellerie neuve\n*  Moteur et trains roulants refaits : aucun travaux à prévoir\n*  Contrôle technique valide (dernier contrôle du 16/06/2026 : OK)\n*  Dossier complet avec factures disponibles\n\n⸻—————————\n\n⚙️ OPTIONS & ÉQUIPEMENTS\n\nAudio / Multimédia\n\n* Système audio neuf\n* Autoradio et haut-parleurs Pioneer (30/04/2026)\n\nConduite & Sécurité\n\n* Disques de freins neufs, durites de frein avant et arrière remplacées\n* Étriers avant refaits, amortisseurs et coupelles de suspension remplacés\n* Rotules de direction, biellettes de barre stabilisat",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "128 Ch",
-        "powerFiscal": "9 Cv",
-        "color": "Noir",
-        "doors": "3",
-        "seats": "5",
-        "vehicleType": "Berline",
-        "critair": "3",
-        "version": "205 1.1 Mito 3p",
-        "finition": "Mito",
-        "issuance": "07/1988",
         "zipcode": "64110",
-        "department": "Pyrénées-Atlantiques",
-        "region": "Aquitaine",
-        "images": 29,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
         "boosted": null,
-        "urgent": false,
-        "hasPhone": true,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
-        "others": {
-          "Permis": "Avec permis",
-          "VO récent": "false",
-          "custom_ref": "VRZ_C79C62",
-          "Importé": "true",
-          "vehicle_history_report_status": "visible",
-          "spare_parts_availability": "Non renseignée"
-        }
+        "others": {}
       },
       "km": 149500,
       "price": 29290,
@@ -37798,7 +37892,7 @@
         }
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3285719634": {
@@ -38323,6 +38417,40 @@
       "lastSeen": "2026-10-21",
       "gone": null
     },
+    "3296376677": {
+      "title": "PEUGEOT 205 GTi 1.9 1.9i - 122 GTi PHASE 2",
+      "url": "https://www.leboncoin.fr/ad/voitures/3296376677",
+      "city": "Guéret",
+      "year": 1991,
+      "pro": true,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "23000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 181040,
+      "price": 26980,
+      "firstPrice": 26980,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 26980
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
     "3298081775": {
       "title": "Golf 2 GTI 16S",
       "url": "https://www.leboncoin.fr/ad/voitures/3298081775",
@@ -38525,6 +38653,278 @@
       ],
       "firstSeen": "2026-11-01",
       "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3300984305": {
+      "title": "PEUGEOT 205 1.6 GTi + Courroie Faite",
+      "url": "https://www.leboncoin.fr/ad/voitures/3300984305",
+      "city": "Saint-Malo",
+      "year": 1989,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "35400",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 190000,
+      "price": 11990,
+      "firstPrice": 11990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 11990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3315110950": {
+      "title": "205 gti",
+      "url": "https://www.leboncoin.fr/ad/voitures/3315110950",
+      "city": "La Coucourde",
+      "year": 1990,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "26740",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 177000,
+      "price": 8500,
+      "firstPrice": 8500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 8500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3315369166": {
+      "title": "Volkswagen golf 3 gti 16s",
+      "url": "https://www.leboncoin.fr/ad/voitures/3315369166",
+      "city": "Sainte-Foy-lès-Lyon",
+      "year": 1993,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "69110",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 205000,
+      "price": 8990,
+      "firstPrice": 8990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 8990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3315473509": {
+      "title": "PEUGEOT 205 GTI 1,6 restaurée ETAT RARE",
+      "url": "https://www.leboncoin.fr/ad/voitures/3315473509",
+      "city": "Veigné",
+      "year": 1986,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "37250",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 152980,
+      "price": 23990,
+      "firstPrice": 23990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 23990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3315599339": {
+      "title": "Échange/vente Peugeot 205 GTI",
+      "url": "https://www.leboncoin.fr/ad/voitures/3315599339",
+      "city": "Pontchâteau",
+      "year": 1985,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "44160",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 190000,
+      "price": 25000,
+      "firstPrice": 25000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 25000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3315994348": {
+      "title": "205 gti",
+      "url": "https://www.leboncoin.fr/ad/voitures/3315994348",
+      "city": "Penta-di-Casinca",
+      "year": 1988,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "20213",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 230000,
+      "price": 14000,
+      "firstPrice": 14000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 14000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3316244052": {
+      "title": "205 gti 1,9L",
+      "url": "https://www.leboncoin.fr/ad/voitures/3316244052",
+      "city": "Vitré",
+      "year": 1989,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "35500",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 267000,
+      "price": 19000,
+      "firstPrice": 19000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 19000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3316245364": {
+      "title": "205 GTI 1.6 115ch",
+      "url": "https://www.leboncoin.fr/ad/voitures/3316245364",
+      "city": "La Chapelle-Longueville",
+      "year": 1987,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "27950",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 210000,
+      "price": 9500,
+      "firstPrice": 9500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 9500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
       "gone": null
     }
   },

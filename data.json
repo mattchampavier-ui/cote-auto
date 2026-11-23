@@ -61,15 +61,6 @@
       {
         "date": "2026-10-21",
         "source": "chrome",
-        "ok": [],
-        "empty": [],
-        "failed": [],
-        "costUsd": 0,
-        "budgetReached": true
-      },
-      {
-        "date": "2026-10-21",
-        "source": "chrome",
         "ok": [
           "peugeot-208-gti-30th",
           "porsche-911-997",
@@ -318,6 +309,16 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "ok": [
+          "peugeot-205-gti"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -357,6 +358,7 @@
       "imports/2026-11-23/bmw-z3-19-20.json",
       "imports/2026-11-23/citroen-saxo-vts.json",
       "imports/2026-11-23/mazda-mx5-na.json",
+      "imports/2026-11-23/peugeot-205-gti.json",
       "imports/2026-11-23/peugeot-206-rc.json",
       "imports/2026-11-23/peugeot-208-gti-30th.json",
       "imports/2026-11-23/peugeot-306-s16.json",
@@ -5265,6 +5267,89 @@
           "mot obligatoire absent": 7,
           "mot exclu « xs »": 1,
           "prix hors marché": 2
+        },
+        "truncated": true
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "count": 16,
+        "min": 8500,
+        "p25": 13498,
+        "median": 19495,
+        "p75": 24243,
+        "max": 29290,
+        "avgKm": 171000,
+        "medianKm": 179000,
+        "refKm": 190000.00000000003,
+        "refPrice": 18020,
+        "eurPer10kKm": 360,
+        "newListings": 13,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 51,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3315110950",
+            "title": "205 gti",
+            "url": "https://www.leboncoin.fr/ad/voitures/3315110950",
+            "price": 8500,
+            "km": 177000,
+            "year": 1990,
+            "city": "La Coucourde",
+            "expected": 18490,
+            "discountPct": 54
+          },
+          {
+            "id": "3315369166",
+            "title": "Volkswagen golf 3 gti 16s",
+            "url": "https://www.leboncoin.fr/ad/voitures/3315369166",
+            "price": 8990,
+            "km": 205000,
+            "year": 1993,
+            "city": "Sainte-Foy-lès-Lyon",
+            "expected": 17480,
+            "discountPct": 49
+          },
+          {
+            "id": "3316245364",
+            "title": "205 GTI 1.6 115ch",
+            "url": "https://www.leboncoin.fr/ad/voitures/3316245364",
+            "price": 9500,
+            "km": 210000,
+            "year": 1987,
+            "city": "La Chapelle-Longueville",
+            "expected": 17290,
+            "discountPct": 45
+          },
+          {
+            "id": "3300984305",
+            "title": "PEUGEOT 205 1.6 GTi + Courroie Faite",
+            "url": "https://www.leboncoin.fr/ad/voitures/3300984305",
+            "price": 11990,
+            "km": 190000,
+            "year": 1989,
+            "city": "Saint-Malo",
+            "expected": 18020,
+            "discountPct": 33
+          },
+          {
+            "id": "3315994348",
+            "title": "205 gti",
+            "url": "https://www.leboncoin.fr/ad/voitures/3315994348",
+            "price": 14000,
+            "km": 230000,
+            "year": 1988,
+            "city": "Penta-di-Casinca",
+            "expected": 16570,
+            "discountPct": 15
+          }
+        ],
+        "proShare": 0.13,
+        "rejected": 4,
+        "rejectedReasons": {
+          "mot obligatoire absent": 4
         },
         "truncated": true
       }
