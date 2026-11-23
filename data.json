@@ -15,15 +15,6 @@
       },
       {
         "date": "2026-10-01",
-        "ok": [],
-        "empty": [
-          "peugeot-206-rc"
-        ],
-        "failed": [],
-        "costUsd": 0.009
-      },
-      {
-        "date": "2026-10-01",
         "ok": [
           "peugeot-206-rc"
         ],
@@ -339,6 +330,16 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "ok": [
+          "porsche-boxster-987"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -376,7 +377,8 @@
       "imports/2026-11-02/vw-golf-4-gti-25.json",
       "imports/2026-11-23/peugeot-208-gti-30th.json",
       "imports/2026-11-23/porsche-911-997.json",
-      "imports/2026-11-23/porsche-boxster-986.json"
+      "imports/2026-11-23/porsche-boxster-986.json",
+      "imports/2026-11-23/porsche-boxster-987.json"
     ]
   },
   "snapshots": {
@@ -1765,6 +1767,76 @@
         "rejectedReasons": {
           "doublon": 1,
           "mot exclu « spyder »": 1
+        },
+        "truncated": true
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "count": 18,
+        "min": 14490,
+        "p25": 26993,
+        "median": 28290,
+        "p75": 39490,
+        "max": 45990,
+        "avgKm": 97000,
+        "medianKm": 96000,
+        "refKm": 80000,
+        "refPrice": 33920,
+        "eurPer10kKm": 1180,
+        "newListings": 13,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 52,
+        "priceDrops": [
+          {
+            "id": "3284841554",
+            "title": "Porsche BOXSTER (987) 2.9 PDK",
+            "url": "https://www.leboncoin.fr/ad/voitures/3284841554",
+            "from": 31990,
+            "to": 26990,
+            "totalDropPct": 15.6
+          }
+        ],
+        "bargains": [
+          {
+            "id": "3275623488",
+            "title": "Porsche Boxster type 987",
+            "url": "https://www.leboncoin.fr/ad/voitures/3275623488",
+            "price": 14490,
+            "km": 124000,
+            "year": 2006,
+            "city": "Billy-Berclau",
+            "expected": 28720,
+            "discountPct": 50
+          },
+          {
+            "id": "3301007237",
+            "title": "PORSCHE Boxster 987 2.7 240ch - 2006 - Sieges chauffants - Tiptronic",
+            "url": "https://www.leboncoin.fr/ad/voitures/3301007237",
+            "price": 22990,
+            "km": 69930,
+            "year": 2006,
+            "city": "Les Sorinières",
+            "expected": 35110,
+            "discountPct": 35
+          },
+          {
+            "id": "3315883589",
+            "title": "Porsche Boxster 987",
+            "url": "https://www.leboncoin.fr/ad/voitures/3315883589",
+            "price": 26700,
+            "km": 47800,
+            "year": 2005,
+            "city": "Lestrem",
+            "expected": 36230,
+            "discountPct": 26
+          }
+        ],
+        "proShare": 0.17,
+        "rejected": 2,
+        "rejectedReasons": {
+          "mot obligatoire absent": 2
         },
         "truncated": true
       }
