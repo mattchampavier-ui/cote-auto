@@ -8978,39 +8978,22 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3233339199",
       "city": "Perrignier",
       "year": 1999,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-07-15",
       "description": "L'Agence TransakAuto THONON-LES-BAINS, société spécialisée en courtage automobile, 1er réseau d'intermédiation automobile auprès des particuliers avec + de 180 agences en France depuis 2011, vous propose ce véhicule Porsche, BOXSTER, Noir, 14 chevaux fiscaux, 2 portes, 82 000 km.\n \n⚠ 🔦 Véhicule visible uniquement sur rdv à l'agence TransakAuto THONON-LES-BAINS, du mardi au samedi de lundi à vendredi de 10:00–19:00\nsamedi 10:00–18:00\ndimanche Fermé\n \nVéhicule en dépôt-vente [non stocké sur place]. Visible uniquement sur rendez-vous dans votre agence après avoir appelé le commercial pour valider les modalités de la visite.\n \n⚙ Garantie mécanique possible de 6 à 36 mois.\n(Une garantie minimale de 3 mois est comprise dans les frais d'intermédiation – voir conditions en agence)\n \n🤝 Véhicule avec factures d'entretien et historique\nVéhicule nettoyé intérieur et extérieur par préparateur pro pour la vente.\n \n⚠ Des erreurs pouvant se glisser dans nos annonces, merci de nous contacter, le descriptif est non contractuel et nous vous invitons à consulter nos conditions générales de prestations ([URL masquée pour votre sécurité]).\n \n📸 Plus de photos sur demande.\n \n🔦 Prix hors carte grise 19",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "204 Ch",
-        "powerFiscal": "14 Cv",
-        "color": "Noir",
-        "doors": "2",
-        "seats": "2",
-        "vehicleType": "Cabriolet",
-        "version": "Boxster 2.5",
-        "finition": "Base",
-        "issuance": "08/1999",
-        "oldPrice": "24990",
         "zipcode": "74550",
-        "department": "Haute-Savoie",
-        "region": "Rhône-Alpes",
-        "images": 45,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
-        "boosted": true,
-        "urgent": false,
-        "hasPhone": true,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
-        "others": {
-          "Équipements intérieurs": "Climatisation, Jantes en alliage",
-          "VO récent": "false",
-          "custom_ref": "VO44232466",
-          "Importé": "true",
-          "vehicle_history_report_status": "visible",
-          "spare_parts_availability": "Non renseignée"
-        }
+        "others": {}
       },
       "km": 82000,
       "price": 19980,
@@ -9022,7 +9005,7 @@
         }
       ],
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3234830440": {
@@ -9206,7 +9189,7 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3244969526",
       "city": "Béthune",
       "year": 2000,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-09-30",
       "description": "Porsche Boxster I (986) 3.2 S cabriolet, noir, 18 cv, 2 portes, première mise en circulation le 13/07/2000.\n\n-----------------------------------------------------------------------------------------\n\n⚠️Les équipements, les options et la version décrits sont sous réserve d'erreurs de saisie. Ils doivent être vérifiés par l'acheteur pendant l'essai ou à la livraison.⚠️\n\n------------------------------------------------------------------------------------------\n\n ⭐️ Possibilité de garantie 6/12/24/48 mois via notre partenaire OPTEVEN. ⭐️\n\n------------------------------------------------------------------------------------------\n\nPour plus d'informations vous pouvez nous joindre directement par téléphone :\n\nAdrien au O6.73.65.63.58\n\n2 places, poids en charge : 1335 kg, contrôle technique : OK, carnet d'entretien\n\nOPTIONS ET ÉQUIPEMENTS :\nExtérieur :\n  - jantes : aluminium\n\nIntérieur :\n  - direction assistée\n\nSécurité :\n  - ABS\n  - airbag conducteur\n  - airbags frontaux\n  - anti-patinage\n\nAutres équipements et informations :\n  - Classe Crit'air : 3\n  - Puissance kilowatt : 185 kw\n  - nombre de rapports : 5 vitesses\n  - puissance réelle : 252 ch\n  - émission CO2 : 281 g/km\n\nRéférence anno",
       "details": {
@@ -9224,16 +9207,20 @@
         "others": {}
       },
       "km": 125406,
-      "price": 20990,
+      "price": 19990,
       "firstPrice": 20990,
       "priceHistory": [
         {
           "date": "2026-10-15",
           "price": 20990
+        },
+        {
+          "date": "2026-11-23",
+          "price": 19990
         }
       ],
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3249044905": {
@@ -9241,7 +9228,7 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3249044905",
       "city": "Saint-Priest",
       "year": 2002,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-11-01",
       "description": "Porsche Boxster I (986) 3.2 S cabriolet, gris, 18 cv, 2 portes, première mise en circulation le 05/12/2002, garantie 12 mois.\n\n- Financement possible avec ou sans apport\n\n- S3 Auto vous propose de vous racheter votre ancien véhicule sans conditions de rachat.\n\n.-\n\nTous nos véhicules sont vendus avec une révision un contrôle technique et plus de 150 points de contrôle afin de vous garantir une qualité optimale une garantie de 12 mois commerciale incluse extensible jusqu'à 60 mois.\n\n.-\n\n- Horaires du Lundi au Samedi de 9h30 à 12h et 14h à 18h.\n\n.-\n\n- S3 Auto\n\n159, route de grenoble (RN6)\n\n69800 Saint Priest a proximité d'Animalis Brico dépot Burger King.\n\n.-\n\n- ps : sous réserve de validation des équipements avec l'équipe commerciale.\n\n2 places, poids en charge : 1320 kg, contrôle technique : OK\n\nOPTIONS ET ÉQUIPEMENTS :\nExtérieur :\n  - Pack nord\n  - jantes : aluminium\n\nIntérieur :\n  - direction assistée\n  - pack électrique\n\nPack :\n  - nombre de rapports : 6 vitesses\n\nSécurité :\n  - ABS\n  - airbag conducteur\n  - airbags frontaux\n  - airbags latéraux\n\nAutres équipements et informations :\n  - Classe Crit'air : 3\n  - Puissance kilowatt : 191 kw\n  - puissance réelle : 260 ch\n  - émission",
       "details": {
@@ -9268,7 +9255,7 @@
         }
       ],
       "firstSeen": "2026-08-12",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3250502855": {
@@ -9946,55 +9933,38 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3272564375",
       "city": "Le Thor",
       "year": 2003,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-09-19",
       "description": "Porsche Boxster S 986 3.2 260 CH - HARDTOP / SUIVI D'ENTRETIEN roadster, noir, 18 cv, 2 portes, première mise en circulation le 01/01/2003.\n\nHistorique du véhicule, \nlunette arrière dégivrante, \nétriers de freins rouges,\n\nL'ISLE AUTO – Spécialiste du véhicule d'occasion\n\nPRIX AFFICHÉ HORS FRAIS D'AGENCE ET DE MISE À LA ROUTE\n\n-LIVRAISON POSSIBLE PARTOUT EN FRANCE\n-SERVICE CARTE GRISE\n-REPRISE DE VOTRE VÉHICULE\n-RECHERCHE PERSONNALISÉE DE VOTRE FUTUR VÉHICULE\n-GARANTIE EXTENSIBLE jusqu'à 36 MOIS.\n\nVÉHICULES VISIBLES UNIQUEMENT SUR RENDEZ-VOUS\n\nOUVERT DU MARDI AU SAMEDI de 10H00 à 18H00.\n\nNOUS PRIVILÉGIONS LES APPELS TÉLÉPHONIQUES pour une réponse plus rapide.\n\nLa liste des équipements est donnée à titre indicatif et n'est pas contractuelle. Des erreurs de saisie peuvent exceptionnellement survenir.\n\nVotre conseiller : Florian\n\nVéhicule d'origine Allemande, importée en 2014.\nEntretien complet Porsche sur la période Allemande.\nSuivi a jour sur la période  française.\nVoir carnet d'entretien sur les dernières photos.\n\nAgence : L'ISLE AUTO SIRET 98440345100011\n\n2 places, contrôle technique : OK, carnet d'entretien\n\nOPTIONS ET ÉQUIPEMENTS :\nExtérieur :\n  - capote électrique\n  - hard top\n ",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "260 Ch",
-        "powerFiscal": "18 Cv",
-        "color": "Noir",
-        "doors": "2",
-        "seats": "2",
-        "vehicleType": "Cabriolet",
-        "critair": "2",
-        "version": "Boxster 3.2 S",
-        "finition": "S",
-        "issuance": "01/2003",
-        "maintenance": "Carnet d'entretien disponible",
         "zipcode": "84250",
-        "department": "Vaucluse",
-        "region": "Provence-Alpes-Côte d'Azur",
-        "images": 24,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
-        "boosted": true,
-        "urgent": false,
-        "hasPhone": true,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
-        "others": {
-          "vehicle_technical_inspection_valid": "Oui",
-          "Sellerie": "Tout cuir",
-          "Équipements intérieurs": "Climatisation, Ordinateur de bord, Sièges chauffants, Vitres électriques arrières",
-          "Permis": "Avec permis",
-          "VO récent": "false",
-          "custom_ref": "OPT_AC8ED6",
-          "Importé": "true",
-          "vehicle_history_report_status": "visible",
-          "spare_parts_availability": "Non renseignée"
-        }
+        "others": {}
       },
       "km": 133500,
-      "price": 21990,
+      "price": 20990,
       "firstPrice": 21990,
       "priceHistory": [
         {
           "date": "2026-10-15",
           "price": 21990
+        },
+        {
+          "date": "2026-11-23",
+          "price": 20990
         }
       ],
       "firstSeen": "2026-09-19",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3272892582": {
@@ -10371,6 +10341,40 @@
       "lastSeen": "2026-10-21",
       "gone": null
     },
+    "3278203400": {
+      "title": "Porsche boxster 2.7 220 type 986",
+      "url": "https://www.leboncoin.fr/ad/voitures/3278203400",
+      "city": "La Roquette-sur-Siagne",
+      "year": 2001,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "06550",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 121802,
+      "price": 20990,
+      "firstPrice": 20990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 20990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
     "3278252962": {
       "title": "PORSCHE BOXSTER 2.7 220CV BVM5 - Sièges chauffants - Jantes Turbo Look",
       "url": "https://www.leboncoin.fr/ad/voitures/3278252962",
@@ -10405,12 +10409,46 @@
       "lastSeen": "2026-11-02",
       "gone": null
     },
+    "3278261473": {
+      "title": "PORSCHE BOXSTER S 986 3.2i 260 PHASE 2 Suivi complet Aucun frais à prévoir",
+      "url": "https://www.leboncoin.fr/ad/voitures/3278261473",
+      "city": "Villeneuve-d'Ascq",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "59493",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 137600,
+      "price": 24990,
+      "firstPrice": 24990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 24990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
     "3278261747": {
-      "title": "PORSCHE BOXSTER 3.2i - 252 TYPE 986 CABRIOLET S",
+      "title": "PORSCHE BOXSTER IMS EMBRAYAGE NEUF 3.2i - 252 TYPE 986 CABRIOLET S",
       "url": "https://www.leboncoin.fr/ad/voitures/3278261747",
       "city": "Reims",
       "year": 2001,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-09-28",
       "details": {
         "fuel": "Essence",
@@ -10436,7 +10474,7 @@
         }
       ],
       "firstSeen": "2026-09-28",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3278292369": {
@@ -10497,7 +10535,7 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3278388347",
       "city": "Élancourt",
       "year": 1998,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-11-01",
       "details": {
         "fuel": "Essence",
@@ -10514,16 +10552,20 @@
         "others": {}
       },
       "km": 87878,
-      "price": 17499,
+      "price": 17299,
       "firstPrice": 17499,
       "priceHistory": [
         {
           "date": "2026-11-02",
           "price": 17499
+        },
+        {
+          "date": "2026-11-23",
+          "price": 17299
         }
       ],
       "firstSeen": "2026-11-01",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3278450457": {
@@ -10560,6 +10602,40 @@
       "lastSeen": "2026-10-21",
       "gone": null
     },
+    "3278535045": {
+      "title": "PORSCHE BOXSTER S 3.2i IMS FAIT - 260 TYPE 986 CABRIOLET PHASE 2 - SUIVI D\\'ENTRETIEN",
+      "url": "https://www.leboncoin.fr/ad/voitures/3278535045",
+      "city": "Saint-Avé",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "56890",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 145500,
+      "price": 21990,
+      "firstPrice": 21990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 21990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
     "3278584760": {
       "title": "Porsche boxster s 3.2 252 ch type 986",
       "url": "https://www.leboncoin.fr/ad/voitures/3278584760",
@@ -10592,6 +10668,40 @@
       ],
       "firstSeen": "2026-09-17",
       "lastSeen": "2026-10-21",
+      "gone": null
+    },
+    "3278592014": {
+      "title": "PORSCHE BOXSTER 2.7i 220 cv TYPE 986 CABRIOLET",
+      "url": "https://www.leboncoin.fr/ad/voitures/3278592014",
+      "city": "Cabestany",
+      "year": 2001,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "66330",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 176460,
+      "price": 18980,
+      "firstPrice": 18980,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 18980
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3279539872": {
@@ -10644,7 +10754,7 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3279748901",
       "city": "Marignier",
       "year": 2002,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-09-30",
       "details": {
         "fuel": "Essence",
@@ -10670,7 +10780,7 @@
         }
       ],
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3279820769": {
@@ -11494,6 +11604,40 @@
       "lastSeen": "2026-11-02",
       "gone": null
     },
+    "3296486563": {
+      "title": "Porsche Boxster (986) 2.7 228 ch - IMS REMPLACÉ",
+      "url": "https://www.leboncoin.fr/ad/voitures/3296486563",
+      "city": "Sarlat-la-Canéda",
+      "year": 2004,
+      "pro": true,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "24200",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 129795,
+      "price": 20990,
+      "firstPrice": 20990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 20990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
     "3299780001": {
       "title": "Porsche boxster 986 – 2.5 204 ch – tiptronic – 1999 – cabriolet",
       "url": "https://www.leboncoin.fr/ad/voitures/3299780001",
@@ -11662,6 +11806,244 @@
       ],
       "firstSeen": "2026-11-02",
       "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3303874828": {
+      "title": "Porsche Boxster 986 + Hard-Top D.Moris",
+      "url": "https://www.leboncoin.fr/ad/voitures/3303874828",
+      "city": "Ballainvilliers",
+      "year": 1997,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "91160",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 174000,
+      "price": 20990,
+      "firstPrice": 20990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 20990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3306664664": {
+      "title": "Porsche BOXSTER (986) 2.7 228CH Boite méca - SIEGES CHAUFFANTS - JA18 - CUIR - CLIM AUTO",
+      "url": "https://www.leboncoin.fr/ad/voitures/3306664664",
+      "city": "Méteren",
+      "year": 2004,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "59270",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 129986,
+      "price": 20990,
+      "firstPrice": 20990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 20990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3312146775": {
+      "title": "PORSCHE BOXSTER S 3.2I 252 Ch - TYPE 986 - CABRIOLET - GARANTIE 12 MOIS",
+      "url": "https://www.leboncoin.fr/ad/voitures/3312146775",
+      "city": "Laval",
+      "year": 2002,
+      "pro": true,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "53000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 98000,
+      "price": 26790,
+      "firstPrice": 26790,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 26790
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3312292657": {
+      "title": "PORSCHE BOXSTER 2.7i - 220 TYPE 986 CABRIOLET . PHASE 1",
+      "url": "https://www.leboncoin.fr/ad/voitures/3312292657",
+      "city": "Le Cannet",
+      "year": 2001,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "06110",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 132500,
+      "price": 15990,
+      "firstPrice": 15990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 15990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3315808489": {
+      "title": "Porsche Boxster S 986 Phase 2 – 3.2 260ch BVM6 – IMS fait – Suivi Porsche",
+      "url": "https://www.leboncoin.fr/ad/voitures/3315808489",
+      "city": "Carcassonne",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "11000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 154000,
+      "price": 24900,
+      "firstPrice": 24900,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 24900
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3315883146": {
+      "title": "Porsche Boxster",
+      "url": "https://www.leboncoin.fr/ad/voitures/3315883146",
+      "city": "Mondragon",
+      "year": 1999,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "84430",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 193000,
+      "price": 14500,
+      "firstPrice": 14500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 14500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3316050716": {
+      "title": "Porsche boxster 986",
+      "url": "https://www.leboncoin.fr/ad/voitures/3316050716",
+      "city": "La Ciotat",
+      "year": 2000,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "13600",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 140000,
+      "price": 18500,
+      "firstPrice": 18500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 18500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
       "gone": null
     }
   },

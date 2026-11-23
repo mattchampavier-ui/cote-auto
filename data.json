@@ -24,15 +24,6 @@
       },
       {
         "date": "2026-10-01",
-        "ok": [],
-        "empty": [
-          "peugeot-206-rc"
-        ],
-        "failed": [],
-        "costUsd": 0.009
-      },
-      {
-        "date": "2026-10-01",
         "ok": [
           "peugeot-206-rc"
         ],
@@ -338,6 +329,16 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "ok": [
+          "porsche-boxster-986"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -374,7 +375,8 @@
       "imports/2026-11-02/renault-twingo-1.json",
       "imports/2026-11-02/vw-golf-4-gti-25.json",
       "imports/2026-11-23/peugeot-208-gti-30th.json",
-      "imports/2026-11-23/porsche-911-997.json"
+      "imports/2026-11-23/porsche-911-997.json",
+      "imports/2026-11-23/porsche-boxster-986.json"
     ]
   },
   "snapshots": {
@@ -1323,6 +1325,92 @@
         "rejected": 1,
         "rejectedReasons": {
           "mot obligatoire absent": 1
+        },
+        "truncated": true
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "count": 19,
+        "min": 14500,
+        "p25": 19480,
+        "median": 20990,
+        "p75": 22490,
+        "max": 26790,
+        "avgKm": 130000,
+        "medianKm": 130000,
+        "refKm": 110000,
+        "refPrice": 21590,
+        "eurPer10kKm": 300,
+        "newListings": 12,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 55,
+        "priceDrops": [
+          {
+            "id": "3278388347",
+            "title": "PORSCHE BOXSTER Porsche 986 2.5i Tiptronic / Phase 1 / Cabriolet / Suivi Porsche Complet",
+            "url": "https://www.leboncoin.fr/ad/voitures/3278388347",
+            "from": 17499,
+            "to": 17299,
+            "totalDropPct": 1.1
+          },
+          {
+            "id": "3272564375",
+            "title": "Porsche Boxster S 986 3.2 260 CH - HARDTOP / SUIVI D'ENTRETIEN",
+            "url": "https://www.leboncoin.fr/ad/voitures/3272564375",
+            "from": 21990,
+            "to": 20990,
+            "totalDropPct": 4.5
+          },
+          {
+            "id": "3244969526",
+            "title": "Porsche Boxster I (986) 3.2 S",
+            "url": "https://www.leboncoin.fr/ad/voitures/3244969526",
+            "from": 20990,
+            "to": 19990,
+            "totalDropPct": 4.8
+          }
+        ],
+        "bargains": [
+          {
+            "id": "3315883146",
+            "title": "Porsche Boxster",
+            "url": "https://www.leboncoin.fr/ad/voitures/3315883146",
+            "price": 14500,
+            "km": 193000,
+            "year": 1999,
+            "city": "Mondragon",
+            "expected": 19630,
+            "discountPct": 26
+          },
+          {
+            "id": "3312292657",
+            "title": "PORSCHE BOXSTER 2.7i - 220 TYPE 986 CABRIOLET . PHASE 1",
+            "url": "https://www.leboncoin.fr/ad/voitures/3312292657",
+            "price": 15990,
+            "km": 132500,
+            "year": 2001,
+            "city": "Le Cannet",
+            "expected": 20910,
+            "discountPct": 24
+          },
+          {
+            "id": "3278388347",
+            "title": "PORSCHE BOXSTER Porsche 986 2.5i Tiptronic / Phase 1 / Cabriolet / Suivi Porsche Complet",
+            "url": "https://www.leboncoin.fr/ad/voitures/3278388347",
+            "price": 17299,
+            "km": 87878,
+            "year": 1998,
+            "city": "Élancourt",
+            "expected": 22260,
+            "discountPct": 22
+          }
+        ],
+        "proShare": 0.11,
+        "rejected": 1,
+        "rejectedReasons": {
+          "prix hors marché": 1
         },
         "truncated": true
       }
