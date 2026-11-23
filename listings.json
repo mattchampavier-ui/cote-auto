@@ -18813,6 +18813,40 @@
       "lastSeen": "2026-10-21",
       "gone": null
     },
+    "3293851843": {
+      "title": "Renault Twingo 1.2 75 INITIALE CLIM CUIR TOIT OUVRANT SOUPLE",
+      "url": "https://www.leboncoin.fr/ad/voitures/3293851843",
+      "city": "Craponne",
+      "year": 2002,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "69290",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 191000,
+      "price": 3990,
+      "firstPrice": 3990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 3990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
     "3298653169": {
       "title": "Twingo 1 toit ouvrant",
       "url": "https://www.leboncoin.fr/ad/voitures/3298653169",
@@ -18981,6 +19015,74 @@
       ],
       "firstSeen": "2026-11-02",
       "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3312259355": {
+      "title": "Renault Twingo 1.2 60ch Cinetic Quickshift toit ouvrant",
+      "url": "https://www.leboncoin.fr/ad/voitures/3312259355",
+      "city": "Saint-Pardoux-du-Breuil",
+      "year": 2000,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "47200",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 239000,
+      "price": 4490,
+      "firstPrice": 4490,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 4490
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3316183572": {
+      "title": "Renault Twingo Initiale 16v Toit Ouvrant",
+      "url": "https://www.leboncoin.fr/ad/voitures/3316183572",
+      "city": "Dunkerque",
+      "year": 2004,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "59140",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 124000,
+      "price": 3990,
+      "firstPrice": 3990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 3990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
       "gone": null
     }
   },

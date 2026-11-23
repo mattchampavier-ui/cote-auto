@@ -6,15 +6,6 @@
     "runs": [
       {
         "date": "2026-10-01",
-        "ok": [],
-        "empty": [
-          "peugeot-206-rc"
-        ],
-        "failed": [],
-        "costUsd": 0.009
-      },
-      {
-        "date": "2026-10-01",
         "ok": [
           "peugeot-206-rc"
         ],
@@ -340,6 +331,16 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "ok": [
+          "renault-twingo-1"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -378,7 +379,8 @@
       "imports/2026-11-23/peugeot-208-gti-30th.json",
       "imports/2026-11-23/porsche-911-997.json",
       "imports/2026-11-23/porsche-boxster-986.json",
-      "imports/2026-11-23/porsche-boxster-987.json"
+      "imports/2026-11-23/porsche-boxster-987.json",
+      "imports/2026-11-23/renault-twingo-1.json"
     ]
   },
   "snapshots": {
@@ -2127,6 +2129,36 @@
           "variante non reconnue": 11,
           "mot exclu « pour pieces »": 1,
           "mot exclu « twingo 2 »": 1
+        },
+        "truncated": true
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "count": 3,
+        "min": 3990,
+        "p25": 3990,
+        "median": 3990,
+        "p75": 4240,
+        "max": 4490,
+        "avgKm": 185000,
+        "medianKm": 191000,
+        "refKm": 150000,
+        "refPrice": 3990,
+        "eurPer10kKm": null,
+        "newListings": 3,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 53,
+        "priceDrops": [],
+        "bargains": [],
+        "proShare": 0,
+        "rejected": 17,
+        "rejectedReasons": {
+          "variante non reconnue": 12,
+          "mot exclu « twingo ii »": 2,
+          "mot exclu « twingo 2 »": 1,
+          "prix hors marché": 2
         },
         "truncated": true
       }
