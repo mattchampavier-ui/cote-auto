@@ -22871,42 +22871,32 @@
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "90 Ch",
-        "powerFiscal": "6 Cv",
-        "color": "Noir",
-        "doors": "3",
-        "seats": "5",
-        "vehicleType": "Citadine",
-        "critair": "Non classé",
-        "issuance": "08/1998",
         "zipcode": "45600",
-        "department": "Loiret",
-        "region": "Centre",
-        "images": 3,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
         "boosted": null,
-        "urgent": false,
-        "hasPhone": false,
-        "expiresAt": "2026-11-18",
-        "others": {
-          "Dommages": "Bon état général",
-          "Sellerie": "Tissu",
-          "vehicle_euro_emissions_standard": "Euro 2",
-          "Permis": "Avec permis",
-          "Importé": "false"
-        }
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
       },
       "km": 261273,
-      "price": 5500,
+      "price": 4800,
       "firstPrice": 5500,
       "priceHistory": [
         {
           "date": "2026-10-01",
           "price": 5500
+        },
+        {
+          "date": "2026-11-23",
+          "price": 4800
         }
       ],
       "firstSeen": "2026-09-19",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-23",
       "gone": null,
       "description": "Bonjour, je vends ma petite Saxo, entièrement restaurée et repeinte il y a 8 mois, avec des éléments de peinture personnalisée. De nombreuses pièces ont été remplacées : kit de distribution, courroie d'accessoires, radiateur d'eau, 4 disques Brembo Sport Max neufs avec plaquettes neuves, câbles et flexibles de frein à main neufs, 245 000 km pont arrière, avec roulements neufs et rabaissement d'environ 30 mm, catalyseur et silencieux neufs, ressorts rouges et amortisseurs KYB neufs. Alternateur révisé, crémaillère de direction hydraulique révisée, joint de soupape neuf, demi-arbre de transmission neuf, roulements de moyeu neufs, vidange moteur et filtres changés à 260 000 km, huile de boîte de vitesses, liquide de freins et antigel changés, biellettes d'amortisseurs et de boîte de vitesses neuves.À 264 500 km, les joints d'huile de vilebrequin et d'arbre à cames ont été remplacés, ce qui  est  remplacé kit d'embrayage et de la courroie de distribution. Ces pièces ont été changées par un ami mécanicien, car je ne dispose pas de facture. Je fournis, à titre de preuve, toutes les anciennes pièces remplacées. Batterie et bougies d'allumage iridium neuves. Le dessous de caisse a été sabl"
     },
@@ -23776,6 +23766,40 @@
       "lastSeen": "2026-10-15",
       "gone": null,
       "description": "À vendre – Saxo VTS 16V 120 ch de 2002, gris EZR\n\nMerci de bien vouloir lire l’annonce avant de me contacter : je ne répondrai pas aux questions dont la réponse figure déjà dans l’annonce.\n\nBon état général. Beaucoup de frais effectués, en voici une liste non exhaustive :\n\nTransmission refaite à neuf (10 000 km) : cardans AVG/AVD, embrayage, boîte de vitesses et roulements AVG/ARG/ARD\nBobine d’allumage et démarreur (5 000 km)\nSupports moteur (10 000 km)\nAmortisseurs arrière ARG/ARD (5 000 km)\nDistribution + pompe à eau (18 000 km)\nRadiateur de chauffage (20 000 km)\nTrain arrière réalisé par l’ancien propriétaire\n\nLa voiture est rabaissée de 3 cm et équipée d’un collecteur d’admission direct, le reste est totalement d’origine.\nCT OK, pas de frais a prévoir, toujours stockée au garage et entretenue régulièrement avec une vidange tous les 20 000 km. Pas de circuit ni d’utilisation similaire.\n\nAnnonce en ligne = véhicule disponible.\n\nPremier arrivé, premier servi."
+    },
+    "3263096364": {
+      "title": "Saxo BIC VTS 2000 1,4L",
+      "url": "https://www.leboncoin.fr/ad/voitures/3263096364",
+      "city": "Mirandol-Bourgnounac",
+      "year": 2000,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "81190",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 164885,
+      "price": 5450,
+      "firstPrice": 5450,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 5450
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
     },
     "3264107945": {
       "title": "Saxo vts 16v",
@@ -25979,6 +26003,448 @@
       ],
       "firstSeen": "2026-10-30",
       "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3302307101": {
+      "title": "CITROEN SAXO VTS 1.6 16V - 120 - Bleu Grand Pavois / Amortisseurs PTS - Bilstein / Ligne Gr. N",
+      "url": "https://www.leboncoin.fr/ad/voitures/3302307101",
+      "city": "Grandvilliers",
+      "year": 2000,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "60210",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 175000,
+      "price": 12980,
+      "firstPrice": 12980,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 12980
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3303700536": {
+      "title": "Citroen Saxo VTS 1.6 90 8V / 2ème Main / Française / Clim / Suivie / Garantie 6 Mois",
+      "url": "https://www.leboncoin.fr/ad/voitures/3303700536",
+      "city": "Ingré",
+      "year": 1999,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "45140",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 62998,
+      "price": 9740,
+      "firstPrice": 9740,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 9740
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3309627681": {
+      "title": "Citreon saxo 1.5d vts",
+      "url": "https://www.leboncoin.fr/ad/voitures/3309627681",
+      "city": "Colmar",
+      "year": 2002,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Diesel",
+        "gearbox": "Manuelle",
+        "zipcode": "68000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 152000,
+      "price": 1800,
+      "firstPrice": 1800,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 1800
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3311016068": {
+      "title": "Citroën Saxo vts",
+      "url": "https://www.leboncoin.fr/ad/voitures/3311016068",
+      "city": "Perpignan",
+      "year": 1999,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "66000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 126200,
+      "price": 7900,
+      "firstPrice": 7900,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 7900
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3312056802": {
+      "title": "Saxo vts",
+      "url": "https://www.leboncoin.fr/ad/voitures/3312056802",
+      "city": "Pontarlier",
+      "year": 1998,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "25300",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 192000,
+      "price": 7500,
+      "firstPrice": 7500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 7500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3312183936": {
+      "title": "Saxo vts",
+      "url": "https://www.leboncoin.fr/ad/voitures/3312183936",
+      "city": "Louhans",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "71500",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 140000,
+      "price": 2000,
+      "firstPrice": 2000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 2000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3312647636": {
+      "title": "Saxo vts",
+      "url": "https://www.leboncoin.fr/ad/voitures/3312647636",
+      "city": "Murat-sur-Vèbre",
+      "year": 1998,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "81320",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 183000,
+      "price": 6499,
+      "firstPrice": 6499,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 6499
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3312784401": {
+      "title": "Saxo VTS new morning",
+      "url": "https://www.leboncoin.fr/ad/voitures/3312784401",
+      "city": "Gournay-en-Bray",
+      "year": 2001,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "76220",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 237000,
+      "price": 7000,
+      "firstPrice": 7000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 7000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3313151879": {
+      "title": "Saxo VTS 1,4 L, 75cv, couleur or",
+      "url": "https://www.leboncoin.fr/ad/voitures/3313151879",
+      "city": "Champdray",
+      "year": 1999,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "88640",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 212000,
+      "price": 5500,
+      "firstPrice": 5500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 5500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3314237089": {
+      "title": "Citroën Saxo vts 16v",
+      "url": "https://www.leboncoin.fr/ad/voitures/3314237089",
+      "city": "Méry-ès-Bois",
+      "year": 2001,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "18380",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 233000,
+      "price": 6000,
+      "firstPrice": 6000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 6000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3315016873": {
+      "title": "Citroën Saxo VTS 16V",
+      "url": "https://www.leboncoin.fr/ad/voitures/3315016873",
+      "city": "Houdain",
+      "year": 2001,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "62150",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 171500,
+      "price": 11900,
+      "firstPrice": 11900,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 11900
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3316033016": {
+      "title": "Saxo vts",
+      "url": "https://www.leboncoin.fr/ad/voitures/3316033016",
+      "city": "Dunkerque",
+      "year": 2002,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Diesel",
+        "gearbox": "Manuelle",
+        "zipcode": "59140",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 284900,
+      "price": 999,
+      "firstPrice": 999,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 999
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3316144433": {
+      "title": "Citroen Saxo VTS 1.6 16v",
+      "url": "https://www.leboncoin.fr/ad/voitures/3316144433",
+      "city": "Angoulême",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "16000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 187500,
+      "price": 12500,
+      "firstPrice": 12500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 12500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
       "gone": null
     }
   },

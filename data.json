@@ -5,31 +5,6 @@
     "lastRecap": "2026-10",
     "runs": [
       {
-        "date": "2026-10-01",
-        "ok": [
-          "peugeot-208-gti-30th",
-          "porsche-911-997",
-          "porsche-boxster-986",
-          "porsche-boxster-987",
-          "renault-twingo-1",
-          "peugeot-206-rc",
-          "renault-clio-2-rs",
-          "citroen-saxo-vts",
-          "peugeot-306-s16",
-          "bmw-z3-19-20",
-          "alfa-156-v6",
-          "mazda-mx5-na",
-          "peugeot-205-gti",
-          "honda-s2000",
-          "renault-megane-r26"
-        ],
-        "empty": [
-          "vw-golf-4-gti-25"
-        ],
-        "failed": [],
-        "costUsd": 0.892
-      },
-      {
         "date": "2026-10-15",
         "ok": [
           "peugeot-208-gti-30th",
@@ -343,6 +318,16 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "ok": [
+          "citroen-saxo-vts"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -378,6 +363,7 @@
       "imports/2026-11-02/renault-megane-r26.json",
       "imports/2026-11-02/renault-twingo-1.json",
       "imports/2026-11-02/vw-golf-4-gti-25.json",
+      "imports/2026-11-23/citroen-saxo-vts.json",
       "imports/2026-11-23/peugeot-206-rc.json",
       "imports/2026-11-23/peugeot-208-gti-30th.json",
       "imports/2026-11-23/porsche-911-997.json",
@@ -3379,6 +3365,87 @@
         "rejectedReasons": {
           "mot obligatoire absent": 7,
           "prix aberrant": 1
+        },
+        "truncated": true
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "count": 15,
+        "min": 999,
+        "p25": 5125,
+        "median": 6499,
+        "p75": 8820,
+        "max": 12980,
+        "avgKm": 186000,
+        "medianKm": 183000,
+        "refKm": 150000,
+        "refPrice": 7590,
+        "eurPer10kKm": 210,
+        "newListings": 14,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 50,
+        "priceDrops": [
+          {
+            "id": "3122468671",
+            "title": "Citroen saxo vts",
+            "url": "https://www.leboncoin.fr/ad/voitures/3122468671",
+            "from": 5500,
+            "to": 4800,
+            "totalDropPct": 12.7
+          }
+        ],
+        "bargains": [
+          {
+            "id": "3316033016",
+            "title": "Saxo vts",
+            "url": "https://www.leboncoin.fr/ad/voitures/3316033016",
+            "price": 999,
+            "km": 284900,
+            "year": 2002,
+            "city": "Dunkerque",
+            "expected": 5450,
+            "discountPct": 82
+          },
+          {
+            "id": "3309627681",
+            "title": "Citreon saxo 1.5d vts",
+            "url": "https://www.leboncoin.fr/ad/voitures/3309627681",
+            "price": 1800,
+            "km": 152000,
+            "year": 2002,
+            "city": "Colmar",
+            "expected": 7540,
+            "discountPct": 76
+          },
+          {
+            "id": "3312183936",
+            "title": "Saxo vts",
+            "url": "https://www.leboncoin.fr/ad/voitures/3312183936",
+            "price": 2000,
+            "km": 140000,
+            "year": 2003,
+            "city": "Louhans",
+            "expected": 7800,
+            "discountPct": 74
+          },
+          {
+            "id": "3263096364",
+            "title": "Saxo BIC VTS 2000 1,4L",
+            "url": "https://www.leboncoin.fr/ad/voitures/3263096364",
+            "price": 5450,
+            "km": 164885,
+            "year": 2000,
+            "city": "Mirandol-Bourgnounac",
+            "expected": 7270,
+            "discountPct": 25
+          }
+        ],
+        "proShare": 0,
+        "rejected": 5,
+        "rejectedReasons": {
+          "mot obligatoire absent": 5
         },
         "truncated": true
       }
