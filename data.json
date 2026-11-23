@@ -33,15 +33,6 @@
       },
       {
         "date": "2026-10-01",
-        "ok": [],
-        "empty": [
-          "peugeot-206-rc"
-        ],
-        "failed": [],
-        "costUsd": 0.009
-      },
-      {
-        "date": "2026-10-01",
         "ok": [
           "peugeot-206-rc"
         ],
@@ -337,6 +328,16 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "ok": [
+          "porsche-911-997"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -372,7 +373,8 @@
       "imports/2026-11-02/renault-megane-r26.json",
       "imports/2026-11-02/renault-twingo-1.json",
       "imports/2026-11-02/vw-golf-4-gti-25.json",
-      "imports/2026-11-23/peugeot-208-gti-30th.json"
+      "imports/2026-11-23/peugeot-208-gti-30th.json",
+      "imports/2026-11-23/porsche-911-997.json"
     ]
   },
   "snapshots": {
@@ -870,6 +872,93 @@
         "rejectedReasons": {
           "prix hors marché": 1
         },
+        "truncated": true
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "count": 20,
+        "min": 44490,
+        "p25": 50742,
+        "median": 55489,
+        "p75": 64900,
+        "max": 84990,
+        "avgKm": 103000,
+        "medianKm": 99000,
+        "refKm": 100000,
+        "refPrice": 59740,
+        "eurPer10kKm": 1810,
+        "newListings": 14,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 62,
+        "priceDrops": [
+          {
+            "id": "3252157311",
+            "title": "Porsche 911 997.2 carrera S - PDK- TECHART",
+            "url": "https://www.leboncoin.fr/ad/voitures/3252157311",
+            "from": 70900,
+            "to": 69500,
+            "totalDropPct": 2
+          },
+          {
+            "id": "3226399068",
+            "title": "PORSCHE 911 CARRERA COUPE 997 S Coupe 3.8i 355cv",
+            "url": "https://www.leboncoin.fr/ad/voitures/3226399068",
+            "from": 48990,
+            "to": 47990,
+            "totalDropPct": 2
+          }
+        ],
+        "bargains": [
+          {
+            "id": "3291960579",
+            "title": "PORSCHE 911 Type 997 - IMS Fait le 10/09/2026 - Garantie 12 Mois",
+            "url": "https://www.leboncoin.fr/ad/voitures/3291960579",
+            "price": 44490,
+            "km": 95400,
+            "year": 2005,
+            "city": "Échiré",
+            "expected": 60580,
+            "discountPct": 27
+          },
+          {
+            "id": "3262068611",
+            "title": "Porsche 997 Carrera S 3.8 355 Meca - Full options - Historique et factures complet",
+            "url": "https://www.leboncoin.fr/ad/voitures/3262068611",
+            "price": 49999,
+            "km": 88000,
+            "year": 2005,
+            "city": "Belfort",
+            "expected": 61920,
+            "discountPct": 19
+          },
+          {
+            "id": "3278536678",
+            "title": "PORSCHE 911 997 CABRIOLET CARRERA S 3.8 355ch",
+            "url": "https://www.leboncoin.fr/ad/voitures/3278536678",
+            "price": 49990,
+            "km": 93000,
+            "year": 2005,
+            "city": "Limas",
+            "expected": 61010,
+            "discountPct": 18
+          },
+          {
+            "id": "3310999543",
+            "title": "PORSCHE 911 coupé type 997 3.8 Carrera S Tiptronic 355 Chrono Bose Cuir Toit Suivi Moteur Chemisé IMS Bobines Ok Garantie 12 mois",
+            "url": "https://www.leboncoin.fr/ad/voitures/3310999543",
+            "price": 54980,
+            "km": 70783,
+            "year": 2006,
+            "city": "Montreuil",
+            "expected": 65040,
+            "discountPct": 15
+          }
+        ],
+        "proShare": 0.15,
+        "rejected": 0,
+        "rejectedReasons": {},
         "truncated": true
       }
     ],
