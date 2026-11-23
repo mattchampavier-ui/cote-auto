@@ -40160,16 +40160,20 @@
         "others": {}
       },
       "km": 75000,
-      "price": 12990,
+      "price": 12980,
       "firstPrice": 12990,
       "priceHistory": [
         {
           "date": "2026-10-21",
           "price": 12990
+        },
+        {
+          "date": "2026-11-23",
+          "price": 12980
         }
       ],
       "firstSeen": "2026-09-12",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3268164763": {
@@ -40274,7 +40278,7 @@
       "description": "Honda s2000 du 15/02/2000\n\nDans un super état à tout niveau, carrosserie, châssis, moteur\nLa peinture a été faite en 2024 complètes avec peinture des jantes neuves \nNiveau châssis :\nTout les trains avant et arrière sont neufs, silenbloc  triangles, rotules, barre Stab,soufflet ..etc \nAinsi que les freins :\nPlaquettes avant et arrière, EBC, flexible, aviation avant arrière, et les quatre étriers ont été refait, changement, piston plus joints\nUn parallélisme a été fait\nLes 4 pneus sont proche du neuf \nMoteur :\nLe moteur a été  entièrement refait, pistons, chemises (bloc re-chemisé par Jacob sport ) ,coussinet ,chaîne ..etc \nMoteur entièrement forger \nTous le haut moteur aussi  soupapes,siège de soupape forger  etc \nKit, embrayage renforcer, plus volant, moteur neuf\nEt j’en oublie certainement\nIl y a une ligne complète avec 4/1 skunk 2 \nFacture a l’appuie \nLe catalyseur origine est aussi fournie avec \nPour plus de renseignements me contacter\n\nCurieux s’abstenir..\nÉchange possible …même avec rajout d’un côtés ou de l’autre suivant le véhicule\n\nPrix 27 500 euros"
     },
     "3270236878": {
-      "title": "TOYOTA MR2 1.8 140 VVT-i 2005 - 110 430 km - Réfection complète peinture - sellerie - capote - pneus arrière neufs -",
+      "title": "TOYOTA MR2 1.8 140 VVT-i 2005 - 110 430 km - Réfection complète peinture - sellerie - capote - freins - pneus - embrayage -",
       "url": "https://www.leboncoin.fr/ad/voitures/3270236878",
       "city": "Reims",
       "year": 2005,
@@ -40304,7 +40308,7 @@
         }
       ],
       "firstSeen": "2026-09-15",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-23",
       "gone": null,
       "description": "Vroom Market Reims vous propose : TOYOTA MR MR2 140 VVT-i 140ch 2005 • 110 430 km • Essence • Boîte manuelle\n\n📁 État & Historique  \nKilométrage : 110 430 km  \nMise en circulation : juin 2005  \nCarrosserie : 2 portes • 2 places  \nFinition : MR2 140 VVT-i  \nContrôle technique : Moins de 6 mois  \n\n⚙️ Motorisation & Performances  \nMotorisation : Essence 140 ch  \nCylindrée : 1794 cm³  \nBoîte : Manuelle 5 rapports  \nTransmission : Propulsion  \nCO2 : 178 g/km  \n\n📸 Photos professionnelles disponibles sur simple demande.\n\n📞 Disponible immédiatement chez Vroom Market Reims  \n🚚 Livraison possible partout en France (sur devis)  \n📅 Véhicule visible sur rendez-vous uniquement  \n\nVéhicule similaire à : Mazda MX-5, Honda S2000, BMW Z3, Audi TT Roadster, Mercedes SLK  \n\n👉 Financement possible | Reprise de votre ancien véhicule | Garantie possible (extensions 12 à 36 mois)\n\n🟦 Vroom Market Reims  \n15 Rue Jean Legros, 51100 Reims  \n\n🕒 Horaires  \nLundi → Vendredi : 9h30 – 19h00  \nSamedi : 9h30 – 19h00  \n\n📌 Tarif hors frais d'agence | Des erreurs peuvent se glisser dans nos annonces.\n\nOPTIONS ET ÉQUIPEMENTS :\nAudio - Télécommunications :\n  - Radio CD\n\nExtérieur :\n  - Jantes Alu\n\nIntérieur :\n  -"
     },
@@ -40410,43 +40414,21 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3274290118",
       "city": "Les Alluets-le-Roi",
       "year": 2000,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-09-21",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "240 Ch",
-        "powerFiscal": "16 Cv",
-        "color": "Gris",
-        "doors": "2",
-        "seats": "2",
-        "vehicleType": "Cabriolet",
-        "issuance": "05/2000",
-        "maintenance": "Carnet d'entretien disponible, Factures disponibles",
         "zipcode": "78580",
-        "department": "Yvelines",
-        "region": "Ile-de-France",
-        "images": 15,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
-        "boosted": true,
-        "urgent": false,
-        "hasPhone": true,
-        "expiresAt": "2026-11-20",
-        "others": {
-          "Sellerie": "Tout cuir",
-          "Permis": "Avec permis",
-          "VO récent": "false",
-          "custom_ref": "NATHAN",
-          "Importé": "false",
-          "vehicle_history_report_status": "visible",
-          "vehicle_history_teaser_critair": "3",
-          "vehicle_history_teaser_owners": "3",
-          "vehicle_history_teaser_expertises": "false",
-          "vehicle_history_teaser_special_uses": "false",
-          "vehicle_history_teaser_atypical_operations": "false",
-          "vehicle_history_teaser_importations": "false",
-          "spare_parts_availability": "Non renseignée"
-        }
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
       },
       "km": 20200,
       "price": 49990,
@@ -40458,7 +40440,7 @@
         }
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-23",
       "gone": null,
       "description": "L'Automobile Performance Paris,  \n\nVous présente cette exceptionnelle Honda S2000 du 10/05/2000 comptabilisant seulement 20 200 km. \n\n* Rare origine France, jamais accidenté. \n\n* Un des modèles les moins kilométrés d'Europe. \n\n* Version AP1. Plus radicale, plus rageur, plus ferme et moins d'aide à la conduite que les AP2. \n\n* Entretiens : \n5 485 km - Japauto\n9 309 km - Japauto\n11 709 km - Japauto\n13 405 km - Japauto\n16 610 km - Japauto\nVidange faite hors facture il y a moins d'un an. \nPossibilité de refaire une vidange à la demande du client pour la vente. \nConsommables en très bon état. \nContrôle technique vierge, refait pour la vente. \n\n* Photos des soubassements disponible. \nVidéos de la voiture disponible. \n\nVisible uniquement sur RDV du Lundi au vendredi de 10h00 à 19h00.  \n\nNATHAN  \n\nL'Automobile Performance Paris  \n\n78580 LES ALLUETS LE ROI  \n\nPour les personnes éloignées, nous pouvons prendre rendez-vous en appel Visio.  \n\nLivraison possible sur toute la France en supplément.  \n\n* Des erreurs pouvant se glisser dans nos annonces n'hésitez pas à nous contacter \n* Frais de courtage à prévoir \n* Service carte grise \n* Véhicule en dépôt vente"
     },
@@ -40540,6 +40522,40 @@
       "lastSeen": "2026-10-01",
       "gone": null
     },
+    "3276822203": {
+      "title": "Bmw Z4 3.0 i 231 cv capote neuve/ superbe état",
+      "url": "https://www.leboncoin.fr/ad/voitures/3276822203",
+      "city": "Petite-Forêt",
+      "year": 2004,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "59494",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 159000,
+      "price": 12980,
+      "firstPrice": 12980,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 12980
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
     "3278261940": {
       "title": "MG TF 135 136cv - Hardtop/Sièges cuir/Jantes 16\\\"",
       "url": "https://www.leboncoin.fr/ad/voitures/3278261940",
@@ -40571,7 +40587,7 @@
         }
       ],
       "firstSeen": "2026-06-25",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3278262538": {
@@ -40579,7 +40595,7 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3278262538",
       "city": "Couchey",
       "year": 2002,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-10-30",
       "description": "Suite Automobile Votre intermédiaire de confiance pour l’achat et la vente de voitures d’occasion.\nLe bonus avec ce véhicule ? Vous bénéficiez d'une garantie de .\nN'hésitez pas à nous contacter pour un essai routier !\nVéhicule visible sur rendez-vous.\n\nModèles équivalents : BMW Z4, Mercedes-Benz SLK, Mercedes-Benz SLC, Audi TT Roadster, Jaguar F-Type, Lotus Elise, Alpine A110, Nissan 370Z Roadster, Mazda MX-5, Honda S2000, Porsche Boxster\n252cv 252ch 252 cv ch\nFrais de mise a la route optionnel 650 € (Pack Complet) :\n\n- Plein du réservoir.\n- Nettoyage complet du véhicule : 150 €\n- Garantie 12 mois : 300 €\n- Service Carte grise + Frais de virement (Obligatoire) Hors Carte Grise : 199 €\n\nServices complémentaires de l'Agence (Sur devis) :\n\n- Reprise de véhicule\n- Nettoyage véhicule\n- Conciergerie véhicule\n- Livraison à domicile\n- Sous-Traitance Mécanique\n- Sous-Traitance Carrosserie\n- Sous-Traitance Débosselage\n- Traitement Céramique\n\nHoraires :\nDu Lundi au Vendredi de 9h00 à 12h00 et de 14h00 à 18h00\nLe Samedi de 9h00 à 12h30\nInstagram : Suiteautomobiledijon\nVéhicule visible sur rendez-vous.\n\nBesoin de vendre votre voiture ? On s'occupe de tout !\n\nAcheter ou vendre une voiture d’occa",
       "details": {
@@ -40597,16 +40613,20 @@
         "others": {}
       },
       "km": 137000,
-      "price": 18990,
+      "price": 17990,
       "firstPrice": 18990,
       "priceHistory": [
         {
           "date": "2026-10-15",
           "price": 18990
+        },
+        {
+          "date": "2026-11-23",
+          "price": 17990
         }
       ],
       "firstSeen": "2026-06-25",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3278304133": {
@@ -40683,7 +40703,7 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3278370282",
       "city": "Couchey",
       "year": 2005,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-10-31",
       "details": {
         "fuel": "Essence",
@@ -40709,7 +40729,7 @@
         }
       ],
       "firstSeen": "2026-09-28",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3278433705": {
@@ -40751,7 +40771,7 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3278592014",
       "city": "Cabestany",
       "year": 2001,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-10-31",
       "details": {
         "fuel": "Essence",
@@ -40777,7 +40797,7 @@
         }
       ],
       "firstSeen": "2026-09-28",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3278641460": {
@@ -40909,7 +40929,7 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3279404530",
       "city": "Toulouse",
       "year": 2005,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-09-15",
       "details": {
         "fuel": "Essence",
@@ -40935,7 +40955,7 @@
         }
       ],
       "firstSeen": "2026-09-15",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3279404806": {
@@ -40943,7 +40963,7 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3279404806",
       "city": "Saint-Aunès",
       "year": 2002,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-10-31",
       "details": {
         "fuel": "Essence",
@@ -40960,16 +40980,20 @@
         "others": {}
       },
       "km": 148000,
-      "price": 37490,
+      "price": 34990,
       "firstPrice": 37490,
       "priceHistory": [
         {
           "date": "2026-10-21",
           "price": 37490
+        },
+        {
+          "date": "2026-11-23",
+          "price": 34990
         }
       ],
       "firstSeen": "2026-09-24",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3279647179": {
@@ -41435,6 +41459,40 @@
       "lastSeen": "2026-10-15",
       "gone": null
     },
+    "3287840653": {
+      "title": "OPEL SPEEDSTER 2.0i Turbo - Vauxhall VXR",
+      "url": "https://www.leboncoin.fr/ad/voitures/3287840653",
+      "city": "Saint-Alban-Leysse",
+      "year": 2004,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "73230",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 15500,
+      "price": 52990,
+      "firstPrice": 52990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 52990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
     "3287868399": {
       "title": "Honda s2000",
       "url": "https://www.leboncoin.fr/ad/voitures/3287868399",
@@ -41483,6 +41541,40 @@
       ],
       "firstSeen": "2026-10-13",
       "lastSeen": "2026-10-15",
+      "gone": null
+    },
+    "3288116114": {
+      "title": "Mazda MX-5 Elégance Pack Clim 2.0 / Hard Top électrique",
+      "url": "https://www.leboncoin.fr/ad/voitures/3288116114",
+      "city": "Beaumont-lès-Valence",
+      "year": 2007,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "26760",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 97500,
+      "price": 11490,
+      "firstPrice": 11490,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 11490
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3288222772": {
@@ -41707,6 +41799,40 @@
       "lastSeen": "2026-10-21",
       "gone": null
     },
+    "3296454630": {
+      "title": "Mazda MX-5 Elégance Pack Clim 1.8 i Roadster 126cv /",
+      "url": "https://www.leboncoin.fr/ad/voitures/3296454630",
+      "city": "Vétraz-Monthoux",
+      "year": 2008,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "74100",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 92000,
+      "price": 9490,
+      "firstPrice": 9490,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 9490
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
     "3298051749": {
       "title": "Honda S2000 2.0 IVTEC 240 réf 452",
       "url": "https://www.leboncoin.fr/ad/voitures/3298051749",
@@ -41807,6 +41933,244 @@
       ],
       "firstSeen": "2026-10-31",
       "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3305964957": {
+      "title": "Porsche Boxster 2.7i / BVM /Entretiens Porsche et spécialistes Noir Basalte Intérieur beige sable",
+      "url": "https://www.leboncoin.fr/ad/voitures/3305964957",
+      "city": "Carquefou",
+      "year": 2006,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "44470",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 114470,
+      "price": 26490,
+      "firstPrice": 26490,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 26490
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3306411108": {
+      "title": "SMART Roadster 0.7 101ch Brabus - 2006 - 146 000 km - Boîte auto",
+      "url": "https://www.leboncoin.fr/ad/voitures/3306411108",
+      "city": "Bourgoin-Jallieu",
+      "year": 2006,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "38300",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 146000,
+      "price": 12490,
+      "firstPrice": 12490,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 12490
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3310862494": {
+      "title": "Mazda mx-5 roadster 1.8 140",
+      "url": "https://www.leboncoin.fr/ad/voitures/3310862494",
+      "city": "Saint-Aunès",
+      "year": 1999,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "34130",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 87000,
+      "price": 10390,
+      "firstPrice": 10390,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 10390
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3313469051": {
+      "title": "Porsche Cayman 987 3.4l S BVM Bose Piwi et endoscopie ok",
+      "url": "https://www.leboncoin.fr/ad/voitures/3313469051",
+      "city": "Caissargues",
+      "year": 2006,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "30132",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 63965,
+      "price": 34990,
+      "firstPrice": 34990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 34990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3314091058": {
+      "title": "Honda S2000 2.0 IVTEC 240 réf 335",
+      "url": "https://www.leboncoin.fr/ad/voitures/3314091058",
+      "city": "Muret",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "31600",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 139800,
+      "price": 19490,
+      "firstPrice": 19490,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 19490
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3314529365": {
+      "title": "MAZDA MX-5 1.6i - NB ROADSTER Elégance PHASE 2",
+      "url": "https://www.leboncoin.fr/ad/voitures/3314529365",
+      "city": "Coignières",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "78310",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 174000,
+      "price": 8999,
+      "firstPrice": 8999,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 8999
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3315421989": {
+      "title": "Honda S2000 AP1",
+      "url": "https://www.leboncoin.fr/ad/voitures/3315421989",
+      "city": "Buchy",
+      "year": 2000,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "76750",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 102000,
+      "price": 29900,
+      "firstPrice": 29900,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 29900
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
       "gone": null
     }
   },

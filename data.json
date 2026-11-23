@@ -52,15 +52,6 @@
       {
         "date": "2026-10-21",
         "source": "chrome",
-        "ok": [],
-        "empty": [],
-        "failed": [],
-        "costUsd": 0,
-        "budgetReached": true
-      },
-      {
-        "date": "2026-10-21",
-        "source": "chrome",
         "ok": [
           "peugeot-208-gti-30th",
           "porsche-911-997",
@@ -319,6 +310,16 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "ok": [
+          "honda-s2000"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -357,6 +358,7 @@
       "imports/2026-11-23/alfa-156-v6.json",
       "imports/2026-11-23/bmw-z3-19-20.json",
       "imports/2026-11-23/citroen-saxo-vts.json",
+      "imports/2026-11-23/honda-s2000.json",
       "imports/2026-11-23/mazda-mx5-na.json",
       "imports/2026-11-23/peugeot-205-gti.json",
       "imports/2026-11-23/peugeot-206-rc.json",
@@ -5735,6 +5737,112 @@
         "rejectedReasons": {
           "prix hors marché": 1
         },
+        "truncated": true
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "count": 20,
+        "min": 8999,
+        "p25": 11865,
+        "median": 15490,
+        "p75": 27343,
+        "max": 52990,
+        "avgKm": 105000,
+        "medianKm": 106000,
+        "refKm": 140000,
+        "refPrice": 15690,
+        "eurPer10kKm": 1520,
+        "newListings": 11,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 62,
+        "priceDrops": [
+          {
+            "id": "3268109545",
+            "title": "MAZDA MX-5 1.8 MZR 126ch ÉLÉGANCE CUIR 2009 - 75 000 km -Sièges chauffants - Bluetooth - Climatisation",
+            "url": "https://www.leboncoin.fr/ad/voitures/3268109545",
+            "from": 12990,
+            "to": 12980,
+            "totalDropPct": 0.1
+          },
+          {
+            "id": "3279404806",
+            "title": "Porsche 911 type 996 targa",
+            "url": "https://www.leboncoin.fr/ad/voitures/3279404806",
+            "from": 37490,
+            "to": 34990,
+            "totalDropPct": 6.7
+          },
+          {
+            "id": "3278262538",
+            "title": "PORSCHE BOXSTER S 986 3.2i 252cv - Sièges cuir électriques chauffants/Air conditionné/Jantes 18",
+            "url": "https://www.leboncoin.fr/ad/voitures/3278262538",
+            "from": 18990,
+            "to": 17990,
+            "totalDropPct": 5.3
+          }
+        ],
+        "bargains": [
+          {
+            "id": "3296454630",
+            "title": "Mazda MX-5 Elégance Pack Clim 1.8 i Roadster 126cv /",
+            "url": "https://www.leboncoin.fr/ad/voitures/3296454630",
+            "price": 9490,
+            "km": 92000,
+            "year": 2008,
+            "city": "Vétraz-Monthoux",
+            "expected": 22980,
+            "discountPct": 59
+          },
+          {
+            "id": "3278261940",
+            "title": "MG TF 135 136cv - Hardtop/Sièges cuir/Jantes 16\\\"",
+            "url": "https://www.leboncoin.fr/ad/voitures/3278261940",
+            "price": 9990,
+            "km": 91000,
+            "year": 2003,
+            "city": "Couchey",
+            "expected": 23130,
+            "discountPct": 57
+          },
+          {
+            "id": "3310862494",
+            "title": "Mazda mx-5 roadster 1.8 140",
+            "url": "https://www.leboncoin.fr/ad/voitures/3310862494",
+            "price": 10390,
+            "km": 87000,
+            "year": 1999,
+            "city": "Saint-Aunès",
+            "expected": 23740,
+            "discountPct": 56
+          },
+          {
+            "id": "3268109545",
+            "title": "MAZDA MX-5 1.8 MZR 126ch ÉLÉGANCE CUIR 2009 - 75 000 km -Sièges chauffants - Bluetooth - Climatisation",
+            "url": "https://www.leboncoin.fr/ad/voitures/3268109545",
+            "price": 12980,
+            "km": 75000,
+            "year": 2009,
+            "city": "Reims",
+            "expected": 25570,
+            "discountPct": 49
+          },
+          {
+            "id": "3288116114",
+            "title": "Mazda MX-5 Elégance Pack Clim 2.0 / Hard Top électrique",
+            "url": "https://www.leboncoin.fr/ad/voitures/3288116114",
+            "price": 11490,
+            "km": 97500,
+            "year": 2007,
+            "city": "Beaumont-lès-Valence",
+            "expected": 22150,
+            "discountPct": 48
+          }
+        ],
+        "proShare": 0.15,
+        "rejected": 0,
+        "rejectedReasons": {},
         "truncated": true
       }
     ],
