@@ -88,15 +88,6 @@
       {
         "date": "2026-10-21",
         "source": "chrome",
-        "ok": [],
-        "empty": [],
-        "failed": [],
-        "costUsd": 0,
-        "budgetReached": true
-      },
-      {
-        "date": "2026-10-21",
-        "source": "chrome",
         "ok": [
           "peugeot-208-gti-30th",
           "porsche-911-997",
@@ -315,6 +306,16 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "ok": [
+          "vw-golf-4-gti-25"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -359,7 +360,8 @@
       "imports/2026-11-23/porsche-boxster-986.json",
       "imports/2026-11-23/porsche-boxster-987.json",
       "imports/2026-11-23/renault-clio-2-rs.json",
-      "imports/2026-11-23/renault-twingo-1.json"
+      "imports/2026-11-23/renault-twingo-1.json",
+      "imports/2026-11-23/vw-golf-4-gti-25.json"
     ]
   },
   "snapshots": {
@@ -5878,6 +5880,45 @@
         "rejectedReasons": {
           "mot exclu « tdi »": 3,
           "variante non reconnue": 2
+        },
+        "truncated": false
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "count": 2,
+        "min": 10000,
+        "p25": 11000,
+        "median": 12000,
+        "p75": 13000,
+        "max": 14000,
+        "avgKm": 174000,
+        "medianKm": 174000,
+        "refKm": 200000.00000000003,
+        "refPrice": 12000,
+        "eurPer10kKm": null,
+        "newListings": 2,
+        "sold": 1,
+        "soldMedianDays": 36,
+        "activeMedianAge": 0,
+        "priceDrops": [],
+        "bargains": [
+          {
+            "id": "3315902903",
+            "title": "Golf 4 gti anniversaire 25th",
+            "url": "https://www.leboncoin.fr/ad/voitures/3315902903",
+            "price": 10000,
+            "km": 196000,
+            "year": 2001,
+            "city": "Laval",
+            "expected": 12000,
+            "discountPct": 17
+          }
+        ],
+        "proShare": 0,
+        "rejected": 3,
+        "rejectedReasons": {
+          "mot exclu « tdi »": 3
         },
         "truncated": false
       }

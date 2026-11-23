@@ -41744,6 +41744,74 @@
       ],
       "firstSeen": "2026-10-08",
       "lastSeen": "2026-11-02",
+      "gone": "2026-11-23"
+    },
+    "3309933884": {
+      "title": "Golf Gti 25th",
+      "url": "https://www.leboncoin.fr/ad/voitures/3309933884",
+      "city": "Tressange",
+      "year": 2002,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "57710",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 152000,
+      "price": 14000,
+      "firstPrice": 14000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 14000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3315902903": {
+      "title": "Golf 4 gti anniversaire 25th",
+      "url": "https://www.leboncoin.fr/ad/voitures/3315902903",
+      "city": "Laval",
+      "year": 2001,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "53000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 196000,
+      "price": 10000,
+      "firstPrice": 10000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 10000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
       "gone": null
     }
   }
