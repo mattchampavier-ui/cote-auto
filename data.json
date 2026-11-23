@@ -5,30 +5,6 @@
     "lastRecap": "2026-10",
     "runs": [
       {
-        "date": "2026-10-15",
-        "ok": [
-          "peugeot-208-gti-30th",
-          "porsche-911-997",
-          "porsche-boxster-986",
-          "porsche-boxster-987",
-          "renault-twingo-1",
-          "peugeot-206-rc",
-          "renault-clio-2-rs",
-          "citroen-saxo-vts",
-          "peugeot-306-s16",
-          "bmw-z3-19-20",
-          "vw-golf-4-gti-25",
-          "alfa-156-v6",
-          "mazda-mx5-na",
-          "peugeot-205-gti",
-          "honda-s2000",
-          "renault-megane-r26"
-        ],
-        "empty": [],
-        "failed": [],
-        "costUsd": 0.898
-      },
-      {
         "date": "2026-10-21",
         "source": "chrome",
         "ok": [],
@@ -328,6 +304,16 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "ok": [
+          "peugeot-306-s16"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -366,6 +352,7 @@
       "imports/2026-11-23/citroen-saxo-vts.json",
       "imports/2026-11-23/peugeot-206-rc.json",
       "imports/2026-11-23/peugeot-208-gti-30th.json",
+      "imports/2026-11-23/peugeot-306-s16.json",
       "imports/2026-11-23/porsche-911-997.json",
       "imports/2026-11-23/porsche-boxster-986.json",
       "imports/2026-11-23/porsche-boxster-987.json",
@@ -3746,6 +3733,108 @@
           "mot exclu « cabriolet »": 1,
           "mot obligatoire absent": 5,
           "mot exclu « hdi »": 3
+        },
+        "truncated": true
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "count": 13,
+        "min": 800,
+        "p25": 6300,
+        "median": 8000,
+        "p75": 12000,
+        "max": 18000,
+        "avgKm": 198000,
+        "medianKm": 192000,
+        "refKm": 180000.00000000003,
+        "refPrice": 9840,
+        "eurPer10kKm": 420,
+        "newListings": 7,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 50,
+        "priceDrops": [
+          {
+            "id": "3272452236",
+            "title": "306 S16 phase 1 BV6 / 167 cv",
+            "url": "https://www.leboncoin.fr/ad/voitures/3272452236",
+            "from": 6800,
+            "to": 6000,
+            "totalDropPct": 11.8
+          },
+          {
+            "id": "3268479738",
+            "title": "106 S16 préparée",
+            "url": "https://www.leboncoin.fr/ad/voitures/3268479738",
+            "from": 14000,
+            "to": 13000,
+            "totalDropPct": 7.1
+          }
+        ],
+        "bargains": [
+          {
+            "id": "3311979710",
+            "title": "Peugeot 206 S16",
+            "url": "https://www.leboncoin.fr/ad/voitures/3311979710",
+            "price": 800,
+            "km": 306000,
+            "year": 2000,
+            "city": "Foucarmont",
+            "expected": 6910,
+            "discountPct": 88
+          },
+          {
+            "id": "3300590277",
+            "title": "Projet 306 S16 trackday",
+            "url": "https://www.leboncoin.fr/ad/voitures/3300590277",
+            "price": 2999,
+            "km": 200000,
+            "year": 1995,
+            "city": "Cholet",
+            "expected": 9010,
+            "discountPct": 67
+          },
+          {
+            "id": "3272452236",
+            "title": "306 S16 phase 1 BV6 / 167 cv",
+            "url": "https://www.leboncoin.fr/ad/voitures/3272452236",
+            "price": 6000,
+            "km": 165000,
+            "year": 1997,
+            "city": "Pithiviers",
+            "expected": 10470,
+            "discountPct": 43
+          },
+          {
+            "id": "3261159396",
+            "title": "206 s16 Tracktool",
+            "url": "https://www.leboncoin.fr/ad/voitures/3261159396",
+            "price": 6300,
+            "km": 160500,
+            "year": 1999,
+            "city": "Le Broc",
+            "expected": 10620,
+            "discountPct": 41
+          },
+          {
+            "id": "3289737741",
+            "title": "306 s16 bv6",
+            "url": "https://www.leboncoin.fr/ad/voitures/3289737741",
+            "price": 7500,
+            "km": 170000,
+            "year": 2000,
+            "city": "Ailly-sur-Noye",
+            "expected": 10260,
+            "discountPct": 27
+          }
+        ],
+        "proShare": 0,
+        "rejected": 7,
+        "rejectedReasons": {
+          "mot obligatoire absent": 5,
+          "mot exclu « cabriolet »": 1,
+          "mot exclu « hdi »": 1
         },
         "truncated": true
       }

@@ -26649,20 +26649,15 @@
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "138",
-        "powerFiscal": "9",
-        "color": "Noir",
-        "doors": "2",
-        "seats": "4",
-        "vehicleType": "Citadine",
         "zipcode": "06510",
-        "department": "Alpes-Maritimes",
-        "region": "Provence-Alpes-Côte d'Azur",
+        "department": null,
+        "region": null,
         "images": null,
         "favorites": null,
         "boosted": null,
-        "hasPhone": false,
-        "expiresAt": "2026-11-02",
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
         "others": {}
       },
       "km": 160500,
@@ -26675,7 +26670,7 @@
         }
       ],
       "firstSeen": "2026-09-03",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3261609180": {
@@ -26941,33 +26936,32 @@
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "150",
-        "powerFiscal": "8",
-        "color": "Blanc",
-        "doors": "3",
-        "seats": "5",
-        "vehicleType": "Berline",
         "zipcode": "70100",
-        "department": "Haute-Saône",
-        "region": "Franche-Comté",
+        "department": null,
+        "region": null,
         "images": null,
         "favorites": null,
         "boosted": null,
-        "hasPhone": true,
-        "expiresAt": "2026-11-11",
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
         "others": {}
       },
       "km": 255000,
-      "price": 14000,
+      "price": 13000,
       "firstPrice": 14000,
       "priceHistory": [
         {
           "date": "2026-10-01",
           "price": 14000
+        },
+        {
+          "date": "2026-11-23",
+          "price": 13000
         }
       ],
       "firstSeen": "2026-09-12",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3270051665": {
@@ -27214,47 +27208,39 @@
       "title": "306 S16 phase 1 BV6 / 167 cv",
       "url": "https://www.leboncoin.fr/ad/voitures/3272452236",
       "city": "Pithiviers",
-      "year": 1996,
+      "year": 1997,
       "pro": false,
       "publishedAt": "2026-09-19",
       "description": "Vends 306 S16 phase 1 BV6\n\nXU10J4RS 167cv \n165000km.\nBleu sigma.\nIntérieur cuir / alcantara.\n\nLe véhicule est une version hollandaise.\nÀ l’arrêt depuis de nombreuses années au sec.\nUne remise en route est à prévoir, distribution, vidange, bougies etc etc…\nJe comptais la refaire, mais je possède plusieurs véhicules, il fallait faire un choix.\nPeinture refaite il y à plusieurs années, mais mal réalisée.\n\nVersion hollandaise, donc équipée d’origine des pare-chocs de la griffe.\nJe possède des pare-chocs version S16 française, avec les pare-boue respectifs.\nUn toit ouvrant accessoire Peugeot a été posé en concession, pas de fuite à ma connaissance.\nJe possède un pavillon complet avec ciel de toit également, car je comptais la remettre comme à sa sortie de concession.\n\nLe véhicule est complet à 100%, hormis le tapis de coffre.\n\nLe véhicule est en papier hollandais, je possède tout les documents.\n\nLe véhicule ne partira pas par la route.\nJe peux le livrer au besoin.",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "167 Ch",
-        "powerFiscal": "11 Cv",
-        "color": "Bleu",
-        "doors": "3",
-        "seats": "4",
-        "vehicleType": "Berline",
-        "history": "Véhicule importé",
         "zipcode": "45300",
-        "department": "Loiret",
-        "region": "Centre",
-        "images": 3,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
         "boosted": null,
-        "urgent": false,
-        "hasPhone": false,
-        "expiresAt": "2026-11-18",
-        "others": {
-          "Dommages": "Bon état général",
-          "Sellerie": "Cuir partiel",
-          "Permis": "Avec permis",
-          "Importé": "false"
-        }
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
       },
       "km": 165000,
-      "price": 6800,
+      "price": 6000,
       "firstPrice": 6800,
       "priceHistory": [
         {
           "date": "2026-10-01",
           "price": 6800
+        },
+        {
+          "date": "2026-11-23",
+          "price": 6000
         }
       ],
       "firstSeen": "2026-09-19",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3273929462": {
@@ -28371,16 +28357,20 @@
         "others": {}
       },
       "km": 170000,
-      "price": 7200,
+      "price": 7500,
       "firstPrice": 7200,
       "priceHistory": [
         {
           "date": "2026-10-21",
           "price": 7200
+        },
+        {
+          "date": "2026-11-23",
+          "price": 7500
         }
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3290512252": {
@@ -28516,7 +28506,7 @@
         }
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3296507909": {
@@ -28652,7 +28642,245 @@
         }
       ],
       "firstSeen": "2026-11-01",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3300849852": {
+      "title": "306 s16",
+      "url": "https://www.leboncoin.fr/ad/voitures/3300849852",
+      "city": "Ernée",
+      "year": 1996,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "53500",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 231000,
+      "price": 9300,
+      "firstPrice": 9300,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 9300
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3303679666": {
+      "title": "Peugeot 306 s16 bv6",
+      "url": "https://www.leboncoin.fr/ad/voitures/3303679666",
+      "city": "Villeneuve-Tolosane",
+      "year": 1997,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "31270",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 189990,
+      "price": 15500,
+      "firstPrice": 15500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 15500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3306320859": {
+      "title": "Peugeot 306 Le Mans S16",
+      "url": "https://www.leboncoin.fr/ad/voitures/3306320859",
+      "city": "Saint-Maurice",
+      "year": 1993,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "94410",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 113600,
+      "price": 18000,
+      "firstPrice": 18000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 18000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3311281516": {
+      "title": "Peugeot 306 s16",
+      "url": "https://www.leboncoin.fr/ad/voitures/3311281516",
+      "city": "Besançon",
+      "year": 1996,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "25000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 192000,
+      "price": 7500,
+      "firstPrice": 7500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 7500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3311979710": {
+      "title": "Peugeot 206 S16",
+      "url": "https://www.leboncoin.fr/ad/voitures/3311979710",
+      "city": "Foucarmont",
+      "year": 2000,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "76340",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 306000,
+      "price": 800,
+      "firstPrice": 800,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 800
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3312497457": {
+      "title": "306 2l s16",
+      "url": "https://www.leboncoin.fr/ad/voitures/3312497457",
+      "city": "Sainte-Rose",
+      "year": 1999,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "97439",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 179000,
+      "price": 8000,
+      "firstPrice": 8000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 8000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3315545828": {
+      "title": "Peugeot 306 s16 bv6",
+      "url": "https://www.leboncoin.fr/ad/voitures/3315545828",
+      "city": "Audincthun",
+      "year": 1997,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "62560",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 218000,
+      "price": 12000,
+      "firstPrice": 12000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 12000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
       "gone": null
     }
   },
