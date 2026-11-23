@@ -449,15 +449,15 @@
       "gone": null
     },
     "3248463615": {
-      "title": "Peugeot 206 2.0 177ch RC - FACTURES DISPONOBLES - DISTRIBUTION OK - BLUETOOTH",
+      "title": "Peugeot 206 2.0 177ch RC - FACTURES DISPONIBLES - DISTRIBUTION OK - BLUETOOTH",
       "url": "https://www.leboncoin.fr/ad/voitures/3248463615",
       "city": "La Ciotat",
       "km": 65663,
       "year": 2006,
-      "price": 13490,
+      "price": 12990,
       "firstPrice": 13990,
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null,
       "pro": true,
       "publishedAt": "2026-10-28",
@@ -483,6 +483,10 @@
         {
           "date": "2026-11-02",
           "price": 13490
+        },
+        {
+          "date": "2026-11-23",
+          "price": 12990
         }
       ]
     },
@@ -3140,6 +3144,346 @@
       ],
       "firstSeen": "2026-11-01",
       "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3308067030": {
+      "title": "PEUGEOT 206 RC - 2.0 177 - Deuxième main - Suivi d\\'entretien",
+      "url": "https://www.leboncoin.fr/ad/voitures/3308067030",
+      "city": "Grandvilliers",
+      "year": 2003,
+      "pro": true,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "60210",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 147000,
+      "price": 8490,
+      "firstPrice": 8490,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 8490
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3308516953": {
+      "title": "PEUGEOT 206 RC 2.0 16V 177ch – Pack JBL",
+      "url": "https://www.leboncoin.fr/ad/voitures/3308516953",
+      "city": "Lille",
+      "year": 2004,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "59800",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 137990,
+      "price": 8990,
+      "firstPrice": 8990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 8990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3312882247": {
+      "title": "Peugeot 206 RC",
+      "url": "https://www.leboncoin.fr/ad/voitures/3312882247",
+      "city": "La Gaude",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "06610",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 82500,
+      "price": 14990,
+      "firstPrice": 14990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 14990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3312905243": {
+      "title": "206 rc",
+      "url": "https://www.leboncoin.fr/ad/voitures/3312905243",
+      "city": "Chanas",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "38150",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 194000,
+      "price": 9999,
+      "firstPrice": 9999,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 9999
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3313044869": {
+      "title": "206 RC 2.0 16 V 177 Ch",
+      "url": "https://www.leboncoin.fr/ad/voitures/3313044869",
+      "city": "Souillac",
+      "year": 2005,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "46200",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 39730,
+      "price": 17900,
+      "firstPrice": 17900,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 17900
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3313107224": {
+      "title": "Peugeot 206 2.0e - 180 RC",
+      "url": "https://www.leboncoin.fr/ad/voitures/3313107224",
+      "city": "Saint-Maur-des-Fossés",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "94100",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 68000,
+      "price": 14990,
+      "firstPrice": 14990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 14990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3313514200": {
+      "title": "206 rc",
+      "url": "https://www.leboncoin.fr/ad/voitures/3313514200",
+      "city": "La Seyne-sur-Mer",
+      "year": 2004,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "83500",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 208000,
+      "price": 5500,
+      "firstPrice": 5500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 5500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3314030918": {
+      "title": "Peugeot 206 RC",
+      "url": "https://www.leboncoin.fr/ad/voitures/3314030918",
+      "city": "Valbonne",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "06560",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 154000,
+      "price": 9000,
+      "firstPrice": 9000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 9000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3314926971": {
+      "title": "206 rc",
+      "url": "https://www.leboncoin.fr/ad/voitures/3314926971",
+      "city": "Les Grandes-Ventes",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "76950",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 149800,
+      "price": 10500,
+      "firstPrice": 10500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 10500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3314995690": {
+      "title": "Véhicule 206 RC",
+      "url": "https://www.leboncoin.fr/ad/voitures/3314995690",
+      "city": "Châtillon-sur-Chalaronne",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "01400",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 225000,
+      "price": 7000,
+      "firstPrice": 7000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 7000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
       "gone": null
     }
   },

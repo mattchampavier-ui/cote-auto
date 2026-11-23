@@ -11,15 +11,6 @@
         ],
         "empty": [],
         "failed": [],
-        "costUsd": 0.129
-      },
-      {
-        "date": "2026-10-01",
-        "ok": [
-          "peugeot-206-rc"
-        ],
-        "empty": [],
-        "failed": [],
         "costUsd": 0.062
       },
       {
@@ -341,6 +332,16 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "ok": [
+          "peugeot-206-rc"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -376,6 +377,7 @@
       "imports/2026-11-02/renault-megane-r26.json",
       "imports/2026-11-02/renault-twingo-1.json",
       "imports/2026-11-02/vw-golf-4-gti-25.json",
+      "imports/2026-11-23/peugeot-206-rc.json",
       "imports/2026-11-23/peugeot-208-gti-30th.json",
       "imports/2026-11-23/porsche-911-997.json",
       "imports/2026-11-23/porsche-boxster-986.json",
@@ -2463,6 +2465,78 @@
           "mot exclu « 206 cc »": 1,
           "mot obligatoire absent": 4,
           "mot exclu « 1.6 »": 2
+        },
+        "truncated": true
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "count": 11,
+        "min": 5500,
+        "p25": 8740,
+        "median": 9999,
+        "p75": 13990,
+        "max": 17900,
+        "avgKm": 134000,
+        "medianKm": 147000,
+        "refKm": 150000,
+        "refPrice": 10030,
+        "eurPer10kKm": 560,
+        "newListings": 10,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 51,
+        "priceDrops": [
+          {
+            "id": "3248463615",
+            "title": "Peugeot 206 2.0 177ch RC - FACTURES DISPONIBLES - DISTRIBUTION OK - BLUETOOTH",
+            "url": "https://www.leboncoin.fr/ad/voitures/3248463615",
+            "from": 13490,
+            "to": 12990,
+            "totalDropPct": 7.1
+          }
+        ],
+        "bargains": [
+          {
+            "id": "3313514200",
+            "title": "206 rc",
+            "url": "https://www.leboncoin.fr/ad/voitures/3313514200",
+            "price": 5500,
+            "km": 208000,
+            "year": 2004,
+            "city": "La Seyne-sur-Mer",
+            "expected": 6780,
+            "discountPct": 19
+          },
+          {
+            "id": "3308067030",
+            "title": "PEUGEOT 206 RC - 2.0 177 - Deuxième main - Suivi d\\'entretien",
+            "url": "https://www.leboncoin.fr/ad/voitures/3308067030",
+            "price": 8490,
+            "km": 147000,
+            "year": 2003,
+            "city": "Grandvilliers",
+            "expected": 10200,
+            "discountPct": 17
+          },
+          {
+            "id": "3308516953",
+            "title": "PEUGEOT 206 RC 2.0 16V 177ch – Pack JBL",
+            "url": "https://www.leboncoin.fr/ad/voitures/3308516953",
+            "price": 8990,
+            "km": 137990,
+            "year": 2004,
+            "city": "Lille",
+            "expected": 10710,
+            "discountPct": 16
+          }
+        ],
+        "proShare": 0.18,
+        "rejected": 9,
+        "rejectedReasons": {
+          "mot obligatoire absent": 6,
+          "mot exclu « 1.6 »": 2,
+          "mot exclu « 206 cc »": 1
         },
         "truncated": true
       }
