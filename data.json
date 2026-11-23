@@ -79,15 +79,6 @@
       {
         "date": "2026-10-21",
         "source": "chrome",
-        "ok": [],
-        "empty": [],
-        "failed": [],
-        "costUsd": 0,
-        "budgetReached": true
-      },
-      {
-        "date": "2026-10-21",
-        "source": "chrome",
         "ok": [
           "peugeot-208-gti-30th",
           "porsche-911-997",
@@ -316,6 +307,16 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "ok": [
+          "alfa-156-v6"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -351,6 +352,7 @@
       "imports/2026-11-02/renault-megane-r26.json",
       "imports/2026-11-02/renault-twingo-1.json",
       "imports/2026-11-02/vw-golf-4-gti-25.json",
+      "imports/2026-11-23/alfa-156-v6.json",
       "imports/2026-11-23/bmw-z3-19-20.json",
       "imports/2026-11-23/citroen-saxo-vts.json",
       "imports/2026-11-23/peugeot-206-rc.json",
@@ -4483,6 +4485,66 @@
           "mot exclu « gta »": 6,
           "doublon": 1,
           "prix hors marché": 1
+        },
+        "truncated": false
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "count": 8,
+        "min": 2200,
+        "p25": 4673,
+        "median": 5500,
+        "p75": 6518,
+        "max": 7990,
+        "avgKm": 199000,
+        "medianKm": 198000,
+        "refKm": 200000.00000000003,
+        "refPrice": 5390,
+        "eurPer10kKm": 60,
+        "newListings": 4,
+        "sold": 6,
+        "soldMedianDays": 44,
+        "activeMedianAge": 19,
+        "priceDrops": [
+          {
+            "id": "3222893175",
+            "title": "ALFA ROMEO 156 2.5 V6 2 192 ch – BUSSO - tres bon état",
+            "url": "https://www.leboncoin.fr/ad/voitures/3222893175",
+            "from": 8800,
+            "to": 7990,
+            "totalDropPct": 9.2
+          }
+        ],
+        "bargains": [
+          {
+            "id": "3303315381",
+            "title": "Alfa 156 v6 2.5 gpl",
+            "url": "https://www.leboncoin.fr/ad/voitures/3303315381",
+            "price": 2200,
+            "km": 200000,
+            "year": 1999,
+            "city": "Romans",
+            "expected": 5390,
+            "discountPct": 59
+          },
+          {
+            "id": "3289765406",
+            "title": "Alfa Romeo 156sw 2.5 v6",
+            "url": "https://www.leboncoin.fr/ad/voitures/3289765406",
+            "price": 3990,
+            "km": 267500,
+            "year": 2001,
+            "city": "Mouzon",
+            "expected": 5050,
+            "discountPct": 21
+          }
+        ],
+        "proShare": 0,
+        "rejected": 6,
+        "rejectedReasons": {
+          "mot exclu « gta »": 5,
+          "mot obligatoire absent": 1
         },
         "truncated": false
       }
