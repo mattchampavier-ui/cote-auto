@@ -1,33 +1,9 @@
 {
   "_comment": "Historique des relevés, ajoutés par le robot (jamais réécrits). Les relevés « manuel » du 08/09/2026 sont l'amorce de départ.",
   "meta": {
-    "lastRun": "2026-11-02",
+    "lastRun": "2026-11-23",
     "lastRecap": "2026-10",
     "runs": [
-      {
-        "date": "2026-10-01",
-        "ok": [],
-        "empty": [
-          "peugeot-208-gti-30th",
-          "porsche-911-997",
-          "porsche-boxster-986",
-          "porsche-boxster-987",
-          "renault-twingo-1",
-          "peugeot-206-rc",
-          "renault-clio-2-rs",
-          "citroen-saxo-vts",
-          "peugeot-306-s16",
-          "bmw-z3-19-20",
-          "vw-golf-4-gti-25",
-          "alfa-156-v6",
-          "mazda-mx5-na",
-          "peugeot-205-gti",
-          "honda-s2000",
-          "renault-megane-r26"
-        ],
-        "failed": [],
-        "costUsd": 1.27
-      },
       {
         "date": "2026-10-01",
         "ok": [],
@@ -351,6 +327,16 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "ok": [
+          "peugeot-208-gti-30th"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -385,7 +371,8 @@
       "imports/2026-11-02/renault-clio-2-rs.json",
       "imports/2026-11-02/renault-megane-r26.json",
       "imports/2026-11-02/renault-twingo-1.json",
-      "imports/2026-11-02/vw-golf-4-gti-25.json"
+      "imports/2026-11-02/vw-golf-4-gti-25.json",
+      "imports/2026-11-23/peugeot-208-gti-30th.json"
     ]
   },
   "snapshots": {
@@ -570,6 +557,73 @@
         "rejected": 2,
         "rejectedReasons": {
           "variante non reconnue": 2
+        },
+        "truncated": false
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "count": 10,
+        "min": 11990,
+        "p25": 13300,
+        "median": 15495,
+        "p75": 19368,
+        "max": 24990,
+        "avgKm": 88000,
+        "medianKm": 107000,
+        "refKm": 100000,
+        "refPrice": 16010,
+        "eurPer10kKm": 680,
+        "newListings": 2,
+        "sold": 4,
+        "soldMedianDays": 58,
+        "activeMedianAge": 55,
+        "priceDrops": [
+          {
+            "id": "3278215050",
+            "title": "Peugeot 208 generation-i 1.6 thp 210 gti 30th peugeot sport - edition numerotée/garantie 12 mois",
+            "url": "https://www.leboncoin.fr/ad/voitures/3278215050",
+            "from": 12490,
+            "to": 11990,
+            "totalDropPct": 7.7
+          },
+          {
+            "id": "3275390710",
+            "title": "208 GTI 30th",
+            "url": "https://www.leboncoin.fr/ad/voitures/3275390710",
+            "from": 14500,
+            "to": 14200,
+            "totalDropPct": 2.1
+          }
+        ],
+        "bargains": [
+          {
+            "id": "3283621933",
+            "title": "208 GTI 30th",
+            "url": "https://www.leboncoin.fr/ad/voitures/3283621933",
+            "price": 16000,
+            "km": 35000,
+            "year": 2014,
+            "city": "Paris",
+            "expected": 20460,
+            "discountPct": 22
+          },
+          {
+            "id": "3311337674",
+            "title": "208 GTI 30th",
+            "url": "https://www.leboncoin.fr/ad/voitures/3311337674",
+            "price": 13000,
+            "km": 108000,
+            "year": 2015,
+            "city": "Six-Fours-les-Plages",
+            "expected": 15460,
+            "discountPct": 16
+          }
+        ],
+        "proShare": 0.2,
+        "rejected": 1,
+        "rejectedReasons": {
+          "variante non reconnue": 1
         },
         "truncated": false
       }
