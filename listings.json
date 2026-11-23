@@ -32039,7 +32039,7 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3191632844",
       "city": "Damazan",
       "year": 1990,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-11-02",
       "description": "Je vends ma Mazda MX-5 de 1990, un cabriolet sportif et agile.\nVéritable youngtimer \n\n- Marque : Mazda\n- Modèle : MX-5\n- Année : 1990\n- Kilométrage : 149 400 km\n- Motorisation : 115 Ch\n- Carburant : Essence\n- Boîte de vitesses : Manuelle\n- Nombre de portes : 2\n- Nombre de sièges : 2\n- Couleur : Rouge\nRévision pour la vente avec 4 pneus neuf.\n\nN'hésitez pas à me contacter pour plus d'informations ou pour organiser un essai.",
       "details": {
@@ -32066,7 +32066,7 @@
         }
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3197726433": {
@@ -32101,6 +32101,40 @@
       ],
       "firstSeen": "2026-09-11",
       "lastSeen": "2026-10-21",
+      "gone": null
+    },
+    "3197947364": {
+      "title": "Bmw z3 1.8 roadster GARANTIE",
+      "url": "https://www.leboncoin.fr/ad/voitures/3197947364",
+      "city": "Montélimar",
+      "year": 1997,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "26200",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 119627,
+      "price": 11490,
+      "firstPrice": 11490,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 11490
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3198496140": {
@@ -32155,7 +32189,7 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3199317557",
       "city": "Avrainville",
       "year": 1991,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-10-30",
       "description": "Mazda Miata 1.6 – Cabriolet (1991 – Marché Europe)\n\nCatégorie : Roadster / Cabriolet 2 portes\nVersion : AUNA02 – Adaptée au marché européen\nDate de fabrication : 20 septembre 1990\nAnnée modèle : 1991\nCarburant : Essence\nTransmission : Manuelle 5 rapports\nCylindrée : 1 600 cm³\nMoteur : 4 cylindres en ligne – Double arbre à cames en tête (DOHC)\nPuissance estimée : env. 115 ch\nTraction : Propulsion (RWD)\nDifférentiel : autobloquant (L.S. Diff)\nFreinage : 4 freins à disques\nABS : Non équipé (W/O A. Lock Brake)\nNorme d’émission : Conforme au standard européen (version CALIF d’origine adaptée)\nDirection : à gauche (LHD)\n\nÉquipements et options\n\nCabriolet à capote souple manuelle\n\nClimatisation d’origine Mazda\n\nJantes aluminium 14’’ d’origine\n\nIntérieur tissu (coloris NA0)\n\nVolant sport 3 branches\n\nSièges baquets avec appuie-tête intégré\n\nVitres manuelles\n\nDirection assistée\n\nSystème audio Mazda d’origine\n\nCompteur gradué en km/h (spécification Europe)\n\nCouleur extérieure : SU (Rouge vif  )\n\nOPTIONS ET ÉQUIPEMENTS :\nAudio - Télécommunications :\n  - Radio CD\n\nIntérieur :\n  - Climatisation manuelle\n  - Direction assistée\n  - Vitres électriques",
       "details": {
@@ -32182,7 +32216,7 @@
         }
       ],
       "firstSeen": "2025-10-25",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3203841842": {
@@ -32196,42 +32230,32 @@
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "116 Ch",
-        "powerFiscal": "6 Cv",
-        "color": "Rouge",
-        "doors": "2",
-        "seats": "2",
-        "vehicleType": "Cabriolet",
-        "critair": "4",
-        "issuance": "05/1993",
-        "oldPrice": "16500",
         "zipcode": "79290",
-        "department": "Deux-Sèvres",
-        "region": "Poitou-Charentes",
-        "images": 3,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
         "boosted": null,
-        "urgent": false,
-        "hasPhone": true,
-        "expiresAt": "2026-11-20",
-        "others": {
-          "Sellerie": "Tissu",
-          "Équipements intérieurs": "Phares anti-brouillard",
-          "Permis": "Avec permis",
-          "Importé": "false"
-        }
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
       },
       "km": 152600,
-      "price": 14000,
+      "price": 12000,
       "firstPrice": 14000,
       "priceHistory": [
         {
           "date": "2026-10-01",
           "price": 14000
+        },
+        {
+          "date": "2026-11-23",
+          "price": 12000
         }
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3208752836": {
@@ -32324,7 +32348,7 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3222225914",
       "city": "Cherbourg-en-Cotentin",
       "year": 1997,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-11-02",
       "details": {
         "fuel": "Essence",
@@ -32350,7 +32374,7 @@
         }
       ],
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3227901009": {
@@ -32771,7 +32795,7 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3257249738",
       "city": "Saint-Médard-en-Jalles",
       "year": 1993,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-10-27",
       "details": {
         "fuel": "Essence",
@@ -32801,7 +32825,7 @@
         }
       ],
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3258711810": {
@@ -33507,7 +33531,7 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3269945731",
       "city": "Lille",
       "year": 1991,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-10-28",
       "details": {
         "fuel": "Essence",
@@ -33524,16 +33548,20 @@
         "others": {}
       },
       "km": 162000,
-      "price": 10850,
+      "price": 9850,
       "firstPrice": 10850,
       "priceHistory": [
         {
           "date": "2026-10-21",
           "price": 10850
+        },
+        {
+          "date": "2026-11-23",
+          "price": 9850
         }
       ],
       "firstSeen": "2026-09-15",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3270050795": {
@@ -34319,11 +34347,11 @@
       "gone": null
     },
     "3287029218": {
-      "title": "Bmw Série 3 320i E36 Cabriolet / Radar AR / Sièges Chauffants / Suivi complet BMW",
+      "title": "Bmw série 3 320i individual cabriolet 1998 – 150 ch",
       "url": "https://www.leboncoin.fr/ad/voitures/3287029218",
       "city": "Cambrai",
       "year": 1998,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-10-29",
       "details": {
         "fuel": "Essence",
@@ -34349,7 +34377,7 @@
         }
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3287100326": {
@@ -34776,6 +34804,380 @@
       ],
       "firstSeen": "2026-11-02",
       "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3311101462": {
+      "title": "Mx5 na 115 postert",
+      "url": "https://www.leboncoin.fr/ad/voitures/3311101462",
+      "city": "Alençon",
+      "year": 1990,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "61000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 170000,
+      "price": 6500,
+      "firstPrice": 6500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 6500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3311271171": {
+      "title": "Mazda mx5 NA",
+      "url": "https://www.leboncoin.fr/ad/voitures/3311271171",
+      "city": "Saint-Domineuc",
+      "year": 1996,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "35190",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 170000,
+      "price": 13800,
+      "firstPrice": 13800,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 13800
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3311579376": {
+      "title": "Mazda mx5 na",
+      "url": "https://www.leboncoin.fr/ad/voitures/3311579376",
+      "city": "Perpignan",
+      "year": 1993,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "66000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 215000,
+      "price": 11000,
+      "firstPrice": 11000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 11000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3311654933": {
+      "title": "Mazda mx5 NA 1.6 édition cosmo",
+      "url": "https://www.leboncoin.fr/ad/voitures/3311654933",
+      "city": "Valmont",
+      "year": 1996,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "57730",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 122000,
+      "price": 13000,
+      "firstPrice": 13000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 13000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3312168106": {
+      "title": "Mazda MX5 NA",
+      "url": "https://www.leboncoin.fr/ad/voitures/3312168106",
+      "city": "Liévin",
+      "year": 1991,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "62800",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 133000,
+      "price": 13000,
+      "firstPrice": 13000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 13000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3312939454": {
+      "title": "Mx5 NA",
+      "url": "https://www.leboncoin.fr/ad/voitures/3312939454",
+      "city": "Annecy",
+      "year": 1998,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "74000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 150000,
+      "price": 7500,
+      "firstPrice": 7500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 7500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3315055333": {
+      "title": "Mazda mx5 Na",
+      "url": "https://www.leboncoin.fr/ad/voitures/3315055333",
+      "city": "Villefranche-de-Lauragais",
+      "year": 1997,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "31290",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 155000,
+      "price": 10000,
+      "firstPrice": 10000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 10000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3316021177": {
+      "title": "Mazda MX5 na 1.6",
+      "url": "https://www.leboncoin.fr/ad/voitures/3316021177",
+      "city": "Golbey",
+      "year": 1991,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "88190",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 174894,
+      "price": 12500,
+      "firstPrice": 12500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 12500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3316224013": {
+      "title": "Mazda MX5 NA 1.6l 1991",
+      "url": "https://www.leboncoin.fr/ad/voitures/3316224013",
+      "city": "Cholet",
+      "year": 1991,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "49300",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 112000,
+      "price": 15500,
+      "firstPrice": 15500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 15500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3316245671": {
+      "title": "Mx5",
+      "url": "https://www.leboncoin.fr/ad/voitures/3316245671",
+      "city": "Paimpol",
+      "year": 1998,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "22500",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 140000,
+      "price": 9200,
+      "firstPrice": 9200,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 9200
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3316297601": {
+      "title": "Mazda mx5 1990",
+      "url": "https://www.leboncoin.fr/ad/voitures/3316297601",
+      "city": "Poitiers",
+      "year": 1990,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "86000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 305976,
+      "price": 6800,
+      "firstPrice": 6800,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 6800
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
       "gone": null
     }
   },

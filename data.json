@@ -70,15 +70,6 @@
       {
         "date": "2026-10-21",
         "source": "chrome",
-        "ok": [],
-        "empty": [],
-        "failed": [],
-        "costUsd": 0,
-        "budgetReached": true
-      },
-      {
-        "date": "2026-10-21",
-        "source": "chrome",
         "ok": [
           "peugeot-208-gti-30th",
           "porsche-911-997",
@@ -317,6 +308,16 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "ok": [
+          "mazda-mx5-na"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -355,6 +356,7 @@
       "imports/2026-11-23/alfa-156-v6.json",
       "imports/2026-11-23/bmw-z3-19-20.json",
       "imports/2026-11-23/citroen-saxo-vts.json",
+      "imports/2026-11-23/mazda-mx5-na.json",
       "imports/2026-11-23/peugeot-206-rc.json",
       "imports/2026-11-23/peugeot-208-gti-30th.json",
       "imports/2026-11-23/peugeot-306-s16.json",
@@ -4896,6 +4898,95 @@
         "rejected": 1,
         "rejectedReasons": {
           "mot exclu « nb »": 1
+        },
+        "truncated": true
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "count": 19,
+        "min": 6500,
+        "p25": 9925,
+        "median": 11980,
+        "p75": 12995,
+        "max": 15900,
+        "avgKm": 155000,
+        "medianKm": 150000,
+        "refKm": 160000,
+        "refPrice": 11270,
+        "eurPer10kKm": 340,
+        "newListings": 12,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 58,
+        "priceDrops": [
+          {
+            "id": "3203841842",
+            "title": "Mazda mx5 na 1.6l 116ch 1991",
+            "url": "https://www.leboncoin.fr/ad/voitures/3203841842",
+            "from": 14000,
+            "to": 12000,
+            "totalDropPct": 14.3
+          },
+          {
+            "id": "3269945731",
+            "title": "MX5 NA 1.6 l 115 cv « CLASSIC RED »",
+            "url": "https://www.leboncoin.fr/ad/voitures/3269945731",
+            "from": 10850,
+            "to": 9850,
+            "totalDropPct": 9.2
+          }
+        ],
+        "bargains": [
+          {
+            "id": "3311101462",
+            "title": "Mx5 na 115 postert",
+            "url": "https://www.leboncoin.fr/ad/voitures/3311101462",
+            "price": 6500,
+            "km": 170000,
+            "year": 1990,
+            "city": "Alençon",
+            "expected": 10930,
+            "discountPct": 41
+          },
+          {
+            "id": "3312939454",
+            "title": "Mx5 NA",
+            "url": "https://www.leboncoin.fr/ad/voitures/3312939454",
+            "price": 7500,
+            "km": 150000,
+            "year": 1998,
+            "city": "Annecy",
+            "expected": 11600,
+            "discountPct": 35
+          },
+          {
+            "id": "3316297601",
+            "title": "Mazda mx5 1990",
+            "url": "https://www.leboncoin.fr/ad/voitures/3316297601",
+            "price": 6800,
+            "km": 305976,
+            "year": 1990,
+            "city": "Poitiers",
+            "expected": 10500,
+            "discountPct": 35
+          },
+          {
+            "id": "3316245671",
+            "title": "Mx5",
+            "url": "https://www.leboncoin.fr/ad/voitures/3316245671",
+            "price": 9200,
+            "km": 140000,
+            "year": 1998,
+            "city": "Paimpol",
+            "expected": 11940,
+            "discountPct": 23
+          }
+        ],
+        "proShare": 0,
+        "rejected": 1,
+        "rejectedReasons": {
+          "prix hors marché": 1
         },
         "truncated": true
       }
