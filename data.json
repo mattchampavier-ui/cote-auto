@@ -7,15 +7,6 @@
       {
         "date": "2026-10-01",
         "ok": [
-          "peugeot-206-rc"
-        ],
-        "empty": [],
-        "failed": [],
-        "costUsd": 0.062
-      },
-      {
-        "date": "2026-10-01",
-        "ok": [
           "peugeot-208-gti-30th",
           "porsche-911-997",
           "porsche-boxster-986",
@@ -342,6 +333,16 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "ok": [
+          "renault-clio-2-rs"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -382,6 +383,7 @@
       "imports/2026-11-23/porsche-911-997.json",
       "imports/2026-11-23/porsche-boxster-986.json",
       "imports/2026-11-23/porsche-boxster-987.json",
+      "imports/2026-11-23/renault-clio-2-rs.json",
       "imports/2026-11-23/renault-twingo-1.json"
     ]
   },
@@ -2905,6 +2907,89 @@
           "mot exclu « clio 3 »": 2,
           "mot exclu « v6 »": 2,
           "variante non reconnue": 1
+        },
+        "truncated": true
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "count": 15,
+        "min": 3500,
+        "p25": 6995,
+        "median": 8500,
+        "p75": 11745,
+        "max": 17990,
+        "avgKm": 152000,
+        "medianKm": 172000,
+        "refKm": 160000,
+        "refPrice": 9330,
+        "eurPer10kKm": 450,
+        "newListings": 11,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 56,
+        "priceDrops": [
+          {
+            "id": "3270112718",
+            "title": "RENAULT CLIO RS 2.0l 172Ch Renault Sport",
+            "url": "https://www.leboncoin.fr/ad/voitures/3270112718",
+            "from": 8990,
+            "to": 8490,
+            "totalDropPct": 5.6
+          }
+        ],
+        "bargains": [
+          {
+            "id": "3315467342",
+            "title": "Clio 1.6 16V 110Cv mini-RS",
+            "url": "https://www.leboncoin.fr/ad/voitures/3315467342",
+            "price": 3500,
+            "km": 192000,
+            "year": 2000,
+            "city": "Chaville",
+            "expected": 7890,
+            "discountPct": 56
+          },
+          {
+            "id": "3270785228",
+            "title": "Voiture RS",
+            "url": "https://www.leboncoin.fr/ad/voitures/3270785228",
+            "price": 4500,
+            "km": 190000,
+            "year": 2001,
+            "city": "Châteauneuf-les-Bains",
+            "expected": 7980,
+            "discountPct": 44
+          },
+          {
+            "id": "3316264852",
+            "title": "Clio 2 rs",
+            "url": "https://www.leboncoin.fr/ad/voitures/3316264852",
+            "price": 6500,
+            "km": 165000,
+            "year": 2002,
+            "city": "Lexy",
+            "expected": 9100,
+            "discountPct": 29
+          },
+          {
+            "id": "3316069613",
+            "title": "Clio 2 rs",
+            "url": "https://www.leboncoin.fr/ad/voitures/3316069613",
+            "price": 8500,
+            "km": 142000,
+            "year": 2001,
+            "city": "Carcassonne",
+            "expected": 10130,
+            "discountPct": 16
+          }
+        ],
+        "proShare": 0.07,
+        "rejected": 5,
+        "rejectedReasons": {
+          "variante non reconnue": 3,
+          "mot exclu « clio 3 »": 1,
+          "mot exclu « v6 »": 1
         },
         "truncated": true
       }

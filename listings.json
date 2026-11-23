@@ -19658,6 +19658,40 @@
       "gone": null,
       "description": "Clio rs 182..bon état général..ct ok du 20/06/2026…2 pneus avant à remplacer…"
     },
+    "3221298345": {
+      "title": "Clio 2 RS 172 phase 1 Jaune tournesol",
+      "url": "https://www.leboncoin.fr/ad/voitures/3221298345",
+      "city": "Orbec",
+      "year": 2001,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "14290",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 172000,
+      "price": 14900,
+      "firstPrice": 14900,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 14900
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
     "3225541573": {
       "title": "Clio rs ps2 edition / ragnotti",
       "url": "https://www.leboncoin.fr/ad/voitures/3225541573",
@@ -20564,47 +20598,32 @@
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "169 Ch",
-        "powerFiscal": "10 Cv",
-        "color": "Gris",
-        "doors": "3",
-        "seats": "5",
-        "vehicleType": "Berline",
-        "version": "Clio 2.0 16v 172ch RS 3p",
-        "finition": "RS",
-        "issuance": "09/2002",
-        "maintenance": "Carnet d'entretien disponible, Factures disponibles, Véhicule non fumeur",
         "zipcode": "24100",
-        "department": "Dordogne",
-        "region": "Aquitaine",
-        "images": 28,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
         "boosted": null,
-        "urgent": false,
-        "hasPhone": true,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
-        "others": {
-          "Dommages": "Bon état général",
-          "Équipements intérieurs": "Climatisation, Essuie-glaces automatiques, Jantes en alliage, Phares anti-brouillard, Phares LED / Xenon, Roue de secours, Sièges sport, Volant réglable en hauteur",
-          "Permis": "Avec permis",
-          "VO récent": "false",
-          "custom_ref": "D195652",
-          "Importé": "true",
-          "vehicle_history_report_status": "visible",
-          "spare_parts_availability": "Non renseignée"
-        }
+        "others": {}
       },
       "km": 231915,
-      "price": 8990,
+      "price": 8490,
       "firstPrice": 8990,
       "priceHistory": [
         {
           "date": "2026-10-01",
           "price": 8990
+        },
+        {
+          "date": "2026-11-23",
+          "price": 8490
         }
       ],
       "firstSeen": "2026-09-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-23",
       "gone": null,
       "description": "---------- NOS SERVICES  ET PRESTATIONS COMPLÉMENTAIRES --------------------------------------------\n\n- Visite virtuelle : avant de vous déplacer, visualisez votre futur véhicule sous toutes ses coutures . Contactez-nous pour en voir plus !\n- Extension de garantie jusqu'à 60 mois.\n- Solutions de Financement de 12 à 84 mois.\n- Livraison dans toute la France métropolitaine (sur devis).\n- Reprise possible de votre ancien véhicule.\n- Les informations délivrées par cette annonce sont non contractuelles et données à titre indicatif.\n\n🚗 Packs disponibles (véhicules éligibles au Label)\n\n🔹 Pack Clés en Main – 691 € TTC(¹)(²)\nDémarches (hors carte grise) | 1/4 de carburant | Nettoyage First | Garantie 6 mois | Label inclus✅\n\n🔹 Pack Sérénité – 891 € TTC(¹)(²)\nDémarches (hors carte grise) | 1/2 de carburant | Nettoyage Confort | Garantie 12 mois | Label inclus✅\n\n🔹 Pack Prestige – 1.091 € TTC(¹)(²)\nDémarches (hors carte grise) | Plein complet | Nettoyage Prestige | Garantie 12 mois | Label inclus✅ + Surprise du chef🎁\n\n_______________________________________________________________________________\n(¹) Les véhicules non éligibles au Label bénéficient de tarifs préférentiels. Veuillez contact"
     },
@@ -20654,12 +20673,46 @@
       "gone": null,
       "description": "Bonjour.\nJe mets en vente ma clio RS 172 de 2003.\nCarrosserie très propre ainsi que l intérieur.\n4 pneus neufs.\nDistribution et poulie dephaseur faitent à 217000 km\nEmbrayage fait en même temps.\nVidange avec tous les filtres.\nVidange de boîte et sonde lambda remplacées.\nReportage photo dispo.\nJe suis à votre disposition pour tout autre renseignement.\n8500 à débattre légèrement devant le véhicule.\nMerci"
     },
+    "3270785228": {
+      "title": "Voiture RS",
+      "url": "https://www.leboncoin.fr/ad/voitures/3270785228",
+      "city": "Châteauneuf-les-Bains",
+      "year": 2001,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Diesel",
+        "gearbox": "Manuelle",
+        "zipcode": "63390",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 190000,
+      "price": 4500,
+      "firstPrice": 4500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 4500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
     "3271479321": {
       "title": "Renault clio ii rs 2.0 182ch renault sport 3p",
       "url": "https://www.leboncoin.fr/ad/voitures/3271479321",
       "city": "Tullins",
       "year": 2004,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-10-31",
       "details": {
         "fuel": "Essence",
@@ -20689,7 +20742,7 @@
         }
       ],
       "firstSeen": "2026-09-17",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3272175500": {
@@ -22267,7 +22320,7 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3292957337",
       "city": "Sélestat",
       "year": 2000,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-10-31",
       "details": {
         "fuel": "Essence",
@@ -22293,7 +22346,7 @@
         }
       ],
       "firstSeen": "2026-10-31",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3294169508": {
@@ -22361,7 +22414,7 @@
         }
       ],
       "firstSeen": "2026-11-01",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3299555038": {
@@ -22498,6 +22551,312 @@
       ],
       "firstSeen": "2026-11-01",
       "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3303247388": {
+      "title": "Renault clio 2 rs 16v 2.0l 172ch",
+      "url": "https://www.leboncoin.fr/ad/voitures/3303247388",
+      "city": "Vitry-le-François",
+      "year": 2000,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "51300",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 209183,
+      "price": 6990,
+      "firstPrice": 6990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 6990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3307261630": {
+      "title": "Clio 2 rs 172 Groupe N",
+      "url": "https://www.leboncoin.fr/ad/voitures/3307261630",
+      "city": "Échallat",
+      "year": 2000,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "16170",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 1000,
+      "price": 12500,
+      "firstPrice": 12500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 12500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3312333950": {
+      "title": "Renault CLIO II RS Ph2 2.0 i 172 ch | FRANÇAISE | Jantes Speedline Groupe A Corse | Ligne Inox Car RS",
+      "url": "https://www.leboncoin.fr/ad/voitures/3312333950",
+      "city": "Riorges",
+      "year": 2001,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "42153",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 180000,
+      "price": 9990,
+      "firstPrice": 9990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 9990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3312708610": {
+      "title": "Renault clio 2 rs phase 2",
+      "url": "https://www.leboncoin.fr/ad/voitures/3312708610",
+      "city": "Saint-Junien",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "87200",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 193000,
+      "price": 7000,
+      "firstPrice": 7000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 7000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3315467342": {
+      "title": "Clio 1.6 16V 110Cv mini-RS",
+      "url": "https://www.leboncoin.fr/ad/voitures/3315467342",
+      "city": "Chaville",
+      "year": 2000,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "92370",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 192000,
+      "price": 3500,
+      "firstPrice": 3500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 3500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3315476379": {
+      "title": "Renault Clio 2 rs",
+      "url": "https://www.leboncoin.fr/ad/voitures/3315476379",
+      "city": "Saint-Pair-sur-Mer",
+      "year": 2002,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "50380",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 149000,
+      "price": 10500,
+      "firstPrice": 10500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 10500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3315755376": {
+      "title": "Renault Clio rs 172ch",
+      "url": "https://www.leboncoin.fr/ad/voitures/3315755376",
+      "city": "Segonzac",
+      "year": 2003,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "16130",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 186000,
+      "price": 7000,
+      "firstPrice": 7000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 7000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3316069613": {
+      "title": "Clio 2 rs",
+      "url": "https://www.leboncoin.fr/ad/voitures/3316069613",
+      "city": "Carcassonne",
+      "year": 2001,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "11000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 142000,
+      "price": 8500,
+      "firstPrice": 8500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 8500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3316264852": {
+      "title": "Clio 2 rs",
+      "url": "https://www.leboncoin.fr/ad/voitures/3316264852",
+      "city": "Lexy",
+      "year": 2002,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "54720",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 165000,
+      "price": 6500,
+      "firstPrice": 6500,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 6500
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
       "gone": null
     }
   },
