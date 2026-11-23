@@ -97,15 +97,6 @@
       {
         "date": "2026-10-21",
         "source": "chrome",
-        "ok": [],
-        "empty": [],
-        "failed": [],
-        "costUsd": 0,
-        "budgetReached": true
-      },
-      {
-        "date": "2026-10-21",
-        "source": "chrome",
         "ok": [
           "peugeot-208-gti-30th",
           "porsche-911-997",
@@ -314,6 +305,16 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "ok": [
+          "bmw-z3-19-20"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -349,6 +350,7 @@
       "imports/2026-11-02/renault-megane-r26.json",
       "imports/2026-11-02/renault-twingo-1.json",
       "imports/2026-11-02/vw-golf-4-gti-25.json",
+      "imports/2026-11-23/bmw-z3-19-20.json",
       "imports/2026-11-23/citroen-saxo-vts.json",
       "imports/2026-11-23/peugeot-206-rc.json",
       "imports/2026-11-23/peugeot-208-gti-30th.json",
@@ -4103,6 +4105,100 @@
           "mot exclu « coupe »": 1,
           "mot exclu « 2.8i »": 1,
           "prix hors marché": 1
+        },
+        "truncated": true
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "count": 10,
+        "min": 7990,
+        "p25": 9490,
+        "median": 11245,
+        "p75": 12748,
+        "max": 14990,
+        "avgKm": 140000,
+        "medianKm": 154000,
+        "refKm": 130000.00000000001,
+        "refPrice": 11860,
+        "eurPer10kKm": 430,
+        "newListings": 7,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 48,
+        "priceDrops": [
+          {
+            "id": "3249081293",
+            "title": "BMW Z3 Roadster 1.9i 118ch Garantie 6 Mois",
+            "url": "https://www.leboncoin.fr/ad/voitures/3249081293",
+            "from": 9990,
+            "to": 7990,
+            "totalDropPct": 20
+          },
+          {
+            "id": "3278435582",
+            "title": "Bmw Z3 Roadster 1.9 i 115cv - Pack M",
+            "url": "https://www.leboncoin.fr/ad/voitures/3278435582",
+            "from": 9990,
+            "to": 8990,
+            "totalDropPct": 10
+          }
+        ],
+        "bargains": [
+          {
+            "id": "3278435582",
+            "title": "Bmw Z3 Roadster 1.9 i 115cv - Pack M",
+            "url": "https://www.leboncoin.fr/ad/voitures/3278435582",
+            "price": 8990,
+            "km": 135400,
+            "year": 2001,
+            "city": "Nice",
+            "expected": 11620,
+            "discountPct": 23
+          },
+          {
+            "id": "3249081293",
+            "title": "BMW Z3 Roadster 1.9i 118ch Garantie 6 Mois",
+            "url": "https://www.leboncoin.fr/ad/voitures/3249081293",
+            "price": 7990,
+            "km": 195944,
+            "year": 2000,
+            "city": "Herrlisheim-près-Colmar",
+            "expected": 10210,
+            "discountPct": 22
+          },
+          {
+            "id": "3282799851",
+            "title": "Bmw z3 1.8l 115 ch - full options",
+            "url": "https://www.leboncoin.fr/ad/voitures/3282799851",
+            "price": 8990,
+            "km": 156000,
+            "year": 1997,
+            "city": "Narbonne",
+            "expected": 10730,
+            "discountPct": 16
+          },
+          {
+            "id": "3313418032",
+            "title": "Bmw Z3 1.8 Roadster - ETAT EXCEPTIONNEL",
+            "url": "https://www.leboncoin.fr/ad/voitures/3313418032",
+            "price": 10990,
+            "km": 104800,
+            "year": 1997,
+            "city": "Chambry",
+            "expected": 12950,
+            "discountPct": 15
+          }
+        ],
+        "proShare": 0.3,
+        "rejected": 10,
+        "rejectedReasons": {
+          "mot exclu « 2.8i »": 3,
+          "mot exclu « coupe »": 2,
+          "mot exclu « 3.0 »": 1,
+          "mot exclu « 2.8 »": 1,
+          "mot exclu « m roadster »": 1,
+          "prix hors marché": 2
         },
         "truncated": true
       }

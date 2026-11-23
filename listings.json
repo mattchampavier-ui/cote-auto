@@ -29302,6 +29302,40 @@
       "lastSeen": "2026-10-21",
       "gone": null
     },
+    "3245061434": {
+      "title": "BMW Z3 2.0 150 ch Roadster 6 CYLINDRES GARANTIE MOIS",
+      "url": "https://www.leboncoin.fr/ad/voitures/3245061434",
+      "city": "Courbépine",
+      "year": 2000,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "27300",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 155000,
+      "price": 11990,
+      "firstPrice": 11990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 11990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
     "3245464697": {
       "title": "BMW Z3 cabriolet",
       "url": "https://www.leboncoin.fr/ad/voitures/3245464697",
@@ -29333,7 +29367,7 @@
         }
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3245635449": {
@@ -29480,38 +29514,37 @@
       "url": "https://www.leboncoin.fr/ad/voitures/3249081293",
       "city": "Herrlisheim-près-Colmar",
       "year": 2000,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-08-12",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "118",
-        "powerFiscal": "8",
-        "color": "Gris",
-        "doors": "2",
-        "seats": "2",
-        "vehicleType": "Cabriolet",
         "zipcode": "68420",
-        "department": "Haut-Rhin",
-        "region": "Alsace",
+        "department": null,
+        "region": null,
         "images": null,
         "favorites": null,
-        "boosted": true,
-        "hasPhone": true,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
         "others": {}
       },
       "km": 195944,
-      "price": 9990,
+      "price": 7990,
       "firstPrice": 9990,
       "priceHistory": [
         {
           "date": "2026-10-01",
           "price": 9990
+        },
+        {
+          "date": "2026-11-23",
+          "price": 7990
         }
       ],
       "firstSeen": "2026-08-12",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3249519594": {
@@ -29928,6 +29961,40 @@
       "lastSeen": "2026-11-02",
       "gone": null
     },
+    "3262291982": {
+      "title": "Bmw Z3 Roadster 1.9i 116ch BVM5 Pack E36 (cuir rouge)",
+      "url": "https://www.leboncoin.fr/ad/voitures/3262291982",
+      "city": "Saint-Brieuc",
+      "year": 2002,
+      "pro": true,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "22000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 61500,
+      "price": 14990,
+      "firstPrice": 14990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 14990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
     "3265952895": {
       "title": "BMW Z3 1.9 i 140cv",
       "url": "https://www.leboncoin.fr/ad/voitures/3265952895",
@@ -30211,6 +30278,40 @@
       ],
       "firstSeen": "2026-09-16",
       "lastSeen": "2026-10-01",
+      "gone": null
+    },
+    "3272019054": {
+      "title": "Bmw Z3 Roadster Z3 ROADSTER 1.9i",
+      "url": "https://www.leboncoin.fr/ad/voitures/3272019054",
+      "city": "Castries",
+      "year": 1997,
+      "pro": true,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Automatique",
+        "zipcode": "34160",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 156800,
+      "price": 11490,
+      "firstPrice": 11490,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 11490
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3272577206": {
@@ -30531,54 +30632,76 @@
       "gone": null
     },
     "3278435582": {
-      "title": "BMW Z3 Roadster 1.9 i 115cv - Pack M",
+      "title": "Bmw Z3 Roadster 1.9 i 115cv - Pack M",
       "url": "https://www.leboncoin.fr/ad/voitures/3278435582",
       "city": "Nice",
       "year": 2001,
-      "pro": true,
+      "pro": false,
       "publishedAt": "2026-09-28",
       "description": "BMW Z3 ROADSTER 1.9i – PACK M – 2001\n2ÈME MAIN • 135 000 KM • CABRIOLET • PROPULSION\n\nIl y a des voitures que l'on achète pour aller vite.\nEt d'autres simplement parce qu'elles donnent envie de prendre la route.\n\nCette BMW Z3 Roadster 1.9i de 115 ch, mise en circulation en 2001, appartient clairement à la seconde catégorie.\nUne silhouette devenue iconique, un long capot, deux places, une capote que l'on ouvre dès que le soleil apparaît et surtout cette architecture devenue rare :\nmoteur à l'avant, propulsion à l'arrière et conducteur au milieu de l'expérience.\n\nLE PLAISIR DU ROADSTER, TOUT SIMPLEMENT\n\nPas besoin de 300 ch pour comprendre l'intérêt d'une Z3.\nAvec son gabarit compact et sa position de conduite basse, elle transforme une simple route côtière ou une balade dans en véritable moment de plaisir.\nCapote ouverte, on profite davantage de la route, du paysage et de la mécanique.\nC'est précisément pour cela que l'on achète un roadster.\n\nPACK M : LA TOUCHE QUI FAIT LA DIFFÉRENCE\nCet exemplaire bénéficie du Pack M, qui vient renforcer le caractère sportif et la présentation de cette Z3.\nSur un modèle désormais entré dans l'univers des youngtimers BMW, c'est une configuration par",
       "details": {
         "fuel": "Essence",
         "gearbox": "Manuelle",
-        "powerDin": "115 Ch",
-        "powerFiscal": "8 Cv",
-        "color": "Noir",
-        "doors": "2",
-        "seats": "2",
-        "vehicleType": "Cabriolet",
-        "version": "Z3 Roadster 1.8i 115ch",
-        "finition": "Base",
-        "issuance": "06/2001",
         "zipcode": "06200",
-        "department": "Alpes-Maritimes",
-        "region": "Provence-Alpes-Côte d'Azur",
-        "images": 28,
+        "department": null,
+        "region": null,
+        "images": null,
         "favorites": null,
-        "boosted": true,
-        "urgent": false,
-        "hasPhone": true,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
         "expiresAt": null,
-        "others": {
-          "Équipements intérieurs": "Climatisation, Ordinateur de bord, Vitres électriques arrières",
-          "VO récent": "false",
-          "custom_ref": "509335",
-          "Importé": "true",
-          "vehicle_history_report_status": "visible",
-          "spare_parts_availability": "Non renseignée"
-        }
+        "others": {}
       },
       "km": 135400,
-      "price": 9990,
+      "price": 8990,
       "firstPrice": 9990,
       "priceHistory": [
         {
           "date": "2026-10-15",
           "price": 9990
+        },
+        {
+          "date": "2026-11-23",
+          "price": 8990
         }
       ],
       "firstSeen": "2026-09-28",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3282799851": {
+      "title": "Bmw z3 1.8l 115 ch - full options",
+      "url": "https://www.leboncoin.fr/ad/voitures/3282799851",
+      "city": "Narbonne",
+      "year": 1997,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "11100",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 156000,
+      "price": 8990,
+      "firstPrice": 8990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 8990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
       "gone": null
     },
     "3283125826": {
@@ -31208,6 +31331,108 @@
       ],
       "firstSeen": "2026-11-02",
       "lastSeen": "2026-11-02",
+      "gone": null
+    },
+    "3313418032": {
+      "title": "Bmw Z3 1.8 Roadster - ETAT EXCEPTIONNEL",
+      "url": "https://www.leboncoin.fr/ad/voitures/3313418032",
+      "city": "Chambry",
+      "year": 1997,
+      "pro": true,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "02000",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 104800,
+      "price": 10990,
+      "firstPrice": 10990,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 10990
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3315934574": {
+      "title": "Bmw z3",
+      "url": "https://www.leboncoin.fr/ad/voitures/3315934574",
+      "city": "Le Touquet-Paris-Plage",
+      "year": 1998,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "62520",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 114500,
+      "price": 14900,
+      "firstPrice": 14900,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 14900
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "gone": null
+    },
+    "3316205197": {
+      "title": "Bmw z3",
+      "url": "https://www.leboncoin.fr/ad/voitures/3316205197",
+      "city": "Boulazac Isle Manoire",
+      "year": 2002,
+      "pro": false,
+      "publishedAt": null,
+      "details": {
+        "fuel": "Essence",
+        "gearbox": "Manuelle",
+        "zipcode": "24330",
+        "department": null,
+        "region": null,
+        "images": null,
+        "favorites": null,
+        "boosted": null,
+        "urgent": null,
+        "hasPhone": null,
+        "expiresAt": null,
+        "others": {}
+      },
+      "km": 153000,
+      "price": 13000,
+      "firstPrice": 13000,
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 13000
+        }
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
       "gone": null
     }
   },
