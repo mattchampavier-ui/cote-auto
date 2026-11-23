@@ -43,15 +43,6 @@
       {
         "date": "2026-10-21",
         "source": "chrome",
-        "ok": [],
-        "empty": [],
-        "failed": [],
-        "costUsd": 0,
-        "budgetReached": true
-      },
-      {
-        "date": "2026-10-21",
-        "source": "chrome",
         "ok": [
           "peugeot-208-gti-30th",
           "porsche-911-997",
@@ -320,6 +311,16 @@
         "empty": [],
         "failed": [],
         "costUsd": 0
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "ok": [
+          "renault-megane-r26"
+        ],
+        "empty": [],
+        "failed": [],
+        "costUsd": 0
       }
     ],
     "importedFiles": [
@@ -368,6 +369,7 @@
       "imports/2026-11-23/porsche-boxster-986.json",
       "imports/2026-11-23/porsche-boxster-987.json",
       "imports/2026-11-23/renault-clio-2-rs.json",
+      "imports/2026-11-23/renault-megane-r26.json",
       "imports/2026-11-23/renault-twingo-1.json",
       "imports/2026-11-23/vw-golf-4-gti-25.json"
     ]
@@ -6140,6 +6142,114 @@
           "variante non reconnue": 1,
           "mot exclu « dci »": 1,
           "prix hors marché": 2
+        },
+        "truncated": true
+      },
+      {
+        "date": "2026-11-23",
+        "source": "chrome",
+        "count": 19,
+        "min": 13000,
+        "p25": 19400,
+        "median": 22150,
+        "p75": 24495,
+        "max": 29990,
+        "avgKm": 114000,
+        "medianKm": 109000,
+        "refKm": 100000.00000000001,
+        "refPrice": 22540,
+        "eurPer10kKm": 580,
+        "newListings": 6,
+        "sold": 0,
+        "soldMedianDays": null,
+        "activeMedianAge": 59,
+        "priceDrops": [
+          {
+            "id": "3165656670",
+            "title": "Renault Megane II RS F1 Team R26 2.0 230 ch - Équipé Complet R26-R",
+            "url": "https://www.leboncoin.fr/ad/voitures/3165656670",
+            "from": 31490,
+            "to": 29990,
+            "totalDropPct": 4.8
+          },
+          {
+            "id": "3262231451",
+            "title": "Renault Megane 2.0 R.S F1 TEAM R26 Série limitée (Échappement N° 25/34)",
+            "url": "https://www.leboncoin.fr/ad/voitures/3262231451",
+            "from": 24500,
+            "to": 24000,
+            "totalDropPct": 5.9
+          },
+          {
+            "id": "3169074583",
+            "title": "Renault Megane 2.0 R26 F1-TEAM RS 230 ch \"ECHAPPEMENT N°15/34\"",
+            "url": "https://www.leboncoin.fr/ad/voitures/3169074583",
+            "from": 27489,
+            "to": 26989,
+            "totalDropPct": 1.8
+          }
+        ],
+        "bargains": [
+          {
+            "id": "3293481955",
+            "title": "Mégane 2 RS r26 f1 team",
+            "url": "https://www.leboncoin.fr/ad/voitures/3293481955",
+            "price": 16000,
+            "km": 101000,
+            "year": 2007,
+            "city": "La Ferté-sous-Jouarre",
+            "expected": 22480,
+            "discountPct": 29
+          },
+          {
+            "id": "3301361243",
+            "title": "Mégane 2 rs r26 f1 team",
+            "url": "https://www.leboncoin.fr/ad/voitures/3301361243",
+            "price": 13000,
+            "km": 210000,
+            "year": 2008,
+            "city": "Entre-Deux",
+            "expected": 17670,
+            "discountPct": 26
+          },
+          {
+            "id": "3152592919",
+            "title": "Renault megane rs 2.0t 16v 230 f1 team r26 numerotee 41mkm",
+            "url": "https://www.leboncoin.fr/ad/voitures/3152592919",
+            "price": 18900,
+            "km": 41461,
+            "year": 2007,
+            "city": "Sorgues",
+            "expected": 25260,
+            "discountPct": 25
+          },
+          {
+            "id": "3301675566",
+            "title": "Renault MEGANE II (2) 2.0 T RS F1 TEAM R26 / NON HOMOLOGUÉ ROUTE / USAGE CIRCUIT, PISTE, TRACKDAY",
+            "url": "https://www.leboncoin.fr/ad/voitures/3301675566",
+            "price": 14900,
+            "km": 179700,
+            "year": 2007,
+            "city": "Les Sables-d'Olonne",
+            "expected": 17890,
+            "discountPct": 17
+          },
+          {
+            "id": "3308084398",
+            "title": "Mégane RS r26",
+            "url": "https://www.leboncoin.fr/ad/voitures/3308084398",
+            "price": 21000,
+            "km": 56000,
+            "year": 2007,
+            "city": "Charleville-Mézières",
+            "expected": 25100,
+            "discountPct": 16
+          }
+        ],
+        "proShare": 0.11,
+        "rejected": 1,
+        "rejectedReasons": {
+          "variante non reconnue": 1
         },
         "truncated": true
       }
